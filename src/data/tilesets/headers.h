@@ -1541,3 +1541,36 @@ const struct Tileset gTileset_HallOfFame =
 };
 
 #endif // IS_FRLG
+
+const struct Tileset gTileset_PorytilesPrimaryPlatGBA =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_PorytilesPrimaryPlatGBA,
+    .palettes = gTilesetPalettes_PorytilesPrimaryPlatGBA,
+    .metatiles = gMetatiles_PorytilesPrimaryPlatGBA,
+    .metatileAttributes = gMetatileAttributes_PorytilesPrimaryPlatGBA,
+    .callback = InitTilesetAnim_PorytilesPrimaryPlatGBAOutside,
+};
+
+const struct Tileset gTileset_PorytilesSecondaryPlatGBATwinleaf =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryPlatGBATwinleaf,
+    .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBATwinleaf,
+    .metatiles = gMetatiles_PorytilesSecondaryPlatGBATwinleaf,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBATwinleaf,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesSecondaryPlatGBASandgem =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryPlatGBASandgem,
+    .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBASandgem,
+    .metatiles = gMetatiles_PorytilesSecondaryPlatGBASandgem,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBASandgem,
+    .callback = NULL,
+};
