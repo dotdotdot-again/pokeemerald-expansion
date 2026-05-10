@@ -708,6 +708,18 @@ enum
 #define OBJ_EVENT_PAL_DP_YOUNGSTER                  0x118E
 #define OBJ_EVENT_PAL_DP_POKE_FANF                  0x118F
 #define OBJ_EVENT_PAL_DP_POKE_FANM                  0x1190
+
+//my pals
+#define OBJ_EVENT_PAL_DP_NURSE                  0x1191
+#define OBJ_EVENT_PAL_DP_SCHOOLBOY                  0x1192
+#define OBJ_EVENT_PAL_DP_WOMAN3                  0x1193
+#define OBJ_EVENT_PAL_DP_FATMAN                  0x1194
+#define OBJ_EVENT_PAL_DP_TWIN                  0x1195
+#define OBJ_EVENT_PAL_DP_MARTMAN                  0x1196
+#define OBJ_EVENT_PAL_DP_MARTLADY                  0x1197
+#define OBJ_EVENT_PAL_DP_MOM                  0x1198
+#define OBJ_EVENT_PAL_DP_LASS                  0x1199
+#define OBJ_EVENT_PAL_DP_CLOWN                  0x119A
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #if OW_FOLLOWERS_POKEBALLS

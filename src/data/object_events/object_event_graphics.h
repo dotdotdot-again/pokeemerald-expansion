@@ -525,6 +525,17 @@ const u16 gObjectEventPal_DP_Worker[] = INCBIN_U16("graphics/object_events/palet
 const u16 gObjectEventPal_DP_YoungCouple[] = INCBIN_U16("graphics/object_events/palettes/DP_young_couple.gbapal");
 const u16 gObjectEventPal_DP_Youngster[] = INCBIN_U16("graphics/object_events/palettes/DP_youngster.gbapal");
 
+//my added pals
+const u16 gObjectEventPal_DP_Nurse[] = INCBIN_U16("graphics/object_events/pics/people/nurse.gbapal");
+const u16 gObjectEventPal_DP_Schoolboy[] = INCBIN_U16("graphics/object_events/pics/people/school_kid_m.gbapal");
+const u16 gObjectEventPal_DP_Woman3[] = INCBIN_U16("graphics/object_events/pics/people/woman_3.gbapal");
+const u16 gObjectEventPal_DP_Fatman[] = INCBIN_U16("graphics/object_events/pics/people/fat_man.gbapal");
+const u16 gObjectEventPal_DP_Twin[] = INCBIN_U16("graphics/object_events/pics/people/twin.gbapal");
+const u16 gObjectEventPal_DP_MartMan[] = INCBIN_U16("graphics/object_events/pics/people/mart_employee.gbapal");
+const u16 gObjectEventPal_DP_MartLady[] = INCBIN_U16("graphics/object_events/pics/people/rooftop_sale_woman.gbapal");
+const u16 gObjectEventPal_DP_Mom[] = INCBIN_U16("graphics/object_events/pics/people/mom.gbapal");
+const u16 gObjectEventPal_DP_Lass[] = INCBIN_U16("graphics/object_events/pics/people/lass.gbapal");
+const u16 gObjectEventPal_DP_Clown[] = INCBIN_U16("graphics/object_events/pics/people/mauville_old_man_1.gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");
@@ -609,7 +620,7 @@ const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effe
 
 const u32 gObjectEventPic_ApricornTree[] = INCBIN_U32("graphics/object_events/pics/misc/apricorn_tree.4bpp");
 
-#if IS_FRLG
+//#if IS_FRLG
 
 const u16 gObjectEventPic_RedNormal[] = INCBIN_U16("graphics/object_events/pics/people/red/red_normal.4bpp");
 const u16 gObjectEventPic_RedBike[] = INCBIN_U16("graphics/object_events/pics/people/red/red_bike.4bpp");
@@ -775,4 +786,4 @@ const u16 gObjectEventPic_JigglypuffOld[] = INCBIN_U16("graphics/object_events/p
 const u16 gObjectEventPic_PidgeyOld[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/pidgey.4bpp");
 const u16 gObjectEventPic_ClefairyOld[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/clefairy.4bpp");
 
-#endif // IS_FRLG
+

@@ -1644,7 +1644,7 @@ static const struct SpriteFrameImage sPicTable_DP_Youngster[] = {
 };
 //End Platinum
 
-#if IS_FRLG
+//#if IS_FRLG
 
 static const struct SpriteFrameImage sPicTable_RedNormal[] = {
     overworld_frame(gObjectEventPic_RedNormal, 2, 4, 0),
@@ -3311,4 +3311,4 @@ static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
     overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
 };
 
-#endif // IS_FRLG
+//#endif // IS_FRLG

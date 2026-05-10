@@ -3,7 +3,7 @@
   "name": "LakeVerityLakefront",
   "layout": "LAYOUT_LAKE_VERITY_LAKEFRONT",
   "music": "MUS_ROUTE101",
-  "region_map_section": "MAPSEC_ROUTE_102",
+  "region_map_section": "MAPSEC_ROUTE_134",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

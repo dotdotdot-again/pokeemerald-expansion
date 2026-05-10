@@ -585,8 +585,19 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_DP_Waitress,            OBJ_EVENT_PAL_DP_WAITRESS},
     {gObjectEventPal_DP_Worker,            OBJ_EVENT_PAL_DP_WORKER},
     {gObjectEventPal_DP_YoungCouple,            OBJ_EVENT_PAL_DP_YOUNG_COUPLE},
-    {gObjectEventPal_DP_Youngster,            OBJ_EVENT_PAL_DP_YOUNGSTER},
-#if IS_FRLG
+    {gObjectEventPal_DP_Youngster,            OBJ_EVENT_PAL_DP_YOUNGSTER}, 
+    //my pals
+    {gObjectEventPal_DP_Nurse,            OBJ_EVENT_PAL_DP_NURSE},
+    {gObjectEventPal_DP_Schoolboy,            OBJ_EVENT_PAL_DP_SCHOOLBOY},
+    {gObjectEventPal_DP_Woman3,            OBJ_EVENT_PAL_DP_WOMAN3},
+    {gObjectEventPal_DP_Fatman,            OBJ_EVENT_PAL_DP_FATMAN},
+    {gObjectEventPal_DP_Twin,            OBJ_EVENT_PAL_DP_TWIN},
+    {gObjectEventPal_DP_MartMan,            OBJ_EVENT_PAL_DP_MARTMAN},
+    {gObjectEventPal_DP_MartLady,            OBJ_EVENT_PAL_DP_MARTLADY},
+    {gObjectEventPal_DP_Mom,            OBJ_EVENT_PAL_DP_MOM},
+    {gObjectEventPal_DP_Lass,            OBJ_EVENT_PAL_DP_LASS},
+    {gObjectEventPal_DP_Clown,            OBJ_EVENT_PAL_DP_CLOWN},
+//#if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
     {gObjectEventPal_PlayerReflectionFrlg,  OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION},
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_GREEN},
@@ -602,7 +613,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Meteorite,             OBJ_EVENT_PAL_TAG_METEORITE},
     {gObjectEventPal_SSAnne,                OBJ_EVENT_PAL_TAG_SS_ANNE},
     {gObjectEventPal_Seagallop,             OBJ_EVENT_PAL_TAG_SEAGALLOP},
-#endif // IS_FRLG
+//#endif // IS_FRLG
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
     {gObjectEventPal_UltraBall,             OBJ_EVENT_PAL_TAG_BALL_ULTRA},

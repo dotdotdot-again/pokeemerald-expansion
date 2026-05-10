@@ -9373,6 +9373,26 @@
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBASandgem",
       "border_filepath": "data/layouts/SandgemTown/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE202",
+      "name": "Route202_Layout",
+      "width": 40,
+      "height": 32,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/Route202/border.bin",
+      "blockdata_filepath": "data/layouts/Route202/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE202_2",
+      "name": "Route202_2_Layout",
+      "width": 42,
+      "height": 27,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBASandgem",
+      "border_filepath": "data/layouts/Route202_2/border.bin",
+      "blockdata_filepath": "data/layouts/Route202_2/map.bin"
     }
   ]
 }

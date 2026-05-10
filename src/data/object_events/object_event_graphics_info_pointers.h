@@ -788,7 +788,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DP_YOUNG_COUPLEF] =               &gObjectEventGraphicsInfo_DP_YoungCoupleF,
     [OBJ_EVENT_GFX_DP_YOUNG_COUPLEM] =               &gObjectEventGraphicsInfo_DP_YoungCoupleM,
     [OBJ_EVENT_GFX_DP_YOUNGSTER] =               &gObjectEventGraphicsInfo_DP_Youngster,
-#if IS_FRLG
+//#if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,
     [OBJ_EVENT_GFX_RED_SURF] =                 &gObjectEventGraphicsInfo_RedSurf,
@@ -933,7 +933,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DEOXYS_A]                 = &gObjectEventGraphicsInfo_DeoxysA,
     [OBJ_EVENT_GFX_DEOXYS_N]                 = &gObjectEventGraphicsInfo_DeoxysN,
     [OBJ_EVENT_GFX_SS_ANNE]                  = &gObjectEventGraphicsInfo_SSAnne,
-#endif // IS_FRLG
+//#endif // IS_FRLG
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

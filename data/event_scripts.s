@@ -1759,3 +1759,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/LakeVerityLakefront/scripts.inc"
 
 	.include "data/maps/SandgemTown/scripts.inc"
+
+	.include "data/maps/Route202/scripts.inc"
+
+	.include "data/maps/Route202_2/scripts.inc"

@@ -1356,7 +1356,7 @@
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
 
 // Badges
-#define FLAG_BADGE01_GET                      (SYSTEM_FLAGS + 0x7)
+#define FLAG_BADGE01_GET                      (SYSTEM_FLAGS + 0x7) // FLAG_0x867
 #define FLAG_BADGE02_GET                      (SYSTEM_FLAGS + 0x8)
 #define FLAG_BADGE03_GET                      (SYSTEM_FLAGS + 0x9)
 #define FLAG_BADGE04_GET                      (SYSTEM_FLAGS + 0xA)
