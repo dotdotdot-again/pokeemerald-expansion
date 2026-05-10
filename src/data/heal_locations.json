@@ -361,6 +361,12 @@
       "map": "MAP_SANDGEM_TOWN",
       "x": 19,
       "y": 9
+    },
+    {
+      "id": "HEAL_LOCATION_ROUTE202",
+      "map": "MAP_ROUTE202",
+      "x": 20,
+      "y": 20
     }
   ]
 }

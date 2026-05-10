@@ -1763,3 +1763,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route202/scripts.inc"
 
 	.include "data/maps/Route202_2/scripts.inc"
+
+	.include "data/maps/JubilifeCity/scripts.inc"

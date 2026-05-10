@@ -3105,3 +3105,22 @@ const u16 gTilesetPalettes_PorytilesSecondaryPlatGBASandgem[][16] =
 };
 
 const u32 gTilesetTiles_PorytilesSecondaryPlatGBASandgem[] = INCBIN_U32("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PorytilesSecondaryPlatGBAJubilife[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PorytilesSecondaryPlatGBAJubilife[] = INCBIN_U32("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/tiles.4bpp.lz");

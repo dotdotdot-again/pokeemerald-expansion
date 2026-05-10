@@ -417,3 +417,6 @@ const u16 gMetatileAttributes_PorytilesSecondaryPlatGBATwinleaf[] = INCBIN_U16("
 
 const u16 gMetatiles_PorytilesSecondaryPlatGBASandgem[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesSecondaryPlatGBASandgem[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesSecondaryPlatGBAJubilife[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesSecondaryPlatGBAJubilife[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/metatile_attributes.bin");
