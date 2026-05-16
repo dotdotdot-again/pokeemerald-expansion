@@ -9378,9 +9378,9 @@
       "id": "LAYOUT_ROUTE202",
       "name": "Route202_Layout",
       "width": 40,
-      "height": 36,
+      "height": 30,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAJubilife",
       "border_filepath": "data/layouts/Route202/border.bin",
       "blockdata_filepath": "data/layouts/Route202/map.bin"
     },
@@ -9397,12 +9397,62 @@
     {
       "id": "LAYOUT_JUBILIFE_CITY",
       "name": "JubilifeCity_Layout",
-      "width": 54,
-      "height": 60,
+      "width": 66,
+      "height": 58,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAJubilife",
       "border_filepath": "data/layouts/JubilifeCity/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE204",
+      "name": "ROUTE204_Layout",
+      "width": 32,
+      "height": 62,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAJubilife",
+      "border_filepath": "data/layouts/ROUTE204/border.bin",
+      "blockdata_filepath": "data/layouts/ROUTE204/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE203",
+      "name": "Route203_Layout",
+      "width": 66,
+      "height": 32,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAJubilife",
+      "border_filepath": "data/layouts/Route203/border.bin",
+      "blockdata_filepath": "data/layouts/Route203/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE218",
+      "name": "Route218_Layout",
+      "width": 64,
+      "height": 30,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBASandgem",
+      "border_filepath": "data/layouts/Route218/border.bin",
+      "blockdata_filepath": "data/layouts/Route218/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOAROMA_TOWN",
+      "name": "FloaromaTown_Layout",
+      "width": 34,
+      "height": 36,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/FloaromaTown/border.bin",
+      "blockdata_filepath": "data/layouts/FloaromaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE205",
+      "name": "Route205_Layout",
+      "width": 32,
+      "height": 64,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/Route205/border.bin",
+      "blockdata_filepath": "data/layouts/Route205/map.bin"
     }
   ]
 }

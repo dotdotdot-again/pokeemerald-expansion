@@ -363,10 +363,10 @@
       "y": 9
     },
     {
-      "id": "HEAL_LOCATION_ROUTE202",
-      "map": "MAP_ROUTE202",
-      "x": 20,
-      "y": 20
+      "id": "HEAL_LOCATION_ROUTE204",
+      "map": "MAP_ROUTE204",
+      "x": 16,
+      "y": 21
     }
   ]
 }
