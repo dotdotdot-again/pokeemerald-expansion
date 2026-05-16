@@ -460,6 +460,8 @@ const u32 gObjectEventPic_DP_YoungCoupleF[] = INCBIN_U32("graphics/object_events
 const u32 gObjectEventPic_DP_YoungCoupleM[] = INCBIN_U32("graphics/object_events/pics/people/DP_young_couple_m.4bpp");
 const u32 gObjectEventPic_DP_Youngster[] = INCBIN_U32("graphics/object_events/pics/people/DP_youngster.4bpp");
 
+const u32 gObjectEventPic_DP_HoneyTree[] = INCBIN_U32("graphics/object_events/pics/misc/honey_tree.4bpp");
+
 const u16 gObjectEventPal_DP_Aaron[] = INCBIN_U16("graphics/object_events/palettes/DP_aaron.gbapal");
 const u16 gObjectEventPal_DP_AceTrainer[] = INCBIN_U16("graphics/object_events/palettes/DP_ace_trainer.gbapal");
 const u16 gObjectEventPal_DP_AceTrainerSnowM[] = INCBIN_U16("graphics/object_events/palettes/DP_ace_trainer_snow_m.gbapal");
@@ -536,6 +538,9 @@ const u16 gObjectEventPal_DP_MartLady[] = INCBIN_U16("graphics/object_events/pic
 const u16 gObjectEventPal_DP_Mom[] = INCBIN_U16("graphics/object_events/pics/people/mom.gbapal");
 const u16 gObjectEventPal_DP_Lass[] = INCBIN_U16("graphics/object_events/pics/people/lass.gbapal");
 const u16 gObjectEventPal_DP_Clown[] = INCBIN_U16("graphics/object_events/pics/people/mauville_old_man_1.gbapal");
+
+const u16 gObjectEventPal_DP_Sign[] = INCBIN_U16("graphics/object_events/pics/misc/gym_sign.gbapal");
+const u16 gObjectEventPal_DP_HoneyTree[] = INCBIN_U16("graphics/object_events/pics/misc/honey_tree.gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");

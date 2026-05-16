@@ -374,6 +374,10 @@ static const struct SpriteFrameImage sPicTable_Truck[] = {
     obj_frame_tiles(gObjectEventPic_Truck),
 };
 
+static const struct SpriteFrameImage sPicTable_DP_HoneyTree[] = {
+    obj_frame_tiles(gObjectEventPic_DP_HoneyTree),
+};
+
 static const struct SpriteFrameImage sPicTable_VigorothCarryingBox[] = {
     overworld_frame(gObjectEventPic_VigorothMover, 4, 4, 0),
     overworld_frame(gObjectEventPic_VigorothMover, 4, 4, 0),
