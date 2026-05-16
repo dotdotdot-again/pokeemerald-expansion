@@ -1,0 +1,8 @@
+mapscripts JubilifeCity_MapScripts {}
+
+script test_event{
+	lock
+	setspeaker("Test")
+	msgbox(format("test"), MSGBOX_NPC)
+	releaseall
+}
