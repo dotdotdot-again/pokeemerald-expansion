@@ -17,6 +17,11 @@
       "map": "MAP_FLOAROMA_TOWN",
       "offset": -2,
       "direction": "up"
+    },
+    {
+      "map": "MAP_JUBILIFE_CITY",
+      "offset": -34,
+      "direction": "down"
     }
   ],
   "object_events": [],
