@@ -485,6 +485,7 @@ enum
     OBJ_EVENT_GFX_DP_YOUNG_COUPLEM,
     OBJ_EVENT_GFX_DP_YOUNGSTER,
     OBJ_EVENT_GFX_DP_HONEY_TREE,
+    OBJ_EVENT_GFX_DP_WINDMILL,
     NUM_OBJ_EVENT_GFX,
 };
 
@@ -723,6 +724,7 @@ enum
 #define OBJ_EVENT_PAL_DP_CLOWN                  0x119A
 #define OBJ_EVENT_PAL_DP_SIGN                  0x119B
 #define OBJ_EVENT_PAL_DP_HONEY_TREE                  0x119C
+#define OBJ_EVENT_PAL_DP_WINDMILL                  0x119D
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #if OW_FOLLOWERS_POKEBALLS

@@ -9448,11 +9448,21 @@
       "id": "LAYOUT_ROUTE205",
       "name": "Route205_Layout",
       "width": 32,
-      "height": 64,
+      "height": 81,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
       "border_filepath": "data/layouts/Route205/border.bin",
       "blockdata_filepath": "data/layouts/Route205/map.bin"
+    },
+    {
+      "id": "LAYOUT_VAELLY_WINDWORKS",
+      "name": "VaellyWindworks_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/VaellyWindworks/border.bin",
+      "blockdata_filepath": "data/layouts/VaellyWindworks/map.bin"
     }
   ]
 }

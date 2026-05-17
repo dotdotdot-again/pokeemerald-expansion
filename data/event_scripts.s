@@ -1775,3 +1775,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/FloaromaTown/scripts.inc"
 
 	.include "data/maps/Route205/scripts.inc"
+
+	.include "data/maps/VaellyWindworks/scripts.inc"
