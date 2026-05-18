@@ -1498,7 +1498,7 @@ const u16 *const gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid[] = {
 static void QueueAnimTiles_PorytilesPrimaryPlatGBA_Water_Mid(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid);
-    AppendTilesetAnimToBuffer(gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 4 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(5)), 4 * TILE_SIZE_4BPP);
 }
 
 static void TilesetAnim_PorytilesPrimaryPlatGBA(u16 timer)

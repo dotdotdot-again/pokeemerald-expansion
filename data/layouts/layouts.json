@@ -9463,6 +9463,36 @@
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
       "border_filepath": "data/layouts/VaellyWindworks/border.bin",
       "blockdata_filepath": "data/layouts/VaellyWindworks/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_FORST",
+      "name": "EternaForst_Layout",
+      "width": 48,
+      "height": 52,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/EternaForst/border.bin",
+      "blockdata_filepath": "data/layouts/EternaForst/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY",
+      "name": "OreburghCity_Layout",
+      "width": 65,
+      "height": 56,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesPlatGBAOreBurgh",
+      "border_filepath": "data/layouts/OreburghCity/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE207",
+      "name": "Route207_Layout",
+      "width": 62,
+      "height": 28,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesPlatGBAOreBurgh",
+      "border_filepath": "data/layouts/Route207/border.bin",
+      "blockdata_filepath": "data/layouts/Route207/map.bin"
     }
   ]
 }

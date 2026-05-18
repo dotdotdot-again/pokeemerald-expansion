@@ -3124,3 +3124,22 @@ const u16 gTilesetPalettes_PorytilesSecondaryPlatGBAJubilife[][16] =
 };
 
 const u32 gTilesetTiles_PorytilesSecondaryPlatGBAJubilife[] = INCBIN_U32("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PorytilesPlatGBAOreBurgh[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gbaore_burgh/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PorytilesPlatGBAOreBurgh[] = INCBIN_U32("data/tilesets/secondary/porytiles_plat_gbaore_burgh/tiles.4bpp.lz");

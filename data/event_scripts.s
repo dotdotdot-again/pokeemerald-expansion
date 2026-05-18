@@ -1777,3 +1777,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route205/scripts.inc"
 
 	.include "data/maps/VaellyWindworks/scripts.inc"
+
+	.include "data/maps/EternaForst/scripts.inc"
+
+	.include "data/maps/OreburghCity/scripts.inc"
+
+	.include "data/maps/Route207/scripts.inc"
