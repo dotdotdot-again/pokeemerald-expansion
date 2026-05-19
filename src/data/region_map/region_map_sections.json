@@ -3,16 +3,16 @@
     {
       "id": "MAPSEC_LITTLEROOT_TOWN",
       "name": "Twinleaf Town",
-      "x": 4,
-      "y": 11,
+      "x": 3,
+      "y": 14,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_OLDALE_TOWN",
       "name": "Sandgem Town",
-      "x": 4,
-      "y": 9,
+      "x": 5,
+      "y": 13,
       "width": 1,
       "height": 1
     },
@@ -59,10 +59,10 @@
     {
       "id": "MAPSEC_PETALBURG_CITY",
       "name": "PETALBURG CITY",
-      "x": 1,
-      "y": 9,
+      "x": 8,
+      "y": 5,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_SLATEPORT_CITY",
@@ -83,9 +83,9 @@
     {
       "id": "MAPSEC_RUSTBORO_CITY",
       "name": "Jubilife City",
-      "x": 0,
-      "y": 5,
-      "width": 1,
+      "x": 4,
+      "y": 10,
+      "width": 2,
       "height": 2
     },
     {
@@ -131,65 +131,65 @@
     {
       "id": "MAPSEC_ROUTE_101",
       "name": "Route 201",
-      "x": 4,
-      "y": 10,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_ROUTE_102",
-      "name": "Route 202",
-      "x": 2,
-      "y": 9,
-      "width": 2,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_ROUTE_103",
-      "name": "Route 203",
-      "x": 4,
-      "y": 8,
-      "width": 4,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_ROUTE_104",
-      "name": "ROUTE 204",
-      "x": 0,
-      "y": 7,
-      "width": 1,
-      "height": 3
-    },
-    {
-      "id": "MAPSEC_ROUTE_105",
-      "name": "ROUTE 205",
-      "x": 0,
-      "y": 10,
-      "width": 1,
-      "height": 3
-    },
-    {
-      "id": "MAPSEC_ROUTE_106",
-      "name": "ROUTE 106",
-      "x": 0,
+      "x": 3,
       "y": 13,
       "width": 2,
       "height": 1
     },
     {
+      "id": "MAPSEC_ROUTE_102",
+      "name": "Route 202",
+      "x": 5,
+      "y": 12,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_103",
+      "name": "Route 203",
+      "x": 6,
+      "y": 10,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_104",
+      "name": "ROUTE 204",
+      "x": 5,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_ROUTE_105",
+      "name": "ROUTE 205",
+      "x": 6,
+      "y": 7,
+      "width": 1,
+      "height": 2
+    },
+    {
+      "id": "MAPSEC_ROUTE_106",
+      "name": "ROUTE 106",
+      "x": 8,
+      "y": 7,
+      "width": 1,
+      "height": 2
+    },
+    {
       "id": "MAPSEC_ROUTE_107",
       "name": "Route 207",
-      "x": 3,
-      "y": 14,
-      "width": 3,
+      "x": 8,
+      "y": 9,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_108",
       "name": "ROUTE 108",
-      "x": 6,
-      "y": 14,
-      "width": 2,
+      "x": 11,
+      "y": 9,
+      "width": 1,
       "height": 1
     },
     {
@@ -211,10 +211,10 @@
     {
       "id": "MAPSEC_ROUTE_111",
       "name": "ROUTE 111",
-      "x": 8,
-      "y": 0,
-      "width": 1,
-      "height": 6
+      "x": 9,
+      "y": 5,
+      "width": 2,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_112",
@@ -267,8 +267,8 @@
     {
       "id": "MAPSEC_ROUTE_118",
       "name": "Route 218",
-      "x": 10,
-      "y": 6,
+      "x": 2,
+      "y": 10,
       "width": 2,
       "height": 1
     },
@@ -395,10 +395,10 @@
     {
       "id": "MAPSEC_ROUTE_134",
       "name": "Lake Lerity",
-      "x": 9,
-      "y": 10,
-      "width": 3,
-      "height": 1
+      "x": 1,
+      "y": 12,
+      "width": 2,
+      "height": 2
     },
     {
       "id": "MAPSEC_UNDERWATER_124",
@@ -451,10 +451,10 @@
     {
       "id": "MAPSEC_MT_CHIMNEY",
       "name": "MT. CHIMNEY",
-      "x": 6,
+      "x": 10,
       "y": 2,
-      "width": 1,
-      "height": 1
+      "width": 2,
+      "height": 8
     },
     {
       "id": "MAPSEC_SAFARI_ZONE",
@@ -475,10 +475,10 @@
     {
       "id": "MAPSEC_PETALBURG_WOODS",
       "name": "Eterna Forest",
-      "x": 0,
-      "y": 8,
+      "x": 6,
+      "y": 5,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_RUSTURF_TUNNEL",
@@ -499,7 +499,7 @@
     {
       "id": "MAPSEC_NEW_MAUVILLE",
       "name": "NEW MAUVILLE",
-      "x": 8,
+      "x": 5,
       "y": 7,
       "width": 1,
       "height": 1
@@ -610,9 +610,9 @@
     },
     {
       "id": "MAPSEC_JAGGED_PASS",
-      "name": "JAGGED PASS",
+      "name": "Valley Windworks",
       "x": 6,
-      "y": 3,
+      "y": 8,
       "width": 1,
       "height": 1
     },

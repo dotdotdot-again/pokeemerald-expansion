@@ -3,7 +3,7 @@
   "name": "VaellyWindworks",
   "layout": "LAYOUT_VAELLY_WINDWORKS",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_RUSTURF_TUNNEL",
+  "region_map_section": "MAPSEC_JAGGED_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

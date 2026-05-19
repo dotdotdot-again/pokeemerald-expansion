@@ -1596,3 +1596,14 @@ const struct Tileset gTileset_PorytilesPlatGBAOreBurgh =
     .metatileAttributes = gMetatileAttributes_PorytilesPlatGBAOreBurgh,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesSecondaryPlatGBAEterna =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryPlatGBAEterna,
+    .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBAEterna,
+    .metatiles = gMetatiles_PorytilesSecondaryPlatGBAEterna,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBAEterna,
+    .callback = NULL,
+};

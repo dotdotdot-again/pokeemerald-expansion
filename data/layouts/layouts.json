@@ -9493,6 +9493,26 @@
       "secondary_tileset": "gTileset_PorytilesPlatGBAOreBurgh",
       "border_filepath": "data/layouts/Route207/border.bin",
       "blockdata_filepath": "data/layouts/Route207/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE205_2",
+      "name": "Route205_2_Layout",
+      "width": 32,
+      "height": 35,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesPlatGBAOreBurgh",
+      "border_filepath": "data/layouts/Route205_2/border.bin",
+      "blockdata_filepath": "data/layouts/Route205_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_CITY",
+      "name": "EternaCity_Layout",
+      "width": 59,
+      "height": 54,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAEterna",
+      "border_filepath": "data/layouts/EternaCity/border.bin",
+      "blockdata_filepath": "data/layouts/EternaCity/map.bin"
     }
   ]
 }

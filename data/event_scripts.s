@@ -1783,3 +1783,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/OreburghCity/scripts.inc"
 
 	.include "data/maps/Route207/scripts.inc"
+
+	.include "data/maps/Route205_2/scripts.inc"
+
+	.include "data/maps/EternaCity/scripts.inc"
