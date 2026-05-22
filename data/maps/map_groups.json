@@ -152,7 +152,12 @@
     "OreburghCity",
     "Route207",
     "Route205_2",
-    "EternaCity"
+    "EternaCity",
+    "Route211",
+    "Route206",
+    "FuegoIronworks",
+    "rocks",
+    "FloaromaTownTop"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

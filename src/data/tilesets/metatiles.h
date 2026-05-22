@@ -426,3 +426,6 @@ const u16 gMetatileAttributes_PorytilesPlatGBAOreBurgh[] = INCBIN_U16("data/tile
 
 const u16 gMetatiles_PorytilesSecondaryPlatGBAEterna[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbaeterna/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesSecondaryPlatGBAEterna[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbaeterna/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesSecondaryPlatGBAWestSpecials[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesSecondaryPlatGBAWestSpecials[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/metatile_attributes.bin");

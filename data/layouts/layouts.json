@@ -9440,7 +9440,7 @@
       "width": 34,
       "height": 36,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
       "border_filepath": "data/layouts/FloaromaTown/border.bin",
       "blockdata_filepath": "data/layouts/FloaromaTown/map.bin"
     },
@@ -9448,9 +9448,9 @@
       "id": "LAYOUT_ROUTE205",
       "name": "Route205_Layout",
       "width": 32,
-      "height": 81,
+      "height": 82,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
       "border_filepath": "data/layouts/Route205/border.bin",
       "blockdata_filepath": "data/layouts/Route205/map.bin"
     },
@@ -9458,9 +9458,9 @@
       "id": "LAYOUT_VAELLY_WINDWORKS",
       "name": "VaellyWindworks_Layout",
       "width": 30,
-      "height": 40,
+      "height": 86,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
       "border_filepath": "data/layouts/VaellyWindworks/border.bin",
       "blockdata_filepath": "data/layouts/VaellyWindworks/map.bin"
     },
@@ -9500,19 +9500,69 @@
       "width": 32,
       "height": 35,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesPlatGBAOreBurgh",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAEterna",
       "border_filepath": "data/layouts/Route205_2/border.bin",
       "blockdata_filepath": "data/layouts/Route205_2/map.bin"
     },
     {
       "id": "LAYOUT_ETERNA_CITY",
       "name": "EternaCity_Layout",
-      "width": 59,
-      "height": 54,
+      "width": 65,
+      "height": 63,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAEterna",
       "border_filepath": "data/layouts/EternaCity/border.bin",
       "blockdata_filepath": "data/layouts/EternaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE211",
+      "name": "Route211_Layout",
+      "width": 35,
+      "height": 36,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAEterna",
+      "border_filepath": "data/layouts/Route211/border.bin",
+      "blockdata_filepath": "data/layouts/Route211/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE206",
+      "name": "Route206_Layout",
+      "width": 33,
+      "height": 113,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAEterna",
+      "border_filepath": "data/layouts/Route206/border.bin",
+      "blockdata_filepath": "data/layouts/Route206/map.bin"
+    },
+    {
+      "id": "LAYOUT_FUEGO_IRONWORKS",
+      "name": "FuegoIronworks_Layout",
+      "width": 32,
+      "height": 36,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
+      "border_filepath": "data/layouts/FuegoIronworks/border.bin",
+      "blockdata_filepath": "data/layouts/FuegoIronworks/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOAROMA_TOWN_TOP",
+      "name": "FloaromaTownTop_Layout",
+      "width": 12,
+      "height": 15,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
+      "border_filepath": "data/layouts/FloaromaTownTop/border.bin",
+      "blockdata_filepath": "data/layouts/FloaromaTownTop/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKS",
+      "name": "rocks_Layout",
+      "width": 42,
+      "height": 31,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/rocks/border.bin",
+      "blockdata_filepath": "data/layouts/rocks/map.bin"
     }
   ]
 }

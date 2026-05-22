@@ -15,25 +15,30 @@
   "connections": [
     {
       "map": "MAP_FLOAROMA_TOWN",
-      "offset": 47,
+      "offset": 48,
       "direction": "left"
     },
     {
       "map": "MAP_VAELLY_WINDWORKS",
-      "offset": 42,
+      "offset": -3,
       "direction": "right"
     },
     {
       "map": "MAP_ETERNA_FORST",
       "offset": 18,
       "direction": "up"
+    },
+    {
+      "map": "MAP_FUEGO_IRONWORKS",
+      "offset": -6,
+      "direction": "left"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_DP_GALACTIC_GRUNTM",
       "x": 24,
-      "y": 61,
+      "y": 62,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,

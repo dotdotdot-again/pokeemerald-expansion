@@ -1787,3 +1787,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Route205_2/scripts.inc"
 
 	.include "data/maps/EternaCity/scripts.inc"
+
+	.include "data/maps/Route211/scripts.inc"
+
+	.include "data/maps/Route206/scripts.inc"
+
+	.include "data/maps/FuegoIronworks/scripts.inc"
+
+	.include "data/maps/FloaromaTownTop/scripts.inc"
+
+	.include "data/maps/rocks/scripts.inc"

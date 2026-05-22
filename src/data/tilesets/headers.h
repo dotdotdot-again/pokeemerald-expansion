@@ -1607,3 +1607,14 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBAEterna =
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBAEterna,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesSecondaryPlatGBAWestSpecials =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryPlatGBAWestSpecials,
+    .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBAWestSpecials,
+    .metatiles = gMetatiles_PorytilesSecondaryPlatGBAWestSpecials,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBAWestSpecials,
+    .callback = NULL,
+};
