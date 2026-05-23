@@ -429,3 +429,15 @@ const u16 gMetatileAttributes_PorytilesSecondaryPlatGBAEterna[] = INCBIN_U16("da
 
 const u16 gMetatiles_PorytilesSecondaryPlatGBAWestSpecials[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesSecondaryPlatGBAWestSpecials[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesSecondaryPlatGBACycling[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbacycling/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesSecondaryPlatGBACycling[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbacycling/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPimaryPlatGBA_Indoor[] = INCBIN_U16("data/tilesets/primary/porytiles_pimary_plat_gba_indoor/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPimaryPlatGBA_Indoor[] = INCBIN_U16("data/tilesets/primary/porytiles_pimary_plat_gba_indoor/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_PokeCenter[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_poke_center/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_PokeCenter[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_poke_center/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Pokemart[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_pokemart/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Pokemart[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_pokemart/metatile_attributes.bin");

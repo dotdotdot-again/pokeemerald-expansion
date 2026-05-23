@@ -579,6 +579,9 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Bottom                      0x2AD
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
+// gTileset_PorytilesPrimaryPlatGBA
+#define METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1  0x07A
+
 // gTileset_Rustboro
 #define METATILE_Rustboro_Door_Gray  0x21F
 #define METATILE_Rustboro_Door_Tan   0x22F

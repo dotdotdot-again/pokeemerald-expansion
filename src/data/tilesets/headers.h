@@ -1618,3 +1618,47 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBAWestSpecials =
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBAWestSpecials,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesSecondaryPlatGBACycling =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryPlatGBACycling,
+    .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBACycling,
+    .metatiles = gMetatiles_PorytilesSecondaryPlatGBACycling,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBACycling,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPimaryPlatGBA_Indoor =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_PorytilesPimaryPlatGBA_Indoor,
+    .palettes = gTilesetPalettes_PorytilesPimaryPlatGBA_Indoor,
+    .metatiles = gMetatiles_PorytilesPimaryPlatGBA_Indoor,
+    .metatileAttributes = gMetatileAttributes_PorytilesPimaryPlatGBA_Indoor,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_PokeCenter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_PokeCenter,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_PokeCenter,
+    .metatiles = gMetatiles_PorytilesPlatGBA_PokeCenter,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_PokeCenter,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_Pokemart =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Pokemart,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Pokemart,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Pokemart,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Pokemart,
+    .callback = NULL,
+};

@@ -1797,3 +1797,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/FloaromaTownTop/scripts.inc"
 
 	.include "data/maps/rocks/scripts.inc"
+
+	.include "data/maps/SandgemPokemonCenter/scripts.inc"
+
+	.include "data/maps/SandgemPokemonCenter_F2/scripts.inc"
+
+	.include "data/maps/SandgemPokemart/scripts.inc"
+
+	.include "data/maps/SandgemPokemonCenter_B1/scripts.inc"

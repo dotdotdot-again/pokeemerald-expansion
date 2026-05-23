@@ -30,7 +30,22 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_SANDGEM_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_SANDGEM_POKEMART",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

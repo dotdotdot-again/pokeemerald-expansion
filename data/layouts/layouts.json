@@ -9528,9 +9528,9 @@
       "id": "LAYOUT_ROUTE206",
       "name": "Route206_Layout",
       "width": 33,
-      "height": 113,
+      "height": 123,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAEterna",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACycling",
       "border_filepath": "data/layouts/Route206/border.bin",
       "blockdata_filepath": "data/layouts/Route206/map.bin"
     },
@@ -9563,6 +9563,46 @@
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
       "border_filepath": "data/layouts/rocks/border.bin",
       "blockdata_filepath": "data/layouts/rocks/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_POKEMON_CENTER",
+      "name": "SandgemPokemonCenter_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/SandgemPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_POKEMON_CENTER_F2",
+      "name": "SandgemPokemonCenter_F2_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/SandgemPokemonCenter_F2/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemPokemonCenter_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_POKEMART",
+      "name": "SandgemPokemart_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/SandgemPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_POKEMON_CENTER_B1",
+      "name": "SandgemPokemonCenter_B1_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/SandgemPokemonCenter_B1/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemPokemonCenter_B1/map.bin"
     }
   ]
 }
