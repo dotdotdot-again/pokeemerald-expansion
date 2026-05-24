@@ -3257,3 +3257,22 @@ const u16 gTilesetPalettes_PorytilesPlatGBA_Pokemart[][16] =
 };
 
 const u32 gTilesetTiles_PorytilesPlatGBA_Pokemart[] = INCBIN_U32("data/tilesets/secondary/porytiles_plat_gba_pokemart/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PorytilesPlatGBA_Tiwnleaf[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PorytilesPlatGBA_Tiwnleaf[] = INCBIN_U32("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/tiles.4bpp.lz");

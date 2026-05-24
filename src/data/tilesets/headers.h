@@ -1662,3 +1662,14 @@ const struct Tileset gTileset_PorytilesPlatGBA_Pokemart =
     .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Pokemart,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesPlatGBA_Tiwnleaf =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Tiwnleaf,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Tiwnleaf,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Tiwnleaf,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Tiwnleaf,
+    .callback = NULL,
+};

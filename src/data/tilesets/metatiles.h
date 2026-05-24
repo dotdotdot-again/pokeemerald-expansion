@@ -441,3 +441,6 @@ const u16 gMetatileAttributes_PorytilesPlatGBA_PokeCenter[] = INCBIN_U16("data/t
 
 const u16 gMetatiles_PorytilesPlatGBA_Pokemart[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_pokemart/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesPlatGBA_Pokemart[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_pokemart/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Tiwnleaf[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Tiwnleaf[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tiwnleaf/metatile_attributes.bin");

@@ -75,7 +75,8 @@
     "gMapGroup_IndoorTwoIslandRoute_Frlg",
     "gMapGroup_IndoorSixIslandRoute_Frlg",
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
-    "gMapGroup_IndoorSandgem"
+    "gMapGroup_IndoorSandgem",
+    "gMapGroup_TiwnleafIndoor"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1191,5 +1192,8 @@
     "SandgemPokemonCenter_F2",
     "SandgemPokemart",
     "SandgemPokemonCenter_B1"
+  ],
+  "gMapGroup_TiwnleafIndoor": [
+    "PlayerHouseF2"
   ]
 }

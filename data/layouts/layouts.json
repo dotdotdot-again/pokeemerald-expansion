@@ -9603,6 +9603,16 @@
       "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
       "border_filepath": "data/layouts/SandgemPokemonCenter_B1/border.bin",
       "blockdata_filepath": "data/layouts/SandgemPokemonCenter_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE_F2",
+      "name": "PlayerHouseF2_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/PlayerHouseF2/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouseF2/map.bin"
     }
   ]
 }

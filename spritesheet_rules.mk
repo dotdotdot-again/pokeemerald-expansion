@@ -1037,9 +1037,6 @@ $(OBJEVENTGFXDIR)/misc/honey_tree.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/misc/windmill.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(OBJEVENTGFXDIR)/misc/windmill.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 8 -mheight 8
-
 $(OBJEVENTGFXDIR)/misc/cuttable_tree_frlg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
