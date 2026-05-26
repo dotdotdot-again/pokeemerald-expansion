@@ -1807,3 +1807,15 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/SandgemPokemonCenter_B1/scripts.inc"
 
 	.include "data/maps/PlayerHouseF2/scripts.inc"
+
+	.include "data/maps/PlayerHouseF1/scripts.inc"
+
+	.include "data/maps/BarryHouseF1/scripts.inc"
+
+	.include "data/maps/Twinlead_House_One/scripts.inc"
+
+	.include "data/maps/BarryHouseF2/scripts.inc"
+
+	.include "data/maps/Twinleaf_House_Two/scripts.inc"
+
+	.include "data/maps/LakeVerity/scripts.inc"

@@ -9613,6 +9613,66 @@
       "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
       "border_filepath": "data/layouts/PlayerHouseF2/border.bin",
       "blockdata_filepath": "data/layouts/PlayerHouseF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE_F1",
+      "name": "PlayerHouseF1_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/PlayerHouseF1/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouseF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARRY_HOUSE_F1",
+      "name": "BarryHouseF1_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/BarryHouseF1/border.bin",
+      "blockdata_filepath": "data/layouts/BarryHouseF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINLEAD_HOUSE_ONE",
+      "name": "Twinlead_House_One_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Twinlead_House_One/border.bin",
+      "blockdata_filepath": "data/layouts/Twinlead_House_One/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARRY_HOUSE_F2",
+      "name": "BarryHouseF2_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/BarryHouseF2/border.bin",
+      "blockdata_filepath": "data/layouts/BarryHouseF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINLEAF_HOUSE_TWO",
+      "name": "Twinleaf_House_Two_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Twinleaf_House_Two/border.bin",
+      "blockdata_filepath": "data/layouts/Twinleaf_House_Two/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAKE_VERITY",
+      "name": "LakeVerity_Layout",
+      "width": 54,
+      "height": 55,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/LakeVerity/border.bin",
+      "blockdata_filepath": "data/layouts/LakeVerity/map.bin"
     }
   ]
 }
