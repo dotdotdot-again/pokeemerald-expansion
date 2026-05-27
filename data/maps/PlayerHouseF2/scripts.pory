@@ -93,7 +93,7 @@ script BarryWalksRight {
         waitmessage
         applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3,walk_fast_up*2,walk_fast_right))
         waitmovement
-        playse(SE_WARP_OUT) 
+        playse(SE_EXIT) 
         removeobject(BarryIntroOne)
         applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
         fadedefaultbgm

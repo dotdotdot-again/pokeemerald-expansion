@@ -139,6 +139,7 @@
 .include "sound/voicegroups/unused_2.inc" @ used by unused GSC radio tower takeover test track in RS
 .include "sound/voicegroups/casino_pinball.inc"
 .include "sound/voicegroups/casino_gacha.inc"
+.include "sound/voicegroups/voicegroup191.inc"
 
 @ FRLG
 .include "sound/voicegroups/rg_follow_me.inc"
@@ -203,3 +204,4 @@
 .include "sound/voicegroups/rg_sevii_45.inc"
 .include "sound/voicegroups/rg_sevii_67.inc"
 .include "sound/voicegroups/drumsets/rg_credits.inc"
+

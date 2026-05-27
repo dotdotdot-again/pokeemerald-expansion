@@ -130,7 +130,7 @@ BarryWalksRight::
 # 95 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmovement
 # 96 "data/maps/PlayerHouseF2/scripts.pory"
-	playse SE_WARP_OUT
+	playse SE_EXIT
 # 97 "data/maps/PlayerHouseF2/scripts.pory"
 	removeobject BarryIntroOne
 # 98 "data/maps/PlayerHouseF2/scripts.pory"
