@@ -77,7 +77,8 @@
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
     "gMapGroup_IndoorSandgem",
     "gMapGroup_TiwnleafIndoor",
-    "gMapGroup_Plat_Dungeons"
+    "gMapGroup_Plat_Dungeons",
+    "gMapGroup_underground"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1192,7 +1193,8 @@
     "SandgemPokemonCenter",
     "SandgemPokemonCenter_F2",
     "SandgemPokemart",
-    "SandgemPokemonCenter_B1"
+    "SandgemPokemonCenter_B1",
+    "Sandgem_House_One_2"
   ],
   "gMapGroup_TiwnleafIndoor": [
     "PlayerHouseF2",
@@ -1200,9 +1202,13 @@
     "BarryHouseF1",
     "Twinlead_House_One",
     "Twinleaf_House_Two",
-    "BarryHouseF2"
+    "BarryHouseF2",
+    "Sandgem_House_One"
   ],
   "gMapGroup_Plat_Dungeons": [
     "LakeVerity"
+  ],
+  "gMapGroup_underground": [
+    "undergound_test"
   ]
 }

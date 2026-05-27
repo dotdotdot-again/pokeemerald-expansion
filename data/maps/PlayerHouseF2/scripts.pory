@@ -1,1 +1,113 @@
-mapscripts PlayerHouseF2_MapScripts {}
+mapscripts PlayerHouseF2_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+		VAR_TEMP_4, 0:trigger_test
+	]
+    MAP_SCRIPT_ON_TRANSITION: OnTransitionTest
+    	MAP_SCRIPT_ON_FRAME_TABLE [
+	VAR_TEMP_2, 0:EveryFrameTest
+	]
+}
+
+script trigger_test{
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    removeobject(BarryIntroOne)
+	//waitmovement(0)
+
+}
+
+script OnTransitionTest{
+	
+	setvar(VAR_TEMP_2,0)
+    
+}
+
+script EveryFrameTest {
+
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 0)
+	{
+        lockall
+	    setflag(FLAG_RECEIVED_RUNNING_SHOES)
+	    setflag(FLAG_SYS_B_DASH)
+        //Whatever music plays during the news scene here
+        setspeaker("Newscaster")
+	    msgbox("\qoPok\emon are by our side, always.\n I hope you will understand the meaning\l of those words.\qc\p" 
+        "That was the comment left by Prof.\n Rowan, who has returned to Sinnoh from\l the Kanto Region.\p"
+        "That concludges our special program,\n \qoLet's Ask Prof. Rowan!\qc\p"
+        "Brought to you by Jubilife TV\n on Nationwide Net!\p"
+        "See You next week,\n same time, same channel")
+	    waitmessage
+        closemessage
+        setvar(VAR_TWINLEAF_INTRO_STATE, 1)
+	    releaseall	
+    }
+    else{
+        setvar(VAR_TEMP_2, 1)
+    }
+}
+
+script BarryWalksRight {
+        lockall
+        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        playse(SE_WARP_IN) 
+        addobject(BarryIntroOne)
+        playse(SE_PIN) 
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("There you are!"))
+        applymovement(BarryIntroOne, moves(walk_fast_left*2,walk_fast_down,face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Hey, {PLAYER} \n"
+        "Did you just see the TV? Sure you did!\p"
+        "Prof. Rowan’s that really important\n"
+        "guy who studies Pokémon, right?\p"
+        "That means he must have lots and lots\n"
+        "of Pokémon.\p"
+        "So, if we ask him, I bet he’d give us\n"
+        "some Pokémon!"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        waitmovement
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_left*5,walk_fast_up*2,face_up))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Oh, hey!\n"
+        "Is this a new PC?!"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(face_right))
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Uh...\n"
+        "Where was I?"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3))
+        waitmovement
+        msgbox(fromat("Oh, right, right! We’re going to go see\n"
+        "Prof. Rowan and get some Pokémon.\p"
+        "I’ll be waiting outside.\p"
+        "OK, {PLAYER}? If you’re late, I’m\n"
+        "fining you $10 million!"
+        ))
+        waitmessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3,walk_fast_up*2,walk_fast_right))
+        waitmovement
+        playse(SE_WARP_OUT) 
+        removeobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        fadedefaultbgm
+        setvar(VAR_TWINLEAF_INTRO_STATE, 2)
+        releaseall	
+}
+
+script BarryEnters {
+        lockall
+        addobject(BarryIntroOne)
+        setspeaker("Barry")
+	    msgbox(fromat("Barry!"))
+	    waitmessage
+        closemessage
+        removeobject(BarryIntroOne)
+        releaseall
+}
