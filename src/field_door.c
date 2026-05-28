@@ -134,6 +134,7 @@ static const u16 sDoorNullPalette48[16] = {};
 static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/door_anims/trainer_hill_roof_elevator.4bpp");
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_MyDoor[] = INCBIN_U8("graphics/door_anims/DP_sliding_single.4bpp");
+static const u8 sDoorAnimTiles_MyWoodDoor[] = INCBIN_U8("graphics/door_anims/DP_wooden_door.4bpp");
 
 #if IS_FRLG
 
@@ -292,6 +293,7 @@ static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 static const u8 myDoorPal[] = {2, 2, 2, 2, 2, 2, 2, 2};
+static const u8 woodenDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
 
 #if IS_FRLG
 
@@ -389,6 +391,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Lobby,              &gTileset_TrainerHill, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_TrainerHill_Door_Elevator_Roof,               &gTileset_TrainerHill, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1,           &gTileset_PorytilesPrimaryPlatGBA, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_MyDoor, myDoorPal},
+    {METATILE_PorytilesSecondaryPlatGBATwinleaf_TwinleadDoor,           &gTileset_PorytilesSecondaryPlatGBATwinleaf, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_MyWoodDoor, woodenDoorPal},
 #else
     {METATILE_GeneralFrlg_Door,                             &gTileset_General_Frlg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_GeneralFrlg, sDoorAnimPalettes_GeneralFrlg},
     {METATILE_GeneralFrlg_SlidingSingleDoor,                &gTileset_General_Frlg, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_SlidingSingle, sDoorAnimPalettes_SlidingSingle},

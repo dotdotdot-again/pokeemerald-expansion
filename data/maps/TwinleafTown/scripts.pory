@@ -1,0 +1,99 @@
+mapscripts TwinleafTown_MapScripts {
+}
+
+
+
+script OnWarpTwinleaf
+{
+    removeobject(Twinleaf_Thud_Barry)
+}
+
+script Twinleaf_fatman {
+    lock
+    msgbox("Technology just blows me away!\p"
+        "I mean, now you can play with people\n"
+        "around the world...wirelessly!",MSGBOX_NPC)
+        release
+
+}
+
+script Twinleaf_playerHouseSign {
+    lock
+    msgbox("{PLAYER}'s House",MSGBOX_SIGN)
+    release
+}
+
+script Twinleaf_barryHouseSign {
+    lock
+    msgbox("Barry's House",MSGBOX_SIGN)
+    release
+}
+
+script Twinleaf_Town_Sign {
+    lock
+    msgbox("Twinleaf Town\n"
+    "Fresh and Free!",MSGBOX_SIGN)
+    release
+}
+
+script Twinleaf_outside_lady {
+    lock
+    msgbox("It’s true that wild Pokémon do attack\n"
+        "people sometimes...\p"
+        "But, Pokémon also open their hearts\n"
+        "to you, so you can become friends.",MSGBOX_NPC)
+        release
+
+}
+
+script Twinleaf_outside_guy {
+    lock
+    msgbox("Hiya, {PLAYER}.\n"
+        "Barry was looking for you.\p"
+        "I think he’s home now.\n"
+        "Why don’t you go check it out?",MSGBOX_NPC)
+        release
+
+}
+
+text barryWasLooking
+{
+    "Hiya, {PLAYER}.\n"
+    "Barry was looking for you.\p"
+    "I think he’s home now.\n"
+    "Why don’t you go check it out?"
+}
+
+script Twinleaf_trigger_trytoleaveguy {
+    lock
+    applymovement(Tiwnleaf_outside_guy, moves(emote_exclamation_mark,face_up))
+    playse(SE_PIN) 
+    waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovement
+    msgbox(barryWasLooking,MSGBOX_NPC)
+    waitmessage
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement
+    release
+}
+
+script Twinleaf_Barry_Thud {
+    lockall
+    showobjectat(Twinleaf_Thud_Barry,MAP_TWINLEAF_TOWN)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_down))
+    applymovement(Twinleaf_Thud_Barry, moves(walk_down))
+    playse(SE_EXIT)
+    waitmovementall
+    msgbox("THUD!!",MSGBOX_NPC)
+    waitmessage
+    releaseall
+
+
+}
+
+script Twinleaf_removeBarry {
+    hideobjectat(Twinleaf_Thud_Barry,MAP_TWINLEAF_TOWN)
+    setvar(VAR_TEMP_2, 1)
+}

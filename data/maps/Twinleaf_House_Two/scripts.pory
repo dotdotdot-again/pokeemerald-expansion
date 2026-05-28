@@ -1,1 +1,16 @@
 mapscripts Twinleaf_House_Two_MapScripts {}
+
+script Twinleaf_House_Two_guy {
+    lockall
+    msgbox("You're off to hang with Barry\n"
+    "again, right? You two sure are tight!",MSGBOX_NPC)
+    releaseall
+}
+
+script Twinleaf_House_Two_TV_Com {
+        lock
+        setspeaker("Commercial")
+        msgbox("Pok\emon Center.\n"
+        "Always by your side.",MSGBOX_SIGN)
+        release
+}

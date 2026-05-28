@@ -1,1 +1,100 @@
-mapscripts PlayerHouseF1_MapScripts {}
+mapscripts PlayerHouseF1_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: OnTransitionPlayerHouseF1
+    	MAP_SCRIPT_ON_FRAME_TABLE [
+	VAR_TEMP_2, 0:EveryFrameMom
+	]
+}
+
+script OnTransitionPlayerHouseF1{
+	
+	setvar(VAR_TEMP_2,0)
+    
+}
+
+script EveryFrameMom {
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 2)
+    {
+        lockall
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        waitmovement
+        applymovement(Mom, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        applymovement(Mom, moves(walk_up,walk_right*3,walk_up*3))
+        waitmovement
+        setspeaker(SP_NAME_MOM)
+	    msgbox("{PLAYER}!\p"
+        "Barry already left.\p"
+        "I don’t know what it was about, but\n"
+        "he sure was in a hurry!",MSGBOX_NPC)
+        waitmessage
+        applymovement(Mom, moves(walk_down*3,walk_left*3,walk_down,face_up))
+        waitmovement
+        setvar(VAR_TWINLEAF_INTRO_STATE, 3)
+        releaseall
+    }
+    else
+    {
+        setvar(VAR_TEMP_2, 1)
+    }
+}
+
+script TalkMom {
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 3)
+    {
+        lock
+        setspeaker(SP_NAME_MOM)
+        msgbox("You know how impatient\n"
+        "Barry is.\p"
+        "He took off before I could even\n"
+        "ask what it was about.",MSGBOX_NPC)
+        release
+    }
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 4)
+    {
+         lock
+        setspeaker(SP_NAME_MOM)
+        msgbox("What is it, dear?\n"
+        "Isn’t Barry waiting for you?",MSGBOX_NPC)
+        release
+    }
+}
+
+script PlayerHouseTVF1 {
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 3)
+    {
+        lock
+        setspeaker("MC")
+        msgbox("Here we are!\n"
+        "It's the contest Digest!\p"
+        "The winner of today's Normal Rank\n"
+        "Tough Contest is...\p"
+        "Dominic, who overwhelmed with his\n"
+        "awesomely buffed Pokémon!\p"
+        "That's all the time we have today!\n"
+        "Let's meet again!",MSGBOX_SIGN)
+        release
+    }
+}
+
+script triggerMomTryToLeave{
+    lockall
+    applymovement(Mom, moves(emote_exclamation_mark,face_down))
+    playse(SE_PIN) 
+    waitse
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovement
+    setspeaker(SP_NAME_MOM)
+    msgbox("Oh, yes!\n"
+        "{PLAYER}!\p"
+        "Don’t go into the tall grass.\n"
+        "Wild Pokémon might attack you.\p"
+        "It would be OK if you had your own\n"
+        "Pokémon, but you don’t, so...\p"
+        "Well, take care, sweetie!",MSGBOX_NPC)
+    waitmessage
+    setvar(VAR_TWINLEAF_INTRO_STATE, 4)
+    releaseall
+
+}
+

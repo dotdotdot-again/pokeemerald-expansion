@@ -28,7 +28,7 @@ script EveryFrameTest {
         lockall
 	    setflag(FLAG_RECEIVED_RUNNING_SHOES)
 	    setflag(FLAG_SYS_B_DASH)
-        //Whatever music plays during the news scene here
+        playbgm(MUS_ENCOUNTER_INTERVIEWER, 0)
         setspeaker("Newscaster")
 	    msgbox("\qoPok\emon are by our side, always.\n I hope you will understand the meaning\l of those words.\qc\p" 
         "That was the comment left by Prof.\n Rowan, who has returned to Sinnoh from\l the Kanto Region.\p"
@@ -37,6 +37,7 @@ script EveryFrameTest {
         "See You next week,\n same time, same channel")
 	    waitmessage
         closemessage
+        fadedefaultbgm
         setvar(VAR_TWINLEAF_INTRO_STATE, 1)
 	    releaseall	
     }
@@ -44,32 +45,81 @@ script EveryFrameTest {
         setvar(VAR_TEMP_2, 1)
     }
 }
-
+// look i KNOW this is the wrong way t odo this but i am lazy atm 
+//if player walks right
 script BarryWalksRight {
         lockall
         playbgm(MUS_ENCOUNTER_BRENDAN, 0)
-        playse(SE_WARP_IN) 
         addobject(BarryIntroOne)
-        playse(SE_PIN) 
         applymovement(BarryIntroOne, moves(emote_exclamation_mark))
-        waitmovement
+        playse(SE_PIN) 
+        waitse
         setspeaker(SP_NAME_BARRY)
 	    msgbox(fromat("There you are!"))
+        waitmessage
+        closemessage
         applymovement(BarryIntroOne, moves(walk_fast_left*2,walk_fast_down,face_left))
         waitmovement
         setspeaker(SP_NAME_BARRY)
-	    msgbox(fromat("Hey, {PLAYER} \n"
-        "Did you just see the TV? Sure you did!\p"
-        "Prof. Rowan’s that really important\n"
-        "guy who studies Pokémon, right?\p"
-        "That means he must have lots and lots\n"
-        "of Pokémon.\p"
-        "So, if we ask him, I bet he’d give us\n"
-        "some Pokémon!"))
+	    msgbox(BarryOne)
         waitmessage
+        closemessage
         applymovement(BarryIntroOne, moves(emote_exclamation_mark))
-        waitmovement
+        playse(SE_PIN) 
+        waitse
         applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_left*5,walk_fast_up*2,face_up))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Oh, hey!\n"
+        "Is this a new PC?!"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(face_right))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Uh...\n"
+        "Where was I?"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox(BarryLast)
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3,walk_fast_up*2,walk_fast_right))
+        waitmovement
+        playse(SE_EXIT) 
+        removeobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        fadedefaultbgm
+        setflag(FLAG_UNUSED_0x020)
+        setvar(VAR_TWINLEAF_INTRO_STATE, 2)
+        releaseall	
+}
+//player walks left
+script BarryWalksLeft {
+        lockall
+        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        addobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("There you are!"))
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_left*4,face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(BarryOne)
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        applymovement(BarryIntroOne, moves(walk_fast_up,walk_fast_left*3,,face_up))
         waitmovement
         applymovement(OBJ_EVENT_ID_PLAYER,moves(face_left))
         waitmovement
@@ -82,23 +132,146 @@ script BarryWalksRight {
 	    msgbox(fromat("Uh...\n"
         "Where was I?"))
         waitmessage
-        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3))
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right))
         waitmovement
-        msgbox(fromat("Oh, right, right! We’re going to go see\n"
-        "Prof. Rowan and get some Pokémon.\p"
-        "I’ll be waiting outside.\p"
-        "OK, {PLAYER}? If you’re late, I’m\n"
-        "fining you $10 million!"
-        ))
+        setspeaker(SP_NAME_BARRY)
+        msgbox(BarryLast)
         waitmessage
-        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3,walk_fast_up*2,walk_fast_right))
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*5,walk_fast_up*2,walk_fast_right))
         waitmovement
         playse(SE_EXIT) 
         removeobject(BarryIntroOne)
         applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
         fadedefaultbgm
+        setflag(FLAG_UNUSED_0x020)
         setvar(VAR_TWINLEAF_INTRO_STATE, 2)
         releaseall	
+}
+
+//player walks down
+script BarryWalksDown {
+        lockall
+        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        addobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("There you are!"))
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_down*2,walk_fast_left*3,face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(BarryOne)
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        applymovement(BarryIntroOne, moves(walk_fast_up,walk_fast_left*4,,walk_fast_up))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Oh, hey!\n"
+        "Is this a new PC?!"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(face_right))
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Uh...\n"
+        "Where was I?"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(walk_fast_down*2,walk_fast_right*2))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox(BarryLast)
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_up,walk_fast_right*4,walk_fast_up,walk_fast_right))
+        waitmovement
+        playse(SE_EXIT) 
+        removeobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        fadedefaultbgm
+        setflag(FLAG_UNUSED_0x020)
+        setvar(VAR_TWINLEAF_INTRO_STATE, 2)
+        releaseall	
+}
+
+//player walks up
+script BarryWalksUp {
+        lockall
+        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        addobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("There you are!"))
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_left*2,walk_fast_down,walk_fast_left*2,face_up))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_down))
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(BarryOne)
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        applymovement(BarryIntroOne, moves(walk_fast_left*3,,walk_fast_up))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Oh, hey!\n"
+        "Is this a new PC?!"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(face_right))
+        setspeaker(SP_NAME_BARRY)
+	    msgbox(fromat("Uh...\n"
+        "Where was I?"))
+        waitmessage
+        applymovement(BarryIntroOne, moves(walk_fast_down,walk_fast_right*3,face_up))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_down))
+        setspeaker(SP_NAME_BARRY)
+        msgbox(BarryLast)
+        waitmessage
+        closemessage
+        applymovement(BarryIntroOne, moves(walk_fast_right*2,walk_fast_up,walk_fast_right*2))
+        waitmovement
+        playse(SE_EXIT) 
+        removeobject(BarryIntroOne)
+        applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
+        fadedefaultbgm
+        setflag(FLAG_UNUSED_0x020)
+        setvar(VAR_TWINLEAF_INTRO_STATE, 2)
+        releaseall	
+}
+
+text BarryOne {
+        "Hey, {PLAYER} \n"
+        "Did you just see the TV? Sure you did!\p"
+        "Prof. Rowan’s that really important\n"
+        "guy who studies Pokémon, right?\p"
+        "That means he must have lots and lots\n"
+        "of Pokémon.\p"
+        "So, if we ask him, I bet he’d give us\n"
+        "some Pokémon!"
+}
+
+text BarryLast {
+        "Oh, right, right! We’re going to go see\n"
+        "Prof. Rowan and get some Pokémon.\p"
+        "I’ll be waiting outside.\p"
+        "OK, {PLAYER}? If you’re late, I’m\n"
+        "fining you 10 million PokéDollars!"
 }
 
 script BarryEnters {

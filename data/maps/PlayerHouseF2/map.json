@@ -10,7 +10,7 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
@@ -44,27 +44,27 @@
       "x": 4,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "BarryEnters"
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "1",
+      "script": "BarryWalksDown"
     },
     {
       "type": "trigger",
       "x": 3,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "BarryEnters"
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "1",
+      "script": "BarryWalksLeft"
     },
     {
       "type": "trigger",
       "x": 4,
       "y": 3,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "BarryEnters"
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "1",
+      "script": "BarryWalksUp"
     },
     {
       "type": "trigger",

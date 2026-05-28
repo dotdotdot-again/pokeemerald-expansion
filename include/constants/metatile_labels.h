@@ -580,7 +580,11 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
 // gTileset_PorytilesPrimaryPlatGBA
-#define METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1  0x07A
+#define METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1       0x07A
+#define METATILE_PorytilesPrimaryPlatGBA_ReflectiveWater  0x0A6
+
+// gTileset_PorytilesSecondaryPlatGBATwinleaf
+#define METATILE_PorytilesSecondaryPlatGBATwinleaf_TwinleadDoor  0x221
 
 // gTileset_Rustboro
 #define METATILE_Rustboro_Door_Gray  0x21F

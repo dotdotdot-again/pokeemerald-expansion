@@ -36,7 +36,7 @@ EveryFrameTest::
 # 26 "data/maps/PlayerHouseF2/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 0
 	goto_if_eq EveryFrameTest_1
-# 44 "data/maps/PlayerHouseF2/scripts.pory"
+# 45 "data/maps/PlayerHouseF2/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	return
 
@@ -47,6 +47,8 @@ EveryFrameTest_1:
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 # 30 "data/maps/PlayerHouseF2/scripts.pory"
 	setflag FLAG_SYS_B_DASH
+# 31 "data/maps/PlayerHouseF2/scripts.pory"
+	playbgm MUS_ENCOUNTER_INTERVIEWER, 0
 # 32 "data/maps/PlayerHouseF2/scripts.pory"
 	setspeaker EveryFrameTest_Text_0
 # 33 "data/maps/PlayerHouseF2/scripts.pory"
@@ -56,110 +58,418 @@ EveryFrameTest_1:
 # 39 "data/maps/PlayerHouseF2/scripts.pory"
 	closemessage
 # 40 "data/maps/PlayerHouseF2/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 1
+	fadedefaultbgm
 # 41 "data/maps/PlayerHouseF2/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 1
+# 42 "data/maps/PlayerHouseF2/scripts.pory"
 	releaseall
 	return
 
 
 BarryWalksRight::
-# 49 "data/maps/PlayerHouseF2/scripts.pory"
-	lockall
-# 50 "data/maps/PlayerHouseF2/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 51 "data/maps/PlayerHouseF2/scripts.pory"
-	playse SE_WARP_IN
+	lockall
 # 52 "data/maps/PlayerHouseF2/scripts.pory"
-	addobject BarryIntroOne
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 53 "data/maps/PlayerHouseF2/scripts.pory"
-	playse SE_PIN
+	addobject BarryIntroOne
 # 54 "data/maps/PlayerHouseF2/scripts.pory"
 	applymovement BarryIntroOne, BarryWalksRight_Movement_0
 # 55 "data/maps/PlayerHouseF2/scripts.pory"
-	waitmovement
+	playse SE_PIN
 # 56 "data/maps/PlayerHouseF2/scripts.pory"
-	setspeaker SP_NAME_BARRY
+	waitse
 # 57 "data/maps/PlayerHouseF2/scripts.pory"
-	msgbox BarryWalksRight_Text_0
-# 58 "data/maps/PlayerHouseF2/scripts.pory"
-	applymovement BarryIntroOne, BarryWalksRight_Movement_1
-# 59 "data/maps/PlayerHouseF2/scripts.pory"
-	waitmovement
-# 60 "data/maps/PlayerHouseF2/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 61 "data/maps/PlayerHouseF2/scripts.pory"
-	msgbox BarryWalksRight_Text_1
-# 69 "data/maps/PlayerHouseF2/scripts.pory"
+# 58 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_0
+# 59 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmessage
-# 70 "data/maps/PlayerHouseF2/scripts.pory"
+# 60 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 61 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_1
+# 62 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 63 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 64 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryOne
+# 65 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 66 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 67 "data/maps/PlayerHouseF2/scripts.pory"
 	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 68 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 69 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_2
 # 71 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmovement
 # 72 "data/maps/PlayerHouseF2/scripts.pory"
-	applymovement BarryIntroOne, BarryWalksRight_Movement_2
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_3
 # 73 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmovement
 # 74 "data/maps/PlayerHouseF2/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_3
+	setspeaker SP_NAME_BARRY
 # 75 "data/maps/PlayerHouseF2/scripts.pory"
-	waitmovement
-# 76 "data/maps/PlayerHouseF2/scripts.pory"
-	setspeaker SP_NAME_BARRY
+	msgbox BarryWalksRight_Text_1
 # 77 "data/maps/PlayerHouseF2/scripts.pory"
-	msgbox BarryWalksRight_Text_2
-# 79 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmessage
-# 80 "data/maps/PlayerHouseF2/scripts.pory"
+# 78 "data/maps/PlayerHouseF2/scripts.pory"
 	applymovement BarryIntroOne, BarryWalksRight_Movement_4
-# 81 "data/maps/PlayerHouseF2/scripts.pory"
+# 79 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 80 "data/maps/PlayerHouseF2/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 82 "data/maps/PlayerHouseF2/scripts.pory"
-	msgbox BarryWalksRight_Text_3
+# 81 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_2
+# 83 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
 # 84 "data/maps/PlayerHouseF2/scripts.pory"
-	waitmessage
-# 85 "data/maps/PlayerHouseF2/scripts.pory"
 	applymovement BarryIntroOne, BarryWalksRight_Movement_5
+# 85 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
 # 86 "data/maps/PlayerHouseF2/scripts.pory"
-	waitmovement
+	setspeaker SP_NAME_BARRY
 # 87 "data/maps/PlayerHouseF2/scripts.pory"
-	msgbox BarryWalksRight_Text_4
-# 93 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryLast
+# 88 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmessage
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 89 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	applymovement BarryIntroOne, BarryWalksRight_Movement_6
-# 95 "data/maps/PlayerHouseF2/scripts.pory"
+# 91 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmovement
-# 96 "data/maps/PlayerHouseF2/scripts.pory"
+# 92 "data/maps/PlayerHouseF2/scripts.pory"
 	playse SE_EXIT
-# 97 "data/maps/PlayerHouseF2/scripts.pory"
+# 93 "data/maps/PlayerHouseF2/scripts.pory"
 	removeobject BarryIntroOne
-# 98 "data/maps/PlayerHouseF2/scripts.pory"
+# 94 "data/maps/PlayerHouseF2/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
-# 99 "data/maps/PlayerHouseF2/scripts.pory"
+# 95 "data/maps/PlayerHouseF2/scripts.pory"
 	fadedefaultbgm
-# 100 "data/maps/PlayerHouseF2/scripts.pory"
+# 96 "data/maps/PlayerHouseF2/scripts.pory"
+	setflag FLAG_UNUSED_0x020
+# 97 "data/maps/PlayerHouseF2/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 2
-# 101 "data/maps/PlayerHouseF2/scripts.pory"
+# 98 "data/maps/PlayerHouseF2/scripts.pory"
+	releaseall
+	return
+
+
+BarryWalksLeft::
+# 102 "data/maps/PlayerHouseF2/scripts.pory"
+	lockall
+# 103 "data/maps/PlayerHouseF2/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
+# 104 "data/maps/PlayerHouseF2/scripts.pory"
+	addobject BarryIntroOne
+# 105 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
+# 106 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 107 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 108 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 109 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 110 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_0
+# 111 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 112 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksLeft_Movement_0
+# 114 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 115 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 116 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryOne
+# 117 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 118 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 119 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 120 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 121 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksLeft_Movement_1
+# 123 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 124 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_3
+# 125 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 126 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 127 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_1
+# 129 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 130 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_4
+# 131 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 132 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_2
+# 134 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 135 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksLeft_Movement_2
+# 136 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 137 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 138 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryLast
+# 139 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 140 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksLeft_Movement_3
+# 142 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 143 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_EXIT
+# 144 "data/maps/PlayerHouseF2/scripts.pory"
+	removeobject BarryIntroOne
+# 145 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
+# 146 "data/maps/PlayerHouseF2/scripts.pory"
+	fadedefaultbgm
+# 147 "data/maps/PlayerHouseF2/scripts.pory"
+	setflag FLAG_UNUSED_0x020
+# 148 "data/maps/PlayerHouseF2/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 2
+# 149 "data/maps/PlayerHouseF2/scripts.pory"
+	releaseall
+	return
+
+
+BarryWalksDown::
+# 154 "data/maps/PlayerHouseF2/scripts.pory"
+	lockall
+# 155 "data/maps/PlayerHouseF2/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
+# 156 "data/maps/PlayerHouseF2/scripts.pory"
+	addobject BarryIntroOne
+# 157 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
+# 158 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 159 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 160 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 161 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 162 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_0
+# 163 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 164 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksDown_Movement_0
+# 166 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 167 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 168 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryOne
+# 169 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 170 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 171 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 172 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 173 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksDown_Movement_1
+# 175 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 176 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_3
+# 177 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 178 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 179 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_1
+# 181 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 182 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_4
+# 183 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 184 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_2
+# 186 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 187 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksDown_Movement_2
+# 188 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 189 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 190 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryLast
+# 191 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 192 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksDown_Movement_3
+# 194 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 195 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_EXIT
+# 196 "data/maps/PlayerHouseF2/scripts.pory"
+	removeobject BarryIntroOne
+# 197 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
+# 198 "data/maps/PlayerHouseF2/scripts.pory"
+	fadedefaultbgm
+# 199 "data/maps/PlayerHouseF2/scripts.pory"
+	setflag FLAG_UNUSED_0x020
+# 200 "data/maps/PlayerHouseF2/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 2
+# 201 "data/maps/PlayerHouseF2/scripts.pory"
+	releaseall
+	return
+
+
+BarryWalksUp::
+# 206 "data/maps/PlayerHouseF2/scripts.pory"
+	lockall
+# 207 "data/maps/PlayerHouseF2/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
+# 208 "data/maps/PlayerHouseF2/scripts.pory"
+	addobject BarryIntroOne
+# 209 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
+# 210 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 211 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 212 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 213 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 214 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_0
+# 215 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 216 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksUp_Movement_0
+# 218 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 219 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksUp_Movement_1
+# 220 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 221 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryOne
+# 222 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 223 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 224 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_0
+# 225 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_PIN
+# 226 "data/maps/PlayerHouseF2/scripts.pory"
+	waitse
+# 227 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksUp_Movement_2
+# 228 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 229 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_3
+# 230 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 231 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 232 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_1
+# 234 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 235 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksRight_Movement_4
+# 236 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 237 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryWalksRight_Text_2
+# 239 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksUp_Movement_3
+# 241 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 242 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksUp_Movement_1
+# 243 "data/maps/PlayerHouseF2/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 244 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox BarryLast
+# 245 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmessage
+# 246 "data/maps/PlayerHouseF2/scripts.pory"
+	closemessage
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement BarryIntroOne, BarryWalksUp_Movement_4
+# 248 "data/maps/PlayerHouseF2/scripts.pory"
+	waitmovement
+# 249 "data/maps/PlayerHouseF2/scripts.pory"
+	playse SE_EXIT
+# 250 "data/maps/PlayerHouseF2/scripts.pory"
+	removeobject BarryIntroOne
+# 251 "data/maps/PlayerHouseF2/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, BarryWalksRight_Movement_4
+# 252 "data/maps/PlayerHouseF2/scripts.pory"
+	fadedefaultbgm
+# 253 "data/maps/PlayerHouseF2/scripts.pory"
+	setflag FLAG_UNUSED_0x020
+# 254 "data/maps/PlayerHouseF2/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 2
+# 255 "data/maps/PlayerHouseF2/scripts.pory"
 	releaseall
 	return
 
 
 BarryEnters::
-# 105 "data/maps/PlayerHouseF2/scripts.pory"
+# 278 "data/maps/PlayerHouseF2/scripts.pory"
 	lockall
-# 106 "data/maps/PlayerHouseF2/scripts.pory"
+# 279 "data/maps/PlayerHouseF2/scripts.pory"
 	addobject BarryIntroOne
-# 107 "data/maps/PlayerHouseF2/scripts.pory"
+# 280 "data/maps/PlayerHouseF2/scripts.pory"
 	setspeaker BarryEnters_Text_0
-# 108 "data/maps/PlayerHouseF2/scripts.pory"
+# 281 "data/maps/PlayerHouseF2/scripts.pory"
 	msgbox BarryEnters_Text_1
-# 109 "data/maps/PlayerHouseF2/scripts.pory"
+# 282 "data/maps/PlayerHouseF2/scripts.pory"
 	waitmessage
-# 110 "data/maps/PlayerHouseF2/scripts.pory"
+# 283 "data/maps/PlayerHouseF2/scripts.pory"
 	closemessage
-# 111 "data/maps/PlayerHouseF2/scripts.pory"
+# 284 "data/maps/PlayerHouseF2/scripts.pory"
 	removeobject BarryIntroOne
-# 112 "data/maps/PlayerHouseF2/scripts.pory"
+# 285 "data/maps/PlayerHouseF2/scripts.pory"
 	releaseall
 	return
 
@@ -176,79 +486,263 @@ BarryWalksRight_Movement_0:
 	emote_exclamation_mark
 	step_end
 
-# 58 "data/maps/PlayerHouseF2/scripts.pory"
+# 61 "data/maps/PlayerHouseF2/scripts.pory"
 BarryWalksRight_Movement_1:
-# 58 "data/maps/PlayerHouseF2/scripts.pory"
+# 61 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 58 "data/maps/PlayerHouseF2/scripts.pory"
+# 61 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 58 "data/maps/PlayerHouseF2/scripts.pory"
+# 61 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_down
-# 58 "data/maps/PlayerHouseF2/scripts.pory"
+# 61 "data/maps/PlayerHouseF2/scripts.pory"
 	face_left
 	step_end
 
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 BarryWalksRight_Movement_2:
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_down
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_left
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_up
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_up
-# 72 "data/maps/PlayerHouseF2/scripts.pory"
+# 70 "data/maps/PlayerHouseF2/scripts.pory"
 	face_up
 	step_end
 
-# 74 "data/maps/PlayerHouseF2/scripts.pory"
+# 72 "data/maps/PlayerHouseF2/scripts.pory"
 BarryWalksRight_Movement_3:
-# 74 "data/maps/PlayerHouseF2/scripts.pory"
+# 72 "data/maps/PlayerHouseF2/scripts.pory"
 	face_left
 	step_end
 
-# 80 "data/maps/PlayerHouseF2/scripts.pory"
+# 78 "data/maps/PlayerHouseF2/scripts.pory"
 BarryWalksRight_Movement_4:
-# 80 "data/maps/PlayerHouseF2/scripts.pory"
+# 78 "data/maps/PlayerHouseF2/scripts.pory"
 	face_right
 	step_end
 
-# 85 "data/maps/PlayerHouseF2/scripts.pory"
+# 84 "data/maps/PlayerHouseF2/scripts.pory"
 BarryWalksRight_Movement_5:
-# 85 "data/maps/PlayerHouseF2/scripts.pory"
+# 84 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_down
-# 85 "data/maps/PlayerHouseF2/scripts.pory"
+# 84 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
-# 85 "data/maps/PlayerHouseF2/scripts.pory"
+# 84 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
-# 85 "data/maps/PlayerHouseF2/scripts.pory"
+# 84 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 BarryWalksRight_Movement_6:
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_down
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_up
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_up
-# 94 "data/maps/PlayerHouseF2/scripts.pory"
+# 90 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksLeft_Movement_0:
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 113 "data/maps/PlayerHouseF2/scripts.pory"
+	face_left
+	step_end
+
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksLeft_Movement_1:
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 122 "data/maps/PlayerHouseF2/scripts.pory"
+	face_up
+	step_end
+
+# 135 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksLeft_Movement_2:
+# 135 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksLeft_Movement_3:
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 141 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksDown_Movement_0:
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 165 "data/maps/PlayerHouseF2/scripts.pory"
+	face_left
+	step_end
+
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksDown_Movement_1:
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 174 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+	step_end
+
+# 187 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksDown_Movement_2:
+# 187 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 187 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 187 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 187 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksDown_Movement_3:
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 193 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksUp_Movement_0:
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 217 "data/maps/PlayerHouseF2/scripts.pory"
+	face_up
+	step_end
+
+# 219 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksUp_Movement_1:
+# 219 "data/maps/PlayerHouseF2/scripts.pory"
+	face_down
+	step_end
+
+# 227 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksUp_Movement_2:
+# 227 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 227 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 227 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_left
+# 227 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+	step_end
+
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksUp_Movement_3:
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_down
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 240 "data/maps/PlayerHouseF2/scripts.pory"
+	face_up
+	step_end
+
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
+BarryWalksUp_Movement_4:
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_up
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
+	walk_fast_right
+# 247 "data/maps/PlayerHouseF2/scripts.pory"
 	walk_fast_right
 	step_end
 
@@ -265,11 +759,29 @@ EveryFrameTest_Text_1:
 	.string "See You next week,\n same time, same channel$"
 
 BarryWalksRight_Text_0:
-# 57 "data/maps/PlayerHouseF2/scripts.pory"
+# 58 "data/maps/PlayerHouseF2/scripts.pory"
 	.string "There you are!$"
 
 BarryWalksRight_Text_1:
-# 61 "data/maps/PlayerHouseF2/scripts.pory"
+# 75 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "Oh, hey!\n"
+	.string "Is this a new PC?!$"
+
+BarryWalksRight_Text_2:
+# 81 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "Uh...\n"
+	.string "Where was I?$"
+
+BarryEnters_Text_0:
+# 280 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "Barry$"
+
+BarryEnters_Text_1:
+# 281 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "Barry!$"
+
+BarryOne::
+# 258 "data/maps/PlayerHouseF2/scripts.pory"
 	.string "Hey, {PLAYER} \n"
 	.string "Did you just see the TV? Sure you did!\p"
 	.string "Prof. Rowan’s that really important\n"
@@ -279,28 +791,10 @@ BarryWalksRight_Text_1:
 	.string "So, if we ask him, I bet he’d give us\n"
 	.string "some Pokémon!$"
 
-BarryWalksRight_Text_2:
-# 77 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "Oh, hey!\n"
-	.string "Is this a new PC?!$"
-
-BarryWalksRight_Text_3:
-# 82 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "Uh...\n"
-	.string "Where was I?$"
-
-BarryWalksRight_Text_4:
-# 87 "data/maps/PlayerHouseF2/scripts.pory"
+BarryLast::
+# 269 "data/maps/PlayerHouseF2/scripts.pory"
 	.string "Oh, right, right! We’re going to go see\n"
 	.string "Prof. Rowan and get some Pokémon.\p"
 	.string "I’ll be waiting outside.\p"
 	.string "OK, {PLAYER}? If you’re late, I’m\n"
-	.string "fining you $10 million!$"
-
-BarryEnters_Text_0:
-# 107 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "Barry$"
-
-BarryEnters_Text_1:
-# 108 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "Barry!$"
+	.string "fining you 10 million PokéDollars!$"

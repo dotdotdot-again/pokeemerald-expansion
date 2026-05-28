@@ -19,7 +19,62 @@
       "direction": "up"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Twinleaf_fatman",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "x": 23,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Twinleaf_outside_lady",
+      "flag": "0"
+    },
+    {
+      "local_id": "Tiwnleaf_outside_guy",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Twinleaf_outside_guy",
+      "flag": "0"
+    },
+    {
+      "local_id": "Twinleaf_Thud_Barry",
+      "graphics_id": "OBJ_EVENT_GFX_DP_BARRY",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
   "warp_events": [
     {
       "x": 20,
@@ -50,6 +105,113 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "Twinleaf_Barry_Thud"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Twinleaf_playerHouseSign"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Twinleaf_Town_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Twinleaf_barryHouseSign"
+    }
+  ]
 }

@@ -1,1 +1,48 @@
 mapscripts Twinlead_House_One_MapScripts {}
+
+script Twinlead_House_One_Old_lady {
+        lockall
+    msgbox("Did you hear?\p"
+        "The Pok\emon Professor returned\n"
+        "to the next town over.\p"
+        "They say he was gone for four long\n"
+        "years."
+        "I wonder if he found some amazing\n"
+        "Pok\emon while he was gone?",MSGBOX_NPC)
+        releaseall
+}
+
+script Twinlead_House_One_Twin {
+        lockall
+    msgbox("Listen, listen, {PLAYER}\n"
+        "I want a cute Pok\emon!",MSGBOX_NPC)
+        releaseall
+}
+
+script Twinlead_House_One_TV {
+        lock
+        setspeaker("MC")
+        msgbox("A Trainer's Day!\p"
+        "This program offers unique looks into\n"
+        "the daily lives of Trainers.\p"
+        "We cover a variety of topic that\n"
+        "affect and convern Trainers.\p"
+        "We seek tips on Trainer-related\n"
+        "news for coverage on the show\p"
+        "Please also consider mixing records\n"
+        "with friends in a Union Room.\p"
+        "That will allow us to check the\n"
+        "routines of your friends, too.\p"
+        "Please tune in again next time.\n"
+        "Good-bye, but just for now!",MSGBOX_SIGN)
+        release
+}
+
+script Twinlead_House_One_TV_Com {
+        lock
+        setspeaker("Commercial")
+        msgbox("Where there is Pok\etch,\n"
+        "there is joy.",MSGBOX_SIGN)
+        release
+}
+
