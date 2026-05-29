@@ -5940,8 +5940,10 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
+/*Platinum Trainers*/
+
 === TRAINER_CALVIN_1 ===
-Name: CALVIN
+Name: Tristan
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5949,7 +5951,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
+Starly
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

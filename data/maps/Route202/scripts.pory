@@ -1,0 +1,11 @@
+mapscripts Route202_MapScripts {
+
+}
+
+script testBattle {
+
+    trainerbattle_single(TRAINER_CALVIN_1, "This is a test fight!", "Test over!")
+    msgbox("This is a post battle script!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    end
+}
