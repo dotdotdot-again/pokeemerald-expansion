@@ -99,3 +99,9 @@ script triggerMomTryToLeave{
 
 }
 
+script after_starter {
+    setspeaker(SP_NAME_MOM)
+    msgbox("Test message!")
+    releaseall
+}
+

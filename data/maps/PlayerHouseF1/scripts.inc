@@ -137,6 +137,16 @@ triggerMomTryToLeave::
 	return
 
 
+after_starter::
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 104 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox after_starter_Text_0
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+	releaseall
+	return
+
+
 # 18 "data/maps/PlayerHouseF1/scripts.pory"
 EveryFrameMom_Movement_0:
 # 18 "data/maps/PlayerHouseF1/scripts.pory"
@@ -244,3 +254,7 @@ triggerMomTryToLeave_Text_0:
 	.string "It would be OK if you had your own\n"
 	.string "Pokémon, but you don’t, so...\p"
 	.string "Well, take care, sweetie!$"
+
+after_starter_Text_0:
+# 104 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Test message!$"

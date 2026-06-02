@@ -546,6 +546,11 @@ const u16 gObjectEventPal_DP_HoneyTree[] = INCBIN_U16("graphics/object_events/pi
 
 const u16 gObjectEventPal_DP_Windmill[] = INCBIN_U16("graphics/object_events/pics/misc/windmill.gbapal");
 
+const u16 gObjectEventPal_DP_Man[] = INCBIN_U16("graphics/object_events/pics/people/man.gbapal");
+const u16 gObjectEventPal_DP_Man_5[] = INCBIN_U16("graphics/object_events/pics/people/man_5.gbapal");
+
+const u16 gObjectEventPal_DP_Female_Scientist[] = INCBIN_U16("graphics/object_events/pics/people/scientist_1.gbapal");
+
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/substitute.gbapal");

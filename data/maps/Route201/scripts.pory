@@ -48,7 +48,7 @@ script Route201_Barry {
     applymovement(Barry_201, moves(walk_fast_right*3))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     waitmovementall
-    msgbox("HOLD IT!!!",MSGBOX_AUTOCLOSE)
+    msgbox("HOLD IT!!!\n",MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left,emote_exclamation_mark))
     applymovement(Barry_201, moves(face_left,emote_exclamation_mark))
@@ -61,10 +61,10 @@ script Route201_Barry {
     applymovement(Rowan_Route_201, moves(walk_right*7))
     waitmovement
     setspeaker(SP_NAME_ROWAN)
-    msgbox("Professor: You two don’t seem to have\n"
+    msgbox("You two don’t seem to have\n"
         "any Pokémon between you?\p"
         "Then, what is the meaning of going into\n"
-        "the tall grass?!",)
+        "the tall grass?!\n")
     waitmessage
     setspeaker(SP_NAME_BARRY)
     msgbox("...\n"
@@ -73,7 +73,7 @@ script Route201_Barry {
     msgbox("...\n"
     "...\l"
     "...\l"
-    "...",)
+    "...")
     waitmessage
     applymovement(Barry_201, moves(face_down))
     setspeaker(SP_NAME_BARRY)
@@ -122,7 +122,7 @@ script Route201_Barry {
     }
     setspeaker(SP_NAME_BARRY)
     msgbox("Me, too!\n"
-    "I love Pokémon, too!")
+    "I love Pokémon, too!\n")
     setspeaker(SP_NAME_ROWAN)
     msgbox("I will ask you once again.\p"
         "You two.\n"
@@ -139,13 +139,11 @@ script Route201_Barry {
     waitmovementall
     setspeaker(SP_NAME_BARRY)
     msgbox("Right, {PLAYER}?",MSGBOX_YESNO)
-    if(var(VAR_RESULT) == 0)
+    if(var(VAR_RESULT) == 1)
     {
-        setspeaker(SP_NAME_BARRY)
-        msgbox("RIGHT!")
 
     }
-    elif(var(VAR_RESULT) == 1)
+    elif(var(VAR_RESULT) == 0)
     {
         setspeaker(SP_NAME_BARRY)
         msgbox("...\n"
@@ -306,16 +304,141 @@ script  Route201_Try_to_not_get_pokemon_trigger_right {
 
 script RownsBag {
     lock
+    fadescreen(FADE_TO_BLACK)
     removeobject(Rowans_Bag_Route201)
     setflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
     setflag(FLAG_SYS_POKEMON_GET)
-    fadescreen(FADE_TO_BLACK)
     special(ChooseStarter)
 	waitstate
+    fadedefaultbgm
     applymovement(Rowan_Route_201, moves(face_down))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(Barry_201, moves(face_down))
+    if(var(VAR_STARTER_MON) == 0)
+    {
     setspeaker(SP_NAME_BARRY)
     msgbox("Then, I choose you!\n"
-    "I'm picking this POKEMON!",MSGBOX_AUTOCLOSE)
+    "I'm picking this Chimchar!",MSGBOX_AUTOCLOSE)
+    }
+    elif(var(VAR_STARTER_MON) == 1)
+    {
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Then, I choose you!\n"
+    "I'm picking this Piplup!",MSGBOX_AUTOCLOSE)
+    }
+    elif(var(VAR_STARTER_MON) == 2)
+    {
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Then, I choose you!\n"
+    "I'm picking this Turtwig!",MSGBOX_AUTOCLOSE)
+    }
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Very well! Both of you have\n"
+        "chosen a good Pokémon, it seems.\p"
+        "Now, listen well!\p"
+        "The Pokémon you have been entrusted\n"
+        "with are unfamiliar with the world.\p"
+        "In that regard, they’re much\n"
+        "like you.\p"
+        "As fellow newcomers to the world,\n"
+        "I hope you’ll do well together.\p"
+        "If you have any trouble, come see me\n"
+        "at my lab in Sandgem Town.\p"
+        "And now, we’ll be on our way.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_up,face_right))    
+    applymovement(Rowan_Route_201, moves(walk_right*8))
+    waitmovementall
+        if(var(VAR_RESULT) == 0)
+        {
+            
+        }
+        elif(var(VAR_RESULT) == 1)
+        {
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Professor!\n"
+        "Wait for me!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(LuDa_Route_201_again, moves(walk_right))
+        waitmovement
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Uh, sorry, folks.",MSGBOX_AUTOCLOSE)
+        }
+    applymovement(LuDa_Route_201_again, moves(walk_right*9))
+    waitmovement
+    removeobject(Rowan_Route_201)
+    removeobject(LuDa_Route_201_again)
+    setflag(FLAG_WONDER_CARD_UNUSED_2)
+    setspeaker(SP_NAME_BARRY)
+    msgbox("How do you like that?\n"
+    "Prof. Rowan’s really nice.\p"
+    "On TV, he seems so stern and scary.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    applymovement(Barry_201, moves(walk_in_place_down,walk_in_place_fast_down,walk_in_place_faster_down,walk_fast_left,walk_fast_down))
+    waitmovementall
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Heheh, {PLAYER}!\n"
+        "We’ve both got Pokémon now.\p"
+        "There’s only one thing to do, right?\n"
+        "Are you up for this?",MSGBOX_YESNO)
+    waitmessage
+    while (var(VAR_RESULT) != 1)
+    {
+        setspeaker(SP_NAME_BARRY)
+        msgbox( "What’s with that attitude?\n"
+        "Don’t be that way!\p"
+        "We’ve both got Pokémon now.\p"
+        "There’s only one thing to do, right?\n"
+        "Are you up for this?",MSGBOX_YESNO)
+        waitmessage
+}
+    setspeaker(SP_NAME_BARRY)
+    msgbox("I’ve always wanted to\n"
+        "say this...\p"
+        "The time has finally come!\p"
+        "{PLAYER}!\n"
+    "I challenge you to a battle!")
+    waitmessage
+    switch(var(VAR_STARTER_MON)) {
+        case 0:
+            trainerbattle_no_intro(TRAINER_BRENDAN_ROUTE_103_TREECKO, "What are you saying?!\nWe ended up losing?!")
+        case 1:
+            trainerbattle_no_intro(TRAINER_BRENDAN_ROUTE_103_TORCHIC, "What are you saying?!\nWe ended up losing?!")
+        case 2:
+            trainerbattle_no_intro(TRAINER_BRENDAN_ROUTE_103_MUDKIP, "What are you saying?!\nWe ended up losing?!")
+    }
+    call(RivalBattleOver)
+
+
+}
+
+script RivalBattleOver {
+    lockall
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Whew!\n"
+        "Let’s go home.\p"
+        "I’m beat after that battle.\n"
+        "My Pokémon needs rest, too.\p"
+        "See ya, {PLAYER}!")
+        waitmessage
+	    fadescreen(FADE_TO_BLACK)
+        warpcontinuescript(MAP_PLAYER_HOUSE_F1,2,6,GoingHomeAfterBarryFight)
+}
+
+script GoingHomeAfterBarryFight {
+    setobjectxy(Mom,2,4)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    fadescreen(FADE_FROM_BLACK)
+    call(after_starter)
+}
+
+script BarryIntro {
+    msgbox("{PLAYER}!\n"
+    "I challenge you to a battle!")
+}
+
+script Barry_Loss {
+    msgbox("What are you saying?!\nWe ended up losing?!")
 }
 
