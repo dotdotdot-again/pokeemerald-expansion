@@ -66,13 +66,13 @@
       "x": 9,
       "y": 8,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "BARRY_INTRO_TWO"
     }
   ],
   "warp_events": [
@@ -186,6 +186,78 @@
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "4",
       "script": "Twinleaf_Barry_Thud"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "5",
+      "script": "Twinleaf_trigger_trytoleaveguy"
     }
   ],
   "bg_events": [

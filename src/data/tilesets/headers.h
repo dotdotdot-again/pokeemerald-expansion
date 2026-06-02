@@ -1673,3 +1673,25 @@ const struct Tileset gTileset_PorytilesPlatGBA_Tiwnleaf =
     .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Tiwnleaf,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesPlatGBA_Lab =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Lab,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Lab,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Lab,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Lab,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_Lucas =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Lucas,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Lucas,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Lucas,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Lucas,
+    .callback = NULL,
+};

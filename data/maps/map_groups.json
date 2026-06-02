@@ -1194,7 +1194,10 @@
     "SandgemPokemonCenter_F2",
     "SandgemPokemart",
     "SandgemPokemonCenter_B1",
-    "Sandgem_House_One_2"
+    "Sandgem_House_One_2",
+    "Sandgem_House_Lab",
+    "Sandgem_Lucas_House",
+    "Sandgem_Lucas_House_F2"
   ],
   "gMapGroup_TiwnleafIndoor": [
     "PlayerHouseF2",

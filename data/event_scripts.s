@@ -1825,3 +1825,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Sandgem_House_One_2/scripts.inc"
 
 	.include "data/maps/Sandgem_House_One/scripts.inc"
+
+	.include "data/maps/Sandgem_House_Lab/scripts.inc"
+
+	.include "data/maps/Sandgem_Lucas_House/scripts.inc"
+
+	.include "data/maps/Sandgem_Lucas_House_F2/scripts.inc"

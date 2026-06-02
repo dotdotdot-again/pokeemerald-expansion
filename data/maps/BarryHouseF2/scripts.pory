@@ -1,1 +1,66 @@
-mapscripts BarryHouseF2_MapScripts {}
+mapscripts BarryHouseF2_MapScripts {    
+    MAP_SCRIPT_ON_TRANSITION: OnTransition_BarryF2
+    	MAP_SCRIPT_ON_FRAME_TABLE [
+	VAR_TEMP_2, 0:EveryFrame_BarryF2
+	]
+}
+
+script OnTransition_BarryF2{
+	
+	setvar(VAR_TEMP_2,0)
+    
+}
+
+script EveryFrame_BarryF2 {
+
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 5)
+	{
+        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        setspeaker(SP_NAME_BARRY)
+	    msgbox("...I’d better take\n"
+        "my Bag and Journal, too...",MSGBOX_NPC)
+        waitmessage
+        applymovement(BarryHome, moves(face_left))
+        waitmovement
+        applymovement(BarryHome, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+	    msgbox("Oh, hey, {PLAYER}!\p"
+        "I'll be waiting on the road!\n"
+        "It's a 10 million fone if you're late!",MSGBOX_NPC)
+        applymovement(BarryHome, moves(walk_fast_down,walk_fast_left*4,walk_fast_up,face_right))
+        waitmovement
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_up))
+        applymovement(BarryHome, moves(walk_fast_left*2))
+        playse(SE_EXIT) 
+        waitmovementall
+        removeobject(BarryHome)
+        setflag(BARRY_INTRO_THREE)
+        fadedefaultbgm
+        setvar(VAR_TWINLEAF_INTRO_STATE, 6)
+        releaseall
+    }
+    else{
+        setvar(VAR_TEMP_2, 1)
+    }
+}
+
+script wii_barry_text {
+    msgbox("It’s a Wii!\n"
+    "It’s controlled by a Wii Remote!",MSGBOX_SIGN)
+}
+
+script barry_f2_tv_text {
+    msgbox("It’s a TV, how intresting.",MSGBOX_SIGN)
+}
+
+script barry_f2_PC{
+    msgbox("You checked the PC screen.\p"
+        "Adventure Rule No. 1\n"
+        "The Select Button opens the menu!\p"
+        "Adventure Rule No. 2\n"
+        "Record your progress with SAVE.\p"
+        "There is nothing else on here...",MSGBOX_SIGN)
+}

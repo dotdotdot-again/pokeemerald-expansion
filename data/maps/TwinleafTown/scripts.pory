@@ -1,11 +1,13 @@
 mapscripts TwinleafTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION:OnTransitionTwinleaf
 }
 
 
 
-script OnWarpTwinleaf
+script OnTransitionTwinleaf
 {
     removeobject(Twinleaf_Thud_Barry)
+    setflag(BARRY_INTRO_TWO)
 }
 
 script Twinleaf_fatman {
@@ -48,11 +50,24 @@ script Twinleaf_outside_lady {
 
 script Twinleaf_outside_guy {
     lock
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 4 || var(VAR_TWINLEAF_INTRO_STATE) == 5)
+    {
     msgbox("Hiya, {PLAYER}.\n"
-        "Barry was looking for you.\p"
-        "I think he’s home now.\n"
-        "Why don’t you go check it out?",MSGBOX_NPC)
-        release
+    "Barry was looking for you.\p"
+    "I think he’s home now.\n"
+    "Why don’t you go check it out?",MSGBOX_NPC)
+    release
+    }
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 6)
+    {
+    msgbox("Hiya, {PLAYER}.\n"
+    "You're looking for Barry?\p"
+    "He just went tear off a little\n"
+    "while ago.\p"
+    "He's probably not gone too far.\n"
+    "Why not go chase after him?",MSGBOX_NPC)
+    }
+
 
 }
 
@@ -62,6 +77,7 @@ text barryWasLooking
     "Barry was looking for you.\p"
     "I think he’s home now.\n"
     "Why don’t you go check it out?"
+    
 }
 
 script Twinleaf_trigger_trytoleaveguy {
@@ -81,16 +97,40 @@ script Twinleaf_trigger_trytoleaveguy {
 
 script Twinleaf_Barry_Thud {
     lockall
-    showobjectat(Twinleaf_Thud_Barry,MAP_TWINLEAF_TOWN)
+    addobject(Twinleaf_Thud_Barry)
+    clearflag(BARRY_INTRO_TWO)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_down))
     applymovement(Twinleaf_Thud_Barry, moves(walk_down))
     playse(SE_EXIT)
     waitmovementall
     msgbox("THUD!!",MSGBOX_NPC)
     waitmessage
+    applymovement(Twinleaf_Thud_Barry, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    setspeaker(SP_NAME_BARRY)
+    msgbox("What was that about?!\p"
+    "Oh, hey, {PLAYER}!\p"
+    "Hey! I’m going to see Prof. Rowan!\n"
+    "You should come, too! And quickly!",MSGBOX_NPC)
+    applymovement(Twinleaf_Thud_Barry, moves(walk_fast_right*4))
+    waitmovement
+    applymovement(Twinleaf_Thud_Barry, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    applymovement(Twinleaf_Thud_Barry, moves(walk_fast_left*4,face_down))
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Oh, jeez!\n"
+    "Forgot something!",MSGBOX_NPC)
+    waitmessage
+    applymovement(Twinleaf_Thud_Barry, moves(walk_fast_up))
+    playse(SE_EXIT)
+    waitmovement
+    removeobject(Twinleaf_Thud_Barry)
+    setflag(Twinleaf_Thud_Barry)
     releaseall
-
-
+    setvar(VAR_TWINLEAF_INTRO_STATE, 5)
 }
 
 script Twinleaf_removeBarry {

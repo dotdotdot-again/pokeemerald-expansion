@@ -1,1 +1,29 @@
 mapscripts BarryHouseF1_MapScripts {}
+
+script BarrysMomTalk {
+    setspeaker("Barry's Mom")
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 5)
+    {
+    msgbox("Oh, hi,\n"
+    "{PLAYER}\p"
+    "Did you come calling on Barry?\p"
+    "He was gone for a second, but then\n"
+    "he came running right back home.\p"
+    "He just can't still, that boy.\n"
+    "I wonder who he takes after?",MSGBOX_NPC)
+    }
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 6)
+    {
+    msgbox("That kid rocketed\n"
+    "off again like usual.\p"
+    "I'd giess he would be out on\n"
+    "Route 201 by now?\p"
+    "He just can't sit still, that boy.\n"
+    "I wonder who he takes after?",MSGBOX_NPC)
+    }
+    else{
+    msgbox("He just can't sit still, that boy.\n"
+    "I wonder who he takes after?",MSGBOX_NPC)
+    }
+
+}

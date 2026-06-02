@@ -1,0 +1,321 @@
+mapscripts Route201_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Route201_OnTrans
+}
+
+script Route201_OnTrans {
+    call(Common_EventScript_SetupRivalGfxId)
+    removeobject(Rowan_Route_201)
+    removeobject(LuDa_Route_201_again)
+    removeobject(Rowans_Bag_Route201)
+    setflag(FLAG_WONDER_CARD_UNUSED_2)
+    setflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+}
+
+script Route201_Barry {
+    setspeaker(SP_NAME_BARRY)
+    msgbox("...\n"
+    "...\p"
+    "What?\n"
+    "Don’t go into the grass, right?\l"
+    "No worries! No problem!\p"
+    "It doesn’t matter that we don’t have\n"
+    "any Pokémon.\p"
+    "Trust me on this one.\n"
+    "I’ve got an idea!\p"
+    "Now listen. You know how wild Pokémon\n"
+    "jump out when you go into tall grass?")
+    waitmessage
+    closemessage
+    applymovement(Barry_201, moves(walk_left,face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("So, what you do is, you scoot over to\n"
+        "the next patch of grass before any\l"
+        "wild Pokémon can appear!\p"
+        "If we just keep dashing, we can get to\n"
+        "Sandgem Town without running into\l"
+        "wild Pokémon!\p"
+        "OK, stick with me!")
+    waitmessage
+    closemessage
+    applymovement(Barry_201, moves(walk_left*3,face_right))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Ok, here goes!\p"
+    "On your makes...",MSGBOX_AUTOCLOSE)
+    applymovement(Barry_201, moves(walk_fast_right*3))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovementall
+    msgbox("HOLD IT!!!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left,emote_exclamation_mark))
+    applymovement(Barry_201, moves(face_left,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    playbgm(MUS_ROUTE122, 0)
+    clearflag(FLAG_WONDER_CARD_UNUSED_2)
+    addobject(Rowan_Route_201)
+    applymovement(Rowan_Route_201, moves(walk_right*7))
+    waitmovement
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Professor: You two don’t seem to have\n"
+        "any Pokémon between you?\p"
+        "Then, what is the meaning of going into\n"
+        "the tall grass?!",)
+    waitmessage
+    setspeaker(SP_NAME_BARRY)
+    msgbox("...\n"
+    "...",)
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("...\n"
+    "...\l"
+    "...\l"
+    "...",)
+    waitmessage
+    applymovement(Barry_201, moves(face_down))
+    setspeaker(SP_NAME_BARRY)
+        msgbox("Hey, {PLAYER}.\n"
+        "This old guy...\p"
+        "It’s Prof. Rowan, isn’t it?\n"
+        "What’s he doing here...?",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(face_left))
+    applymovement(Rowan_Route_201, moves(walk_left*3))
+    waitmovementall
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("...\n"
+        "...\p"
+        "They tried to go into the tall grass\n"
+        "because they wanted Pokémon...\p"
+        "Hmm...\n"
+        "What to do...?\p"
+        "Their world would surely change if\n"
+        "they were to meet Pokémon...\p"
+        "Is it right for me to put them on that\n"
+        "path...?\p"
+        "...\n"
+        "...",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Rowan_Route_201, moves(walk_right*3))
+    waitmovement
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("You two.\n"
+    "You truly love Pokémon, do you?",MSGBOX_YESNO)
+    waitmessage
+    while (var(VAR_RESULT) != 1)
+    {
+        applymovement(Barry_201, moves(face_down))
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Whoa, hold up!\n"
+        "You’re not making any sense here!")
+        applymovement(Barry_201, moves(face_left))
+        setspeaker(SP_NAME_ROWAN)
+        msgbox("Er-hem!\p"
+        "I didn’t quite catch that, so I will\n"
+        "ask you again.\p"
+        "You two.\n"
+        "You truly love Pokémon, do you?",MSGBOX_YESNO)
+        waitmessage
+    }
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Me, too!\n"
+    "I love Pokémon, too!")
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("I will ask you once again.\p"
+        "You two.\n"
+        "You truly love Pokémon, do you?")
+    setspeaker(SP_NAME_BARRY)
+    msgbox("What?!\n"
+        "You can ask a hundred times!\l"
+        "The answer will never change!\p"
+        "We’ll both answer a hundred times,\n"
+        "we love Pokémon!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Right, {PLAYER}?",MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 0)
+    {
+        setspeaker(SP_NAME_BARRY)
+        msgbox("RIGHT!")
+
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        setspeaker(SP_NAME_BARRY)
+        msgbox("...\n"
+        "That joke's getting old!")
+    }
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("...A pair of reckless kids\n"
+        "who foolishly try to enter tall grass\l"
+        "without Pokémon of their own...?\p"
+        "It worries me what people like that\n"
+        "would do with Pokémon.") 
+    waitmessage
+    applymovement(Barry_201, moves(face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+        msgbox("...Uh...\n"
+        "Well, I, uh...\p"
+        "...\n"
+        "...\p"
+        "Well, then forget about me, but give\n"
+        "a Pokémon to my friend here!\p"
+        "I mean, it was me who tried to go into\n"
+        "the tall grass and all...")
+    setspeaker(SP_NAME_ROWAN)
+         msgbox("!\p"
+        "How big of you...\p"
+        "Very well, then!\n"
+        "I will entrust you two with Pokémon!\p"
+        "I apologize for putting you through\n"
+        "that exercise.\p"
+        "However!\p"
+        "You must promise me that you will never\n"
+        "recklessly endanger yourselves again.\p"
+        "Now, then...\p"
+        "Hm?\n"
+        "Now, where...?")
+        waitmessage
+        applymovement(Rowan_Route_201, moves(face_left,delay_16,face_right,delay_16))
+        waitmovement
+        playbgm(MUS_ENCOUNTER_MAY, 0)
+        addobject(LuDa_Route_201_again)
+        checkplayergender
+        if(var(VAR_RESULT) == 0)
+        {
+            setspeaker(SP_NAME_DAWN)
+            msgbox("Professor Rowan!")
+            applymovement(LuDa_Route_201_again, moves(walk_right*6))
+            waitmovement
+            releaseall
+            
+        }
+        elif(var(VAR_RESULT) == 1)
+        {
+            setspeaker(SP_NAME_LUCAS)
+            msgbox("Professor Rowan!")
+            applymovement(LuDa_Route_201_again, moves(walk_right*6))
+            waitmovement
+            setspeaker(SP_NAME_LUCAS)
+            msgbox("You left your briefcase behind at\n"
+            "the lake.")
+            waitmessage
+            applymovement(Rowan_Route_201, moves(face_left))
+            applymovement(LuDa_Route_201_again, moves(face_down,delay_16))
+            clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+            addobject(Rowans_Bag_Route201)
+            setobjectxy(Rowans_Bag_Route201,16,13)
+            waitmovement
+            applymovement(LuDa_Route_201_again, moves(delay_16,face_right))
+            waitmovement
+            setspeaker(SP_NAME_LUCAS)
+            msgbox("Is something wrong here?")
+            setspeaker(SP_NAME_ROWAN)
+            msgbox("Ah! There it is!\n"
+        "Lucas, nice work.\p"
+        "What I was about to do was to entrust\n"
+        "these two with their own Pokémon.")    
+            setspeaker(SP_NAME_LUCAS)
+            applymovement(LuDa_Route_201_again, moves(emote_question_mark))
+            playse(SE_PIN) 
+            msgbox("Wha...?")
+            waitmovement
+            setspeaker(SP_NAME_LUCAS)
+            msgbox("Those Pokémon are crucial.\n"
+        "You’re giving them away?")
+        setspeaker(SP_NAME_ROWAN)
+        msgbox("Hm!\p"
+        "We exist side by side with Pokémon.\p"
+        "There comes a time when people should\n"
+        "meet Pokémon.\p"
+        "There is a world that should be\n"
+        "explored together.\p"
+        "For them, today is that time.\n"
+        "The place, right here.")
+        }
+        applymovement(Rowan_Route_201, moves(face_right))
+        waitmovement
+        setspeaker(SP_NAME_ROWAN)
+        msgbox("Go on! Open the briefcase and\n"
+        "choose a Pokémon!")
+        applymovement(Barry_201, moves(walk_in_place_left))
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Really?!\n"
+        "Prof. Rowan!\p"
+        "I can’t believe it! I’m so happy now\n"
+        "that I can’t keep a straight face!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(Barry_201, moves(face_down))
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Hey, {PLAYER}.\n"
+        "You can choose first.\p"
+        "Hey, I’m practically a grown-up.\n"
+        "I have to show some class here.")
+        waitmessage
+        setvar(VAR_TWINLEAF_INTRO_STATE, 7)
+        fadedefaultbgm
+        releaseall
+}
+
+script Route201_Barry_Trigger_Far_Right {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Too slow!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_down,walk_fast_right,face_down))
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("All right!\n"
+    "Let's get mocing to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_up*2,walk_right*2,face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,walk_right))
+    waitmovementall
+    call(Route201_Barry) 
+
+}
+
+script  Route201_Try_to_not_get_pokemon_trigger_down {
+    applymovement(Barry_201, moves(walk_in_place_down))
+        setspeaker(SP_NAME_BARRY)
+    msgbox("What's up with you?\n"
+    "Open the briefcase and pick a Pok\emon!",MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+}
+
+script  Route201_Try_to_not_get_pokemon_trigger_right {
+    applymovement(Barry_201, moves(walk_in_place_down))
+        setspeaker(SP_NAME_BARRY)
+    msgbox("What's up with you?\n"
+    "Open the briefcase and pick a Pok\emon!",MSGBOX_AUTOCLOSE)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+}
+
+script RownsBag {
+    lock
+    removeobject(Rowans_Bag_Route201)
+    setflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+    setflag(FLAG_SYS_POKEMON_GET)
+    fadescreen(FADE_TO_BLACK)
+    special(ChooseStarter)
+	waitstate
+    applymovement(Rowan_Route_201, moves(face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Then, I choose you!\n"
+    "I'm picking this POKEMON!",MSGBOX_AUTOCLOSE)
+}
+

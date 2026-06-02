@@ -52,9 +52,9 @@
 #else
 
 #define FLAG_UNUSED_0x020    0x20 // Baarry in Intro 1
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
+#define BARRY_INTRO_TWO    0x21 // Unused Flag
+#define BARRY_INTRO_THREE    0x22 // Unused Flag
+#define FLAG_UNUSED_0x023    0x23 // Derby
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
@@ -349,7 +349,7 @@
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13B
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
-#define FLAG_WONDER_CARD_UNUSED_2            0x13E
+#define FLAG_WONDER_CARD_UNUSED_2            0x13E //Rowan Route 201?
 #define FLAG_WONDER_CARD_UNUSED_3            0x13F
 #define FLAG_WONDER_CARD_UNUSED_4            0x140
 #define FLAG_WONDER_CARD_UNUSED_5            0x141

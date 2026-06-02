@@ -45,7 +45,7 @@ EveryFrameMom_1:
 # 25 "data/maps/PlayerHouseF1/scripts.pory"
 	setspeaker SP_NAME_MOM
 # 26 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox EveryFrameMom_Text_0, MSGBOX_NPC
+	msgbox EveryFrameMom_Text_0, MSGBOX_AUTOCLOSE
 # 30 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmessage
 # 31 "data/maps/PlayerHouseF1/scripts.pory"
@@ -125,12 +125,14 @@ triggerMomTryToLeave::
 # 87 "data/maps/PlayerHouseF1/scripts.pory"
 	setspeaker SP_NAME_MOM
 # 88 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox triggerMomTryToLeave_Text_0, MSGBOX_NPC
+	msgbox triggerMomTryToLeave_Text_0
 # 95 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
+	closemessage
 # 96 "data/maps/PlayerHouseF1/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 4
+	waitmessage
 # 97 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 4
+# 98 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
@@ -138,7 +140,7 @@ triggerMomTryToLeave::
 # 18 "data/maps/PlayerHouseF1/scripts.pory"
 EveryFrameMom_Movement_0:
 # 18 "data/maps/PlayerHouseF1/scripts.pory"
-	face_up
+	face_down
 	step_end
 
 # 20 "data/maps/PlayerHouseF1/scripts.pory"
@@ -196,7 +198,7 @@ triggerMomTryToLeave_Movement_0:
 # 85 "data/maps/PlayerHouseF1/scripts.pory"
 triggerMomTryToLeave_Movement_1:
 # 85 "data/maps/PlayerHouseF1/scripts.pory"
-	face_down
+	face_up
 	step_end
 
 EveryFrameMom_Text_0:

@@ -15,7 +15,7 @@ script EveryFrameMom {
     if(var(VAR_TWINLEAF_INTRO_STATE) == 2)
     {
         lockall
-        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement
         applymovement(Mom, moves(emote_exclamation_mark))
         playse(SE_PIN) 
@@ -26,7 +26,7 @@ script EveryFrameMom {
 	    msgbox("{PLAYER}!\p"
         "Barry already left.\p"
         "I don’t know what it was about, but\n"
-        "he sure was in a hurry!",MSGBOX_NPC)
+        "he sure was in a hurry!",MSGBOX_AUTOCLOSE)
         waitmessage
         applymovement(Mom, moves(walk_down*3,walk_left*3,walk_down,face_up))
         waitmovement
@@ -82,7 +82,7 @@ script triggerMomTryToLeave{
     applymovement(Mom, moves(emote_exclamation_mark,face_down))
     playse(SE_PIN) 
     waitse
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     waitmovement
     setspeaker(SP_NAME_MOM)
     msgbox("Oh, yes!\n"
@@ -91,7 +91,8 @@ script triggerMomTryToLeave{
         "Wild Pokémon might attack you.\p"
         "It would be OK if you had your own\n"
         "Pokémon, but you don’t, so...\p"
-        "Well, take care, sweetie!",MSGBOX_NPC)
+        "Well, take care, sweetie!")
+    closemessage
     waitmessage
     setvar(VAR_TWINLEAF_INTRO_STATE, 4)
     releaseall

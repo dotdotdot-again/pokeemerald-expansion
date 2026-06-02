@@ -9703,6 +9703,36 @@
       "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
       "border_filepath": "data/layouts/Sandgem_House_One_2/border.bin",
       "blockdata_filepath": "data/layouts/Sandgem_House_One_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_HOUSE_LAB",
+      "name": "Sandgem_House_Lab_Layout",
+      "width": 24,
+      "height": 16,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Lab",
+      "border_filepath": "data/layouts/Sandgem_House_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/Sandgem_House_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_LUCAS_HOUSE",
+      "name": "Sandgem_Lucas_House_Layout",
+      "width": 15,
+      "height": 14,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Sandgem_Lucas_House/border.bin",
+      "blockdata_filepath": "data/layouts/Sandgem_Lucas_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_LUCAS_HOUSE_F2",
+      "name": "Sandgem_Lucas_House_F2_Layout",
+      "width": 15,
+      "height": 14,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Lucas",
+      "border_filepath": "data/layouts/Sandgem_Lucas_House_F2/border.bin",
+      "blockdata_filepath": "data/layouts/Sandgem_Lucas_House_F2/map.bin"
     }
   ]
 }
