@@ -101,10 +101,11 @@ script Twinleaf_Barry_Thud {
     clearflag(BARRY_INTRO_TWO)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_down))
     applymovement(Twinleaf_Thud_Barry, moves(walk_down))
-    playse(SE_EXIT)
+    playse(SE_DOOR)
     waitmovementall
     msgbox("THUD!!",MSGBOX_NPC)
     waitmessage
+    playbgm(MUS_ENCOUNTER_BRENDAN,0)
     applymovement(Twinleaf_Thud_Barry, moves(emote_exclamation_mark))
     playse(SE_PIN) 
     waitse
@@ -125,12 +126,13 @@ script Twinleaf_Barry_Thud {
     "Forgot something!",MSGBOX_NPC)
     waitmessage
     applymovement(Twinleaf_Thud_Barry, moves(walk_fast_up))
-    playse(SE_EXIT)
+    playse(SE_DOOR)
+    fadedefaultbgm
     waitmovement
     removeobject(Twinleaf_Thud_Barry)
     setflag(Twinleaf_Thud_Barry)
-    releaseall
     setvar(VAR_TWINLEAF_INTRO_STATE, 5)
+    releaseall
 }
 
 script Twinleaf_removeBarry {

@@ -58,6 +58,12 @@ script TalkMom {
         "Isn’t Barry waiting for you?",MSGBOX_NPC)
         release
     }
+    else{
+          lock
+        setspeaker(SP_NAME_MOM)
+        msgbox("Let me heal your pokemon for you.",MSGBOX_NPC)
+        release       
+    }
 }
 
 script PlayerHouseTVF1 {
@@ -100,8 +106,27 @@ script triggerMomTryToLeave{
 }
 
 script after_starter {
+    applymovement(Mom, moves(walk_up,delay_16,walk_left,face_up,delay_16,walk_right*3,walk_down,walk_right,walk_down*3))
+    waitmovement
+    applymovement(Mom, moves(walk_right*2,walk_down,face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3,walk_down,walk_down,walk_right))
+    waitmovementall
     setspeaker(SP_NAME_MOM)
-    msgbox("Test message!")
+    msgbox("What’s the matter, dear?\p"
+        "...\p"
+        "Wow.\n"
+        "That’s what happened to you?\p"
+        "You and Barry are lucky to have\n"
+        "met Prof. Rowan.\p"
+        "Imagine if you didn’t...\p"
+        "I wouldn’t like to think what the wild\n"
+        "Pokémon might have done to you two.\p"
+        "{PLAYER}, go see Prof. Rowan, and\n"
+        "thank him properly for your Pokémon.\r"
+        "His lab is in Sandgem Town, isn’t it?\r"
+        "Now that you have your own Pokémon,\n"
+        "the tall grass won’t be so threatening.")
+    setvar(VAR_TWINLEAF_INTRO_STATE, 8)
     releaseall
 }
 

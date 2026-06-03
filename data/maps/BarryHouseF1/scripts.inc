@@ -44,7 +44,7 @@ BarrysMomTalk_Text_2:
 # 17 "data/maps/BarryHouseF1/scripts.pory"
 	.string "That kid rocketed\n"
 	.string "off again like usual.\p"
-	.string "I'd giess he would be out on\n"
+	.string "I'd geuss he would be out on\n"
 	.string "Route 201 by now?\p"
 	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"

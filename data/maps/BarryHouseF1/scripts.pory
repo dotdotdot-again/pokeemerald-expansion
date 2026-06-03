@@ -16,7 +16,7 @@ script BarrysMomTalk {
     {
     msgbox("That kid rocketed\n"
     "off again like usual.\p"
-    "I'd giess he would be out on\n"
+    "I'd geuss he would be out on\n"
     "Route 201 by now?\p"
     "He just can't sit still, that boy.\n"
     "I wonder who he takes after?",MSGBOX_NPC)

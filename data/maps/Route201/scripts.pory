@@ -44,7 +44,7 @@ script Route201_Barry {
     waitmovementall
     setspeaker(SP_NAME_BARRY)
     msgbox("Ok, here goes!\p"
-    "On your makes...",MSGBOX_AUTOCLOSE)
+    "On your maarks...",MSGBOX_AUTOCLOSE)
     applymovement(Barry_201, moves(walk_fast_right*3))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     waitmovementall
@@ -310,7 +310,7 @@ script RownsBag {
     setflag(FLAG_SYS_POKEMON_GET)
     special(ChooseStarter)
 	waitstate
-    fadedefaultbgm
+    playbgm(MUS_ROUTE101,0)
     applymovement(Rowan_Route_201, moves(face_down))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     applymovement(Barry_201, moves(face_down))
@@ -423,6 +423,8 @@ script RivalBattleOver {
         "See ya, {PLAYER}!")
         waitmessage
 	    fadescreen(FADE_TO_BLACK)
+        playse(SE_EXIT)
+        waitse
         warpcontinuescript(MAP_PLAYER_HOUSE_F1,2,6,GoingHomeAfterBarryFight)
 }
 

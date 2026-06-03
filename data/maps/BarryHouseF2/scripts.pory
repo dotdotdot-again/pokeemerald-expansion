@@ -29,7 +29,7 @@ script EveryFrame_BarryF2 {
         setspeaker(SP_NAME_BARRY)
 	    msgbox("Oh, hey, {PLAYER}!\p"
         "I'll be waiting on the road!\n"
-        "It's a 10 million fone if you're late!",MSGBOX_NPC)
+        "It's a 10 million fine if you're late!",MSGBOX_NPC)
         applymovement(BarryHome, moves(walk_fast_down,walk_fast_left*4,walk_fast_up,face_right))
         waitmovement
         applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_up))

@@ -415,7 +415,7 @@ RownsBag::
 # 312 "data/maps/Route201/scripts.pory"
 	waitstate
 # 313 "data/maps/Route201/scripts.pory"
-	fadedefaultbgm
+	playbgm MUS_ROUTE101, 0
 # 314 "data/maps/Route201/scripts.pory"
 	applymovement Rowan_Route_201, Route201_Barry_Movement_7
 # 315 "data/maps/Route201/scripts.pory"
@@ -580,30 +580,34 @@ RivalBattleOver::
 # 425 "data/maps/Route201/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 426 "data/maps/Route201/scripts.pory"
+	playse SE_EXIT
+# 427 "data/maps/Route201/scripts.pory"
+	waitse
+# 428 "data/maps/Route201/scripts.pory"
 	warpcontinuescript MAP_PLAYER_HOUSE_F1, 2, 6, GoingHomeAfterBarryFight
 	return
 
 
 GoingHomeAfterBarryFight::
-# 430 "data/maps/Route201/scripts.pory"
-	setobjectxy Mom, 2, 4
-# 431 "data/maps/Route201/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route201_Barry_Movement_1
 # 432 "data/maps/Route201/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	setobjectxy Mom, 2, 4
 # 433 "data/maps/Route201/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route201_Barry_Movement_1
+# 434 "data/maps/Route201/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 435 "data/maps/Route201/scripts.pory"
 	call after_starter
 	return
 
 
 BarryIntro::
-# 437 "data/maps/Route201/scripts.pory"
+# 439 "data/maps/Route201/scripts.pory"
 	msgbox BarryIntro_Text_0
 	return
 
 
 Barry_Loss::
-# 442 "data/maps/Route201/scripts.pory"
+# 444 "data/maps/Route201/scripts.pory"
 	msgbox RownsBag_Text_10
 	return
 
@@ -921,7 +925,7 @@ Route201_Barry_Text_1:
 Route201_Barry_Text_2:
 # 46 "data/maps/Route201/scripts.pory"
 	.string "Ok, here goes!\p"
-	.string "On your makes...$"
+	.string "On your maarks...$"
 
 Route201_Barry_Text_3:
 # 51 "data/maps/Route201/scripts.pory"
@@ -1202,6 +1206,6 @@ RivalBattleOver_Text_0:
 	.string "See ya, {PLAYER}!$"
 
 BarryIntro_Text_0:
-# 437 "data/maps/Route201/scripts.pory"
+# 439 "data/maps/Route201/scripts.pory"
 	.string "{PLAYER}!\n"
 	.string "I challenge you to a battle!$"

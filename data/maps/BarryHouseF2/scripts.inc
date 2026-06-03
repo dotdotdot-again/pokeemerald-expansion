@@ -148,7 +148,7 @@ EveryFrame_BarryF2_Text_1:
 # 30 "data/maps/BarryHouseF2/scripts.pory"
 	.string "Oh, hey, {PLAYER}!\p"
 	.string "I'll be waiting on the road!\n"
-	.string "It's a 10 million fone if you're late!$"
+	.string "It's a 10 million fine if you're late!$"
 
 wii_barry_text_Text_0:
 # 51 "data/maps/BarryHouseF2/scripts.pory"

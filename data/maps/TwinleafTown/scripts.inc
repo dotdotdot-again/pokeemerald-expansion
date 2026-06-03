@@ -129,7 +129,7 @@ Twinleaf_Barry_Thud::
 # 103 "data/maps/TwinleafTown/scripts.pory"
 	applymovement Twinleaf_Thud_Barry, Twinleaf_trigger_trytoleaveguy_Movement_2
 # 104 "data/maps/TwinleafTown/scripts.pory"
-	playse SE_EXIT
+	playse SE_DOOR
 # 105 "data/maps/TwinleafTown/scripts.pory"
 	waitmovementall
 # 106 "data/maps/TwinleafTown/scripts.pory"
@@ -137,56 +137,60 @@ Twinleaf_Barry_Thud::
 # 107 "data/maps/TwinleafTown/scripts.pory"
 	waitmessage
 # 108 "data/maps/TwinleafTown/scripts.pory"
-	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_1
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 109 "data/maps/TwinleafTown/scripts.pory"
-	playse SE_PIN
-# 110 "data/maps/TwinleafTown/scripts.pory"
-	waitse
-# 111 "data/maps/TwinleafTown/scripts.pory"
-	setspeaker SP_NAME_BARRY
-# 112 "data/maps/TwinleafTown/scripts.pory"
-	msgbox Twinleaf_Barry_Thud_Text_1, MSGBOX_NPC
-# 116 "data/maps/TwinleafTown/scripts.pory"
-	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_2
-# 117 "data/maps/TwinleafTown/scripts.pory"
-	waitmovement
-# 118 "data/maps/TwinleafTown/scripts.pory"
 	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_1
-# 119 "data/maps/TwinleafTown/scripts.pory"
+# 110 "data/maps/TwinleafTown/scripts.pory"
 	playse SE_PIN
-# 120 "data/maps/TwinleafTown/scripts.pory"
+# 111 "data/maps/TwinleafTown/scripts.pory"
 	waitse
-# 121 "data/maps/TwinleafTown/scripts.pory"
-	waitmovement
-# 122 "data/maps/TwinleafTown/scripts.pory"
-	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_3
-# 123 "data/maps/TwinleafTown/scripts.pory"
+# 112 "data/maps/TwinleafTown/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 124 "data/maps/TwinleafTown/scripts.pory"
-	msgbox Twinleaf_Barry_Thud_Text_2, MSGBOX_NPC
-# 126 "data/maps/TwinleafTown/scripts.pory"
-	waitmessage
-# 127 "data/maps/TwinleafTown/scripts.pory"
-	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_4
-# 128 "data/maps/TwinleafTown/scripts.pory"
-	playse SE_EXIT
-# 129 "data/maps/TwinleafTown/scripts.pory"
+# 113 "data/maps/TwinleafTown/scripts.pory"
+	msgbox Twinleaf_Barry_Thud_Text_1, MSGBOX_NPC
+# 117 "data/maps/TwinleafTown/scripts.pory"
+	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_2
+# 118 "data/maps/TwinleafTown/scripts.pory"
 	waitmovement
+# 119 "data/maps/TwinleafTown/scripts.pory"
+	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_1
+# 120 "data/maps/TwinleafTown/scripts.pory"
+	playse SE_PIN
+# 121 "data/maps/TwinleafTown/scripts.pory"
+	waitse
+# 122 "data/maps/TwinleafTown/scripts.pory"
+	waitmovement
+# 123 "data/maps/TwinleafTown/scripts.pory"
+	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_3
+# 124 "data/maps/TwinleafTown/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 125 "data/maps/TwinleafTown/scripts.pory"
+	msgbox Twinleaf_Barry_Thud_Text_2, MSGBOX_NPC
+# 127 "data/maps/TwinleafTown/scripts.pory"
+	waitmessage
+# 128 "data/maps/TwinleafTown/scripts.pory"
+	applymovement Twinleaf_Thud_Barry, Twinleaf_Barry_Thud_Movement_4
+# 129 "data/maps/TwinleafTown/scripts.pory"
+	playse SE_DOOR
 # 130 "data/maps/TwinleafTown/scripts.pory"
-	removeobject Twinleaf_Thud_Barry
+	fadedefaultbgm
 # 131 "data/maps/TwinleafTown/scripts.pory"
-	setflag Twinleaf_Thud_Barry
+	waitmovement
 # 132 "data/maps/TwinleafTown/scripts.pory"
-	releaseall
+	removeobject Twinleaf_Thud_Barry
 # 133 "data/maps/TwinleafTown/scripts.pory"
+	setflag Twinleaf_Thud_Barry
+# 134 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 5
+# 135 "data/maps/TwinleafTown/scripts.pory"
+	releaseall
 	return
 
 
 Twinleaf_removeBarry::
-# 137 "data/maps/TwinleafTown/scripts.pory"
+# 139 "data/maps/TwinleafTown/scripts.pory"
 	hideobjectat Twinleaf_Thud_Barry, MAP_TWINLEAF_TOWN
-# 138 "data/maps/TwinleafTown/scripts.pory"
+# 140 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	return
 
@@ -219,41 +223,41 @@ Twinleaf_Barry_Thud_Movement_0:
 	face_down
 	step_end
 
-# 108 "data/maps/TwinleafTown/scripts.pory"
+# 109 "data/maps/TwinleafTown/scripts.pory"
 Twinleaf_Barry_Thud_Movement_1:
-# 108 "data/maps/TwinleafTown/scripts.pory"
+# 109 "data/maps/TwinleafTown/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 117 "data/maps/TwinleafTown/scripts.pory"
 Twinleaf_Barry_Thud_Movement_2:
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 117 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 117 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 117 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 117 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 123 "data/maps/TwinleafTown/scripts.pory"
 Twinleaf_Barry_Thud_Movement_3:
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 123 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_left
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 123 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_left
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 123 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_left
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 123 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_left
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 123 "data/maps/TwinleafTown/scripts.pory"
 	face_down
 	step_end
 
-# 127 "data/maps/TwinleafTown/scripts.pory"
+# 128 "data/maps/TwinleafTown/scripts.pory"
 Twinleaf_Barry_Thud_Movement_4:
-# 127 "data/maps/TwinleafTown/scripts.pory"
+# 128 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
 	step_end
 
@@ -304,14 +308,14 @@ Twinleaf_Barry_Thud_Text_0:
 	.string "THUD!!$"
 
 Twinleaf_Barry_Thud_Text_1:
-# 112 "data/maps/TwinleafTown/scripts.pory"
+# 113 "data/maps/TwinleafTown/scripts.pory"
 	.string "What was that about?!\p"
 	.string "Oh, hey, {PLAYER}!\p"
 	.string "Hey! I’m going to see Prof. Rowan!\n"
 	.string "You should come, too! And quickly!$"
 
 Twinleaf_Barry_Thud_Text_2:
-# 124 "data/maps/TwinleafTown/scripts.pory"
+# 125 "data/maps/TwinleafTown/scripts.pory"
 	.string "Oh, jeez!\n"
 	.string "Forgot something!$"
 

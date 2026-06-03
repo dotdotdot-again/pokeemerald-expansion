@@ -139,10 +139,16 @@ triggerMomTryToLeave::
 
 after_starter::
 # 103 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	applymovement Mom, after_starter_Movement_0
 # 104 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox after_starter_Text_0
+	waitmovement
 # 105 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, after_starter_Movement_1
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, after_starter_Movement_2
+# 107 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovementall
+# 108 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
@@ -211,6 +217,64 @@ triggerMomTryToLeave_Movement_1:
 	face_up
 	step_end
 
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_0:
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_up
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_left
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	face_up
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+	step_end
+
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_1:
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+	face_left
+	step_end
+
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_2:
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+	step_end
+
 EveryFrameMom_Text_0:
 # 26 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "{PLAYER}!\p"
@@ -254,7 +318,3 @@ triggerMomTryToLeave_Text_0:
 	.string "It would be OK if you had your own\n"
 	.string "Pokémon, but you don’t, so...\p"
 	.string "Well, take care, sweetie!$"
-
-after_starter_Text_0:
-# 104 "data/maps/PlayerHouseF1/scripts.pory"
-	.string "Test message!$"
