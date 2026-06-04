@@ -2,7 +2,7 @@
   "id": "MAP_LAKE_VERITY_LAKEFRONT",
   "name": "LakeVerityLakefront",
   "layout": "LAYOUT_LAKE_VERITY_LAKEFRONT",
-  "music": "MUS_ROUTE101",
+  "music": "MUS_SEALED_CHAMBER",
   "region_map_section": "MAPSEC_ROUTE_134",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -36,6 +36,34 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "LakeVerLakefront_trigger_at_the_lake"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "LakeVerLakefront_trigger_at_the_lake"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "lake_Ver_sign"
+    }
+  ]
 }

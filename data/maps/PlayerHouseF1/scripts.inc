@@ -66,6 +66,20 @@ TalkMom::
 # 53 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 4
 	goto_if_eq TalkMom_2
+# 53 "data/maps/PlayerHouseF1/scripts.pory"
+	compare VAR_TWINLEAF_INTRO_STATE, 5
+	goto_if_eq TalkMom_2
+# 53 "data/maps/PlayerHouseF1/scripts.pory"
+	compare VAR_TWINLEAF_INTRO_STATE, 6
+	goto_if_eq TalkMom_2
+# 62 "data/maps/PlayerHouseF1/scripts.pory"
+	lock
+# 63 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 64 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_2, MSGBOX_NPC
+# 65 "data/maps/PlayerHouseF1/scripts.pory"
+	release
 	return
 
 TalkMom_1:
@@ -92,63 +106,69 @@ TalkMom_2:
 
 
 PlayerHouseTVF1::
-# 64 "data/maps/PlayerHouseF1/scripts.pory"
+# 70 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 3
 	goto_if_eq PlayerHouseTVF1_1
 	return
 
 PlayerHouseTVF1_1:
-# 66 "data/maps/PlayerHouseF1/scripts.pory"
+# 72 "data/maps/PlayerHouseF1/scripts.pory"
 	lock
-# 67 "data/maps/PlayerHouseF1/scripts.pory"
+# 73 "data/maps/PlayerHouseF1/scripts.pory"
 	setspeaker PlayerHouseTVF1_Text_0
-# 68 "data/maps/PlayerHouseF1/scripts.pory"
+# 74 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox PlayerHouseTVF1_Text_1, MSGBOX_SIGN
-# 76 "data/maps/PlayerHouseF1/scripts.pory"
+# 82 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 
 triggerMomTryToLeave::
-# 81 "data/maps/PlayerHouseF1/scripts.pory"
-	lockall
-# 82 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, triggerMomTryToLeave_Movement_0
-# 83 "data/maps/PlayerHouseF1/scripts.pory"
-	playse SE_PIN
-# 84 "data/maps/PlayerHouseF1/scripts.pory"
-	waitse
-# 85 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, triggerMomTryToLeave_Movement_1
-# 86 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
 # 87 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	lockall
 # 88 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, triggerMomTryToLeave_Movement_0
+# 89 "data/maps/PlayerHouseF1/scripts.pory"
+	playse SE_PIN
+# 90 "data/maps/PlayerHouseF1/scripts.pory"
+	waitse
+# 91 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, triggerMomTryToLeave_Movement_1
+# 92 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovement
+# 93 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 94 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox triggerMomTryToLeave_Text_0
-# 95 "data/maps/PlayerHouseF1/scripts.pory"
+# 101 "data/maps/PlayerHouseF1/scripts.pory"
 	closemessage
-# 96 "data/maps/PlayerHouseF1/scripts.pory"
+# 102 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmessage
-# 97 "data/maps/PlayerHouseF1/scripts.pory"
+# 103 "data/maps/PlayerHouseF1/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 4
-# 98 "data/maps/PlayerHouseF1/scripts.pory"
+# 104 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
 
 after_starter::
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	applymovement Mom, after_starter_Movement_0
-# 104 "data/maps/PlayerHouseF1/scripts.pory"
+# 110 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmovement
-# 105 "data/maps/PlayerHouseF1/scripts.pory"
+# 111 "data/maps/PlayerHouseF1/scripts.pory"
 	applymovement Mom, after_starter_Movement_1
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, after_starter_Movement_2
-# 107 "data/maps/PlayerHouseF1/scripts.pory"
+# 113 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmovementall
-# 108 "data/maps/PlayerHouseF1/scripts.pory"
+# 114 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox after_starter_Text_0
+# 129 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 8
+# 130 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
@@ -203,75 +223,75 @@ EveryFrameMom_Movement_3:
 	face_up
 	step_end
 
-# 82 "data/maps/PlayerHouseF1/scripts.pory"
+# 88 "data/maps/PlayerHouseF1/scripts.pory"
 triggerMomTryToLeave_Movement_0:
-# 82 "data/maps/PlayerHouseF1/scripts.pory"
+# 88 "data/maps/PlayerHouseF1/scripts.pory"
 	emote_exclamation_mark
-# 82 "data/maps/PlayerHouseF1/scripts.pory"
+# 88 "data/maps/PlayerHouseF1/scripts.pory"
 	face_down
 	step_end
 
-# 85 "data/maps/PlayerHouseF1/scripts.pory"
+# 91 "data/maps/PlayerHouseF1/scripts.pory"
 triggerMomTryToLeave_Movement_1:
-# 85 "data/maps/PlayerHouseF1/scripts.pory"
+# 91 "data/maps/PlayerHouseF1/scripts.pory"
 	face_up
 	step_end
 
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_0:
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_up
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	delay_16
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_left
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	face_up
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	delay_16
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
+# 109 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
 	step_end
 
-# 105 "data/maps/PlayerHouseF1/scripts.pory"
+# 111 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_1:
-# 105 "data/maps/PlayerHouseF1/scripts.pory"
+# 111 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 105 "data/maps/PlayerHouseF1/scripts.pory"
+# 111 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 105 "data/maps/PlayerHouseF1/scripts.pory"
+# 111 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 105 "data/maps/PlayerHouseF1/scripts.pory"
+# 111 "data/maps/PlayerHouseF1/scripts.pory"
 	face_left
 	step_end
 
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_2:
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 106 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
 	step_end
 
@@ -294,12 +314,16 @@ TalkMom_Text_1:
 	.string "What is it, dear?\n"
 	.string "Isn’t Barry waiting for you?$"
 
+TalkMom_Text_2:
+# 64 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Let me heal your pokemon for you.$"
+
 PlayerHouseTVF1_Text_0:
-# 67 "data/maps/PlayerHouseF1/scripts.pory"
+# 73 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "MC$"
 
 PlayerHouseTVF1_Text_1:
-# 68 "data/maps/PlayerHouseF1/scripts.pory"
+# 74 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Here we are!\n"
 	.string "It's the contest Digest!\p"
 	.string "The winner of today's Normal Rank\n"
@@ -310,7 +334,7 @@ PlayerHouseTVF1_Text_1:
 	.string "Let's meet again!$"
 
 triggerMomTryToLeave_Text_0:
-# 88 "data/maps/PlayerHouseF1/scripts.pory"
+# 94 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Oh, yes!\n"
 	.string "{PLAYER}!\p"
 	.string "Don’t go into the tall grass.\n"
@@ -318,3 +342,20 @@ triggerMomTryToLeave_Text_0:
 	.string "It would be OK if you had your own\n"
 	.string "Pokémon, but you don’t, so...\p"
 	.string "Well, take care, sweetie!$"
+
+after_starter_Text_0:
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "What’s the matter, dear?\p"
+	.string "...\p"
+	.string "Wow.\n"
+	.string "That’s what happened to you?\p"
+	.string "You and Barry are lucky to have\n"
+	.string "met Prof. Rowan.\p"
+	.string "Imagine if you didn’t...\p"
+	.string "I wouldn’t like to think what the wild\n"
+	.string "Pokémon might have done to you two.\p"
+	.string "{PLAYER}, go see Prof. Rowan, and\n"
+	.string "thank him properly for your Pokémon.\p"
+	.string "His lab is in Sandgem Town, isn’t it?\p"
+	.string "Now that you have your own Pokémon,\n"
+	.string "the tall grass won’t be so threatening.$"

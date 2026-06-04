@@ -1,0 +1,42 @@
+mapscripts LakeVerityLakefront_MapScripts {
+    
+}
+
+script LakeVerLakefront_trigger_at_the_lake {
+    lockall
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(face_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("All right!\n"
+    "We're at the lake!\p"
+    "Get ready, because we're capturing\n"
+    "that legendary Pok\emon.\p"
+    "trust me on this one. It's here.\n"
+    "It even says so on the sign!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_up*2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2))
+    fadescreen(FADE_TO_BLACK)
+    destroyfollowernpc
+    clearflag(FLAG_HIDE_ROUTE_103_RIVAL)
+    playse(SE_EXIT)
+    waitse
+    warpcontinuescript(MAP_LAKE_VERITY,40,48,goToLakeVerWithBarry)
+}
+
+script goToLakeVerWithBarry {
+    fadescreen(FADE_FROM_BLACK)
+    call(meetCyrus_lake_ver)
+}
+
+script lake_Ver_sign {
+    lock
+    msgbox("Lake Verity Ahead\p"
+    "According to legend, this lake is home\n"
+    "to this Pok\emon said to be \qoThe being\l"
+    "Emotion\qc\p"
+    "It is because of this Poke\emon that\n"
+    "people can exerience sorry and joy.",MSGBOX_SIGN)
+    release
+}

@@ -284,3 +284,21 @@ script BarryEnters {
         removeobject(BarryIntroOne)
         releaseall
 }
+
+script Player_PC_text {
+        lock
+        msgbox("It's your PC",MSGBOX_SIGN)
+        release
+}
+
+script Player_TV_text {
+        lock
+        msgbox("It's an ad about the local\n trading station.",MSGBOX_SIGN)
+        release
+}
+
+script Player_Wii_text {
+        lock
+        msgbox("It's your Wii",MSGBOX_SIGN)
+        release
+}

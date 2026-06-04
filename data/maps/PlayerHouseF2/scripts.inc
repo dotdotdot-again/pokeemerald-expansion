@@ -474,6 +474,36 @@ BarryEnters::
 	return
 
 
+Player_PC_text::
+# 289 "data/maps/PlayerHouseF2/scripts.pory"
+	lock
+# 290 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox Player_PC_text_Text_0, MSGBOX_SIGN
+# 291 "data/maps/PlayerHouseF2/scripts.pory"
+	release
+	return
+
+
+Player_TV_text::
+# 295 "data/maps/PlayerHouseF2/scripts.pory"
+	lock
+# 296 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox Player_TV_text_Text_0, MSGBOX_SIGN
+# 297 "data/maps/PlayerHouseF2/scripts.pory"
+	release
+	return
+
+
+Player_Wii_text::
+# 301 "data/maps/PlayerHouseF2/scripts.pory"
+	lock
+# 302 "data/maps/PlayerHouseF2/scripts.pory"
+	msgbox Player_Wii_text_Text_0, MSGBOX_SIGN
+# 303 "data/maps/PlayerHouseF2/scripts.pory"
+	release
+	return
+
+
 # 12 "data/maps/PlayerHouseF2/scripts.pory"
 trigger_test_Movement_0:
 # 12 "data/maps/PlayerHouseF2/scripts.pory"
@@ -779,6 +809,18 @@ BarryEnters_Text_0:
 BarryEnters_Text_1:
 # 281 "data/maps/PlayerHouseF2/scripts.pory"
 	.string "Barry!$"
+
+Player_PC_text_Text_0:
+# 290 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "It's your PC$"
+
+Player_TV_text_Text_0:
+# 296 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "It's an ad about the local\n trading station.$"
+
+Player_Wii_text_Text_0:
+# 302 "data/maps/PlayerHouseF2/scripts.pory"
+	.string "It's your Wii$"
 
 BarryOne::
 # 258 "data/maps/PlayerHouseF2/scripts.pory"

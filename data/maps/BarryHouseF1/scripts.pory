@@ -21,9 +21,25 @@ script BarrysMomTalk {
     "He just can't sit still, that boy.\n"
     "I wonder who he takes after?",MSGBOX_NPC)
     }
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 8)
+    {
+    msgbox("That kid rocketed\n"
+    "off again like usual.\p"
+    "My Barry\n"
+    "should be out on Route 201 by now?\p"
+    "He just can't sit still, that boy.\n"
+    "I wonder who he takes after?",MSGBOX_NPC)
+    }
     else{
     msgbox("He just can't sit still, that boy.\n"
     "I wonder who he takes after?",MSGBOX_NPC)
     }
 
+}
+
+script Barry_Mom_TV {
+    lock
+    msgbox("It appears to be some show about\n"
+    "Police investigating crime.",MSGBOX_SIGN)
+    release
 }

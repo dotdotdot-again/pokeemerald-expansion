@@ -1,1 +1,97 @@
 mapscripts LakeVerity_MapScripts {}
+
+script meetCyrus_lake_ver {
+    lockall
+    
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2))
+    applymovement(LakeVerBarry, moves(walk_up*2))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("What's going on...?",MSGBOX_AUTOCLOSE)
+    waitmessage
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_up*6))
+    waitmovement
+    msgbox("...The flowing time...\n"
+        "...The expanding space...\p"
+        "I will make it all mine one day...\n"
+        "Cyrus is my name. Remember it...\p"
+        "Until then, sleep while you can,\n"
+        "legendary Pokémon of the lake bed...",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down*6))
+    applymovement(LakeVerCyrus, moves(walk_down*5,walk_left,walk_down*3))
+    waitmovementall
+    special(RemoveCameraObject)
+        msgbox("Allow me to pass.\n"
+        "Step aside.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LakeVerBarry, moves(walk_right,face_left))
+    waitmovementall
+    applymovement(LakeVerCyrus, moves(walk_down*3))
+    waitmovement
+    removeobject(LakeVerCyrus)
+    setflag(FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM)
+    playse(SE_EXIT)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+    applymovement(LakeVerBarry, moves(walk_left,face_down))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("What was that about?\n"
+        "Weird guy...",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LakeVerBarry, moves(face_left))
+    waitmovementall
+        msgbox("OK, {PLAYER}!\n"
+        "Let’s catch that legendary Pokémon!")
+    waitmessage
+    playmoncry(SPECIES_MESPRIT,0)
+        msgbox("Kyauuun!")
+    waitmoncry
+    waitmessage
+    applymovement(LakeVerBarry, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    applymovement(LakeVerBarry, moves(walk_fast_up*2,face_right,delay_16,face_left,delay_16,walk_fast_down*2,face_left))
+    waitmovementall
+    setspeaker(SP_NAME_BARRY)
+    msgbox("!\n"
+        "Did you hear that, {PLAYER}?!\p"
+        "That was the legendary Pokémon crying!\n"
+        "That had to be it!\p"
+        "OK! This is our chance!\n"
+        "Let’s catch it!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LakeVerBarry, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("...Wait!\n"
+        "What...?!\p"
+        "We don’t have anything on us!\p"
+        "You know, Poké Balls!\n"
+        "P-O-K-accent-E Balls!\p"
+        "If we don’t have those, we can’t catch\n"
+        "Pokémon or take them around with us!\p"
+        "...Do you think Prof. Rowan’d give us\n"
+        "some if we asked him?\p"
+        "You know, you remember what he said,\n"
+        "don’t you?\p"
+        "He said to visit him at his lab if we\n"
+        "needed anything.\p"
+        "OK, {PLAYER}!\n"
+        "I’ll race you!\p"
+        "First one to the professor’s lab in\n"
+        "Sandgem Town rules!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(LakeVerBarry, moves(walk_fast_down*2))
+    waitmovement
+    removeobject(LakeVerBarry)
+    setflag(FLAG_HIDE_ROUTE_103_RIVAL)
+    setvar(VAR_TWINLEAF_INTRO_STATE, 10)
+    releaseall
+}

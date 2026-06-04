@@ -67,6 +67,15 @@ script Twinleaf_outside_guy {
     "He's probably not gone too far.\n"
     "Why not go chase after him?",MSGBOX_NPC)
     }
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 10)
+    {
+    msgbox("Barry? He went tearing off\n"
+    "in a huge rush a while ago.\p"
+    "...Ouch. He ran right into me earlier.\n"
+    "It's still hurting.\l"
+    "That kid's growing up tough.",MSGBOX_NPC)
+    }
+
 
 
 }
@@ -97,11 +106,11 @@ script Twinleaf_trigger_trytoleaveguy {
 
 script Twinleaf_Barry_Thud {
     lockall
+    opendoor(9,8)
     addobject(Twinleaf_Thud_Barry)
     clearflag(BARRY_INTRO_TWO)
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_down))
     applymovement(Twinleaf_Thud_Barry, moves(walk_down))
-    playse(SE_DOOR)
     waitmovementall
     msgbox("THUD!!",MSGBOX_NPC)
     waitmessage
@@ -126,7 +135,8 @@ script Twinleaf_Barry_Thud {
     "Forgot something!",MSGBOX_NPC)
     waitmessage
     applymovement(Twinleaf_Thud_Barry, moves(walk_fast_up))
-    playse(SE_DOOR)
+    waitmovement
+    closedoor(9,8)
     fadedefaultbgm
     waitmovement
     removeobject(Twinleaf_Thud_Barry)

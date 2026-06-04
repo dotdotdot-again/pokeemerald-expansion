@@ -11,8 +11,11 @@ BarrysMomTalk::
 # 15 "data/maps/BarryHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 6
 	goto_if_eq BarrysMomTalk_2
-# 25 "data/maps/BarryHouseF1/scripts.pory"
-	msgbox BarrysMomTalk_Text_3, MSGBOX_NPC
+# 24 "data/maps/BarryHouseF1/scripts.pory"
+	compare VAR_TWINLEAF_INTRO_STATE, 8
+	goto_if_eq BarrysMomTalk_3
+# 34 "data/maps/BarryHouseF1/scripts.pory"
+	msgbox BarrysMomTalk_Text_4, MSGBOX_NPC
 	return
 
 BarrysMomTalk_1:
@@ -23,6 +26,21 @@ BarrysMomTalk_1:
 BarrysMomTalk_2:
 # 17 "data/maps/BarryHouseF1/scripts.pory"
 	msgbox BarrysMomTalk_Text_2, MSGBOX_NPC
+	return
+
+BarrysMomTalk_3:
+# 26 "data/maps/BarryHouseF1/scripts.pory"
+	msgbox BarrysMomTalk_Text_3, MSGBOX_NPC
+	return
+
+
+Barry_Mom_TV::
+# 41 "data/maps/BarryHouseF1/scripts.pory"
+	lock
+# 42 "data/maps/BarryHouseF1/scripts.pory"
+	msgbox Barry_Mom_TV_Text_0, MSGBOX_SIGN
+# 44 "data/maps/BarryHouseF1/scripts.pory"
+	release
 	return
 
 
@@ -50,6 +68,20 @@ BarrysMomTalk_Text_2:
 	.string "I wonder who he takes after?$"
 
 BarrysMomTalk_Text_3:
-# 25 "data/maps/BarryHouseF1/scripts.pory"
+# 26 "data/maps/BarryHouseF1/scripts.pory"
+	.string "That kid rocketed\n"
+	.string "off again like usual.\p"
+	.string "My Barry\n"
+	.string "should be out on Route 201 by now?\p"
 	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"
+
+BarrysMomTalk_Text_4:
+# 34 "data/maps/BarryHouseF1/scripts.pory"
+	.string "He just can't sit still, that boy.\n"
+	.string "I wonder who he takes after?$"
+
+Barry_Mom_TV_Text_0:
+# 42 "data/maps/BarryHouseF1/scripts.pory"
+	.string "It appears to be some show about\n"
+	.string "Police investigating crime.$"

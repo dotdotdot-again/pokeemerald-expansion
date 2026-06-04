@@ -9,6 +9,7 @@ enum SpeakerNames {
     SP_NAME_DAWN,
     SP_NAME_LUCAS,
     SP_NAME_ROWAN,
+    SP_NAME_CYRUS,
     SP_NAME_COUNT
 };
 

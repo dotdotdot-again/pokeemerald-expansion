@@ -9667,7 +9667,7 @@
     {
       "id": "LAYOUT_LAKE_VERITY",
       "name": "LakeVerity_Layout",
-      "width": 54,
+      "width": 60,
       "height": 55,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",

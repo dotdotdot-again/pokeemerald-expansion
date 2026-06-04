@@ -189,15 +189,52 @@ script Route201_Barry {
         checkplayergender
         if(var(VAR_RESULT) == 0)
         {
+            //Dawn Script if Player Male
             setspeaker(SP_NAME_DAWN)
-            msgbox("Professor Rowan!")
+            msgbox("Professor Rowan.")
             applymovement(LuDa_Route_201_again, moves(walk_right*6))
             waitmovement
-            releaseall
+            setspeaker(SP_NAME_DAWN)
+            msgbox("You left your briefcase at the lake!\p")
+            waitmessage
+            applymovement(Rowan_Route_201, moves(face_left))
+            applymovement(LuDa_Route_201_again, moves(face_down,delay_16))
+            clearflag(FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG)
+            addobject(Rowans_Bag_Route201)
+            setobjectxy(Rowans_Bag_Route201,16,13)
+            waitmovement
+            applymovement(LuDa_Route_201_again, moves(delay_16,face_right))
+            waitmovement
+            setspeaker(SP_NAME_DAWN)
+            msgbox("Oh?\n"
+            "Is something wrong here?")
+            setspeaker(SP_NAME_ROWAN)
+            msgbox("Ah! There it is!\n"
+        "Dawn, nice work.\p"
+        "What I was about to do was to entrust\n"
+        "these two with their own Pokémon.")    
+            setspeaker(SP_NAME_DAWN)
+            applymovement(LuDa_Route_201_again, moves(emote_question_mark))
+            playse(SE_PIN) 
+            msgbox("Pardon?!")
+            waitmovement
+            setspeaker(SP_NAME_DAWN)
+            msgbox("Those Pokémon are hard to replace.\n"
+        "Are you sure about giving them away?")
+        setspeaker(SP_NAME_ROWAN)
+        msgbox("Hm!\p"
+        "We exist side by side with Pokémon.\p"
+        "There comes a time when people should\n"
+        "meet Pokémon.\p"
+        "There is a world that should be\n"
+        "explored together.\p"
+        "For them, today is that time.\n"
+        "The place, right here.")
             
         }
         elif(var(VAR_RESULT) == 1)
         {
+            //Lucas Script if Player female
             setspeaker(SP_NAME_LUCAS)
             msgbox("Professor Rowan!")
             applymovement(LuDa_Route_201_again, moves(walk_right*6))
@@ -286,6 +323,73 @@ script Route201_Barry_Trigger_Far_Right {
 
 }
 
+
+script Route201_Barry_Trigger_Middle {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Too slow!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_down))
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("All right!\n"
+    "Let's get mocing to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_up*2,walk_right*3,face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,walk_right*2))
+    waitmovementall
+    call(Route201_Barry) 
+
+}
+
+script Route201_Barry_Trigger_Left {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Too slow!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_left,walk_fast_down))
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("All right!\n"
+    "Let's get mocing to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_up*2,walk_right*4,face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,walk_right*3))
+    waitmovementall
+    call(Route201_Barry) 
+
+}
+
+script Route201_Barry_Trigger_Far_Left {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Too slow!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_left*2,walk_fast_down))
+    waitmovement
+    setspeaker(SP_NAME_BARRY)
+    msgbox("All right!\n"
+    "Let's get mocing to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_up*2,walk_right*5,face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,walk_right*4))
+    waitmovementall
+    call(Route201_Barry) 
+
+}
+
 script  Route201_Try_to_not_get_pokemon_trigger_down {
     applymovement(Barry_201, moves(walk_in_place_down))
         setspeaker(SP_NAME_BARRY)
@@ -349,9 +453,18 @@ script RownsBag {
     applymovement(Barry_201, moves(walk_up,face_right))    
     applymovement(Rowan_Route_201, moves(walk_right*8))
     waitmovementall
+    checkplayergender
         if(var(VAR_RESULT) == 0)
         {
-            
+        setspeaker(SP_NAME_DAWN)
+        msgbox("Professor!\n"
+        "Wait for me, please!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(LuDa_Route_201_again, moves(walk_right))
+        waitmovement
+        setspeaker(SP_NAME_DAWN)
+        msgbox("I’m sorry...\n"
+        "Please let me pass.",MSGBOX_AUTOCLOSE)
         }
         elif(var(VAR_RESULT) == 1)
         {
@@ -444,3 +557,146 @@ script Barry_Loss {
     msgbox("What are you saying?!\nWe ended up losing?!")
 }
 
+script toSlowAgain_Far_Right {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+        setspeaker(SP_NAME_BARRY)
+        msgbox(barryToSlowText,MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_down,walk_fast_right,face_down))
+    waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Me and you together,\n"
+        "we’ve got nothing to fear!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfollowernpc(Barry_201,0)
+    setvar(VAR_TWINLEAF_INTRO_STATE, 9)
+    releaseall
+}
+
+script toSlowAgain_Middle {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+        setspeaker(SP_NAME_BARRY)
+        msgbox(barryToSlowText,MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_down))
+    waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Me and you together,\n"
+        "we’ve got nothing to fear!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfollowernpc(Barry_201,0)
+    setvar(VAR_TWINLEAF_INTRO_STATE, 9)
+    releaseall
+}
+
+script toSlowAgain_Left {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+        setspeaker(SP_NAME_BARRY)
+        msgbox(barryToSlowText,MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_down,walk_fast_left,face_down))
+    waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Me and you together,\n"
+        "we’ve got nothing to fear!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfollowernpc(Barry_201,0)
+    setvar(VAR_TWINLEAF_INTRO_STATE, 9)
+    releaseall
+}
+
+script toSlowAgain_Far_Left {
+    lockall
+    applymovement(Barry_201, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+        setspeaker(SP_NAME_BARRY)
+        msgbox(barryToSlowText,MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Barry_201, moves(walk_fast_down,walk_fast_left*2,face_down))
+    waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("Me and you together,\n"
+        "we’ve got nothing to fear!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    setfollowernpc(Barry_201,0)
+    setvar(VAR_TWINLEAF_INTRO_STATE, 9)
+    releaseall
+}
+
+text barryToSlowText {
+        "Too slow!\n"
+        "{PLAYER}, I’m sick of waiting!\p"
+        "I’m going to go see Prof. Rowan, so I\n"
+        "can thank him properly.\p"
+        "So, I had this great idea.\n"
+        "Listen up, OK?\p"
+        "You know that lake where we always\n"
+        "play at?\p"
+        "You know how they say a legendary\n"
+        "Pokémon lives there?\p"
+        "You guessed it!\n"
+        "Let’s catch that Pokémon.\p"
+        "That’ll make Prof. Rowan happy.\n"
+        "I’m sure of that!"
+}
+
+script route201_talk_barry {
+    setspeaker(SP_NAME_BARRY)
+    msgbox("Poke\emon all have\n"
+    "different moves, huh?\p"
+    "A Trainer makes his Pok\emon battle\n"
+    "by ordering them to use moves.\p"
+    "That's so awesomely cool.",MSGBOX_AUTOCLOSE)
+}
+
+script route201_barry_not_that_way_down {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    setspeaker(SP_NAME_BARRY)
+    msgbox(route201_barry_not_that_way_text,MSGBOX_NPC)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_up))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+    waitmovementall
+    releaseall
+}
+
+script route201_barry_not_that_way_right {
+    lockall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+    setspeaker(SP_NAME_BARRY)
+    msgbox(route201_barry_not_that_way_text,MSGBOX_NPC)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+    waitmovementall
+    releaseall
+}
+
+text route201_barry_not_that_way_text {
+         "Heheh, {PLAYER}.\n"
+        "The lake’s not that way!"
+}
+
+//After all the damn events
+
+script route201_sign_one {
+    lock
+    msgbox("Rt. 201\n"
+    "Twinleaf Town \ad",MSGBOX_SIGN)
+    release
+}

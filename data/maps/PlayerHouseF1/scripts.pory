@@ -50,7 +50,7 @@ script TalkMom {
         "ask what it was about.",MSGBOX_NPC)
         release
     }
-    elif(var(VAR_TWINLEAF_INTRO_STATE) == 4)
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 4 || var(VAR_TWINLEAF_INTRO_STATE) == 5 || var(VAR_TWINLEAF_INTRO_STATE) == 6)
     {
          lock
         setspeaker(SP_NAME_MOM)
@@ -122,8 +122,8 @@ script after_starter {
         "I wouldn’t like to think what the wild\n"
         "Pokémon might have done to you two.\p"
         "{PLAYER}, go see Prof. Rowan, and\n"
-        "thank him properly for your Pokémon.\r"
-        "His lab is in Sandgem Town, isn’t it?\r"
+        "thank him properly for your Pokémon.\p"
+        "His lab is in Sandgem Town, isn’t it?\p"
         "Now that you have your own Pokémon,\n"
         "the tall grass won’t be so threatening.")
     setvar(VAR_TWINLEAF_INTRO_STATE, 8)
