@@ -700,3 +700,17 @@ script route201_sign_one {
     "Twinleaf Town \ad",MSGBOX_SIGN)
     release
 }
+
+script route201_sign_two {
+    lock
+    msgbox("Rt. 201\n"
+    "Sandgem Town \ar",MSGBOX_SIGN)
+    release
+}
+
+script route201_this_ledge {
+       lock
+    msgbox("That ledge is one way. Jump down\n"
+        "for a shortcut to Twinleaf Town!",MSGBOX_NPC)
+    release 
+}

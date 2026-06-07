@@ -1583,7 +1583,7 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBAJubilife =
     .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBAJubilife,
     .metatiles = gMetatiles_PorytilesSecondaryPlatGBAJubilife,
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBAJubilife,
-    .callback = NULL,
+    .callback = InitTilesetAnim_PorytilesSecondaryPlatGBAJubilife,
 };
 
 const struct Tileset gTileset_PorytilesPlatGBAOreBurgh =
@@ -1693,5 +1693,16 @@ const struct Tileset gTileset_PorytilesPlatGBA_Lucas =
     .palettes = gTilesetPalettes_PorytilesPlatGBA_Lucas,
     .metatiles = gMetatiles_PorytilesPlatGBA_Lucas,
     .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Lucas,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesSecondaryPlatGBACaveOne =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesSecondaryPlatGBACaveOne,
+    .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBACaveOne,
+    .metatiles = gMetatiles_PorytilesSecondaryPlatGBACaveOne,
+    .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBACaveOne,
     .callback = NULL,
 };

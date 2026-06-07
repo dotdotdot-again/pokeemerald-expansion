@@ -1515,3 +1515,61 @@ void InitTilesetAnim_PorytilesPrimaryPlatGBAOutside(void)
     sPrimaryTilesetAnimCounterMax = 256;
     sPrimaryTilesetAnimCallback = TilesetAnim_PorytilesPrimaryPlatGBA;
 }
+
+//foutian frames
+const u16 gTilesetAnims_DP_Fount_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/0.4bpp");
+const u16 gTilesetAnims_DP_Fount_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/1.4bpp");
+const u16 gTilesetAnims_DP_Fount_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/2.4bpp");
+const u16 gTilesetAnims_DP_Fount_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/3.4bpp");
+const u16 gTilesetAnims_DP_Fount_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/4.4bpp");
+
+//tv station frames
+const u16 gTilesetAnims_DP_TV_Station_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/tvStation/0.4bpp");
+const u16 gTilesetAnims_DP_TV_Station_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/tvStation/1.4bpp");
+const u16 gTilesetAnims_DP_TV_Station_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/tvStation/2.4bpp");
+
+//fountain animation
+const u16 *const gTilesetAnims_DP_Fount[] = {
+    gTilesetAnims_DP_Fount_Frame0,
+    gTilesetAnims_DP_Fount_Frame1,
+    gTilesetAnims_DP_Fount_Frame2,
+    gTilesetAnims_DP_Fount_Frame3,
+    gTilesetAnims_DP_Fount_Frame4,
+}; 
+
+//tv station animation
+const u16 *const gTilesetAnims_DP_TV_Station[] = {
+    gTilesetAnims_DP_TV_Station_Frame0,
+    gTilesetAnims_DP_TV_Station_Frame1,
+    gTilesetAnims_DP_TV_Station_Frame2,
+}; 
+
+ //Fount queue
+static void QueueAnimTiles_gTilesetAnims_DP_Fount(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_DP_Fount);
+    AppendTilesetAnimToBuffer(gTilesetAnims_DP_Fount[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(512)), 4 * TILE_SIZE_4BPP);
+}
+
+ //TV Station queue
+static void QueueAnimTiles_gTilesetAnims_DP_TV_Staion(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_DP_TV_Station);
+    AppendTilesetAnimToBuffer(gTilesetAnims_DP_TV_Station[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(516)), 1 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_PorytilesSecondaryPlatGBAJubilife(u16 timer)
+{
+    if (timer % 10 == 0) {
+        QueueAnimTiles_gTilesetAnims_DP_Fount(timer / 10);
+        QueueAnimTiles_gTilesetAnims_DP_TV_Staion(timer / 10);
+    }
+
+}
+
+void InitTilesetAnim_PorytilesSecondaryPlatGBAJubilife(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_PorytilesSecondaryPlatGBAJubilife;
+}

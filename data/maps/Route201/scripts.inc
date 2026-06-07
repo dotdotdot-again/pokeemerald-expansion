@@ -994,6 +994,26 @@ route201_sign_one::
 	return
 
 
+route201_sign_two::
+# 705 "data/maps/Route201/scripts.pory"
+	lock
+# 706 "data/maps/Route201/scripts.pory"
+	msgbox route201_sign_two_Text_0, MSGBOX_SIGN
+# 708 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
+route201_this_ledge::
+# 712 "data/maps/Route201/scripts.pory"
+	lock
+# 713 "data/maps/Route201/scripts.pory"
+	msgbox route201_this_ledge_Text_0, MSGBOX_NPC
+# 715 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
 # 29 "data/maps/Route201/scripts.pory"
 Route201_Barry_Movement_0:
 # 29 "data/maps/Route201/scripts.pory"
@@ -1790,6 +1810,16 @@ route201_sign_one_Text_0:
 # 699 "data/maps/Route201/scripts.pory"
 	.string "Rt. 201\n"
 	.string "Twinleaf Town {DOWN_ARROW}$"
+
+route201_sign_two_Text_0:
+# 706 "data/maps/Route201/scripts.pory"
+	.string "Rt. 201\n"
+	.string "Sandgem Town {RIGHT_ARROW}$"
+
+route201_this_ledge_Text_0:
+# 713 "data/maps/Route201/scripts.pory"
+	.string "That ledge is one way. Jump down\n"
+	.string "for a shortcut to Twinleaf Town!$"
 
 barryToSlowText::
 # 640 "data/maps/Route201/scripts.pory"

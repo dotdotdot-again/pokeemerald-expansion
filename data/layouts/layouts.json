@@ -9487,7 +9487,7 @@
     {
       "id": "LAYOUT_ROUTE207",
       "name": "Route207_Layout",
-      "width": 62,
+      "width": 69,
       "height": 28,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesPlatGBAOreBurgh",
@@ -9527,8 +9527,8 @@
     {
       "id": "LAYOUT_ROUTE206",
       "name": "Route206_Layout",
-      "width": 33,
-      "height": 123,
+      "width": 40,
+      "height": 127,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACycling",
       "border_filepath": "data/layouts/Route206/border.bin",
@@ -9733,6 +9733,36 @@
       "secondary_tileset": "gTileset_PorytilesPlatGBA_Lucas",
       "border_filepath": "data/layouts/Sandgem_Lucas_House_F2/border.bin",
       "blockdata_filepath": "data/layouts/Sandgem_Lucas_House_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_GATE",
+      "name": "OreburghGate_Layout",
+      "width": 29,
+      "height": 26,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
+      "border_filepath": "data/layouts/OreburghGate/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghGate/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_GATE_B1F",
+      "name": "OreburghGate_B1F_Layout",
+      "width": 65,
+      "height": 23,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
+      "border_filepath": "data/layouts/OreburghGate_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghGate_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAVAGED_PATH",
+      "name": "RavagedPath_Layout",
+      "width": 37,
+      "height": 50,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
+      "border_filepath": "data/layouts/RavagedPath/border.bin",
+      "blockdata_filepath": "data/layouts/RavagedPath/map.bin"
     }
   ]
 }

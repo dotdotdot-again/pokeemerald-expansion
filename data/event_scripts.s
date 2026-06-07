@@ -1831,3 +1831,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Sandgem_Lucas_House/scripts.inc"
 
 	.include "data/maps/Sandgem_Lucas_House_F2/scripts.inc"
+
+	.include "data/maps/OreburghGate/scripts.inc"
+
+	.include "data/maps/OreburghGate_B1F/scripts.inc"
+
+	.include "data/maps/RavagedPath/scripts.inc"

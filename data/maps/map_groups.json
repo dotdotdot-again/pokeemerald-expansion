@@ -1209,7 +1209,10 @@
     "Sandgem_House_One"
   ],
   "gMapGroup_Plat_Dungeons": [
-    "LakeVerity"
+    "LakeVerity",
+    "OreburghGate",
+    "OreburghGate_B1F",
+    "RavagedPath"
   ],
   "gMapGroup_underground": [
     "undergound_test"

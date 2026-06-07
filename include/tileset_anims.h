@@ -44,4 +44,6 @@ void InitTilesetAnim_MtEmber(void);
 //My animations
 void InitTilesetAnim_PorytilesPrimaryPlatGBAOutside(void);
 
+void InitTilesetAnim_PorytilesSecondaryPlatGBAJubilife(void);
+
 #endif // GUARD_TILESET_ANIMS_H
