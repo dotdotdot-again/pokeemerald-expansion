@@ -79,6 +79,12 @@ TalkMom::
 # 64 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox TalkMom_Text_2, MSGBOX_NPC
 # 65 "data/maps/PlayerHouseF1/scripts.pory"
+	special HealPlayerParty
+# 66 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_3, MSGBOX_NPC
+# 67 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 68 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
@@ -106,69 +112,69 @@ TalkMom_2:
 
 
 PlayerHouseTVF1::
-# 70 "data/maps/PlayerHouseF1/scripts.pory"
+# 73 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 3
 	goto_if_eq PlayerHouseTVF1_1
 	return
 
 PlayerHouseTVF1_1:
-# 72 "data/maps/PlayerHouseF1/scripts.pory"
+# 75 "data/maps/PlayerHouseF1/scripts.pory"
 	lock
-# 73 "data/maps/PlayerHouseF1/scripts.pory"
+# 76 "data/maps/PlayerHouseF1/scripts.pory"
 	setspeaker PlayerHouseTVF1_Text_0
-# 74 "data/maps/PlayerHouseF1/scripts.pory"
+# 77 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox PlayerHouseTVF1_Text_1, MSGBOX_SIGN
-# 82 "data/maps/PlayerHouseF1/scripts.pory"
+# 85 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 
 triggerMomTryToLeave::
-# 87 "data/maps/PlayerHouseF1/scripts.pory"
-	lockall
-# 88 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, triggerMomTryToLeave_Movement_0
-# 89 "data/maps/PlayerHouseF1/scripts.pory"
-	playse SE_PIN
 # 90 "data/maps/PlayerHouseF1/scripts.pory"
-	waitse
+	lockall
 # 91 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, triggerMomTryToLeave_Movement_1
+	applymovement Mom, triggerMomTryToLeave_Movement_0
 # 92 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
+	playse SE_PIN
 # 93 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	waitse
 # 94 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, triggerMomTryToLeave_Movement_1
+# 95 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovement
+# 96 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 97 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox triggerMomTryToLeave_Text_0
-# 101 "data/maps/PlayerHouseF1/scripts.pory"
-	closemessage
-# 102 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 103 "data/maps/PlayerHouseF1/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 4
 # 104 "data/maps/PlayerHouseF1/scripts.pory"
+	closemessage
+# 105 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 106 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 4
+# 107 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
 
 after_starter::
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, after_starter_Movement_0
-# 110 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
-# 111 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, after_starter_Movement_1
 # 112 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, after_starter_Movement_2
+	applymovement Mom, after_starter_Movement_0
 # 113 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovementall
+	waitmovement
 # 114 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	applymovement Mom, after_starter_Movement_1
 # 115 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, after_starter_Movement_2
+# 116 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovementall
+# 117 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 118 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox after_starter_Text_0
-# 129 "data/maps/PlayerHouseF1/scripts.pory"
+# 132 "data/maps/PlayerHouseF1/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 8
-# 130 "data/maps/PlayerHouseF1/scripts.pory"
+# 133 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
@@ -223,75 +229,75 @@ EveryFrameMom_Movement_3:
 	face_up
 	step_end
 
-# 88 "data/maps/PlayerHouseF1/scripts.pory"
+# 91 "data/maps/PlayerHouseF1/scripts.pory"
 triggerMomTryToLeave_Movement_0:
-# 88 "data/maps/PlayerHouseF1/scripts.pory"
+# 91 "data/maps/PlayerHouseF1/scripts.pory"
 	emote_exclamation_mark
-# 88 "data/maps/PlayerHouseF1/scripts.pory"
+# 91 "data/maps/PlayerHouseF1/scripts.pory"
 	face_down
 	step_end
 
-# 91 "data/maps/PlayerHouseF1/scripts.pory"
+# 94 "data/maps/PlayerHouseF1/scripts.pory"
 triggerMomTryToLeave_Movement_1:
-# 91 "data/maps/PlayerHouseF1/scripts.pory"
+# 94 "data/maps/PlayerHouseF1/scripts.pory"
 	face_up
 	step_end
 
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_0:
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_up
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	delay_16
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_left
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	face_up
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	delay_16
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 112 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
 	step_end
 
-# 111 "data/maps/PlayerHouseF1/scripts.pory"
+# 114 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_1:
-# 111 "data/maps/PlayerHouseF1/scripts.pory"
+# 114 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 111 "data/maps/PlayerHouseF1/scripts.pory"
+# 114 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 111 "data/maps/PlayerHouseF1/scripts.pory"
+# 114 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 111 "data/maps/PlayerHouseF1/scripts.pory"
+# 114 "data/maps/PlayerHouseF1/scripts.pory"
 	face_left
 	step_end
 
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_2:
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 115 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
 	step_end
 
@@ -318,12 +324,16 @@ TalkMom_Text_2:
 # 64 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Let me heal your pokemon for you.$"
 
+TalkMom_Text_3:
+# 66 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Have fun sweetie.$"
+
 PlayerHouseTVF1_Text_0:
-# 73 "data/maps/PlayerHouseF1/scripts.pory"
+# 76 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "MC$"
 
 PlayerHouseTVF1_Text_1:
-# 74 "data/maps/PlayerHouseF1/scripts.pory"
+# 77 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Here we are!\n"
 	.string "It's the contest Digest!\p"
 	.string "The winner of today's Normal Rank\n"
@@ -334,7 +344,7 @@ PlayerHouseTVF1_Text_1:
 	.string "Let's meet again!$"
 
 triggerMomTryToLeave_Text_0:
-# 94 "data/maps/PlayerHouseF1/scripts.pory"
+# 97 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Oh, yes!\n"
 	.string "{PLAYER}!\p"
 	.string "Don’t go into the tall grass.\n"
@@ -344,7 +354,7 @@ triggerMomTryToLeave_Text_0:
 	.string "Well, take care, sweetie!$"
 
 after_starter_Text_0:
-# 115 "data/maps/PlayerHouseF1/scripts.pory"
+# 118 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "What’s the matter, dear?\p"
 	.string "...\p"
 	.string "Wow.\n"

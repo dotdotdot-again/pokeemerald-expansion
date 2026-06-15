@@ -9408,7 +9408,7 @@
       "id": "LAYOUT_ROUTE204",
       "name": "ROUTE204_Layout",
       "width": 32,
-      "height": 62,
+      "height": 29,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAJubilife",
       "border_filepath": "data/layouts/ROUTE204/border.bin",
@@ -9467,7 +9467,7 @@
     {
       "id": "LAYOUT_ETERNA_FORST",
       "name": "EternaForst_Layout",
-      "width": 48,
+      "width": 54,
       "height": 52,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
@@ -9763,6 +9763,436 @@
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
       "border_filepath": "data/layouts/RavagedPath/border.bin",
       "blockdata_filepath": "data/layouts/RavagedPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE204_2",
+      "name": "ROUTE204_2_Layout",
+      "width": 32,
+      "height": 33,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
+      "border_filepath": "data/layouts/ROUTE204_2/border.bin",
+      "blockdata_filepath": "data/layouts/ROUTE204_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_POKEMON_CENTER",
+      "name": "JubilifePokemonCenter_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/JubilifePokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifePokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_POKEMART",
+      "name": "Jubilife_Pokemart_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/Jubilife_Pokemart/border.bin",
+      "blockdata_filepath": "data/layouts/Jubilife_Pokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_POKEMON_CENTER_B1",
+      "name": "JubilifePokemonCenter_B1_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/JubilifePokemonCenter_B1/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifePokemonCenter_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_POKEMON_CENTER_F2",
+      "name": "JubilifePokemonCenter_F2_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/JubilifePokemonCenter_F2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifePokemonCenter_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_HOUSE_ONE",
+      "name": "JubilifeHouseOne_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeHouseOne/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeHouseOne/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_HOUSE_ONE_F2",
+      "name": "JubilifeHouseOne_F2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeHouseOne_F2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeHouseOne_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_SCHOOL",
+      "name": "JubilifeSchool_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeSchool/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeSchool/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TRADING_CENTER",
+      "name": "JubilifeTradingCenter_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TradingCenter",
+      "border_filepath": "data/layouts/JubilifeTradingCenter/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTradingCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TRADING_CENTER_F2",
+      "name": "JubilifeTradingCenter_F2_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TradingCenter",
+      "border_filepath": "data/layouts/JubilifeTradingCenter_F2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTradingCenter_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TRADING_CENTER_F3",
+      "name": "JubilifeTradingCenter_F3_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TradingCenter",
+      "border_filepath": "data/layouts/JubilifeTradingCenter_F3/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTradingCenter_F3/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_HOUSE_TWO",
+      "name": "JubilifeHouseTwo_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeHouseTwo/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeHouseTwo/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_HOUSE_TWO_F2",
+      "name": "JubilifeHouseTwo_F2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeHouseTwo_F2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeHouseTwo_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_HOUSE_THREE",
+      "name": "JubilifeHouseThree_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeHouseThree/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeHouseThree/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_HOUSE_THREE_F2",
+      "name": "JubilifeHouseThree_F2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/JubilifeHouseThree_F2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeHouseThree_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_COMPANY_F1",
+      "name": "JubilifeCompanyF1_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Company",
+      "border_filepath": "data/layouts/JubilifeCompanyF1/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCompanyF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TVF1",
+      "name": "JubilifeTVF1_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TV_Station",
+      "border_filepath": "data/layouts/JubilifeTVF1/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTVF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_COMPANY_F2",
+      "name": "JubilifeCompanyF2_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Company",
+      "border_filepath": "data/layouts/JubilifeCompanyF2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCompanyF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_COMPANY_F3",
+      "name": "JubilifeCompanyF3_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Company",
+      "border_filepath": "data/layouts/JubilifeCompanyF3/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCompanyF3/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TVF4",
+      "name": "JubilifeTVF4_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TV_Station",
+      "border_filepath": "data/layouts/JubilifeTVF4/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTVF4/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TVF3",
+      "name": "JubilifeTVF3_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TV_Station",
+      "border_filepath": "data/layouts/JubilifeTVF3/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTVF3/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_TVF2",
+      "name": "JubilifeTVF2_Layout",
+      "width": 26,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_TV_Station",
+      "border_filepath": "data/layouts/JubilifeTVF2/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeTVF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_GYM",
+      "name": "OreburghGym_Layout",
+      "width": 14,
+      "height": 25,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Gym_One",
+      "border_filepath": "data/layouts/OreburghGym/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_POKEMON_CENTER",
+      "name": "OreburghPokemonCenter_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/OreburghPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORAROMA_POKEMON_CENTER",
+      "name": "FloraromaPokemonCenter_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/FloraromaPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/FloraromaPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_POKEMON_CENTER",
+      "name": "EternaPokemonCenter_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/EternaPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/EternaPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_POKEMART",
+      "name": "OreburghPokemart_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/OreburghPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORAROMA_POKEMART",
+      "name": "FloraromaPokemart_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/FloraromaPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/FloraromaPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_POKEMART",
+      "name": "EternaPokemart_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/EternaPokemart/border.bin",
+      "blockdata_filepath": "data/layouts/EternaPokemart/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORAROMA_POKEMON_CENTER_B1",
+      "name": "FloraromaPokemonCenter_B1_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/FloraromaPokemonCenter_B1/border.bin",
+      "blockdata_filepath": "data/layouts/FloraromaPokemonCenter_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_POKEMON_CENTER_B1",
+      "name": "OreburghPokemonCenter_B1_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/OreburghPokemonCenter_B1/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghPokemonCenter_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_POKEMON_CENTER_F2",
+      "name": "OreburghPokemonCenter_F2_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/OreburghPokemonCenter_F2/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghPokemonCenter_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_HOUSE_TWO",
+      "name": "OreburghHouseTwo_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/OreburghHouseTwo/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghHouseTwo/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_HOUSE_ONE",
+      "name": "OreburghHouseOne_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/OreburghHouseOne/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghHouseOne/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_HOUSE_ONE_F2",
+      "name": "OreburghHouseOne_F2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/OreburghHouseOne_F2/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghHouseOne_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_SMALL_HOUSE_TWO",
+      "name": "Oreburgh_Small_House_Two_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Oreburgh_Small_House_Two/border.bin",
+      "blockdata_filepath": "data/layouts/Oreburgh_Small_House_Two/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_HOUSE_TWO_F2",
+      "name": "OreburghHouseTwo_F2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/OreburghHouseTwo_F2/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghHouseTwo_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_SMALL_HOUSE",
+      "name": "Oreburgh_Small_House_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Oreburgh_Small_House/border.bin",
+      "blockdata_filepath": "data/layouts/Oreburgh_Small_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_MUSEUM",
+      "name": "Oreburgh_museum_Layout",
+      "width": 23,
+      "height": 20,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesGBA_Oreburgh_other",
+      "border_filepath": "data/layouts/Oreburgh_museum/border.bin",
+      "blockdata_filepath": "data/layouts/Oreburgh_museum/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_HOUSE_THREE",
+      "name": "OreburghHouseThree_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/OreburghHouseThree/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghHouseThree/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_SMALL_HOUSE_THREE",
+      "name": "Oreburgh_Small_House_Three_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Oreburgh_Small_House_Three/border.bin",
+      "blockdata_filepath": "data/layouts/Oreburgh_Small_House_Three/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_HOUSE_THREE_F2",
+      "name": "OreburghHouseThree_F2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/OreburghHouseThree_F2/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghHouseThree_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_MINE",
+      "name": "Oreburgh_Mine_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
+      "border_filepath": "data/layouts/Oreburgh_Mine/border.bin",
+      "blockdata_filepath": "data/layouts/Oreburgh_Mine/map.bin"
     }
   ]
 }

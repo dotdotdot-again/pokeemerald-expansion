@@ -62,6 +62,9 @@ script TalkMom {
           lock
         setspeaker(SP_NAME_MOM)
         msgbox("Let me heal your pokemon for you.",MSGBOX_NPC)
+        special(HealPlayerParty)
+        msgbox("Have fun sweetie.",MSGBOX_NPC)
+        waitmessage
         release       
     }
 }

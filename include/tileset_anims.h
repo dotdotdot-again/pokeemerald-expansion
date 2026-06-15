@@ -46,4 +46,6 @@ void InitTilesetAnim_PorytilesPrimaryPlatGBAOutside(void);
 
 void InitTilesetAnim_PorytilesSecondaryPlatGBAJubilife(void);
 
+void InitTilesetAnim_WestOthers(void);
+
 #endif // GUARD_TILESET_ANIMS_H

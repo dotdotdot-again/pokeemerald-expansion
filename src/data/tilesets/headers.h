@@ -1616,7 +1616,7 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBAWestSpecials =
     .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBAWestSpecials,
     .metatiles = gMetatiles_PorytilesSecondaryPlatGBAWestSpecials,
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBAWestSpecials,
-    .callback = NULL,
+    .callback = InitTilesetAnim_WestOthers,
 };
 
 const struct Tileset gTileset_PorytilesSecondaryPlatGBACycling =
@@ -1704,5 +1704,82 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBACaveOne =
     .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBACaveOne,
     .metatiles = gMetatiles_PorytilesSecondaryPlatGBACaveOne,
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBACaveOne,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_Jubilife_Indoors =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Jubilife_Indoors,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Jubilife_Indoors,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Jubilife_Indoors,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Jubilife_Indoors,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_porytiles_plat_gba_jubilife_indoors =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_porytiles_plat_gba_jubilife_indoors,
+    .palettes = gTilesetPalettes_porytiles_plat_gba_jubilife_indoors,
+    .metatiles = gMetatiles_porytiles_plat_gba_jubilife_indoors,
+    .metatileAttributes = gMetatileAttributes_porytiles_plat_gba_jubilife_indoors,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_TradingCenter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_TradingCenter,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_TradingCenter,
+    .metatiles = gMetatiles_PorytilesPlatGBA_TradingCenter,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_TradingCenter,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_Company =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Company,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Company,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Company,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Company,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_TV_Station =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_TV_Station,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_TV_Station,
+    .metatiles = gMetatiles_PorytilesPlatGBA_TV_Station,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_TV_Station,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesGBA_Oreburgh_other =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesGBA_Oreburgh_other,
+    .palettes = gTilesetPalettes_PorytilesGBA_Oreburgh_other,
+    .metatiles = gMetatiles_PorytilesGBA_Oreburgh_other,
+    .metatileAttributes = gMetatileAttributes_PorytilesGBA_Oreburgh_other,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_Gym_One =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Gym_One,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Gym_One,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Gym_One,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Gym_One,
     .callback = NULL,
 };

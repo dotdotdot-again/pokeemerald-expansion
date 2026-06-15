@@ -361,6 +361,12 @@
       "map": "MAP_SANDGEM_TOWN",
       "x": 19,
       "y": 10
+    },
+    {
+      "id": "HEAL_LOCATION_JUBILIFE_CITY",
+      "map": "MAP_JUBILIFE_CITY",
+      "x": 54,
+      "y": 35
     }
   ]
 }

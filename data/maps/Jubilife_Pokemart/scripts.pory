@@ -1,0 +1,20 @@
+mapscripts Jubilife_Pokemart_MapScripts {}
+
+script Jubilife_Pokemart_Guy{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Jubilife_Basic)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+mart Jubilife_Basic {
+	ITEM_LAVA_COOKIE
+	ITEM_MOOMOO_MILK
+	ITEM_RARE_CANDY
+	ITEM_LEMONADE
+	ITEM_BERRY_JUICE
+}

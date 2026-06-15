@@ -453,3 +453,24 @@ const u16 gMetatileAttributes_PorytilesPlatGBA_Lucas[] = INCBIN_U16("data/tilese
 
 const u16 gMetatiles_PorytilesSecondaryPlatGBACaveOne[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbacave_one/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesSecondaryPlatGBACaveOne[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbacave_one/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Jubilife_Indoors[] = INCBIN_U16("data/tilesets/primary/porytiles_plat_gba_jubilife_indoors/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Jubilife_Indoors[] = INCBIN_U16("data/tilesets/primary/porytiles_plat_gba_jubilife_indoors/metatile_attributes.bin");
+
+const u16 gMetatiles_porytiles_plat_gba_jubilife_indoors[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_jubilife_indoors/metatiles.bin");
+const u16 gMetatileAttributes_porytiles_plat_gba_jubilife_indoors[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_jubilife_indoors/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_TradingCenter[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_trading_center/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_TradingCenter[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_trading_center/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Company[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_company/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Company[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_company/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_TV_Station[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tv_station/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_TV_Station[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_tv_station/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesGBA_Oreburgh_other[] = INCBIN_U16("data/tilesets/secondary/porytiles_gba_oreburgh_other/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesGBA_Oreburgh_other[] = INCBIN_U16("data/tilesets/secondary/porytiles_gba_oreburgh_other/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Gym_One[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_one/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Gym_One[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_one/metatile_attributes.bin");

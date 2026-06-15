@@ -1837,3 +1837,89 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/OreburghGate_B1F/scripts.inc"
 
 	.include "data/maps/RavagedPath/scripts.inc"
+
+	.include "data/maps/ROUTE204_2/scripts.inc"
+
+	.include "data/maps/JubilifePokemonCenter_B1/scripts.inc"
+
+	.include "data/maps/JubilifePokemonCenter/scripts.inc"
+
+	.include "data/maps/Jubilife_Pokemart/scripts.inc"
+
+	.include "data/maps/JubilifePokemonCenter_F2/scripts.inc"
+
+	.include "data/maps/JubilifeHouseOne/scripts.inc"
+
+	.include "data/maps/JubilifeHouseOne_F2/scripts.inc"
+
+	.include "data/maps/JubilifeSchool/scripts.inc"
+
+	.include "data/maps/JubilifeTradingCenter/scripts.inc"
+
+	.include "data/maps/JubilifeTradingCenter_F2/scripts.inc"
+
+	.include "data/maps/JubilifeTradingCenter_F3/scripts.inc"
+
+	.include "data/maps/JubilifeHouseTwo/scripts.inc"
+
+	.include "data/maps/JubilifeHouseTwo_F2/scripts.inc"
+
+	.include "data/maps/JubilifeHouseThree/scripts.inc"
+
+	.include "data/maps/JubilifeHouseThree_F2/scripts.inc"
+
+	.include "data/maps/JubilifeCompanyF1/scripts.inc"
+
+	.include "data/maps/JubilifeTVF1/scripts.inc"
+
+	.include "data/maps/JubilifeCompanyF2/scripts.inc"
+
+	.include "data/maps/JubilifeCompanyF3/scripts.inc"
+
+	.include "data/maps/JubilifeTVF4/scripts.inc"
+
+	.include "data/maps/JubilifeTVF3/scripts.inc"
+
+	.include "data/maps/JubilifeTVF2/scripts.inc"
+
+	.include "data/maps/OreburghGym/scripts.inc"
+
+	.include "data/maps/OreburghPokemonCenter/scripts.inc"
+
+	.include "data/maps/EternaPokemonCenter/scripts.inc"
+
+	.include "data/maps/FloraromaPokemonCenter/scripts.inc"
+
+	.include "data/maps/EternaPokemart/scripts.inc"
+
+	.include "data/maps/OreburghPokemart/scripts.inc"
+
+	.include "data/maps/FloraromaPokemart/scripts.inc"
+
+	.include "data/maps/FloraromaPokemonCenter_B1/scripts.inc"
+
+	.include "data/maps/OreburghPokemonCenter_B1/scripts.inc"
+
+	.include "data/maps/OreburghPokemonCenter_F2/scripts.inc"
+
+	.include "data/maps/OreburghHouseTwo/scripts.inc"
+
+	.include "data/maps/OreburghHouseOne/scripts.inc"
+
+	.include "data/maps/OreburghHouseOne_F2/scripts.inc"
+
+	.include "data/maps/Oreburgh_museum/scripts.inc"
+
+	.include "data/maps/Oreburgh_Small_House/scripts.inc"
+
+	.include "data/maps/OreburghHouseTwo_F2/scripts.inc"
+
+	.include "data/maps/Oreburgh_Small_House_Two/scripts.inc"
+
+	.include "data/maps/Oreburgh_Small_House_Three/scripts.inc"
+
+	.include "data/maps/OreburghHouseThree_F2/scripts.inc"
+
+	.include "data/maps/OreburghHouseThree/scripts.inc"
+
+	.include "data/maps/Oreburgh_Mine/scripts.inc"

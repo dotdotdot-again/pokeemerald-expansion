@@ -25,7 +25,7 @@
     },
     {
       "map": "MAP_ETERNA_FORST",
-      "offset": 18,
+      "offset": 12,
       "direction": "up"
     },
     {
@@ -49,7 +49,15 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 23,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE205",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

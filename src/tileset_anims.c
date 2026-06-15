@@ -1471,6 +1471,7 @@ void InitTilesetAnim_CeladonGym(void)
 
 //my animation
 
+//Primary Outside
 //water mid
 const u16 gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid_Frame0[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_plat_gba/anim/water_middle/00.4bpp");
 const u16 gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid_Frame1[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_plat_gba/anim/water_middle/01.4bpp");
@@ -1480,6 +1481,7 @@ const u16 gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid_Frame4[] = INCBIN_U16(
 const u16 gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid_Frame5[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_plat_gba/anim/water_middle/05.4bpp");
 const u16 gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid_Frame6[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_plat_gba/anim/water_middle/06.4bpp");
 const u16 gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid_Frame7[] = INCBIN_U16("data/tilesets/primary/porytiles_primary_plat_gba/anim/water_middle/07.4bpp");
+
 
 //water mid animation
 const u16 *const gTilesetAnims_PorytilesPrimaryPlatGBA_Water_Mid[] = {
@@ -1516,6 +1518,7 @@ void InitTilesetAnim_PorytilesPrimaryPlatGBAOutside(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_PorytilesPrimaryPlatGBA;
 }
 
+//Jubilife
 //foutian frames
 const u16 gTilesetAnims_DP_Fount_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/0.4bpp");
 const u16 gTilesetAnims_DP_Fount_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbajubilife/anim/fount/1.4bpp");
@@ -1534,14 +1537,14 @@ const u16 *const gTilesetAnims_DP_Fount[] = {
     gTilesetAnims_DP_Fount_Frame1,
     gTilesetAnims_DP_Fount_Frame2,
     gTilesetAnims_DP_Fount_Frame3,
-    gTilesetAnims_DP_Fount_Frame4,
+    gTilesetAnims_DP_Fount_Frame4
 }; 
 
 //tv station animation
 const u16 *const gTilesetAnims_DP_TV_Station[] = {
     gTilesetAnims_DP_TV_Station_Frame0,
     gTilesetAnims_DP_TV_Station_Frame1,
-    gTilesetAnims_DP_TV_Station_Frame2,
+    gTilesetAnims_DP_TV_Station_Frame2
 }; 
 
  //Fount queue
@@ -1564,12 +1567,50 @@ static void TilesetAnim_PorytilesSecondaryPlatGBAJubilife(u16 timer)
         QueueAnimTiles_gTilesetAnims_DP_Fount(timer / 10);
         QueueAnimTiles_gTilesetAnims_DP_TV_Staion(timer / 10);
     }
-
 }
 
 void InitTilesetAnim_PorytilesSecondaryPlatGBAJubilife(void)
 {
-    sPrimaryTilesetAnimCounter = 0;
-    sPrimaryTilesetAnimCounterMax = 256;
-    sPrimaryTilesetAnimCallback = TilesetAnim_PorytilesSecondaryPlatGBAJubilife;
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 256;
+    sSecondaryTilesetAnimCallback = TilesetAnim_PorytilesSecondaryPlatGBAJubilife;
+}
+
+
+//West Spicials
+
+
+//Normal FRLG Red Flowers
+const u16 gTilesetAnims_red_flowers_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/00.4bpp");
+const u16 gTilesetAnims_red_flowers_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/01.4bpp");
+const u16 gTilesetAnims_red_flowers_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/02.4bpp");
+const u16 gTilesetAnims_red_flowers_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/03.4bpp");
+const u16 gTilesetAnims_red_flowers_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/04.4bpp");
+
+const u16 *const gTilesetAnims_red_flowers[] = {
+    gTilesetAnims_red_flowers_Frame0,
+    gTilesetAnims_red_flowers_Frame1,
+    gTilesetAnims_red_flowers_Frame2,
+    gTilesetAnims_red_flowers_Frame3,
+    gTilesetAnims_red_flowers_Frame4
+};
+
+static void QueueAnimTiles_red_flowers(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_red_flowers);
+    AppendTilesetAnimToBuffer(gTilesetAnims_red_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(512)), 4 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_westOthers(u16 timer)
+{
+    if (timer % 16 == 0) {
+        QueueAnimTiles_red_flowers(timer / 16);
+    }
+}
+
+void InitTilesetAnim_WestOthers(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 256;
+    sSecondaryTilesetAnimCallback = TilesetAnim_westOthers;
 }

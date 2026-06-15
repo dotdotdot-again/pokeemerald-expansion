@@ -78,7 +78,11 @@
     "gMapGroup_IndoorSandgem",
     "gMapGroup_TiwnleafIndoor",
     "gMapGroup_Plat_Dungeons",
-    "gMapGroup_underground"
+    "gMapGroup_underground",
+    "gMapGroup_IndoorJubilife",
+    "gMapGroup_IndoorOreburgh",
+    "gMapGroup_IndoorFloaroma",
+    "gMapGroup_IndoorEterna"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -161,7 +165,8 @@
     "Route206",
     "FuegoIronworks",
     "rocks",
-    "FloaromaTownTop"
+    "FloaromaTownTop",
+    "ROUTE204_2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1197,7 +1202,8 @@
     "Sandgem_House_One_2",
     "Sandgem_House_Lab",
     "Sandgem_Lucas_House",
-    "Sandgem_Lucas_House_F2"
+    "Sandgem_Lucas_House_F2",
+    "JubilifePokemonCenter"
   ],
   "gMapGroup_TiwnleafIndoor": [
     "PlayerHouseF2",
@@ -1212,9 +1218,58 @@
     "LakeVerity",
     "OreburghGate",
     "OreburghGate_B1F",
-    "RavagedPath"
+    "RavagedPath",
+    "Oreburgh_Mine"
   ],
   "gMapGroup_underground": [
     "undergound_test"
+  ],
+  "gMapGroup_IndoorJubilife": [
+    "JubilifePokemonCenter_F2",
+    "Jubilife_Pokemart",
+    "JubilifePokemonCenter_B1",
+    "JubilifeHouseOne",
+    "JubilifeHouseOne_F2",
+    "JubilifeSchool",
+    "JubilifeTradingCenter",
+    "JubilifeTradingCenter_F2",
+    "JubilifeTradingCenter_F3",
+    "JubilifeHouseTwo",
+    "JubilifeHouseTwo_F2",
+    "JubilifeHouseThree",
+    "JubilifeHouseThree_F2",
+    "JubilifeCompanyF1",
+    "JubilifeTVF1",
+    "JubilifeCompanyF2",
+    "JubilifeCompanyF3",
+    "JubilifeTVF2",
+    "JubilifeTVF3",
+    "JubilifeTVF4",
+    "OreburghHouseOne"
+  ],
+  "gMapGroup_IndoorOreburgh": [
+    "OreburghGym",
+    "OreburghPokemonCenter",
+    "OreburghPokemart",
+    "OreburghPokemonCenter_F2",
+    "OreburghPokemonCenter_B1",
+    "OreburghHouseTwo",
+    "OreburghHouseOne_F2",
+    "OreburghHouseTwo_F2",
+    "Oreburgh_Small_House",
+    "Oreburgh_Small_House_Two",
+    "Oreburgh_museum",
+    "OreburghHouseThree",
+    "OreburghHouseThree_F2",
+    "Oreburgh_Small_House_Three"
+  ],
+  "gMapGroup_IndoorFloaroma": [
+    "FloraromaPokemonCenter",
+    "FloraromaPokemart",
+    "FloraromaPokemonCenter_B1"
+  ],
+  "gMapGroup_IndoorEterna": [
+    "EternaPokemonCenter",
+    "EternaPokemart"
   ]
 }

@@ -184,70 +184,70 @@
       "x": 54,
       "y": 34,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
       "x": 53,
       "y": 26,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_POKEMART",
       "dest_warp_id": "0"
     },
     {
       "x": 42,
       "y": 34,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_SCHOOL",
       "dest_warp_id": "0"
     },
     {
       "x": 41,
       "y": 44,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_HOUSE_ONE",
       "dest_warp_id": "0"
     },
     {
       "x": 23,
       "y": 35,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_TRADING_CENTER",
       "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 44,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_HOUSE_TWO",
       "dest_warp_id": "0"
     },
     {
       "x": 38,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_TVF1",
       "dest_warp_id": "0"
     },
     {
       "x": 19,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_JUBILIFE_COMPANY_F1",
+      "dest_warp_id": "2"
     },
     {
       "x": 15,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_COMPANY_F1",
       "dest_warp_id": "0"
     },
     {
       "x": 54,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_CITY",
+      "dest_map": "MAP_JUBILIFE_HOUSE_THREE",
       "dest_warp_id": "0"
     },
     {
