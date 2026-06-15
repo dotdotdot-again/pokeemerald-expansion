@@ -1,1 +1,24 @@
 mapscripts OreburghCity_MapScripts {}
+
+script Oreburgh_TownSign_one {
+    lock
+    msgbox("Oreburgh City\n"
+    "City of Energy",MSGBOX_SIGN)
+    release
+}
+
+script Oreburgh_GymSign {
+    lock
+    msgbox("Oreburgh City Pok\emon Gym\n"
+    "Leader: Roark\l"
+    "\qoCall me Roark the Rock!\qc",MSGBOX_SIGN)
+    release
+}
+
+script Oreburgh_Younger_at_entrence {
+    lock
+    msgbox("Can I see your Trainer Case?\n"
+    "It's got the Gym Badge you just\n"
+    "won, right?",MSGBOX_NPC)
+    release
+}

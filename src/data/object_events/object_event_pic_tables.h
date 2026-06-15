@@ -1658,6 +1658,14 @@ static const struct SpriteFrameImage sPicTable_DP_YoungCoupleM[] = {
 static const struct SpriteFrameImage sPicTable_DP_Youngster[] = {
     overworld_ascending_frames(gObjectEventPic_DP_Youngster, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_DP_Roark[] = {
+    overworld_ascending_frames(gObjectEventPic_DP_Roark, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_DP_Gardeina[] = {
+    overworld_ascending_frames(gObjectEventPic_DP_Gardenia, 2, 4),
+};
 //End Platinum
 
 //#if IS_FRLG

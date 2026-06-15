@@ -486,6 +486,8 @@ enum
     OBJ_EVENT_GFX_DP_YOUNGSTER,
     OBJ_EVENT_GFX_DP_HONEY_TREE,
     OBJ_EVENT_GFX_DP_WINDMILL,
+    OBJ_EVENT_GFX_DP_ROARK,
+    OBJ_EVENT_GFX_DP_GARDENIA,
     NUM_OBJ_EVENT_GFX,
 };
 
@@ -728,6 +730,8 @@ enum
 #define OBJ_EVENT_PAL_DP_MAN                  0x119E
 #define OBJ_EVENT_PAL_DP_MAN_5                  0x119F
 #define OBJ_EVENT_PAL_DP_FEMALE_SCIENTIST                  0x11AA
+#define OBJ_EVENT_PAL_DP_ROARK                  0x11AB
+#define OBJ_EVENT_PAL_DP_GARDENIA                  0x11AC
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #if OW_FOLLOWERS_POKEBALLS

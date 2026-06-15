@@ -603,6 +603,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_DP_Man,            OBJ_EVENT_PAL_DP_MAN},
     {gObjectEventPal_DP_Man_5,            OBJ_EVENT_PAL_DP_MAN_5},
     {gObjectEventPal_DP_Female_Scientist,            OBJ_EVENT_PAL_DP_FEMALE_SCIENTIST},
+    {gObjectEventPal_DP_Roark,            OBJ_EVENT_PAL_DP_ROARK},
+    {gObjectEventPal_DP_Gardenia,            OBJ_EVENT_PAL_DP_GARDENIA},
 //#if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
     {gObjectEventPal_PlayerReflectionFrlg,  OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION},

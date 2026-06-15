@@ -94,6 +94,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayFieldMov
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Truck;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DP_HoneyTree;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DP_Windmill;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DP_Roark;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DP_Gardenia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothCarryingBox;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothFacingAway;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirchsBag;
@@ -792,6 +794,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DP_YOUNGSTER] =               &gObjectEventGraphicsInfo_DP_Youngster,
     [OBJ_EVENT_GFX_DP_HONEY_TREE] =               &gObjectEventGraphicsInfo_DP_HoneyTree,
     [OBJ_EVENT_GFX_DP_WINDMILL] =               &gObjectEventGraphicsInfo_DP_Windmill,
+    [OBJ_EVENT_GFX_DP_ROARK] =               &gObjectEventGraphicsInfo_DP_Roark,
+    [OBJ_EVENT_GFX_DP_GARDENIA] =               &gObjectEventGraphicsInfo_DP_Gardenia,
 //#if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,
     [OBJ_EVENT_GFX_RED_BIKE] =                 &gObjectEventGraphicsInfo_RedBike,

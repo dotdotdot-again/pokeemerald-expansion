@@ -462,7 +462,12 @@ const u32 gObjectEventPic_DP_Youngster[] = INCBIN_U32("graphics/object_events/pi
 
 const u32 gObjectEventPic_DP_HoneyTree[] = INCBIN_U32("graphics/object_events/pics/misc/honey_tree.4bpp");
 
-const u32 gObjectEventPic_DP_Windmill[] = INCBIN_U32("graphics/object_events/pics/misc/windmill.4bpp");
+const u32 gObjectEventPic_DP_Windmill[] = INCBIN_U32("graphics/object_events/pics/misc/windmill.4bpp");\
+
+const u32 gObjectEventPic_DP_Roark[] = INCBIN_U32("graphics/object_events/pics/people/DP_roark.4bpp");
+const u32 gObjectEventPic_DP_Gardenia[] = INCBIN_U32("graphics/object_events/pics/people/DP_gardenia.4bpp");
+
+
 
 const u16 gObjectEventPal_DP_Aaron[] = INCBIN_U16("graphics/object_events/palettes/DP_aaron.gbapal");
 const u16 gObjectEventPal_DP_AceTrainer[] = INCBIN_U16("graphics/object_events/palettes/DP_ace_trainer.gbapal");
@@ -550,6 +555,9 @@ const u16 gObjectEventPal_DP_Man[] = INCBIN_U16("graphics/object_events/pics/peo
 const u16 gObjectEventPal_DP_Man_5[] = INCBIN_U16("graphics/object_events/pics/people/man_5.gbapal");
 
 const u16 gObjectEventPal_DP_Female_Scientist[] = INCBIN_U16("graphics/object_events/pics/people/scientist_1.gbapal");
+
+const u16 gObjectEventPal_DP_Roark[] = INCBIN_U16("graphics/object_events/pics/people/DP_roark.gbapal");
+const u16 gObjectEventPal_DP_Gardenia[] = INCBIN_U16("graphics/object_events/pics/people/DP_gardenia.gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");

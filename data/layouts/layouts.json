@@ -10187,12 +10187,22 @@
     {
       "id": "LAYOUT_OREBURGH_MINE",
       "name": "Oreburgh_Mine_Layout",
-      "width": 13,
-      "height": 12,
+      "width": 32,
+      "height": 33,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
       "border_filepath": "data/layouts/Oreburgh_Mine/border.bin",
       "blockdata_filepath": "data/layouts/Oreburgh_Mine/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_MINE_F2",
+      "name": "Oreburgh_Mine_F2_Layout",
+      "width": 42,
+      "height": 39,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
+      "border_filepath": "data/layouts/Oreburgh_Mine_F2/border.bin",
+      "blockdata_filepath": "data/layouts/Oreburgh_Mine_F2/map.bin"
     }
   ]
 }
