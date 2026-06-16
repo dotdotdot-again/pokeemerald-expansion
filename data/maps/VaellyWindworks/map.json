@@ -112,7 +112,15 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 69,
+      "elevation": 0,
+      "dest_map": "MAP_VALLEY_WINDWORKS_INDOORS",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

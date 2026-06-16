@@ -1783,3 +1783,25 @@ const struct Tileset gTileset_PorytilesPlatGBA_Gym_One =
     .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Gym_One,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesPlatGBA_Indoor_West_One =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Indoor_West_One,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Indoor_West_One,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Indoor_West_One,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Indoor_West_One,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_PorytilesPlatGBA_ValleyWindworks =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_ValleyWindworks,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_ValleyWindworks,
+    .metatiles = gMetatiles_PorytilesPlatGBA_ValleyWindworks,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_ValleyWindworks,
+    .callback = NULL,
+};

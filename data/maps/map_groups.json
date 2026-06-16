@@ -1220,7 +1220,9 @@
     "OreburghGate_B1F",
     "RavagedPath",
     "Oreburgh_Mine",
-    "Oreburgh_Mine_F2"
+    "Oreburgh_Mine_F2",
+    "Floaroma_Meadow",
+    "Valley_Windworks_Indoors"
   ],
   "gMapGroup_underground": [
     "undergound_test"
@@ -1267,7 +1269,11 @@
   "gMapGroup_IndoorFloaroma": [
     "FloraromaPokemonCenter",
     "FloraromaPokemart",
-    "FloraromaPokemonCenter_B1"
+    "FloraromaPokemonCenter_B1",
+    "FloraPokemonCenter_F2",
+    "Flora_Small_House_One",
+    "Flora_Small_House_Two",
+    "Flora_Flower_Shop"
   ],
   "gMapGroup_IndoorEterna": [
     "EternaPokemonCenter",

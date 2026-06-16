@@ -1925,3 +1925,15 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Oreburgh_Mine/scripts.inc"
 
 	.include "data/maps/Oreburgh_Mine_F2/scripts.inc"
+
+	.include "data/maps/FloraPokemonCenter_F2/scripts.inc"
+
+	.include "data/maps/Flora_Small_House_Two/scripts.inc"
+
+	.include "data/maps/Flora_Flower_Shop/scripts.inc"
+
+	.include "data/maps/Flora_Small_House_One/scripts.inc"
+
+	.include "data/maps/Floaroma_Meadow/scripts.inc"
+
+	.include "data/maps/Valley_Windworks_Indoors/scripts.inc"

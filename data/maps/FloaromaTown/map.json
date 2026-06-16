@@ -37,43 +37,43 @@
       "x": 26,
       "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_map": "MAP_FLORA_SMALL_HOUSE_TWO",
       "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_map": "MAP_FLORA_SMALL_HOUSE_ONE",
       "dest_warp_id": "0"
     },
     {
       "x": 22,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_map": "MAP_FLORA_FLOWER_SHOP",
       "dest_warp_id": "0"
     },
     {
       "x": 26,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_map": "MAP_FLORAROMA_POKEMART",
       "dest_warp_id": "0"
     },
     {
       "x": 4,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FLOAROMA_TOWN",
+      "dest_map": "MAP_FLOAROMA_MEADOW",
       "dest_warp_id": "0"
     },
     {
       "x": 5,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_FLOAROMA_TOWN",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_FLOAROMA_MEADOW",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

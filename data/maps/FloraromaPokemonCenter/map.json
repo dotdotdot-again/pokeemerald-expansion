@@ -41,14 +41,14 @@
       "x": 2,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_POKEMON_CENTER_F2",
+      "dest_map": "MAP_FLORA_POKEMON_CENTER_F2",
       "dest_warp_id": "0"
     },
     {
       "x": 14,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_JUBILIFE_POKEMON_CENTER_B1",
+      "dest_map": "MAP_FLORAROMA_POKEMON_CENTER_B1",
       "dest_warp_id": "0"
     }
   ],

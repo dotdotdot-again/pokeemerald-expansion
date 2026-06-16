@@ -10203,6 +10203,66 @@
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBACaveOne",
       "border_filepath": "data/layouts/Oreburgh_Mine_F2/border.bin",
       "blockdata_filepath": "data/layouts/Oreburgh_Mine_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORA_POKEMON_CENTER_F2",
+      "name": "FloraPokemonCenter_F2_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/FloraPokemonCenter_F2/border.bin",
+      "blockdata_filepath": "data/layouts/FloraPokemonCenter_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORA_FLOWER_SHOP",
+      "name": "Flora_Flower_Shop_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Indoor_West_One",
+      "border_filepath": "data/layouts/Flora_Flower_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/Flora_Flower_Shop/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORA_SMALL_HOUSE_TWO",
+      "name": "Flora_Small_House_Two_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Flora_Small_House_Two/border.bin",
+      "blockdata_filepath": "data/layouts/Flora_Small_House_Two/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORA_SMALL_HOUSE_ONE",
+      "name": "Flora_Small_House_One_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Flora_Small_House_One/border.bin",
+      "blockdata_filepath": "data/layouts/Flora_Small_House_One/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOAROMA_MEADOW",
+      "name": "Floaroma_Meadow_Layout",
+      "width": 66,
+      "height": 58,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBAWestSpecials",
+      "border_filepath": "data/layouts/Floaroma_Meadow/border.bin",
+      "blockdata_filepath": "data/layouts/Floaroma_Meadow/map.bin"
+    },
+    {
+      "id": "LAYOUT_VALLEY_WINDWORKS_INDOORS",
+      "name": "Valley_Windworks_Indoors_Layout",
+      "width": 27,
+      "height": 18,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_ValleyWindworks",
+      "border_filepath": "data/layouts/Valley_Windworks_Indoors/border.bin",
+      "blockdata_filepath": "data/layouts/Valley_Windworks_Indoors/map.bin"
     }
   ]
 }

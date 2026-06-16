@@ -474,3 +474,9 @@ const u16 gMetatileAttributes_PorytilesGBA_Oreburgh_other[] = INCBIN_U16("data/t
 
 const u16 gMetatiles_PorytilesPlatGBA_Gym_One[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_one/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesPlatGBA_Gym_One[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_one/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Indoor_West_One[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_indoor_west_one/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Indoor_West_One[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_indoor_west_one/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_ValleyWindworks[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_valley_windworks/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_ValleyWindworks[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_valley_windworks/metatile_attributes.bin");
