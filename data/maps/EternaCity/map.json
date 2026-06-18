@@ -30,7 +30,99 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_POKEMART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_BIG_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_BIKE_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_BIKE_SHOP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_GALATIC_BUILDING",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_HOUSE_ONE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 38,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_HOUSE_ONE_TWO",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 53,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_HOUSE_ONE_THREE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 57,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_ETERNA_CITY",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

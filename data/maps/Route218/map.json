@@ -17,10 +17,30 @@
       "map": "MAP_JUBILIFE_CITY",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_CANALAVE_CITY",
+      "offset": 7,
+      "direction": "left"
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 58,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_JUBILIFE_GATE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE218",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

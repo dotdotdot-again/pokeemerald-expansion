@@ -10263,6 +10263,206 @@
       "secondary_tileset": "gTileset_PorytilesPlatGBA_ValleyWindworks",
       "border_filepath": "data/layouts/Valley_Windworks_Indoors/border.bin",
       "blockdata_filepath": "data/layouts/Valley_Windworks_Indoors/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_FOREST",
+      "name": "Eterna_Forest_Layout",
+      "width": 42,
+      "height": 37,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/Eterna_Forest/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Forest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE221",
+      "name": "Route221_Layout",
+      "width": 96,
+      "height": 34,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBASandgem",
+      "border_filepath": "data/layouts/Route221/border.bin",
+      "blockdata_filepath": "data/layouts/Route221/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE220",
+      "name": "Route220_Layout",
+      "width": 69,
+      "height": 33,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBASandgem",
+      "border_filepath": "data/layouts/Route220/border.bin",
+      "blockdata_filepath": "data/layouts/Route220/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_GATE",
+      "name": "Jubilife_Gate_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPLatGBA_Gates",
+      "border_filepath": "data/layouts/Jubilife_Gate/border.bin",
+      "blockdata_filepath": "data/layouts/Jubilife_Gate/map.bin"
+    },
+    {
+      "id": "LAYOUT_CANALAVE_CITY",
+      "name": "CanalaveCity_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "border_filepath": "data/layouts/CanalaveCity/border.bin",
+      "blockdata_filepath": "data/layouts/CanalaveCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE205_HOUSE",
+      "name": "Route205_House_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Route205_House/border.bin",
+      "blockdata_filepath": "data/layouts/Route205_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLORA_MEADOW_HOUSE",
+      "name": "Flora_Meadow_House_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Flora_Meadow_House/border.bin",
+      "blockdata_filepath": "data/layouts/Flora_Meadow_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_POKEMON_CENTER_B1",
+      "name": "EternaPokemonCenter_B1_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Pokemart",
+      "border_filepath": "data/layouts/EternaPokemonCenter_B1/border.bin",
+      "blockdata_filepath": "data/layouts/EternaPokemonCenter_B1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_POKEMON_CENTER_F2",
+      "name": "EternaPokemonCenter_F2_Layout",
+      "width": 17,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_PokeCenter",
+      "border_filepath": "data/layouts/EternaPokemonCenter_F2/border.bin",
+      "blockdata_filepath": "data/layouts/EternaPokemonCenter_F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_BIG_HOUSE",
+      "name": "EternaBigHouse_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/EternaBigHouse/border.bin",
+      "blockdata_filepath": "data/layouts/EternaBigHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_BIG_HOUSE_F2",
+      "name": "EternaBigHouseF2_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/EternaBigHouseF2/border.bin",
+      "blockdata_filepath": "data/layouts/EternaBigHouseF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_BIG_HOUSE_F3",
+      "name": "EternaBigHouseF3_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_porytiles_plat_gba_jubilife_indoors",
+      "border_filepath": "data/layouts/EternaBigHouseF3/border.bin",
+      "blockdata_filepath": "data/layouts/EternaBigHouseF3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GYM",
+      "name": "Eterna_Gym_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_HOUSE_ONE_THREE",
+      "name": "Eterna_House_One_Three_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_House_One_Three/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_House_One_Three/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GATE",
+      "name": "Eterna_Gate_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPLatGBA_Gates",
+      "border_filepath": "data/layouts/Eterna_Gate/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Gate/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_HOUSE_ONE_TWO",
+      "name": "Eterna_House_One_Two_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_House_One_Two/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_House_One_Two/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_BIKE_SHOP",
+      "name": "Eterna_Bike_Shop_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_Bike_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Bike_Shop/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GALATIC_BUILDING",
+      "name": "Eterna_Galatic_Building_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_Galatic_Building/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Galatic_Building/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_HOUSE_ONE",
+      "name": "Eterna_House_One_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_House_One/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_House_One/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_HOUSE_FOUR",
+      "name": "Eterna_House_Four_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "border_filepath": "data/layouts/Eterna_House_Four/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_House_Four/map.bin"
     }
   ]
 }

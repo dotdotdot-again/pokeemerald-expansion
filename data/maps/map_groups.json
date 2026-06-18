@@ -166,7 +166,10 @@
     "FuegoIronworks",
     "rocks",
     "FloaromaTownTop",
-    "ROUTE204_2"
+    "ROUTE204_2",
+    "Route220",
+    "Route221",
+    "CanalaveCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1222,7 +1225,8 @@
     "Oreburgh_Mine",
     "Oreburgh_Mine_F2",
     "Floaroma_Meadow",
-    "Valley_Windworks_Indoors"
+    "Valley_Windworks_Indoors",
+    "Eterna_Forest"
   ],
   "gMapGroup_underground": [
     "undergound_test"
@@ -1248,7 +1252,8 @@
     "JubilifeTVF2",
     "JubilifeTVF3",
     "JubilifeTVF4",
-    "OreburghHouseOne"
+    "OreburghHouseOne",
+    "Jubilife_Gate"
   ],
   "gMapGroup_IndoorOreburgh": [
     "OreburghGym",
@@ -1264,7 +1269,8 @@
     "Oreburgh_museum",
     "OreburghHouseThree",
     "OreburghHouseThree_F2",
-    "Oreburgh_Small_House_Three"
+    "Oreburgh_Small_House_Three",
+    "EternaBigHouseF2"
   ],
   "gMapGroup_IndoorFloaroma": [
     "FloraromaPokemonCenter",
@@ -1273,10 +1279,24 @@
     "FloraPokemonCenter_F2",
     "Flora_Small_House_One",
     "Flora_Small_House_Two",
-    "Flora_Flower_Shop"
+    "Flora_Flower_Shop",
+    "Flora_Meadow_House",
+    "Route205_House"
   ],
   "gMapGroup_IndoorEterna": [
     "EternaPokemonCenter",
-    "EternaPokemart"
+    "EternaPokemart",
+    "EternaPokemonCenter_B1",
+    "EternaPokemonCenter_F2",
+    "EternaBigHouse",
+    "EternaBigHouseF3",
+    "Eterna_Gym",
+    "Eterna_Bike_Shop",
+    "Eterna_Galatic_Building",
+    "Eterna_House_One",
+    "Eterna_House_One_Two",
+    "Eterna_House_One_Three",
+    "Eterna_House_Four",
+    "Eterna_Gate"
   ]
 }

@@ -1937,3 +1937,43 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Floaroma_Meadow/scripts.inc"
 
 	.include "data/maps/Valley_Windworks_Indoors/scripts.inc"
+
+	.include "data/maps/Eterna_Forest/scripts.inc"
+
+	.include "data/maps/Route220/scripts.inc"
+
+	.include "data/maps/Route221/scripts.inc"
+
+	.include "data/maps/Jubilife_Gate/scripts.inc"
+
+	.include "data/maps/CanalaveCity/scripts.inc"
+
+	.include "data/maps/Flora_Meadow_House/scripts.inc"
+
+	.include "data/maps/Route205_House/scripts.inc"
+
+	.include "data/maps/EternaPokemonCenter_F2/scripts.inc"
+
+	.include "data/maps/EternaPokemonCenter_B1/scripts.inc"
+
+	.include "data/maps/EternaBigHouseF2/scripts.inc"
+
+	.include "data/maps/EternaBigHouse/scripts.inc"
+
+	.include "data/maps/EternaBigHouseF3/scripts.inc"
+
+	.include "data/maps/Eterna_House_One_Three/scripts.inc"
+
+	.include "data/maps/Eterna_Bike_Shop/scripts.inc"
+
+	.include "data/maps/Eterna_Gym/scripts.inc"
+
+	.include "data/maps/Eterna_Galatic_Building/scripts.inc"
+
+	.include "data/maps/Eterna_House_One/scripts.inc"
+
+	.include "data/maps/Eterna_House_One_Two/scripts.inc"
+
+	.include "data/maps/Eterna_Gate/scripts.inc"
+
+	.include "data/maps/Eterna_House_Four/scripts.inc"
