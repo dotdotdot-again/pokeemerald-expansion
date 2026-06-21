@@ -10390,7 +10390,7 @@
       "width": 13,
       "height": 12,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
-      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "secondary_tileset": "gTileset_PorytilesPlatGBA_Gym_Two",
       "border_filepath": "data/layouts/Eterna_Gym/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_Gym/map.bin"
     },
@@ -10427,20 +10427,20 @@
     {
       "id": "LAYOUT_ETERNA_BIKE_SHOP",
       "name": "Eterna_Bike_Shop_Layout",
-      "width": 13,
+      "width": 17,
       "height": 12,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
-      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "secondary_tileset": "gTileset_PorytilesPLatGBA_Gates",
       "border_filepath": "data/layouts/Eterna_Bike_Shop/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_Bike_Shop/map.bin"
     },
     {
       "id": "LAYOUT_ETERNA_GALATIC_BUILDING",
       "name": "Eterna_Galatic_Building_Layout",
-      "width": 13,
-      "height": 12,
+      "width": 25,
+      "height": 17,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
-      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "secondary_tileset": "gTileset_Porytiles_PlatGBA_Galactic",
       "border_filepath": "data/layouts/Eterna_Galatic_Building/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_Galatic_Building/map.bin"
     },
@@ -10450,7 +10450,7 @@
       "width": 13,
       "height": 12,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
-      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "secondary_tileset": "gTileset_PorytilesGBA_Oreburgh_other",
       "border_filepath": "data/layouts/Eterna_House_One/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_House_One/map.bin"
     },
@@ -10460,9 +10460,49 @@
       "width": 13,
       "height": 12,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
-      "secondary_tileset": "gTileset_PorytilesPlatGBA_Tiwnleaf",
+      "secondary_tileset": "gTileset_PorytilesGBA_Oreburgh_other",
       "border_filepath": "data/layouts/Eterna_House_Four/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_House_Four/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GALATIC_BUILDING_F2",
+      "name": "Eterna_Galatic_BuildingF2_Layout",
+      "width": 28,
+      "height": 17,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_Porytiles_PlatGBA_Galactic",
+      "border_filepath": "data/layouts/Eterna_Galatic_BuildingF2/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Galatic_BuildingF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GALATIC_BUILDING_F3",
+      "name": "Eterna_Galatic_BuildingF3_Layout",
+      "width": 28,
+      "height": 17,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_Porytiles_PlatGBA_Galactic",
+      "border_filepath": "data/layouts/Eterna_Galatic_BuildingF3/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Galatic_BuildingF3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GALATIC_BUILDING_F4",
+      "name": "Eterna_Galatic_BuildingF4_Layout",
+      "width": 27,
+      "height": 17,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_Porytiles_PlatGBA_Galactic",
+      "border_filepath": "data/layouts/Eterna_Galatic_BuildingF4/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Galatic_BuildingF4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_GALATIC_BUILDING_BACKROOM",
+      "name": "Eterna_Galatic_Building_Backroom_Layout",
+      "width": 14,
+      "height": 13,
+      "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
+      "secondary_tileset": "gTileset_Porytiles_PlatGBA_Galactic",
+      "border_filepath": "data/layouts/Eterna_Galatic_Building_Backroom/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Galatic_Building_Backroom/map.bin"
     }
   ]
 }

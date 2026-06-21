@@ -1827,3 +1827,25 @@ const struct Tileset gTileset_PorytilesPLatGBA_Gates =
     .metatileAttributes = gMetatileAttributes_PorytilesPLatGBA_Gates,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PorytilesPlatGBA_Gym_Two =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PorytilesPlatGBA_Gym_Two,
+    .palettes = gTilesetPalettes_PorytilesPlatGBA_Gym_Two,
+    .metatiles = gMetatiles_PorytilesPlatGBA_Gym_Two,
+    .metatileAttributes = gMetatileAttributes_PorytilesPlatGBA_Gym_Two,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Porytiles_PlatGBA_Galactic =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Porytiles_PlatGBA_Galactic,
+    .palettes = gTilesetPalettes_Porytiles_PlatGBA_Galactic,
+    .metatiles = gMetatiles_Porytiles_PlatGBA_Galactic,
+    .metatileAttributes = gMetatileAttributes_Porytiles_PlatGBA_Galactic,
+    .callback = NULL,
+};

@@ -559,6 +559,8 @@ const u16 gObjectEventPal_DP_Female_Scientist[] = INCBIN_U16("graphics/object_ev
 const u16 gObjectEventPal_DP_Roark[] = INCBIN_U16("graphics/object_events/pics/people/DP_roark.gbapal");
 const u16 gObjectEventPal_DP_Gardenia[] = INCBIN_U16("graphics/object_events/pics/people/DP_gardenia.gbapal");
 
+const u16 gObjectEventPal_DP_TrashCan[] = INCBIN_U16("graphics/object_events/pics/misc/ruby.gbapal");
+
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/substitute.gbapal");

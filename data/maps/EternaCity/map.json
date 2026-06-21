@@ -105,21 +105,21 @@
       "x": 16,
       "y": 57,
       "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_ETERNA_GATE",
+      "dest_warp_id": "1"
     },
     {
       "x": 17,
       "y": 57,
       "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_ETERNA_GATE",
+      "dest_warp_id": "1"
     },
     {
       "x": 22,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_ETERNA_CITY",
+      "dest_map": "MAP_ETERNA_HOUSE_FOUR",
       "dest_warp_id": "0"
     }
   ],

@@ -486,3 +486,9 @@ const u16 gMetatileAttributes_PorytilesSecondaryPlatGBA_Eterna_Forest[] = INCBIN
 
 const u16 gMetatiles_PorytilesPLatGBA_Gates[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gates/metatiles.bin");
 const u16 gMetatileAttributes_PorytilesPLatGBA_Gates[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gates/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesPlatGBA_Gym_Two[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesPlatGBA_Gym_Two[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/metatile_attributes.bin");
+
+const u16 gMetatiles_Porytiles_PlatGBA_Galactic[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/metatiles.bin");
+const u16 gMetatileAttributes_Porytiles_PlatGBA_Galactic[] = INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/metatile_attributes.bin");

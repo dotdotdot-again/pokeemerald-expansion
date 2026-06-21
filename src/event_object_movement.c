@@ -605,6 +605,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_DP_Female_Scientist,            OBJ_EVENT_PAL_DP_FEMALE_SCIENTIST},
     {gObjectEventPal_DP_Roark,            OBJ_EVENT_PAL_DP_ROARK},
     {gObjectEventPal_DP_Gardenia,            OBJ_EVENT_PAL_DP_GARDENIA},
+    {gObjectEventPal_DP_TrashCan,            OBJ_EVENT_PAL_DP_TRASHCAN},
 //#if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
     {gObjectEventPal_PlayerReflectionFrlg,  OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION},

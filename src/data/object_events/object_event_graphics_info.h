@@ -7685,13 +7685,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FossilFrlg = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ruby = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_BLUE,
+    .paletteTag = OBJ_EVENT_PAL_DP_TRASHCAN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 128,
     .width = 16,
     .height = 16,
     .paletteSlot = PALSLOT_NPC_1,
-    .shadowSize = SHADOW_SIZE_S,
+    .shadowSize = SHADOW_SIZE_NONE,
     .inanimate = TRUE,
     .compressed = FALSE,
     .tracks = TRACKS_NONE,

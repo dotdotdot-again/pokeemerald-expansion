@@ -3542,3 +3542,41 @@ const u16 gTilesetPalettes_PorytilesPLatGBA_Gates[][16] =
 };
 
 const u32 gTilesetTiles_PorytilesPLatGBA_Gates[] = INCBIN_U32("data/tilesets/secondary/porytiles_plat_gba_gates/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PorytilesPlatGBA_Gym_Two[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_gym_two/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PorytilesPlatGBA_Gym_Two[] = INCBIN_U32("data/tilesets/secondary/porytiles_plat_gba_gym_two/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Porytiles_PlatGBA_Galactic[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/porytiles_plat_gba_galactic/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Porytiles_PlatGBA_Galactic[] = INCBIN_U32("data/tilesets/secondary/porytiles_plat_gba_galactic/tiles.4bpp.lz");

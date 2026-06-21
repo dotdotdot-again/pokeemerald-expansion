@@ -1977,3 +1977,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Eterna_Gate/scripts.inc"
 
 	.include "data/maps/Eterna_House_Four/scripts.inc"
+
+	.include "data/maps/Eterna_Galatic_BuildingF2/scripts.inc"
+
+	.include "data/maps/Eterna_Galatic_BuildingF3/scripts.inc"
+
+	.include "data/maps/Eterna_Galatic_BuildingF4/scripts.inc"
+
+	.include "data/maps/Eterna_Galatic_Building_Backroom/scripts.inc"
