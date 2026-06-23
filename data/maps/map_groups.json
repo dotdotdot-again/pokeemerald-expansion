@@ -1226,7 +1226,8 @@
     "Oreburgh_Mine_F2",
     "Floaroma_Meadow",
     "Valley_Windworks_Indoors",
-    "Eterna_Forest"
+    "Eterna_Forest",
+    "Eterna_Forest_2"
   ],
   "gMapGroup_underground": [
     "undergound_test"

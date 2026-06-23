@@ -1985,3 +1985,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/Eterna_Galatic_BuildingF4/scripts.inc"
 
 	.include "data/maps/Eterna_Galatic_Building_Backroom/scripts.inc"
+
+	.include "data/maps/Eterna_Forest_2/scripts.inc"

@@ -1,0 +1,71 @@
+mapscripts SandgemTown_MapScripts {
+
+}
+
+script Sandgem_LuDa_Walk_Mid {
+    lockall
+    applymovement(SandgemLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    applymovement(SandgemLuda, moves(walk_left*3))
+    waitmovement
+    call(Sandgem_LuDa_Cont)
+
+}
+
+script Sandgem_LuDa_Cont {
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTown_Text_LucasTheProfsWaitingToSeeYou,MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(SandgemLuda, moves(walk_right*4,face_up))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*4,face_up))
+        waitmovementall
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTown_Text_LucasSeeThisIsIsOurPokemonResearchLab)
+        waitmessage
+        opendoor(10,9)
+        clearflag(FLAG_HIDE_ROUTE_103_RIVAL)
+        addobject(Sandgem_Barry)
+        applymovement(Sandgem_Barry, moves(walk_fast_down))
+        msgbox("THUD!!!",MSGBOX_AUTOCLOSE)
+        releaseall
+    }
+}
+
+
+//Gendered Text
+//Dawn
+text SandgemTown_Text_DawnTheProfessorIsWaiting {
+        "Oh! There you are!\n"
+        "Please, come with me!\l"
+        "The professor is waiting!"
+}
+
+text SandgemTown_Text_DawnThisIsItOurPokemonResearchLab {
+        "This is it!\n"
+        "Our Pokémon Research Lab!\p"
+        "Let’s go..."
+}
+
+//Lucas
+text SandgemTown_Text_LucasTheProfsWaitingToSeeYou {
+        "Hi! I’ve been waiting for you!\n"
+        "Please, come with me.\l"
+        "The prof’s waiting to see you."
+}
+
+text SandgemTown_Text_LucasSeeThisIsIsOurPokemonResearchLab {
+        "See? This is our Pokémon Research\n"
+        "Lab.\p"
+        "We’ll just go ahead and..."
+}
+

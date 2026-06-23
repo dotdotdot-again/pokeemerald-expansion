@@ -1014,6 +1014,65 @@ route201_this_ledge::
 	return
 
 
+Route201_Text_WildPokemonLurkInTallGrass::
+# 719 "data/maps/Route201/scripts.pory"
+	lock
+# 720 "data/maps/Route201/scripts.pory"
+	msgbox Route201_Text_WildPokemonLurkInTallGrass_Text_0, MSGBOX_NPC
+# 726 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
+Route201_Text_HereAPotionAsAFreeSample::
+# 730 "data/maps/Route201/scripts.pory"
+	lock
+# 731 "data/maps/Route201/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_POTION_OLDALE, Route201_Text_HereAPotionAsAFreeSample_2
+# 748 "data/maps/Route201/scripts.pory"
+	goto_if_set FLAG_RECEIVED_POTION_OLDALE, Route201_Text_HereAPotionAsAFreeSample_3
+# 754 "data/maps/Route201/scripts.pory"
+	msgbox Route201_Text_HereAPotionAsAFreeSample_Text_2, MSGBOX_NPC
+Route201_Text_HereAPotionAsAFreeSample_1:
+# 757 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+Route201_Text_HereAPotionAsAFreeSample_2:
+# 733 "data/maps/Route201/scripts.pory"
+	msgbox Route201_Text_HereAPotionAsAFreeSample_Text_0, MSGBOX_NPC
+# 745 "data/maps/Route201/scripts.pory"
+	giveitem ITEM_POTION
+# 746 "data/maps/Route201/scripts.pory"
+	setflag FLAG_RECEIVED_POTION_OLDALE
+	goto Route201_Text_HereAPotionAsAFreeSample_1
+
+Route201_Text_HereAPotionAsAFreeSample_3:
+# 750 "data/maps/Route201/scripts.pory"
+	msgbox Route201_Text_HereAPotionAsAFreeSample_Text_1, MSGBOX_NPC
+	goto Route201_Text_HereAPotionAsAFreeSample_1
+
+
+Route201_Text_IfYourPokemonsHPIsLowGoHome::
+# 761 "data/maps/Route201/scripts.pory"
+	lock
+# 762 "data/maps/Route201/scripts.pory"
+	msgbox Route201_Text_IfYourPokemonsHPIsLowGoHome_Text_0, MSGBOX_NPC
+# 765 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
+Route201_Text_TrainerTipsTalkToAnyone::
+# 769 "data/maps/Route201/scripts.pory"
+	lock
+# 770 "data/maps/Route201/scripts.pory"
+	msgbox Route201_Text_TrainerTipsTalkToAnyone_Text_0, MSGBOX_NPC
+# 775 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
 # 29 "data/maps/Route201/scripts.pory"
 Route201_Barry_Movement_0:
 # 29 "data/maps/Route201/scripts.pory"
@@ -1820,6 +1879,53 @@ route201_this_ledge_Text_0:
 # 713 "data/maps/Route201/scripts.pory"
 	.string "That ledge is one way. Jump down\n"
 	.string "for a shortcut to Twinleaf Town!$"
+
+Route201_Text_WildPokemonLurkInTallGrass_Text_0:
+# 720 "data/maps/Route201/scripts.pory"
+	.string "Wild Pokémon lurk in tall grass. They\n"
+	.string "can come bursting out at any time.\p"
+	.string "So, if you’re wanting to battle wild\n"
+	.string "Pokémon, just walk in tall grass.\p"
+	.string "If you want to avoid wild Pokémon,\n"
+	.string "then stay out of the tall grass.$"
+
+Route201_Text_HereAPotionAsAFreeSample_Text_0:
+# 733 "data/maps/Route201/scripts.pory"
+	.string "Hi!\n"
+	.string "I work at a Pokémon Mart.\p"
+	.string "Did you know that a Pokémon’s health\n"
+	.string "is measured by Hit Points (HP)?\p"
+	.string "If a Pokémon runs out of HP, it\n"
+	.string "faints and can’t battle anymore.\p"
+	.string "If a Pokémon’s HP gets low, you\n"
+	.string "should heal it with a Potion.\p"
+	.string "Here, let me give you a Potion as\n"
+	.string "a free sample. First one’s free!\p"
+	.string "It will automatically go in the\n"
+	.string "Medicine Pocket of your Bag.$"
+
+Route201_Text_HereAPotionAsAFreeSample_Text_1:
+# 750 "data/maps/Route201/scripts.pory"
+	.string "You can find a Pokémon Mart in cities\n"
+	.string "and most major towns.$"
+
+Route201_Text_HereAPotionAsAFreeSample_Text_2:
+# 754 "data/maps/Route201/scripts.pory"
+	.string "I AM ERROR$"
+
+Route201_Text_IfYourPokemonsHPIsLowGoHome_Text_0:
+# 762 "data/maps/Route201/scripts.pory"
+	.string "If your Pokémon’s health--that’s its\n"
+	.string "HP--is getting low, you should go\l"
+	.string "home and get some rest.$"
+
+Route201_Text_TrainerTipsTalkToAnyone_Text_0:
+# 770 "data/maps/Route201/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "Don’t be shy! Talk to anyone and\n"
+	.string "everyone you happen to see.\p"
+	.string "By talking to people, you will get\n"
+	.string "invaluable information and advice.$"
 
 barryToSlowText::
 # 640 "data/maps/Route201/scripts.pory"

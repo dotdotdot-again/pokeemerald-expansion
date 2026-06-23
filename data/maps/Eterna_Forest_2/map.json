@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ETERNA_FOREST",
-  "name": "Eterna_Forest",
-  "layout": "LAYOUT_ETERNA_FOREST",
+  "id": "MAP_ETERNA_FOREST_2",
+  "name": "Eterna_Forest_2",
+  "layout": "LAYOUT_ETERNA_FOREST_2",
   "music": "MUS_PETALBURG_WOODS",
   "region_map_section": "MAPSEC_PETALBURG_WOODS",
   "requires_flash": false,
@@ -14,23 +14,23 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ETERNA_FOREST_2",
-      "offset": 49,
-      "direction": "up"
+      "map": "MAP_ETERNA_FOREST",
+      "offset": -49,
+      "direction": "down"
     }
   ],
   "object_events": [],
   "warp_events": [
     {
-      "x": 14,
-      "y": 53,
+      "x": -42,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ROUTE205",
       "dest_warp_id": "1"
     },
     {
-      "x": 15,
-      "y": 53,
+      "x": -41,
+      "y": 27,
       "elevation": 0,
       "dest_map": "MAP_ROUTE205",
       "dest_warp_id": "2"

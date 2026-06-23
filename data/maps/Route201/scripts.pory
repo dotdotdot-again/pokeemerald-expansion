@@ -714,3 +714,64 @@ script route201_this_ledge {
         "for a shortcut to Twinleaf Town!",MSGBOX_NPC)
     release 
 }
+
+script Route201_Text_WildPokemonLurkInTallGrass {
+       lock
+    msgbox("Wild Pokémon lurk in tall grass. They\n"
+        "can come bursting out at any time.\p"
+        "So, if you’re wanting to battle wild\n"
+        "Pokémon, just walk in tall grass.\p"
+        "If you want to avoid wild Pokémon,\n"
+        "then stay out of the tall grass.",MSGBOX_NPC)
+    release 
+}
+
+script Route201_Text_HereAPotionAsAFreeSample {
+       lock
+    if(flag(FLAG_RECEIVED_POTION_OLDALE) == false)
+    {
+        msgbox("Hi!\n"
+        "I work at a Pokémon Mart.\p"
+        "Did you know that a Pokémon’s health\n"
+        "is measured by Hit Points (HP)?\p"
+        "If a Pokémon runs out of HP, it\n"
+        "faints and can’t battle anymore.\p"
+        "If a Pokémon’s HP gets low, you\n"
+        "should heal it with a Potion.\p"
+        "Here, let me give you a Potion as\n"
+        "a free sample. First one’s free!\p"
+        "It will automatically go in the\n"
+        "Medicine Pocket of your Bag.",MSGBOX_NPC)
+        giveitem(ITEM_POTION)
+        setflag(FLAG_RECEIVED_POTION_OLDALE)
+    }
+    elif(flag(FLAG_RECEIVED_POTION_OLDALE) == true)
+    {
+        msgbox("You can find a Pokémon Mart in cities\n"
+        "and most major towns.",MSGBOX_NPC)
+    }
+    else{
+        msgbox("I AM ERROR",MSGBOX_NPC)
+    }
+
+    release 
+}
+
+script Route201_Text_IfYourPokemonsHPIsLowGoHome {
+       lock
+    msgbox("If your Pokémon’s health--that’s its\n"
+        "HP--is getting low, you should go\l"
+        "home and get some rest.",MSGBOX_NPC)
+    release 
+}
+
+script Route201_Text_TrainerTipsTalkToAnyone {
+       lock
+    msgbox("Trainer Tips!\p"
+        "Don’t be shy! Talk to anyone and\n"
+        "everyone you happen to see.\p"
+        "By talking to people, you will get\n"
+        "invaluable information and advice.",MSGBOX_NPC)
+    release 
+}
+

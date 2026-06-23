@@ -10267,10 +10267,10 @@
     {
       "id": "LAYOUT_ETERNA_FOREST",
       "name": "Eterna_Forest_Layout",
-      "width": 42,
-      "height": 37,
+      "width": 102,
+      "height": 61,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
-      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBA_Eterna_Forest",
       "border_filepath": "data/layouts/Eterna_Forest/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_Forest/map.bin"
     },
@@ -10387,8 +10387,8 @@
     {
       "id": "LAYOUT_ETERNA_GYM",
       "name": "Eterna_Gym_Layout",
-      "width": 13,
-      "height": 12,
+      "width": 26,
+      "height": 30,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
       "secondary_tileset": "gTileset_PorytilesPlatGBA_Gym_Two",
       "border_filepath": "data/layouts/Eterna_Gym/border.bin",
@@ -10503,6 +10503,16 @@
       "secondary_tileset": "gTileset_Porytiles_PlatGBA_Galactic",
       "border_filepath": "data/layouts/Eterna_Galatic_Building_Backroom/border.bin",
       "blockdata_filepath": "data/layouts/Eterna_Galatic_Building_Backroom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETERNA_FOREST_2",
+      "name": "Eterna_Forest_2_Layout",
+      "width": 58,
+      "height": 35,
+      "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
+      "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBA_Eterna_Forest",
+      "border_filepath": "data/layouts/Eterna_Forest_2/border.bin",
+      "blockdata_filepath": "data/layouts/Eterna_Forest_2/map.bin"
     }
   ]
 }

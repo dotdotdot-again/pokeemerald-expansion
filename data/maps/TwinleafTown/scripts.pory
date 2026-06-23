@@ -75,6 +75,13 @@ script Twinleaf_outside_guy {
     "It's still hurting.\l"
     "That kid's growing up tough.",MSGBOX_NPC)
     }
+    else{
+    msgbox("Barry? He went tearing off\n"
+    "in a huge rush a while ago.\p"
+    "...Ouch. He ran right into me earlier.\n"
+    "It's still hurting.\l"
+    "That kid's growing up tough.",MSGBOX_NPC)
+    }
 
 
 
