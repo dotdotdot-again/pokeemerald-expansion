@@ -1,1 +1,265 @@
 mapscripts Sandgem_House_Lab_MapScripts {}
+
+
+script Intro_In_Sandgem_Lab {
+    applymovement(LabLuda, moves(delay_16,walk_up*6,walk_right,face_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16,walk_up*7))
+    waitmovementall
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Well, well, look who’s here.\p"
+        "{PLAYER}, was it?\n"
+        "Let’s have a look at your Pokémon.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+    waitmovement
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("...\p"
+        "Hmm...\n"
+        "I see...\p"
+        "This Pokémon seems to be rather\n"
+        "happy.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+    waitmovement
+    bufferleadmonspeciesname(STR_VAR_1)
+    setspeaker(SP_NAME_ROWAN)
+   msgbox("Hm!\p"
+        "Entrusting you with that {STR_VAR_1}\n"
+        "was no mistake, it seems!")
+    waitmessage
+    msgbox("Professor: Well, would you like to give\n"
+        "it a nickname?",MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 1)
+    {
+    call(Common_EventScript_NameReceivedPartyMon)
+    bufferpartymonnick(STR_VAR_1,0)
+    }
+    waitmessage
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("When I first saw you two \n"
+        "about to step into the tall grass\l"
+        "without Pokémon, I was shocked.\p"
+        "I was astounded by these foolhardy\n"
+        "children.\p"
+        "But now, you’ve astounded me in an\n"
+        "entirely different way.\p"
+        "Already, there is a bond growing\n"
+        "between you and that Pokémon.\p"
+        "I feel privileged to have met you.\p"
+        "I’m sure {STR_VAR_1} feels the same\n"
+        "way about you.\p"
+        "That’s why I’ll ask you to cherish that\n"
+        "Pok\emon of yours.",MSGBOX_AUTOCLOSE)  
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    applymovement(LabLuda, moves(walk_in_place_left))
+    waitmovementall
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTownLab_Text_LucasBoyAmIGladYoureKindTowardPokemon,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(LabLuda, moves(walk_in_place_left))
+    waitmovement
+    applymovement(LabRowan, moves(walk_in_place_down))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovementall
+        setspeaker(SP_NAME_ROWAN)
+    msgbox("Professor: Er-hem!\n"
+        "Let’s move on to the main topic.\p"
+        "There is something I want you to do\n"
+        "for me.\p"
+        "Allow me to properly introduce myself\n"
+        "first.\p"
+        "My name, as you know, is Rowan.\n"
+        "I study Pokémon.\p"
+        "First of all, I want to know exactly\n"
+        "what kinds of Pokémon live in the\l"
+        "Sinnoh region.\p"
+        "To do so, it is necessary to collect\n"
+        "data using the Pokédex.\p"
+        "This is what I wish to ask of you.\p"
+        "I want to entrust you with this\n"
+        "Pokédex.\p"
+        "Will you use it to record data on all\n"
+        "the Pokémon in Sinnoh for me?",MSGBOX_YESNO)  
+        while (var(VAR_RESULT) != 1)
+    {
+        setspeaker(SP_NAME_ROWAN)
+    msgbox("Rowan: ...\p"
+        "...\p"
+        "...\p"
+        "...\p"
+        "I can stand here without speaking for\n"
+        "hours. I’m a very patient man.\p"
+        "Let me ask you again, {PLAYER}.\p"
+        "I want to entrust you with this\n"
+        "Pokédex.\p"
+        "Will you use it to record data on all\n"
+        "the Pokémon in Sinnoh for me?",MSGBOX_YESNO)
+        waitmessage
+    }
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Hm!\p"
+        "Good answer!")
+    waitmessage
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{PLAYER} obtained\n"
+        "the {COLOR RED}{SHADOW LIGHT_RED}Pokédex{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!")
+	waitfanfare
+	setflag(FLAG_SYS_POKEDEX_GET)
+	special(SetUnlockedPokedexFlags)
+	setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("That Pokédex is a very\n"
+        "high-tech device.\p"
+        "It will automatically record data on\n"
+        "every kind of Pokémon you encounter.\p"
+        "{PLAYER}, I ask that you go\n"
+        "everywhere and meet every kind of\l"
+        "Pokémon in this region!")
+    waitmessage
+    applymovement(LabLuda, moves(walk_in_place_left))
+    waitmovement
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTownLab_Text_LucasIveGotTheSameKindOfPokedex,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("When you walked up Route 201\n"
+        "with your Pokémon, what did you feel?\p"
+        "I’ve lived for 60 long years.\n"
+        "Even now, I get a thrill when\p"
+        "I’m with a Pokémon.\p"
+        "Now, you should know that there are\n"
+        "countless Pokémon in this world.\p"
+        "That means there are just as many\n"
+        "thrills waiting for you out there!\p"
+        "Now go!\p"
+        "{PLAYER}, your grand adventure\n"
+        "begins right now!")
+    waitmessage
+    applymovement(LabLuda, moves(walk_in_place_left))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTownLab_Text_LucasIllTeachYouStuffLater,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(LabLuda, moves(walk_down*7))
+    waitmovement
+    removeobject(LabLuda)
+    setflag(LUDA_SANDGEM_LAB)
+    clearflag(LUDA_SANDGEM)
+    setvar(VAR_SANDGEM_INTRO_STATE,1)
+    releaseall
+}
+
+
+//NPC Text
+
+script Rowan_Lab {
+if(var(VAR_SANDGEM_INTRO_STATE) == 1)
+{
+    lock
+setspeaker(SP_NAME_ROWAN)
+msgbox("Go on!\p"
+        "{PLAYER}, your grand adventure\n"
+        "awaits you!",MSGBOX_NPC)
+    release
+}
+else
+{
+
+}
+
+}
+
+
+script LuDa_Dad_Lab {
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        lock
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("I’m Lucas’s father.\p"
+        "I’ll be happy to assist you on your\n"
+        "quest for the professor.\p"
+        "Hahaha. Eh...\n"
+        "I’m sure we can count on you!",MSGBOX_NPC)
+        release
+    }
+}
+
+script Roseanne_Lab {
+lock
+setspeaker("Roseanne")
+msgbox("Professor Rowan invented a new\n"
+        "Pokédex while working alongside a\l"
+        "professor from the Kanto region.\p"
+        "Oh, my name is Roseanne.\p"
+        "It’s an honor to be an assistant to\n"
+        "our professor!",MSGBOX_NPC)
+release
+}
+
+script Lab_PC {
+    lock
+    msgbox("It's Rowan's Computer",MSGBOX_SIGN)
+release
+}
+
+
+
+
+
+
+
+
+//Gendered Text
+text SandgemTownLab_Text_LucasBoyAmIGladYoureKindTowardPokemon {
+        "Boy, am I glad you’re kind\n"
+        "toward Pokémon.\p"
+        "If you weren’t, well...\n"
+        "I don’t even want to think about it."
+}
+
+text SandgemTownLab_Text_LucasIveGotTheSameKindOfPokedex {
+        "I’ve got the same kind of\n"
+        "Pokédex as you."
+}
+
+text SandgemTownLab_Text_LucasIllTeachYouStuffLater {
+        "The professor asked me to help,\n"
+        "so I’m filling the Pokédex pages, too.\p"
+        "That makes us comrades working toward\n"
+        "the same goal.\p"
+        "I’ll teach you stuff later, OK?"
+}

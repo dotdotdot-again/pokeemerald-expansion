@@ -51,11 +51,11 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Baarry in Intro 1
-#define BARRY_INTRO_TWO    0x21 // Unused Flag
-#define BARRY_INTRO_THREE    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Derby
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
+#define FLAG_UNUSED_0x020    0x20 // Barry in Intro 1
+#define BARRY_INTRO_TWO    0x21 // Barry in Intro 2
+#define BARRY_INTRO_THREE    0x22 // Barry in Intro 3
+#define FLAG_UNUSED_0x023    0x23 // Derby Flag
+#define FLAG_UNUSED_0x024    0x24 // Derby Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
@@ -97,8 +97,8 @@
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define LUDA_SANDGEM_LAB     0x4E // Unused Flag
+#define LUDA_SANDGEM    0x4F // Lucas/Dawn outside of Sandgem Town in intro
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -350,7 +350,7 @@
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_WONDER_CARD_UNUSED_2            0x13E //Rowan Route 201?
-#define FLAG_WONDER_CARD_UNUSED_3            0x13F
+#define FLAG_WONDER_CARD_UNUSED_3            0x13F 
 #define FLAG_WONDER_CARD_UNUSED_4            0x140
 #define FLAG_WONDER_CARD_UNUSED_5            0x141
 #define FLAG_WONDER_CARD_UNUSED_6            0x142

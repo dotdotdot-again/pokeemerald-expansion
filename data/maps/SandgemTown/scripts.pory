@@ -1,5 +1,26 @@
 mapscripts SandgemTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: OnTransition_Sandgem
+    	MAP_SCRIPT_ON_FRAME_TABLE [
+	VAR_TEMP_2, 0:EveryFrame_Sandgem
+	]
 
+}
+
+script OnTransition_Sandgem{
+	
+	setvar(VAR_TEMP_2,0)
+    
+}
+
+script EveryFrame_Sandgem {
+    if(var(VAR_SANDGEM_INTRO_STATE) == 1)
+    {
+        call(Sandgem_After_Lab_Event)
+
+    }
+    else{
+    setvar(VAR_TEMP_2, 1)
+    }
 }
 
 script Sandgem_LuDa_Walk_Mid {
@@ -33,12 +54,94 @@ script Sandgem_LuDa_Cont {
         msgbox(SandgemTown_Text_LucasSeeThisIsIsOurPokemonResearchLab)
         waitmessage
         opendoor(10,9)
+        waitdooranim
         clearflag(FLAG_HIDE_ROUTE_103_RIVAL)
         addobject(Sandgem_Barry)
         applymovement(Sandgem_Barry, moves(walk_fast_down))
         msgbox("THUD!!!",MSGBOX_AUTOCLOSE)
-        releaseall
+        waitmessage
+        applymovement(Sandgem_Barry, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("What the...\p"
+        "Oh, it’s you, {PLAYER}!\p"
+        "That old guy... He’s not scary so\n"
+        "much as he is totally out there!\p"
+        "Aww, it doesn’t matter, {PLAYER}.\n"
+        "I’m out of here. See you later!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(Sandgem_Barry, moves(walk_fast_right*2,walk_fast_down,walk_fast_right*6))
+        applymovement(SandgemLuda, moves(delay_4,face_right))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_4,face_right))
+        waitmovementall
+        setflag(FLAG_HIDE_ROUTE_103_RIVAL)
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTown_Text_LucasLetsGoIn,MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(SandgemLuda, moves(walk_up,walk_fast_left,walk_up))
+        waitmovement
+        removeobject(SandgemLuda)
+        setflag(LUDA_SANDGEM)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_4,walk_up*2))
+        waitmovement
+        fadescreen(FADE_TO_BLACK)
+        playse(SE_EXIT)
+        waitse
+        warpcontinuescript(MAP_SANDGEM_HOUSE_LAB,7,14,EnteringSandgemLab)
     }
+}
+
+script EnteringSandgemLab {
+    fadescreen(FADE_FROM_BLACK)
+    call(Intro_In_Sandgem_Lab)
+    
+}
+
+script Sandgem_After_Lab_Event {
+    lockall
+    applymovement(SandgemLuda, moves(face_up))
+    waitmovement
+    opendoor(10,9)
+    addobject(Sandgem_Rowan_Outside)
+    clearflag(BARRY_INTRO_TWO)
+        setspeaker(SP_NAME_ROWAN)
+    msgbox("{PLAYER}!!!!!!!!!",MSGBOX_AUTOCLOSE) 
+    waitmessage
+    applymovement(SandgemLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_8,face_up))
+    waitmovement
+        setspeaker(SP_NAME_ROWAN)
+    msgbox("I have something good here.\n"
+        "You should take this as well.",MSGBOX_AUTOCLOSE) 
+    waitmessage
+    giveitem(ITEM_TM27,1)
+        setspeaker(SP_NAME_ROWAN)
+    msgbox("That is a Technical Machine.\n"
+        "That one contains the move Return.\p"
+        "Using a Technical Machine, or TM for\n"
+        "short, teaches a move instantly to\l"
+        "a Pokémon.\p"
+        "The move Return gains power the more\n"
+        "friendly your Pokémon is with you.\p"
+        "It’s up to you, of course, if you want\n"
+        "to use that TM or not.\p"
+        "I’ll send you off with the wish that\n"
+        "your journey will be fun.",MSGBOX_AUTOCLOSE) 
+    waitmessage
+    applymovement(Sandgem_Rowan_Outside, moves(face_up,delay_8))
+    waitmovement
+    removeobject(Sandgem_Rowan_Outside)
+    setflag(BARRY_INTRO_TWO)
+    closedoor(10,9)
+
+    setvar(VAR_SANDGEM_INTRO_STATE,2)
 }
 
 
@@ -67,5 +170,13 @@ text SandgemTown_Text_LucasSeeThisIsIsOurPokemonResearchLab {
         "See? This is our Pokémon Research\n"
         "Lab.\p"
         "We’ll just go ahead and..."
+}
+
+text SandgemTown_Text_LucasLetsGoIn {
+        "What was that?!\p"
+        "Your friend always seems to be\n"
+        "in such a rush.\p"
+        "Anyway...\n"
+        "Let’s go in."
 }
 

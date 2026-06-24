@@ -119,13 +119,13 @@
 #define VAR_ROUTE102_STATE                               0x4061 // Unused Var
 #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
 #define VAR_ROUTE104_STATE                               0x4063
-#define VAR_ROUTE105_STATE                               0x4064 // Unused Var
-#define VAR_ROUTE106_STATE                               0x4065 // Unused Var
-#define VAR_ROUTE107_STATE                               0x4066 // Unused Var
-#define VAR_ROUTE108_STATE                               0x4067 // Unused Var
-#define VAR_ROUTE109_STATE                               0x4068 // Unused Var
+#define VAR_ROUTE105_STATE                               0x4064 // Deby Var
+#define VAR_ROUTE106_STATE                               0x4065 // Deby Var
+#define VAR_ROUTE107_STATE                               0x4066 // Deby Var
+#define VAR_ROUTE108_STATE                               0x4067 // Deby Var
+#define VAR_ROUTE109_STATE                               0x4068 // Deby Var
 #define VAR_ROUTE110_STATE                               0x4069
-#define VAR_ROUTE111_STATE                               0x406A // Unused Var
+#define VAR_ROUTE111_STATE                               0x406A // Deby Var
 #define VAR_ROUTE112_STATE                               0x406B // Unused Var
 #define VAR_ROUTE113_STATE                               0x406C // Unused Var
 #define VAR_ROUTE114_STATE                               0x406D // Unused Var
@@ -136,12 +136,12 @@
 #define VAR_ROUTE119_STATE                               0x4072
 #define VAR_ROUTE120_STATE                               0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                               0x4074
-#define VAR_ROUTE122_STATE                               0x4075 // Unused Var
-#define VAR_ROUTE123_STATE                               0x4076 // Unused Var
-#define VAR_ROUTE124_STATE                               0x4077 // Unused Var
-#define VAR_ROUTE125_STATE                               0x4078 // Unused Var
-#define VAR_ROUTE126_STATE                               0x4079 // Unused Var
-#define VAR_ROUTE127_STATE                               0x407A // Unused Var
+#define VAR_ROUTE122_STATE                               0x4075 // Deby Var
+#define VAR_ROUTE123_STATE                               0x4076 // Deby Var
+#define VAR_ROUTE124_STATE                               0x4077 // Deby Var
+#define VAR_ROUTE125_STATE                               0x4078 // Deby Var
+#define VAR_ROUTE126_STATE                               0x4079 // Deby Var
+#define VAR_ROUTE127_STATE                               0x407A // Deby Var
 #define VAR_ROUTE128_STATE                               0x407B
 #define VAR_ROUTE129_STATE                               0x407C // Unused Var
 #define VAR_ROUTE130_STATE                               0x407D // Unused Var
