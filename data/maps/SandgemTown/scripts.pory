@@ -35,11 +35,85 @@ script Sandgem_LuDa_Walk_Mid {
 
 }
 
+script Sandgem_LuDa_Walk_Top {
+    lockall
+    applymovement(SandgemLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,face_right))
+    applymovement(SandgemLuda, moves(walk_left*3))
+    waitmovementall
+    call(Sandgem_LuDa_Cont)
+
+}
+
+script Sandgem_LuDa_Walk_Bottom {
+    lockall
+    applymovement(SandgemLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovement
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up,face_right))
+    applymovement(SandgemLuda, moves(walk_left*3))
+    waitmovementall
+    call(Sandgem_LuDa_Cont)
+
+}
+
 script Sandgem_LuDa_Cont {
     checkplayergender
     if(var(VAR_RESULT) == 0)
     {
         //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox(SandgemTown_Text_DawnTheProfessorIsWaiting,MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(SandgemLuda, moves(walk_right*4,face_up))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*4,face_up))
+        waitmovementall
+        setspeaker(SP_NAME_DAWN)
+        msgbox(SandgemTown_Text_DawnThisIsItOurPokemonResearchLab)
+        waitmessage
+        opendoor(10,9)
+        waitdooranim
+        clearflag(FLAG_HIDE_ROUTE_103_RIVAL)
+        addobject(Sandgem_Barry)
+        applymovement(Sandgem_Barry, moves(walk_fast_down))
+        msgbox("THUD!!!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        playbgm(MUS_ENCOUNTER_BRENDAN,0)
+        applymovement(Sandgem_Barry, moves(emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        waitmovement
+        setspeaker(SP_NAME_BARRY)
+        msgbox("What the...\p"
+        "Oh, it’s you, {PLAYER}!\p"
+        "That old guy... He’s not scary so\n"
+        "much as he is totally out there!\p"
+        "Aww, it doesn’t matter, {PLAYER}.\n"
+        "I’m out of here. See you later!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(Sandgem_Barry, moves(walk_fast_right*2,walk_fast_down,walk_fast_right*6))
+        applymovement(SandgemLuda, moves(delay_4,face_right))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_4,face_right))
+        waitmovementall
+        fadedefaultbgm
+        setflag(FLAG_HIDE_ROUTE_103_RIVAL)
+        setspeaker(SP_NAME_DAWN)
+        msgbox(SandgemTown_Text_DawnLetsGoInside,MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(SandgemLuda, moves(walk_up,walk_fast_left,walk_up))
+        waitmovement
+        removeobject(SandgemLuda)
+        setflag(LUDA_SANDGEM)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_4,walk_up*2))
+        waitmovement
+        fadescreen(FADE_TO_BLACK)
+        playse(SE_EXIT)
+        waitse
+        warpcontinuescript(MAP_SANDGEM_HOUSE_LAB,7,14,EnteringSandgemLab)
     }
     elif(var(VAR_RESULT) == 1)
     {
@@ -60,6 +134,7 @@ script Sandgem_LuDa_Cont {
         applymovement(Sandgem_Barry, moves(walk_fast_down))
         msgbox("THUD!!!",MSGBOX_AUTOCLOSE)
         waitmessage
+        playbgm(MUS_ENCOUNTER_BRENDAN,0)
         applymovement(Sandgem_Barry, moves(emote_exclamation_mark))
         playse(SE_PIN) 
         waitse
@@ -76,6 +151,7 @@ script Sandgem_LuDa_Cont {
         applymovement(SandgemLuda, moves(delay_4,face_right))
         applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_4,face_right))
         waitmovementall
+        fadedefaultbgm
         setflag(FLAG_HIDE_ROUTE_103_RIVAL)
         setspeaker(SP_NAME_LUCAS)
         msgbox(SandgemTown_Text_LucasLetsGoIn,MSGBOX_AUTOCLOSE)
@@ -140,8 +216,140 @@ script Sandgem_After_Lab_Event {
     removeobject(Sandgem_Rowan_Outside)
     setflag(BARRY_INTRO_TWO)
     closedoor(10,9)
-
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_8))
+    waitmovement
+        checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox(SandgemTown_Text_DawnIDidntKnowTheProfessorHadTMs,MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        //applymovement(SandgemLuda, moves(walk_up))
+        waitmovementall
+        setspeaker(SP_NAME_DAWN)
+        msgbox("Ok, {PLAYER}!\n"
+        "Do you want me to show you around\l"
+        "town?",MSGBOX_YESNO)
+            if(var(VAR_RESULT) == 1)
+            {
+                playbgm(MUS_FOLLOW_ME,0)
+                setspeaker(SP_NAME_DAWN)
+                msgbox("Ok, follow me!",MSGBOX_AUTOCLOSE)
+                waitmessage
+                applymovement(SandgemLuda, moves(walk_right*10,face_up))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,walk_right*9,face_up))
+                waitmovementall
+                setspeaker(SP_NAME_DAWN)
+                msgbox(SandgemTown_Text_DawnThisIsThePokemonCenter,MSGBOX_AUTOCLOSE)
+                waitmessage
+                applymovement(SandgemLuda, moves(walk_right*10,face_up))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*10,face_up))
+                waitmovementall
+                setspeaker(SP_NAME_DAWN)
+                msgbox(SandgemTown_Text_DawnThisIsThePokeMart)
+                waitmessage
+                applymovement(SandgemLuda, moves(face_left))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+                waitmovementall
+                applymovement(SandgemLuda, moves(emote_exclamation_mark))
+                playse(SE_PIN) 
+                waitse
+                setspeaker(SP_NAME_DAWN)
+                msgbox(SandgemTown_Text_DawnLetYourFamilyKnowYoureHelpingProfRowan,MSGBOX_AUTOCLOSE)
+                waitmessage
+                applymovement(SandgemLuda, moves(walk_down,walk_left*5,walk_up*6))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down,delay_8,face_right))
+                waitmovementall
+                fadedefaultbgm
+                removeobject(SandgemLuda)
+                setflag(LUDA_SANDGEM)
+            }
+            elif(var(VAR_RESULT) == 0)
+            {
+            setspeaker(SP_NAME_LUCAS)
+            msgbox("Ok... no problem")
+            waitmessage
+            applymovement(SandgemLuda, moves(emote_exclamation_mark))
+            playse(SE_PIN) 
+            waitse
+            setspeaker(SP_NAME_DAWN)
+            msgbox(SandgemTown_Text_DawnLetYourFamilyKnowYoureHelpingProfRowan,MSGBOX_AUTOCLOSE)
+            waitmessage
+            setspeaker(SP_NAME_LUCAS)
+            applymovement(SandgemLuda, moves(walk_right*8))
+            waitmovement
+            removeobject(SandgemLuda)
+            setflag(LUDA_SANDGEM)
+            }
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(SandgemTown_Text_LucasWellIllBeTheProfessorHadTMs,MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        //applymovement(SandgemLuda, moves(walk_up))
+        waitmovementall
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Hey, {PLAYER}!\n"
+        "Do you want me to show you around\l"
+        "town?",MSGBOX_YESNO)
+            if(var(VAR_RESULT) == 1)
+            {
+                playbgm(MUS_FOLLOW_ME,0)
+                setspeaker(SP_NAME_LUCAS)
+                msgbox("Ok, follow me!",MSGBOX_AUTOCLOSE)
+                waitmessage
+                applymovement(SandgemLuda, moves(walk_right*10,face_up))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down,walk_right*9,face_up))
+                waitmovementall
+                setspeaker(SP_NAME_LUCAS)
+                msgbox(SandgemTown_Text_LucasThisIsThePokemonCenter,MSGBOX_AUTOCLOSE)
+                waitmessage
+                applymovement(SandgemLuda, moves(walk_right*10,face_up))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*10,face_up))
+                waitmovementall
+                setspeaker(SP_NAME_LUCAS)
+                msgbox(SandgemTown_Text_LucasThisIsThePokeMart)
+                waitmessage
+                applymovement(SandgemLuda, moves(face_left))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+                waitmovementall
+                applymovement(SandgemLuda, moves(emote_exclamation_mark))
+                playse(SE_PIN) 
+                waitse
+                setspeaker(SP_NAME_LUCAS)
+                msgbox(SandgemTown_Text_LucasLetYourFamilyKnowYoureHelpingProfRowan,MSGBOX_AUTOCLOSE)
+                waitmessage
+                applymovement(SandgemLuda, moves(walk_down,walk_left*5,walk_up*6))
+                applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down,delay_8,face_right))
+                waitmovementall
+                fadedefaultbgm
+                removeobject(SandgemLuda)
+                setflag(LUDA_SANDGEM)
+            }
+            elif(var(VAR_RESULT) == 0)
+            {
+            setspeaker(SP_NAME_LUCAS)
+            msgbox("Ok, no worries")
+            waitmessage
+            applymovement(SandgemLuda, moves(emote_exclamation_mark))
+            playse(SE_PIN) 
+            waitse
+            setspeaker(SP_NAME_LUCAS)
+            msgbox(SandgemTown_Text_LucasLetYourFamilyKnowYoureHelpingProfRowan,MSGBOX_AUTOCLOSE)
+            waitmessage
+            applymovement(SandgemLuda, moves(walk_right*8))
+            waitmovement
+            removeobject(SandgemLuda)
+            setflag(LUDA_SANDGEM)
+            }
+    }
     setvar(VAR_SANDGEM_INTRO_STATE,2)
+    releaseall
 }
 
 
@@ -157,6 +365,66 @@ text SandgemTown_Text_DawnThisIsItOurPokemonResearchLab {
         "This is it!\n"
         "Our Pokémon Research Lab!\p"
         "Let’s go..."
+}
+
+text SandgemTown_Text_DawnLetsGoInside {
+        "Wow, what was that?\p"
+        "Your friend sure seems to be really\n"
+        "impatient.\p"
+        "Well, anyway...\n"
+        "Let’s go inside."
+}
+
+//Dawn after lab
+
+text SandgemTown_Text_DawnIDidntKnowTheProfessorHadTMs {
+        "Oh, wow.\n"
+        "I didn’t know the professor had TMs.\p"
+        "Was he a Trainer when he was\n"
+        "young...?"
+}
+
+text SandgemTown_Text_DawnIllActAsYourMentor {
+        "OK, {PLAYER}, I’ll act as\n"
+        "your mentor.\p"
+        "I’ve got a bit more experience than\n"
+        "you as a Trainer and as the professor’s\l"
+        "assistant.\p"
+        "OK, follow me!"
+}
+
+text SandgemTown_Text_DawnThisIsThePokemonCenter {
+        "This building with the red roof is\n"
+        "the Pokémon Center.\p"
+        "It’s the place that heals Pokémon\n"
+        "that have been hurt in battle.\p"
+        "You can find a Pokémon Center in\n"
+        "most towns."
+}
+
+text SandgemTown_Text_DawnThisIsThePokeMart {
+        "The building with the blue roof over\n"
+        "here is the Poké Mart.\p"
+        "It’s a shop where you can buy and\n"
+        "sell items and medicine.\p"
+        "{PLAYER}, since you’re a novice\n"
+        "Trainer, you won’t be able to buy\l"
+        "many kinds of merchandise.\p"
+        "Don’t let it bother you!"
+}
+
+text SandgemTown_Text_DawnLetYourFamilyKnowYoureHelpingProfRowan {
+        "Oh, that’s right!\n"
+        "{PLAYER}...\p"
+        "Don’t you need to let your family\n"
+        "know that you’re going to be helping\l"
+        "Prof. Rowan with the Pokédex?\p"
+        "You may need to go far away, so I\n"
+        "think you should let someone know.\p"
+        "Oh, but before you go, heal up your\n"
+        "Pokémon at the Pokémon Center.\p"
+        "It will be a lot less scary that way.\n"
+        "OK, bye now!"
 }
 
 //Lucas
@@ -178,5 +446,62 @@ text SandgemTown_Text_LucasLetsGoIn {
         "in such a rush.\p"
         "Anyway...\n"
         "Let’s go in."
+}
+
+//after lab event
+
+text SandgemTown_Text_LucasWellIllBeTheProfessorHadTMs {
+        "Well, I’ll be...\n"
+        "The professor had TMs...?\p"
+        "Next thing, he’ll tell me he battled\n"
+        "when he was young."
+}
+
+text SandgemTown_Text_LucasIWantToShowYouAFewThings {
+        "Hey, {PLAYER}!\n"
+        "I want to show you a few things.\l"
+        "So, follow me!"
+}
+
+text SandgemTown_Text_LucasThisIsThePokemonCenter {
+        "This building with the red roof is\n"
+        "the Pokémon Center.\p"
+        "You can get your Pokémon healed if\n"
+        "it’s been hurt in battle.\p"
+        "You’ll find a Pokémon Center in most\n"
+        "towns."
+}
+
+text SandgemTown_Text_LucasThisIsThePokeMart {
+        "Over here, the building with the blue\n"
+        "roof is the Poké Mart.\p"
+        "It’s a shop where you can buy and\n"
+        "sell all sorts of items.\p"
+        "{PLAYER}, since you’re a rookie\n"
+        "Trainer, you won’t be able to buy\l"
+        "very much stuff.\p"
+        "Don’t worry about it, OK?"
+}
+
+text SandgemTown_Text_LucasLetYourFamilyKnowYoureHelpingProfRowan {
+        "Oh, yeah, right!\n"
+        "{PLAYER}...\p"
+        "You should let your family know\n"
+        "you’re helping Prof. Rowan put\l"
+        "together his Pokédex.\p"
+        "Sometimes, you have to go far away,\n"
+        "so you should let someone know.\p"
+        "Oh, but first, go heal up your\n"
+        "Pokémon at the Pokémon Center.\p"
+        "You’ll be safe then.\n"
+        "OK, be seeing you!"
+      
+}
+
+
+
+
+script testingSomethingSandgem {
+    setflag(B_FLAG_FOLLOWERS_DISABLED)
 }
 

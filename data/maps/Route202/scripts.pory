@@ -9,3 +9,34 @@ script testBattle {
     waitmessage
     end
 }
+
+script goSeeYourMom 
+{
+    lockall
+    applymovement(SandgemLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(SandgemLuda, moves(walk_right*4))
+    waitmovement
+    checkplayergender
+        if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox(SandgemTownLab_Text_DawnImSoGladThatYourKindTowardPokemon,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Why don’t you go tell your\n"
+        "family that the professor asked for\l"
+        "your help?\p"
+        "You should do it right away.",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right,face_left))
+    applymovement(SandgemLuda, moves(walk_left*4,face_right))
+}
