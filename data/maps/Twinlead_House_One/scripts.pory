@@ -1,7 +1,14 @@
 mapscripts Twinlead_House_One_MapScripts {}
 
 script Twinlead_House_One_Old_lady {
-        lockall
+        lock
+        if (flag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH) == TRUE)
+        {
+        msgbox("Well! Professor Rowan gave you a\n"
+        "Pokédex, did he?",MSGBOX_NPC)
+        release
+        }
+        else{
     msgbox("Did you hear?\p"
         "The Pok\emon Professor returned\n"
         "to the next town over.\p"
@@ -9,14 +16,27 @@ script Twinlead_House_One_Old_lady {
         "years."
         "I wonder if he found some amazing\n"
         "Pok\emon while he was gone?",MSGBOX_NPC)
-        releaseall
+        release
+
+        }
+
 }
 
 script Twinlead_House_One_Twin {
-        lockall
-    msgbox("Listen, listen, {PLAYER}\n"
+        lock
+        if (flag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH) == TRUE)
+        {
+        msgbox("Listen, listen, {PLAYER}.\n"
+        "I want a cute Pokémon!",MSGBOX_NPC)
+        release
+        }
+        else{
+        msgbox("Listen, listen, {PLAYER}\n"
         "I want a cute Pok\emon!",MSGBOX_NPC)
-        releaseall
+        release
+
+        }
+
 }
 
 script Twinlead_House_One_TV {

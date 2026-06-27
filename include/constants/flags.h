@@ -95,7 +95,7 @@
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
+#define LUDA_ROUTE_202_AGAIN    0x4C // Unused Flag
 #define LUDA_ROUTE_202    0x4D // Unused Flag
 #define LUDA_SANDGEM_LAB     0x4E // Unused Flag
 #define LUDA_SANDGEM    0x4F // Lucas/Dawn outside of Sandgem Town in intro

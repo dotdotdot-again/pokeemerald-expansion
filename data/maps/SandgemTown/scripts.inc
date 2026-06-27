@@ -140,7 +140,7 @@ Sandgem_LuDa_Cont_1:
 # 84 "data/maps/SandgemTown/scripts.pory"
 	waitmessage
 # 85 "data/maps/SandgemTown/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
+	playbgm MUS_DP_RIVAL, 0
 # 86 "data/maps/SandgemTown/scripts.pory"
 	applymovement Sandgem_Barry, Sandgem_LuDa_Walk_Mid_Movement_0
 # 87 "data/maps/SandgemTown/scripts.pory"
@@ -229,7 +229,7 @@ Sandgem_LuDa_Cont_2:
 # 136 "data/maps/SandgemTown/scripts.pory"
 	waitmessage
 # 137 "data/maps/SandgemTown/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
+	playbgm MUS_DP_RIVAL, 0
 # 138 "data/maps/SandgemTown/scripts.pory"
 	applymovement Sandgem_Barry, Sandgem_LuDa_Walk_Mid_Movement_0
 # 139 "data/maps/SandgemTown/scripts.pory"
@@ -366,9 +366,9 @@ Sandgem_After_Lab_Event::
 	goto_if_eq Sandgem_After_Lab_Event_3
 Sandgem_After_Lab_Event_1:
 # 351 "data/maps/SandgemTown/scripts.pory"
-	releaseall
-# 352 "data/maps/SandgemTown/scripts.pory"
 	setvar VAR_SANDGEM_INTRO_STATE, 2
+# 352 "data/maps/SandgemTown/scripts.pory"
+	releaseall
 	return
 
 Sandgem_After_Lab_Event_2:
@@ -419,7 +419,7 @@ Sandgem_After_Lab_Event_3:
 
 Sandgem_After_Lab_Event_6:
 # 237 "data/maps/SandgemTown/scripts.pory"
-	playbgm MUS_FOLLOW_ME, 0
+	playbgm MUS_DP_FOLLOW_ME, 0
 # 238 "data/maps/SandgemTown/scripts.pory"
 	setspeaker SP_NAME_DAWN
 # 239 "data/maps/SandgemTown/scripts.pory"
@@ -515,7 +515,7 @@ Sandgem_After_Lab_Event_7:
 
 Sandgem_After_Lab_Event_10:
 # 302 "data/maps/SandgemTown/scripts.pory"
-	playbgm MUS_FOLLOW_ME, 0
+	playbgm MUS_DP_FOLLOW_ME, 0
 # 303 "data/maps/SandgemTown/scripts.pory"
 	setspeaker SP_NAME_LUCAS
 # 304 "data/maps/SandgemTown/scripts.pory"
@@ -608,8 +608,102 @@ Sandgem_After_Lab_Event_11:
 	goto Sandgem_After_Lab_Event_1
 
 
+SandgemTown_Text_TheThingYouHaveItsAPokedexIsntIt::
+# 358 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 359 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_TheThingYouHaveItsAPokedexIsntIt_Text_0, MSGBOX_NPC
+# 363 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_Text_IdBetterSaveThis::
+# 367 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 368 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_IdBetterSaveThis_Text_0, MSGBOX_NPC
+# 372 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_Text_PokemonAreSoCool::
+# 376 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 377 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_PokemonAreSoCool_Text_0, MSGBOX_NPC
+# 383 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_Text_MapSign::
+# 388 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 389 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_MapSign_Text_0, MSGBOX_SIGN
+# 391 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_Text_PokemonResearchLabSign::
+# 395 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 396 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_PokemonResearchLabSign_Text_0, MSGBOX_SIGN
+# 397 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_Text_CounterpartMailbox::
+# 401 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 402 "data/maps/SandgemTown/scripts.pory"
+	checkplayergender
+# 403 "data/maps/SandgemTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq SandgemTown_Text_CounterpartMailbox_1
+# 408 "data/maps/SandgemTown/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SandgemTown_Text_CounterpartMailbox_2
+	return
+
+SandgemTown_Text_CounterpartMailbox_1:
+# 406 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_CounterpartMailbox_Text_0, MSGBOX_SIGN
+	return
+
+SandgemTown_Text_CounterpartMailbox_2:
+# 411 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_CounterpartMailbox_Text_1, MSGBOX_SIGN
+	return
+
+
+SandgemTown_Text_PokeMartSign::
+# 416 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 417 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_PokeMartSign_Text_0, MSGBOX_SIGN
+# 419 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_Text_PokemonCenterSign::
+# 423 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 424 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_Text_PokemonCenterSign_Text_0, MSGBOX_SIGN
+# 426 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
 testingSomethingSandgem::
-# 505 "data/maps/SandgemTown/scripts.pory"
+# 578 "data/maps/SandgemTown/scripts.pory"
 	setflag B_FLAG_FOLLOWERS_DISABLED
 	return
 
@@ -932,20 +1026,70 @@ Sandgem_After_Lab_Event_Text_7:
 # 337 "data/maps/SandgemTown/scripts.pory"
 	.string "Ok, no worries$"
 
+SandgemTown_Text_TheThingYouHaveItsAPokedexIsntIt_Text_0:
+# 359 "data/maps/SandgemTown/scripts.pory"
+	.string "That thing you have!\p"
+	.string "It’s a Pokédex, isn’t it?!\p"
+	.string "You’re off to see all kinds of\n"
+	.string "Pokémon now! Lucky you!$"
+
+SandgemTown_Text_IdBetterSaveThis_Text_0:
+# 368 "data/maps/SandgemTown/scripts.pory"
+	.string "So I don’t forget what’s happened,\n"
+	.string "till now, I’d better save this...\p"
+	.string "There!\n"
+	.string "Now I can take a break.$"
+
+SandgemTown_Text_PokemonAreSoCool_Text_0:
+# 377 "data/maps/SandgemTown/scripts.pory"
+	.string "Oh, wow!\n"
+	.string "Pokémon are so cool!\p"
+	.string "You can make yours battle and make\n"
+	.string "them stronger!\p"
+	.string "I wish I had some!\n"
+	.string "It’s so cool!$"
+
+SandgemTown_Text_MapSign_Text_0:
+# 389 "data/maps/SandgemTown/scripts.pory"
+	.string "Sandgem Town\n"
+	.string "Town of Sand!$"
+
+SandgemTown_Text_PokemonResearchLabSign_Text_0:
+# 396 "data/maps/SandgemTown/scripts.pory"
+	.string "Pokémon Research Lab$"
+
+SandgemTown_Text_CounterpartMailbox_Text_0:
+# 406 "data/maps/SandgemTown/scripts.pory"
+	.string "Dawn’s House$"
+
+SandgemTown_Text_CounterpartMailbox_Text_1:
+# 411 "data/maps/SandgemTown/scripts.pory"
+	.string "Lucas’s House$"
+
+SandgemTown_Text_PokeMartSign_Text_0:
+# 417 "data/maps/SandgemTown/scripts.pory"
+	.string "All Your Item Needs Fulfilled!\n"
+	.string "Pokémon Mart$"
+
+SandgemTown_Text_PokemonCenterSign_Text_0:
+# 424 "data/maps/SandgemTown/scripts.pory"
+	.string "Heal Your Pokémon!\n"
+	.string "Pokémon Center$"
+
 SandgemTown_Text_DawnTheProfessorIsWaiting::
-# 358 "data/maps/SandgemTown/scripts.pory"
+# 431 "data/maps/SandgemTown/scripts.pory"
 	.string "Oh! There you are!\n"
 	.string "Please, come with me!\l"
 	.string "The professor is waiting!$"
 
 SandgemTown_Text_DawnThisIsItOurPokemonResearchLab::
-# 364 "data/maps/SandgemTown/scripts.pory"
+# 437 "data/maps/SandgemTown/scripts.pory"
 	.string "This is it!\n"
 	.string "Our Pokémon Research Lab!\p"
 	.string "Let’s go...$"
 
 SandgemTown_Text_DawnLetsGoInside::
-# 370 "data/maps/SandgemTown/scripts.pory"
+# 443 "data/maps/SandgemTown/scripts.pory"
 	.string "Wow, what was that?\p"
 	.string "Your friend sure seems to be really\n"
 	.string "impatient.\p"
@@ -953,14 +1097,14 @@ SandgemTown_Text_DawnLetsGoInside::
 	.string "Let’s go inside.$"
 
 SandgemTown_Text_DawnIDidntKnowTheProfessorHadTMs::
-# 380 "data/maps/SandgemTown/scripts.pory"
+# 453 "data/maps/SandgemTown/scripts.pory"
 	.string "Oh, wow.\n"
 	.string "I didn’t know the professor had TMs.\p"
 	.string "Was he a Trainer when he was\n"
 	.string "young...?$"
 
 SandgemTown_Text_DawnIllActAsYourMentor::
-# 387 "data/maps/SandgemTown/scripts.pory"
+# 460 "data/maps/SandgemTown/scripts.pory"
 	.string "OK, {PLAYER}, I’ll act as\n"
 	.string "your mentor.\p"
 	.string "I’ve got a bit more experience than\n"
@@ -969,7 +1113,7 @@ SandgemTown_Text_DawnIllActAsYourMentor::
 	.string "OK, follow me!$"
 
 SandgemTown_Text_DawnThisIsThePokemonCenter::
-# 396 "data/maps/SandgemTown/scripts.pory"
+# 469 "data/maps/SandgemTown/scripts.pory"
 	.string "This building with the red roof is\n"
 	.string "the Pokémon Center.\p"
 	.string "It’s the place that heals Pokémon\n"
@@ -978,7 +1122,7 @@ SandgemTown_Text_DawnThisIsThePokemonCenter::
 	.string "most towns.$"
 
 SandgemTown_Text_DawnThisIsThePokeMart::
-# 405 "data/maps/SandgemTown/scripts.pory"
+# 478 "data/maps/SandgemTown/scripts.pory"
 	.string "The building with the blue roof over\n"
 	.string "here is the Poké Mart.\p"
 	.string "It’s a shop where you can buy and\n"
@@ -989,7 +1133,7 @@ SandgemTown_Text_DawnThisIsThePokeMart::
 	.string "Don’t let it bother you!$"
 
 SandgemTown_Text_DawnLetYourFamilyKnowYoureHelpingProfRowan::
-# 416 "data/maps/SandgemTown/scripts.pory"
+# 489 "data/maps/SandgemTown/scripts.pory"
 	.string "Oh, that’s right!\n"
 	.string "{PLAYER}...\p"
 	.string "Don’t you need to let your family\n"
@@ -1003,19 +1147,19 @@ SandgemTown_Text_DawnLetYourFamilyKnowYoureHelpingProfRowan::
 	.string "OK, bye now!$"
 
 SandgemTown_Text_LucasTheProfsWaitingToSeeYou::
-# 431 "data/maps/SandgemTown/scripts.pory"
+# 504 "data/maps/SandgemTown/scripts.pory"
 	.string "Hi! I’ve been waiting for you!\n"
 	.string "Please, come with me.\l"
 	.string "The prof’s waiting to see you.$"
 
 SandgemTown_Text_LucasSeeThisIsIsOurPokemonResearchLab::
-# 437 "data/maps/SandgemTown/scripts.pory"
+# 510 "data/maps/SandgemTown/scripts.pory"
 	.string "See? This is our Pokémon Research\n"
 	.string "Lab.\p"
 	.string "We’ll just go ahead and...$"
 
 SandgemTown_Text_LucasLetsGoIn::
-# 443 "data/maps/SandgemTown/scripts.pory"
+# 516 "data/maps/SandgemTown/scripts.pory"
 	.string "What was that?!\p"
 	.string "Your friend always seems to be\n"
 	.string "in such a rush.\p"
@@ -1023,20 +1167,20 @@ SandgemTown_Text_LucasLetsGoIn::
 	.string "Let’s go in.$"
 
 SandgemTown_Text_LucasWellIllBeTheProfessorHadTMs::
-# 453 "data/maps/SandgemTown/scripts.pory"
+# 526 "data/maps/SandgemTown/scripts.pory"
 	.string "Well, I’ll be...\n"
 	.string "The professor had TMs...?\p"
 	.string "Next thing, he’ll tell me he battled\n"
 	.string "when he was young.$"
 
 SandgemTown_Text_LucasIWantToShowYouAFewThings::
-# 460 "data/maps/SandgemTown/scripts.pory"
+# 533 "data/maps/SandgemTown/scripts.pory"
 	.string "Hey, {PLAYER}!\n"
 	.string "I want to show you a few things.\l"
 	.string "So, follow me!$"
 
 SandgemTown_Text_LucasThisIsThePokemonCenter::
-# 466 "data/maps/SandgemTown/scripts.pory"
+# 539 "data/maps/SandgemTown/scripts.pory"
 	.string "This building with the red roof is\n"
 	.string "the Pokémon Center.\p"
 	.string "You can get your Pokémon healed if\n"
@@ -1045,7 +1189,7 @@ SandgemTown_Text_LucasThisIsThePokemonCenter::
 	.string "towns.$"
 
 SandgemTown_Text_LucasThisIsThePokeMart::
-# 475 "data/maps/SandgemTown/scripts.pory"
+# 548 "data/maps/SandgemTown/scripts.pory"
 	.string "Over here, the building with the blue\n"
 	.string "roof is the Poké Mart.\p"
 	.string "It’s a shop where you can buy and\n"
@@ -1056,7 +1200,7 @@ SandgemTown_Text_LucasThisIsThePokeMart::
 	.string "Don’t worry about it, OK?$"
 
 SandgemTown_Text_LucasLetYourFamilyKnowYoureHelpingProfRowan::
-# 486 "data/maps/SandgemTown/scripts.pory"
+# 559 "data/maps/SandgemTown/scripts.pory"
 	.string "Oh, yeah, right!\n"
 	.string "{PLAYER}...\p"
 	.string "You should let your family know\n"

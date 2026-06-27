@@ -13,30 +13,252 @@ script testBattle {
 script goSeeYourMom 
 {
     lockall
-    applymovement(SandgemLuda, moves(emote_exclamation_mark))
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
     playse(SE_PIN) 
     waitse
     waitmovementall
-    applymovement(SandgemLuda, moves(walk_right*4))
-    waitmovement
+    applymovement(LudaRoute202, moves(walk_right*4))
+    waitmovementall
     checkplayergender
         if(var(VAR_RESULT) == 0)
     {
         //Dawn Script if Player Male
         setspeaker(SP_NAME_DAWN)
-        msgbox(SandgemTownLab_Text_DawnImSoGladThatYourKindTowardPokemon,MSGBOX_AUTOCLOSE)
+        msgbox(Route202_Text_DawnYouShouldGoTellYourFamily,MSGBOX_AUTOCLOSE)
         waitmessage
     }
     elif(var(VAR_RESULT) == 1)
     {
         //Lucas Script if Player female
         setspeaker(SP_NAME_LUCAS)
-        msgbox("Why don’t you go tell your\n"
-        "family that the professor asked for\l"
-        "your help?\p"
-        "You should do it right away.",MSGBOX_AUTOCLOSE)
+        msgbox(Route202_Text_LucasWhyDontYouGoTellYourFamily,MSGBOX_AUTOCLOSE)
         waitmessage
     }
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right,face_left))
-    applymovement(SandgemLuda, moves(walk_left*4,face_right))
+    applymovement(LudaRoute202, moves(walk_right,walk_left*5,face_right))
+    waitmovementall
+    releaseall
+}
+
+script goSeeYourMomMid 
+{
+    lockall
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_up,walk_right*4))
+    waitmovementall
+    checkplayergender
+        if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox(Route202_Text_DawnYouShouldGoTellYourFamily,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(Route202_Text_LucasWhyDontYouGoTellYourFamily,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right,face_left))
+    applymovement(LudaRoute202, moves(walk_right,walk_left*5,walk_down,face_right))
+    waitmovementall
+    releaseall
+}
+
+script goSeeYourMomTop
+{
+    lockall
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_up*2,walk_right*4))
+    waitmovementall
+    checkplayergender
+        if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox(Route202_Text_DawnYouShouldGoTellYourFamily,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(Route202_Text_LucasWhyDontYouGoTellYourFamily,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right,face_left))
+    applymovement(LudaRoute202, moves(walk_right,walk_left*5,walk_down*2,face_right))
+    waitmovementall
+    releaseall
+}
+
+script goSeeYourMomBottom 
+{
+    lockall
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_down,walk_right*4))
+    waitmovementall
+    checkplayergender
+        if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox(Route202_Text_DawnYouShouldGoTellYourFamily,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox(Route202_Text_LucasWhyDontYouGoTellYourFamily,MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right,face_left))
+    applymovement(LudaRoute202, moves(walk_right,walk_left*5,walk_up,face_right))
+    waitmovementall
+    releaseall
+}
+
+script CatchPokemon {
+    lockall
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        playbgm(MUS_DP_DAWN,0)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        playbgm(MUS_DP_LUCAS,0)
+    }
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_right*4))
+    waitmovementall
+    call(CatchPokemonCont)
+}
+
+
+script CatchPokemonCont 
+{
+    checkplayergender
+        if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox("{PLAYER}, do you know\n"
+        "how to catch Pokémon?",MSGBOX_YESNO)
+        waitmessage
+        if(var(VAR_RESULT) == 1)
+    {
+        setspeaker(SP_NAME_DAWN)
+        msgbox("Oh really...\p"
+        "I guess it isn't really that hard\n"
+        "so of course you'd figure it out\n"
+        "by now...\p"
+        "Anyway, {PLAYER}, to get you\n"
+        "started, I’ll give you five\l"
+        "Poké Balls!") 
+        waitmessage
+        giveitem(ITEM_POKE_BALL,5)
+    }
+    elif(var(VAR_RESULT) == 0)
+    {
+        setspeaker(SP_NAME_DAWN)
+        msgbox("Giggle...\n"
+        "Don't worry it's super easy!\n"
+        "all you gotta do is go into your bag and\l"
+        "select which Poké Balls! you wanna use\n"
+        "and then throw it!\p"
+        "Simple as that.\p"
+        "OK, {PLAYER}, to get you\n"
+        "started, I’ll give you five\l"
+        "Poké Balls!")
+        waitmessage
+        giveitem(ITEM_POKE_BALL,5)
+
+    }
+    setspeaker(SP_NAME_DAWN)
+        msgbox("If you have lots of Pokémon with you,\n"
+        "you’ll be able to travel farther.\p"
+        "That way, you’ll have a better shot\n"
+        "at meeting more Pokémon.\p"
+        "See you around!") 
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("{PLAYER}, do you know\n"
+        "how to catch Pokémon?",MSGBOX_YESNO)
+        waitmessage
+        if(var(VAR_RESULT) == 1)
+    {
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Oh really? Wow your just a\n"
+        "natural at all this then huh?\p"
+        "Guess that saves me needing to\n"
+        "demonstrate it then huh?\p"
+        "Here, {PLAYER}, I’ll give you\n"
+        "five Poké Balls to get you started.") 
+        waitmessage
+        giveitem(ITEM_POKE_BALL,5)
+    }
+    elif(var(VAR_RESULT) == 0)
+    {
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Don't worry it's really easy!\n"
+        "all you gotta do is go into your bag and\l"
+        "select which Pok\eball you wanna use and\n"
+        "then throw it!\p"
+        "Simple as that.\p"
+        "Here, {PLAYER}, I’ll give you\n"
+        "five Poké Balls to get you started.") 
+        waitmessage
+        giveitem(ITEM_POKE_BALL,5)
+
+    }
+    setspeaker(SP_NAME_LUCAS)
+        msgbox("If you have lots of Pokémon with you,\n"
+        "you’ll be able to travel farther.\p"
+        "That way, you’ll have a better shot\n"
+        "at meeting more Pokémon.\p"
+        "See you around!") 
+        waitmessage
+    }
+    closemessage
+    fadedefaultbgm
+    applymovement(LudaRoute202, moves(walk_left*7))
+    waitmovement
+    removeobject(LudaRoute202)
+    setflag(LUDA_ROUTE_202_AGAIN)
+    setvar(VAR_SANDGEM_INTRO_STATE,4)
+    releaseall
+}
+
+
+
+text Route202_Text_LucasWhyDontYouGoTellYourFamily {
+"Why don’t you go tell your\n"
+        "family that the professor asked for\l"
+        "your help?\p"
+        "You should do it right away."
+}
+
+text Route202_Text_DawnYouShouldGoTellYourFamily {
+"You should go tell your family\n"
+        "that you’re helping the professor.\p"
+        "The faster the better, too."
 }

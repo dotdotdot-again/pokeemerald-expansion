@@ -1,1 +1,33 @@
 mapscripts Sandgem_Lucas_House_F2_MapScripts {}
+
+script LuDa_PC {
+    lock
+        checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        msgbox("It's Dawn's PC",MSGBOX_NPC)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        msgbox("It's Lucas's PC",MSGBOX_NPC)
+    }
+    release
+}
+
+script LuDa_Sangem_Trashcan {
+    lock
+        checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        msgbox("It's Dawn's Trash can",MSGBOX_NPC)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        msgbox("It's Lucas's Trash Can",MSGBOX_NPC)
+    }
+    release
+}

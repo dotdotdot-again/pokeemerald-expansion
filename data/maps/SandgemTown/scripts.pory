@@ -82,7 +82,7 @@ script Sandgem_LuDa_Cont {
         applymovement(Sandgem_Barry, moves(walk_fast_down))
         msgbox("THUD!!!",MSGBOX_AUTOCLOSE)
         waitmessage
-        playbgm(MUS_ENCOUNTER_BRENDAN,0)
+        playbgm(MUS_DP_RIVAL,0)
         applymovement(Sandgem_Barry, moves(emote_exclamation_mark))
         playse(SE_PIN) 
         waitse
@@ -134,7 +134,7 @@ script Sandgem_LuDa_Cont {
         applymovement(Sandgem_Barry, moves(walk_fast_down))
         msgbox("THUD!!!",MSGBOX_AUTOCLOSE)
         waitmessage
-        playbgm(MUS_ENCOUNTER_BRENDAN,0)
+        playbgm(MUS_DP_RIVAL,0)
         applymovement(Sandgem_Barry, moves(emote_exclamation_mark))
         playse(SE_PIN) 
         waitse
@@ -234,7 +234,7 @@ script Sandgem_After_Lab_Event {
         "town?",MSGBOX_YESNO)
             if(var(VAR_RESULT) == 1)
             {
-                playbgm(MUS_FOLLOW_ME,0)
+                playbgm(MUS_DP_FOLLOW_ME,0)
                 setspeaker(SP_NAME_DAWN)
                 msgbox("Ok, follow me!",MSGBOX_AUTOCLOSE)
                 waitmessage
@@ -299,7 +299,7 @@ script Sandgem_After_Lab_Event {
         "town?",MSGBOX_YESNO)
             if(var(VAR_RESULT) == 1)
             {
-                playbgm(MUS_FOLLOW_ME,0)
+                playbgm(MUS_DP_FOLLOW_ME,0)
                 setspeaker(SP_NAME_LUCAS)
                 msgbox("Ok, follow me!",MSGBOX_AUTOCLOSE)
                 waitmessage
@@ -352,6 +352,79 @@ script Sandgem_After_Lab_Event {
     releaseall
 }
 
+//NPCs
+
+script SandgemTown_Text_TheThingYouHaveItsAPokedexIsntIt {
+    lock
+    msgbox("That thing you have!\p"
+        "It’s a Pokédex, isn’t it?!\p"
+        "You’re off to see all kinds of\n"
+        "Pokémon now! Lucky you!",MSGBOX_NPC)
+    release
+}
+
+script SandgemTown_Text_IdBetterSaveThis {
+    lock
+    msgbox("So I don’t forget what’s happened,\n"
+        "till now, I’d better save this...\p"
+        "There!\n"
+        "Now I can take a break.",MSGBOX_NPC)
+    release
+}
+
+script SandgemTown_Text_PokemonAreSoCool {
+    lock
+    msgbox("Oh, wow!\n"
+        "Pokémon are so cool!\p"
+        "You can make yours battle and make\n"
+        "them stronger!\p"
+        "I wish I had some!\n"
+        "It’s so cool!",MSGBOX_NPC)
+    release
+}
+
+//Signs
+script SandgemTown_Text_MapSign {
+    lock
+    msgbox("Sandgem Town\n"
+        "Town of Sand!",MSGBOX_SIGN)
+    release
+}
+
+script SandgemTown_Text_PokemonResearchLabSign {
+    lock
+    msgbox("Pokémon Research Lab",MSGBOX_SIGN)
+    release
+}
+
+script SandgemTown_Text_CounterpartMailbox {
+    lock
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        msgbox("Dawn’s House",MSGBOX_SIGN)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        msgbox("Lucas’s House",MSGBOX_SIGN)
+    }
+}
+
+script SandgemTown_Text_PokeMartSign {
+    lock
+    msgbox("All Your Item Needs Fulfilled!\n"
+        "Pokémon Mart",MSGBOX_SIGN)
+    release
+}
+
+script SandgemTown_Text_PokemonCenterSign {
+    lock
+    msgbox("Heal Your Pokémon!\n"
+        "Pokémon Center",MSGBOX_SIGN)
+    release
+}
 
 //Gendered Text
 //Dawn

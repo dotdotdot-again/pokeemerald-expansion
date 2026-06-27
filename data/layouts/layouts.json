@@ -9347,7 +9347,7 @@
     {
       "id": "LAYOUT_ROUTE201",
       "name": "Route201_Layout",
-      "width": 64,
+      "width": 66,
       "height": 22,
       "primary_tileset": "gTileset_PorytilesPrimaryPlatGBA",
       "secondary_tileset": "gTileset_PorytilesSecondaryPlatGBATwinleaf",

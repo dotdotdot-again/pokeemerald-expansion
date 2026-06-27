@@ -58,11 +58,141 @@ script TalkMom {
         "Isn’t Barry waiting for you?",MSGBOX_NPC)
         release
     }
+    elif(var(VAR_SANDGEM_INTRO_STATE) == 2)
+    {
+        lock
+        applymovement(Mom, moves(face_player))
+        setspeaker(SP_NAME_MOM)
+        msgbox("Welcome home, {PLAYER}.\n"
+        "Are you and your Pokémon healthy?\p"
+        "It’s so late right now...\n"
+        "Take a quick rest, dear.",MSGBOX_AUTOCLOSE)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
+        special(HealPlayerParty)
+        playfanfare(MUS_HEAL)
+        waitfanfare
+        fadescreen(FADE_FROM_BLACK)
+        setspeaker(SP_NAME_MOM)
+        msgbox("What is it, {PLAYER}?\p"
+        "...\p"
+        "Wow. Professor Rowan asked you\n"
+        "to do something that big.\p"
+        "OK, dear, go for it!\n"
+        "Your mom’s got your back!\p"
+        "Oh, I know! {PLAYER}, I’ve got\n"
+        "something that you’ll find useful.",MSGBOX_AUTOCLOSE)
+        waitmessage
+        playfanfare(MUS_OBTAIN_ITEM)
+    msgbox("{PLAYER} obtained\n"
+        "the {COLOR BLUE}{SHADOW LIGHT_BLUE}Mom's Journal{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!")
+	waitfanfare
+    setspeaker(SP_NAME_MOM)
+        msgbox("That’s a Journal. It keeps a record\n"
+        "of your daily events.\p"
+        "Check it, and you’ll be able to\n"
+        "remember what you did last.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Mom, moves(face_away_player))
+    waitmovement
+    setspeaker(SP_NAME_MOM)
+        msgbox("Gee, a journey full of adventure...\n"
+        "I envy you, kiddo.\p"
+        "Plus, you’re not alone.\n"
+        "You have your Pokémon with you.\l"
+        "I wish I could go instead!",MSGBOX_AUTOCLOSE)
+     waitmessage
+    applymovement(Mom, moves(face_player))
+    waitmovement
+        setspeaker(SP_NAME_MOM)
+        msgbox("I’m just joking, dear!\n"
+        "Yup, {PLAYER}!\p"
+        "I’ll be all right by myself, so you\n"
+        "go and enjoy your adventure!\p"
+        "When you’re exposed to new things,\n"
+        "and experience new sensations...\l"
+        "It makes your mother happy, too.\p"
+        "...But come back sometimes.\p"
+        "I would like to see the kinds of\n"
+        "Pokémon you’ve caught, dear.",MSGBOX_AUTOCLOSE)
+        waitmessage
+        playse(SE_DOOR)
+        clearflag(FLAG_UNUSED_0x020)
+        addobject(barryMom)
+        applymovement(Mom, moves(face_down,emote_exclamation_mark))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down,emote_exclamation_mark))
+        playse(SE_PIN) 
+        waitse
+        waitmovementall
+        applymovement(barryMom, moves(walk_up,face_left,delay_16,face_right,delay_16))
+        waitmovementall
+        setspeaker("Barry's Mom")
+        msgbox("Excuse me.\n"
+        "Is my little Barry here?",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(Mom, moves(walk_in_place_down))
+        waitmovement
+        setspeaker(SP_NAME_MOM)
+        msgbox("Oh?\n"
+        "No, he’s not...",MSGBOX_AUTOCLOSE)
+        waitmessage
+        setspeaker("Barry's Mom")
+        msgbox("Oh...\n"
+        "Then, he must have left already...\l"
+        "What to do...\p"
+        "That boy shouted about going on an\n"
+        "adventure, then he bolted.\p"
+        "He’s so headstrong and reckless...\n"
+        "I at least wanted him to take this...",MSGBOX_AUTOCLOSE)
+        waitmessage
+        setspeaker(SP_NAME_MOM)
+        msgbox("Not to worry, {PLAYER} will\n"
+        "deliver that to him.")
+        waitmessage
+        applymovement(Mom, moves(face_player))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_original_direction))
+        setspeaker(SP_NAME_MOM)
+        msgbox("Won’t you, {PLAYER}?",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(barryMom, moves(face_player))
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        setspeaker("Barry's Mom")
+        msgbox("Oh, really?\n"
+        "You’d do that for me?\p"
+        "{PLAYER}, please take this to\n"
+        "Barry for me.",MSGBOX_AUTOCLOSE)
+        waitmessage
+        giveitem(ITEM_PARCEL)
+        setspeaker(SP_NAME_MOM)
+        msgbox("Bye-bye, {PLAYER}!\n"
+        "Enjoy your adventure!",MSGBOX_AUTOCLOSE)
+        waitmessage
+        setspeaker("Barry's Mom")
+        msgbox("Let me think...\p"
+        "Knowing my boy, he would probably\n"
+        "head straight to Jubilife City...\p"
+        "OK, please take that to my\n"
+        "Barry.",MSGBOX_AUTOCLOSE)
+        waitmessage
+        applymovement(barryMom, moves(walk_down))
+        waitmovement
+        playse(SE_DOOR)
+        setflag(FLAG_UNUSED_0x020)
+        removeobject(barryMom)
+        waitse
+        setvar(VAR_SANDGEM_INTRO_STATE,3)
+        release
+    }
     else{
           lock
         setspeaker(SP_NAME_MOM)
         msgbox("Let me heal your pokemon for you.",MSGBOX_NPC)
+        waitmessage
+        fadescreen(FADE_TO_BLACK)
         special(HealPlayerParty)
+        playfanfare(MUS_HEAL)
+        waitfanfare
+        fadescreen(FADE_FROM_BLACK)
         msgbox("Have fun sweetie.",MSGBOX_NPC)
         waitmessage
         release       

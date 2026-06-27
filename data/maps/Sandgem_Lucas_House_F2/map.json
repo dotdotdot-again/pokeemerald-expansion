@@ -2,7 +2,7 @@
   "id": "MAP_SANDGEM_LUCAS_HOUSE_F2",
   "name": "Sandgem_Lucas_House_F2",
   "layout": "LAYOUT_SANDGEM_LUCAS_HOUSE_F2",
-  "music": "MUS_OLDALE",
+  "music": "MUS_DP_SANDGEM_DAY",
   "region_map_section": "MAPSEC_OLDALE_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -20,9 +20,26 @@
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_LUCAS_HOUSE",
-      "dest_warp_id": "4"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LuDa_PC"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LuDa_Sangem_Trashcan"
+    }
+  ]
 }

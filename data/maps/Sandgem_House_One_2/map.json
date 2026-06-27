@@ -2,7 +2,7 @@
   "id": "MAP_SANDGEM_HOUSE_ONE_2",
   "name": "Sandgem_House_One_2",
   "layout": "LAYOUT_SANDGEM_HOUSE_ONE_2",
-  "music": "MUS_OLDALE",
+  "music": "MUS_DP_SANDGEM_DAY",
   "region_map_section": "MAPSEC_OLDALE_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SandgemTownHouse_Text_PokemonGrowStrongerFromBattlingOtherPokemon",
       "flag": "0"
     },
     {
@@ -32,12 +32,12 @@
       "x": 7,
       "y": 6,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SandgemTownHouse_Text_AGoodTrainerTakesCareToNotLetTheirPokemonFaint",
       "flag": "0"
     }
   ],

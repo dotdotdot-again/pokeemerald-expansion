@@ -2,7 +2,7 @@
   "id": "MAP_BARRY_HOUSE_F1",
   "name": "BarryHouseF1",
   "layout": "LAYOUT_BARRY_HOUSE_F1",
-  "music": "MUS_LITTLEROOT",
+  "music": "MUS_DP_TWINLEAF_DAY",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

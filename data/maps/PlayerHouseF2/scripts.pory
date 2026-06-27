@@ -28,11 +28,13 @@ script EveryFrameTest {
         lockall
 	    setflag(FLAG_RECEIVED_RUNNING_SHOES)
 	    setflag(FLAG_SYS_B_DASH)
-        playbgm(MUS_ENCOUNTER_INTERVIEWER, 0)
+        playbgm(MUS_PL_TV_BROADCAST, 0)
         setspeaker("Newscaster")
 	    msgbox("\qoPok\emon are by our side, always.\n I hope you will understand the meaning\l of those words.\qc\p" 
-        "That was the comment left by Prof.\n Rowan, who has returned to Sinnoh from\l the Kanto Region.\p"
-        "That concludges our special program,\n \qoLet's Ask Prof. Rowan!\qc\p"
+        "That was the comment left by Prof.\n Rowan, who has returned to Sinnoh from\l the Kanto Region.")
+        fadenewbgm(MUS_PL_TV_END)
+        setspeaker("Newscaster")
+         msgbox("That concludges our special program,\n \qoLet's Ask Prof. Rowan!\qc\p"
         "Brought to you by Jubilife TV\n on Nationwide Net!\p"
         "See You next week,\n same time, same channel")
 	    waitmessage
@@ -49,7 +51,7 @@ script EveryFrameTest {
 //if player walks right
 script BarryWalksRight {
         lockall
-        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        playbgm(MUS_DP_RIVAL, 0)
         addobject(BarryIntroOne)
         applymovement(BarryIntroOne, moves(emote_exclamation_mark))
         playse(SE_PIN) 
@@ -100,7 +102,7 @@ script BarryWalksRight {
 //player walks left
 script BarryWalksLeft {
         lockall
-        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        playbgm(MUS_DP_RIVAL, 0)
         addobject(BarryIntroOne)
         applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
         applymovement(BarryIntroOne, moves(emote_exclamation_mark))
@@ -152,7 +154,7 @@ script BarryWalksLeft {
 //player walks down
 script BarryWalksDown {
         lockall
-        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        playbgm(MUS_DP_RIVAL, 0)
         addobject(BarryIntroOne)
         applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
         applymovement(BarryIntroOne, moves(emote_exclamation_mark))
@@ -204,7 +206,7 @@ script BarryWalksDown {
 //player walks up
 script BarryWalksUp {
         lockall
-        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        playbgm(MUS_DP_RIVAL, 0)
         addobject(BarryIntroOne)
         applymovement(OBJ_EVENT_ID_PLAYER,moves(face_right))
         applymovement(BarryIntroOne, moves(emote_exclamation_mark))

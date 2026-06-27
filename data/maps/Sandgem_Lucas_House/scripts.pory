@@ -1,1 +1,44 @@
 mapscripts Sandgem_Lucas_House_MapScripts {}
+
+script SandgemTownCounterpartHouse1F_Text_WowYoureDoingTheSameAsMyBigSibling {
+    lock
+
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        msgbox("Who are you?\p"
+        "...\p"
+        "Oh...\n"
+        "You’re {PLAYER}?\p"
+        "Hey, you’re doing that Pokédex thingy\n"
+        "for the professor!\p"
+        "Wow! That’s the same as my big\n"
+        "sister! Go for it!",MSGBOX_NPC)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        msgbox("Who are you?\p"
+        "...\p"
+        "Oh...\n"
+        "You’re {PLAYER}?\p"
+        "You’re doing that Pokédex thingy\n"
+        "for the professor!\p"
+        "Wow! That’s the same as my big\n"
+        "brother! Go for it!",MSGBOX_NPC)
+    }
+    release
+}
+
+script SandgemTownCounterpartHouse1F_Text_SoThatRowanFellowIsBack {
+    lock
+    msgbox("Ah, so that Rowan fellow is back?\n"
+        "He’s quite the remarkable man.\p"
+        "He’s been studying Pokémon since way,\n"
+        "way back.\p"
+        "My son and grandchild help Rowan\n"
+        "with his studies now.",MSGBOX_NPC)
+    release
+
+}

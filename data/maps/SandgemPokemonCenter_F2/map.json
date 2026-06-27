@@ -2,7 +2,7 @@
   "id": "MAP_SANDGEM_POKEMON_CENTER_F2",
   "name": "SandgemPokemonCenter_F2",
   "layout": "LAYOUT_SANDGEM_POKEMON_CENTER_F2",
-  "music": "MUS_POKE_CENTER",
+  "music": "MUS_DP_POKE_CENTER_DAY",
   "region_map_section": "MAPSEC_DEWFORD_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

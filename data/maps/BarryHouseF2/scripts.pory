@@ -15,7 +15,7 @@ script EveryFrame_BarryF2 {
 
     if(var(VAR_TWINLEAF_INTRO_STATE) == 5)
 	{
-        playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+        playbgm(MUS_DP_RIVAL, 0)
         setspeaker(SP_NAME_BARRY)
 	    msgbox("...I’d better take\n"
         "my Bag and Journal, too...",MSGBOX_NPC)

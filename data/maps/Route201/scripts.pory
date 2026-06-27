@@ -55,7 +55,7 @@ script Route201_Barry {
     playse(SE_PIN) 
     waitse
     waitmovement
-    playbgm(MUS_ROUTE122, 0)
+    playbgm(MUS_DP_ROWAN, 0)
     clearflag(FLAG_WONDER_CARD_UNUSED_2)
     addobject(Rowan_Route_201)
     applymovement(Rowan_Route_201, moves(walk_right*7))
@@ -184,12 +184,13 @@ script Route201_Barry {
         waitmessage
         applymovement(Rowan_Route_201, moves(face_left,delay_16,face_right,delay_16))
         waitmovement
-        playbgm(MUS_ENCOUNTER_MAY, 0)
         addobject(LuDa_Route_201_again)
         checkplayergender
         if(var(VAR_RESULT) == 0)
         {
+            
             //Dawn Script if Player Male
+            playbgm(MUS_DP_DAWN, 0)
             setspeaker(SP_NAME_DAWN)
             msgbox("Professor Rowan.")
             applymovement(LuDa_Route_201_again, moves(walk_right*6))
@@ -235,6 +236,7 @@ script Route201_Barry {
         elif(var(VAR_RESULT) == 1)
         {
             //Lucas Script if Player female
+            playbgm(MUS_DP_LUCAS, 0)
             setspeaker(SP_NAME_LUCAS)
             msgbox("Professor Rowan!")
             applymovement(LuDa_Route_201_again, moves(walk_right*6))
@@ -414,7 +416,7 @@ script RownsBag {
     setflag(FLAG_SYS_POKEMON_GET)
     special(ChooseStarter)
 	waitstate
-    playbgm(MUS_ROUTE101,0)
+    playbgm(MUS_DP_ROUTE201_DAY,0)
     applymovement(Rowan_Route_201, moves(face_down))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     applymovement(Barry_201, moves(face_down))

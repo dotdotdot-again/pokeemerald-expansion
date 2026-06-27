@@ -2,7 +2,7 @@
   "id": "MAP_PLAYER_HOUSE_F2",
   "name": "PlayerHouseF2",
   "layout": "LAYOUT_PLAYER_HOUSE_F2",
-  "music": "MUS_LITTLEROOT",
+  "music": "MUS_DP_TWINLEAF_DAY",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

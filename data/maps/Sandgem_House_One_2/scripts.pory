@@ -1,1 +1,22 @@
 mapscripts Sandgem_House_One_2_MapScripts {}
+
+script SandgemTownHouse_Text_PokemonGrowStrongerFromBattlingOtherPokemon {
+    lock
+    msgbox("Pokémon grow steadily stronger from\n"
+        "battling against other Pokémon.\p"
+        "At first, you should take it easy,\n"
+        "though.\p"
+        "Heal your Pokémon regularly at Pokémon\n"
+        "Centers while you’re leveling them up.",MSGBOX_NPC)
+    release
+}
+
+
+script SandgemTownHouse_Text_AGoodTrainerTakesCareToNotLetTheirPokemonFaint {
+    lock
+    msgbox("A good Trainer is one that takes care\n"
+        "not to let their Pokémon faint from\l"
+        "losing HP.",MSGBOX_NPC)
+    release
+}
+

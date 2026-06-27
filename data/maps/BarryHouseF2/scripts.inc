@@ -27,7 +27,7 @@ EveryFrame_BarryF2::
 
 EveryFrame_BarryF2_1:
 # 18 "data/maps/BarryHouseF2/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
+	playbgm MUS_DP_RIVAL, 0
 # 19 "data/maps/BarryHouseF2/scripts.pory"
 	setspeaker SP_NAME_BARRY
 # 20 "data/maps/BarryHouseF2/scripts.pory"

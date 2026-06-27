@@ -1,1 +1,39 @@
 mapscripts SandgemPokemart_MapScripts {}
+
+script Sandgem_Pokemart_Guy{
+    lockall
+    faceplayer
+    message("Welcome!\n"
+    "What do you need?")
+    waitmessage
+    pokemart(Sandgem_Basic)
+    msgbox("Please come again.")
+    releaseall
+    end
+}
+
+mart Sandgem_Basic {
+	ITEM_POKE_BALL
+	ITEM_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+}
+
+script SandgemTownMart_Text_BuyLotsOfPotions {
+    lock
+    msgbox("If a Pokémon loses all its HP,\n"
+        "it can’t battle anymore.\p"
+        "I’m buying lots of Potions to avoid\n"
+        "having that happen!",MSGBOX_NPC)
+    release
+}
+
+script SandgemTownMart_Text_TossAPokeBall {
+    lock
+    msgbox("If you come across a Pokémon you’ve\n"
+        "just gotta have, toss a Poké Ball!\p"
+        "Never leave home without one!",MSGBOX_NPC)
+    release
+}
+
+

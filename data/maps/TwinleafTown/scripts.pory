@@ -50,7 +50,14 @@ script Twinleaf_outside_lady {
 
 script Twinleaf_outside_guy {
     lock
-    if(var(VAR_TWINLEAF_INTRO_STATE) == 4 || var(VAR_TWINLEAF_INTRO_STATE) == 5)
+    if (flag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH) == TRUE)
+    {
+        msgbox("Everyone goes off on adventures,\n"
+        "and then they gradually grow up...",MSGBOX_NPC)
+    }
+    else
+    {
+        if(var(VAR_TWINLEAF_INTRO_STATE) == 4 || var(VAR_TWINLEAF_INTRO_STATE) == 5)
     {
     msgbox("Hiya, {PLAYER}.\n"
     "Barry was looking for you.\p"
@@ -58,8 +65,9 @@ script Twinleaf_outside_guy {
     "Why don’t you go check it out?",MSGBOX_NPC)
     release
     }
-    elif(var(VAR_TWINLEAF_INTRO_STATE) == 6)
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 6 || var(VAR_TWINLEAF_INTRO_STATE) == 7 || var(VAR_TWINLEAF_INTRO_STATE) == 8 || var(VAR_TWINLEAF_INTRO_STATE) == 9)
     {
+        //I got lazy with this one lol :p
     msgbox("Hiya, {PLAYER}.\n"
     "You're looking for Barry?\p"
     "He just went tear off a little\n"
@@ -81,7 +89,10 @@ script Twinleaf_outside_guy {
     "...Ouch. He ran right into me earlier.\n"
     "It's still hurting.\l"
     "That kid's growing up tough.",MSGBOX_NPC)
+
     }
+    }
+    
 
 
 
@@ -121,7 +132,7 @@ script Twinleaf_Barry_Thud {
     waitmovementall
     msgbox("THUD!!",MSGBOX_NPC)
     waitmessage
-    playbgm(MUS_ENCOUNTER_BRENDAN,0)
+    playbgm(MUS_DP_RIVAL,0)
     applymovement(Twinleaf_Thud_Barry, moves(emote_exclamation_mark))
     playse(SE_PIN) 
     waitse

@@ -1293,7 +1293,7 @@ void Overworld_PlaySpecialMapMusic(void)
         else if (GetCurrentMapType() == MAP_TYPE_UNDERWATER)
             music = MUS_UNDERWATER;
         else if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
-            music = (IS_FRLG ? MUS_RG_SURF : MUS_SURF);
+            music = (IS_FRLG ? MUS_RG_SURF : MUS_DP_SURF);
     }
 
     if (music != GetCurrentMapMusic())

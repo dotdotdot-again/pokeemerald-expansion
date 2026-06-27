@@ -220,6 +220,14 @@ script LuDa_Dad_Lab {
     if(var(VAR_RESULT) == 0)
     {
         //Dawn Script if Player Male
+        lock
+        setspeaker(SP_NAME_DAWN)
+        msgbox("I’m Dawn’s father.\p"
+        "I’ll be happy to assist you on your\n"
+        "quest for the professor.\p"
+        "Hahaha. Eh...\n"
+        "I’m sure we can count on you!",MSGBOX_NPC)
+        release
     }
     elif(var(VAR_RESULT) == 1)
     {

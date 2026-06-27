@@ -275,44 +275,52 @@ LuDa_Dad_Lab::
 # 220 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LuDa_Dad_Lab_1
-# 224 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 232 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq LuDa_Dad_Lab_2
 	return
 
 LuDa_Dad_Lab_1:
+# 223 "data/maps/Sandgem_House_Lab/scripts.pory"
+	lock
+# 224 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker SP_NAME_DAWN
+# 225 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox LuDa_Dad_Lab_Text_0, MSGBOX_NPC
+# 230 "data/maps/Sandgem_House_Lab/scripts.pory"
+	release
 	return
 
 LuDa_Dad_Lab_2:
-# 227 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 235 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 228 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 236 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_LUCAS
-# 229 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox LuDa_Dad_Lab_Text_0, MSGBOX_NPC
-# 234 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 237 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox LuDa_Dad_Lab_Text_1, MSGBOX_NPC
+# 242 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 
 Roseanne_Lab::
-# 239 "data/maps/Sandgem_House_Lab/scripts.pory"
-	lock
-# 240 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker Roseanne_Lab_Text_0
-# 241 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox Roseanne_Lab_Text_1, MSGBOX_NPC
 # 247 "data/maps/Sandgem_House_Lab/scripts.pory"
+	lock
+# 248 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker Roseanne_Lab_Text_0
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Roseanne_Lab_Text_1, MSGBOX_NPC
+# 255 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 
 Lab_PC::
-# 251 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 259 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 252 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 260 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Lab_PC_Text_0, MSGBOX_SIGN
-# 253 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 261 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
@@ -526,7 +534,15 @@ Rowan_Lab_Text_0:
 	.string "awaits you!$"
 
 LuDa_Dad_Lab_Text_0:
-# 229 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 225 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "I’m Dawn’s father.\p"
+	.string "I’ll be happy to assist you on your\n"
+	.string "quest for the professor.\p"
+	.string "Hahaha. Eh...\n"
+	.string "I’m sure we can count on you!$"
+
+LuDa_Dad_Lab_Text_1:
+# 237 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’m Lucas’s father.\p"
 	.string "I’ll be happy to assist you on your\n"
 	.string "quest for the professor.\p"
@@ -534,11 +550,11 @@ LuDa_Dad_Lab_Text_0:
 	.string "I’m sure we can count on you!$"
 
 Roseanne_Lab_Text_0:
-# 240 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 248 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Roseanne$"
 
 Roseanne_Lab_Text_1:
-# 241 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Professor Rowan invented a new\n"
 	.string "Pokédex while working alongside a\l"
 	.string "professor from the Kanto region.\p"
@@ -547,22 +563,22 @@ Roseanne_Lab_Text_1:
 	.string "our professor!$"
 
 Lab_PC_Text_0:
-# 252 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 260 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "It's Rowan's Computer$"
 
 SandgemTownLab_Text_DawnImSoGladThatYourKindTowardPokemon::
-# 266 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 274 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’m so glad that you’re kind\n"
 	.string "toward Pokémon!\p"
 	.string "If you weren’t, I’d have to...\n"
 	.string "Oh, I just can’t say it...$"
 
 SandgemTownLab_Text_DawnIveGotOneToo::
-# 273 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 281 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’ve got one, too!$"
 
 SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings::
-# 277 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 285 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "The Pokémon that I met for\n"
 	.string "the first time was {STR_VAR_2}!\p"
 	.string "If you would have chosen {STR_VAR_2}\n"
@@ -579,19 +595,19 @@ SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings::
 	.string "Glad to meet you, {PLAYER}!$"
 
 SandgemTownLab_Text_LucasBoyAmIGladYoureKindTowardPokemon::
-# 296 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 304 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Boy, am I glad you’re kind\n"
 	.string "toward Pokémon.\p"
 	.string "If you weren’t, well...\n"
 	.string "I don’t even want to think about it.$"
 
 SandgemTownLab_Text_LucasIveGotTheSameKindOfPokedex::
-# 303 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 311 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’ve got the same kind of\n"
 	.string "Pokédex as you.$"
 
 SandgemTownLab_Text_LucasIllTeachYouStuffLater::
-# 308 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 316 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "The professor asked me to help,\n"
 	.string "so I’m filling the Pokédex pages, too.\p"
 	.string "That makes us comrades working toward\n"
