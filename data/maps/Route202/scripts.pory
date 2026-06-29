@@ -10,6 +10,32 @@ script testBattle {
     end
 }
 
+script testPokedex {
+    lock
+    msgbox("How many pokedex pokemon you got?",MSGBOX_AUTOCLOSE)
+    waitmessage
+    if(var(VAR_RESULT) == 0)
+    {
+        msgbox("You have zero pokemon",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        msgbox("You have 1 pokemon",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(var(VAR_RESULT) == 2)
+    {
+        msgbox("You have 2 pokemon",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    else{
+        msgbox("You have more than 2 pokemon",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    release
+}
+
 script goSeeYourMom 
 {
     lockall
@@ -146,6 +172,67 @@ script CatchPokemon {
     waitse
     waitmovementall
     applymovement(LudaRoute202, moves(walk_right*4))
+    waitmovementall
+    call(CatchPokemonCont)
+}
+
+
+script CatchPokemonMid {
+    lockall
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        playbgm(MUS_DP_DAWN,0)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        playbgm(MUS_DP_LUCAS,0)
+    }
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_up,walk_right*4))
+    waitmovementall
+    call(CatchPokemonCont)
+}
+
+script CatchPokemonTop {
+    lockall
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        playbgm(MUS_DP_DAWN,0)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        playbgm(MUS_DP_LUCAS,0)
+    }
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_up*2,walk_right*4))
+    waitmovementall
+    call(CatchPokemonCont)
+}
+
+script CatchPokemonBottom {
+    lockall
+    checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        playbgm(MUS_DP_DAWN,0)
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        playbgm(MUS_DP_LUCAS,0)
+    }
+    applymovement(LudaRoute202, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+    waitmovementall
+    applymovement(LudaRoute202, moves(walk_down,walk_right*4))
     waitmovementall
     call(CatchPokemonCont)
 }

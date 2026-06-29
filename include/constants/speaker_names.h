@@ -10,6 +10,8 @@ enum SpeakerNames {
     SP_NAME_LUCAS,
     SP_NAME_ROWAN,
     SP_NAME_CYRUS,
+    SP_NAME_IDK,
+    SP_NAME_LOOKER,
     SP_NAME_COUNT
 };
 

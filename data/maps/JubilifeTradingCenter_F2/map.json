@@ -2,7 +2,7 @@
   "id": "MAP_JUBILIFE_TRADING_CENTER_F2",
   "name": "JubilifeTradingCenter_F2",
   "layout": "LAYOUT_JUBILIFE_TRADING_CENTER_F2",
-  "music": "MUS_GAME_CORNER",
+  "music": "MUS_DP_WFC",
   "region_map_section": "MAPSEC_RUSTBORO_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

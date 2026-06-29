@@ -138,6 +138,33 @@
       "var": "VAR_SANDGEM_INTRO_STATE",
       "var_value": "3",
       "script": "CatchPokemon"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_INTRO_STATE",
+      "var_value": "3",
+      "script": "CatchPokemonMid"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_INTRO_STATE",
+      "var_value": "3",
+      "script": "CatchPokemonTop"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_SANDGEM_INTRO_STATE",
+      "var_value": "3",
+      "script": "CatchPokemonBottom"
     }
   ],
   "bg_events": [

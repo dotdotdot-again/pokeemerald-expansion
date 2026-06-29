@@ -2,7 +2,7 @@
   "id": "MAP_JUBILIFE_GATE",
   "name": "Jubilife_Gate",
   "layout": "LAYOUT_JUBILIFE_GATE",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_OREBURGH_GATE",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

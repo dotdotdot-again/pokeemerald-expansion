@@ -2,7 +2,7 @@
   "id": "MAP_JUBILIFE_COMPANY_F2",
   "name": "JubilifeCompanyF2",
   "layout": "LAYOUT_JUBILIFE_COMPANY_F2",
-  "music": "MUS_GAME_CORNER",
+  "music": "MUS_DP_JUBILIFE_DAY",
   "region_map_section": "MAPSEC_RUSTBORO_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

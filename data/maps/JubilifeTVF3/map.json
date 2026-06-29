@@ -2,7 +2,7 @@
   "id": "MAP_JUBILIFE_TVF3",
   "name": "JubilifeTVF3",
   "layout": "LAYOUT_JUBILIFE_TVF3",
-  "music": "MUS_GAME_CORNER",
+  "music": "MUS_DP_JUBILIFE_DAY",
   "region_map_section": "MAPSEC_RUSTBORO_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

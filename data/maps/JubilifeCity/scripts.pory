@@ -6,3 +6,357 @@ script test_event{
 	msgbox(format("test"), MSGBOX_NPC)
 	releaseall
 }
+
+script Jubilife_Enterence_LuDa_Event_Mid  {
+	lockall
+	applymovement(JubLuda, moves(walk_down*3))
+	waitmovement
+	applymovement(JubLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(JubLuda, moves(walk_down*2))
+	waitmovement
+	call(Jubilife_Enterence_LuDa_Event_Cont)
+}
+
+script Jubilife_Enterence_LuDa_Event_Left  {
+	lockall
+	applymovement(JubLuda, moves(walk_left,walk_down*3))
+	waitmovement
+	applymovement(JubLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(JubLuda, moves(walk_down*2))
+	waitmovement
+	setvar(VAR_JUBILIFE_STATE,2)
+	call(Jubilife_Enterence_LuDa_Event_Cont)
+}
+
+script Jubilife_Enterence_LuDa_Event_Right  {
+	lockall
+	applymovement(JubLuda, moves(walk_right,walk_down*3))
+	waitmovement
+	applymovement(JubLuda, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(JubLuda, moves(walk_down*2))
+	waitmovement
+	setvar(VAR_JUBILIFE_STATE,3)
+	call(Jubilife_Enterence_LuDa_Event_Cont)
+}
+
+script Jubilife_Enterence_LuDa_Event_Cont {
+	checkplayergender
+	if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+		playbgm(MUS_DP_DAWN,0)
+		setspeaker(SP_NAME_DAWN)
+        msgbox("Hi, {PLAYER}!\n"
+        "Are you catching Pokémon?")
+		getpartysize
+		if(var(VAR_RESULT) == 0 || var(VAR_RESULT) == 1)
+		{
+		setspeaker(SP_NAME_DAWN)
+		msgbox("Huh?\n"
+        "...Um...\p"
+        "I think you’d feel a lot safer if you\n"
+        "were to catch some more.\p"
+        "You know, like when you need to travel\n"
+        "to faraway places.")
+		
+		}
+		elif(var(VAR_RESULT) >= 2)
+		{
+		buffernumberstring(STR_VAR_1,VAR_RESULT)
+		setspeaker(SP_NAME_DAWN)
+		msgbox("Wow! You’ve already got {STR_VAR_1} Pokémon\n"
+        "with you!\p"
+        "At that pace, your Pokédex should\n"
+        "be full in no time at all!")
+		
+		}
+		setspeaker(SP_NAME_DAWN)
+        msgbox("Oh, I know! Don’t you think it’s\n"
+        "better to know more about Pokémon?\p"
+        "Sure it is!\n"
+        "I know just the place.\p"
+        "Come on!\n"
+        "Don’t be shy. Follow me!",MSGBOX_AUTOCLOSE)
+		waitmessage
+
+	applymovement(JubLuda, moves(walk_up*16))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*16))
+	waitmovementall
+	setspeaker(SP_NAME_DAWN)
+        msgbox("That man...\n"
+        "What is he doing?",MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(LookerJubilife, moves(delay_16,face_left,delay_16,face_up,delay_16,walk_left*2,walk_fast_left*4,face_right,delay_16,face_up,delay_16))
+	waitmovementall
+	applymovement(LookerJubilife, moves(walk_right,walk_fast_right*2))
+	applymovement(JubLuda, moves(walk_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up,walk_right,walk_up))
+	waitmovementall
+	setspeaker(SP_NAME_DAWN)
+        msgbox("Um...")
+	waitmessage
+	applymovement(LookerJubilife, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovementall
+	playbgm(MUS_PL_LOOKER,0)
+        msgbox("WHAAAT?!")
+	setspeaker("Mystery man")
+		msgbox("...How did you know?\p"
+        "How did you unmask me as a member of\n"
+        "the International Police?!")
+	setspeaker(SP_NAME_DAWN)
+        msgbox("Huh? What? I beg your pardon?\n"
+        "I was just making conversation...")
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+		playbgm(MUS_DP_LUCAS,0)
+		setspeaker(SP_NAME_LUCAS)
+        msgbox("Hey, {PLAYER}!\n"
+        "How many Pokémon have you caught?")
+		getpartysize
+		if(var(VAR_RESULT) == 0 || var(VAR_RESULT) == 1)
+		{
+		setspeaker(SP_NAME_LUCAS)
+		msgbox("Huh?\n"
+        "I think you should catch some more.\p"
+        "It might be more of a challenge\n"
+        "raising a lot of Pokémon...\p"
+        "But it’s worth it. The more Pokémon\n"
+        "you have, the happier you’ll be.")
+		
+		}
+		elif(var(VAR_RESULT) >= 2)
+		{
+		buffernumberstring(STR_VAR_1,VAR_RESULT)
+		setspeaker(SP_NAME_LUCAS)
+		msgbox("Whoa! You already have {STR_VAR_1} Pokémon\n"
+        "with you!")
+		
+		}
+		setspeaker(SP_NAME_LUCAS)
+        msgbox("Hey, that’s right! Don’t you think it’s\n"
+        "better to know more about Pokémon?\p"
+        "Sure it is!\n"
+        "There’s this great place for that.\p"
+        "Come on! It’s all right.\n"
+        "Follow me.",MSGBOX_AUTOCLOSE)
+		waitmessage
+		if(var(VAR_JUBILIFE_STATE) == 2)
+		{
+			applymovement(JubLuda, moves(walk_up*8,walk_right,walk_up*8))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*9,walk_right,walk_up*7))
+
+		}
+		elif(var(VAR_JUBILIFE_STATE) == 3)
+		{
+			applymovement(JubLuda, moves(walk_up*8,walk_left,walk_up*8))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*9,walk_left,walk_up*7))
+
+		}
+		else{
+			applymovement(JubLuda, moves(walk_up*16))
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*16))
+		}
+		
+	waitmovementall
+	setspeaker(SP_NAME_LUCAS)
+        msgbox("That guy...\n"
+        "What’s he doing?",MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(LookerJubilife, moves(delay_16,face_left,delay_16,face_up,delay_16,walk_left*2,walk_fast_left*4,face_right,delay_16,face_up,delay_16))
+	waitmovementall
+	applymovement(LookerJubilife, moves(walk_right,walk_fast_right*2))
+	applymovement(JubLuda, moves(walk_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up,walk_right,walk_up))
+	waitmovementall
+	setspeaker(SP_NAME_LUCAS)
+        msgbox("Uh, excuse...")
+	waitmessage
+	applymovement(LookerJubilife, moves(face_down,emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovementall
+	playbgm(MUS_PL_LOOKER,0)
+        msgbox("WHAAAT?!")
+	setspeaker("Mystery man")
+		msgbox("...How did you know?\p"
+        "How did you unmask me as a member of\n"
+        "the International Police?!")
+	setspeaker(SP_NAME_LUCAS)
+        msgbox("Huh? What? Are you kidding?\n"
+        "I was just making small talk...")
+    }
+	setspeaker("Shady man")
+		msgbox("...Heh. You claim you were\n"
+        "only making conversation, do you?\p"
+        "But, I know better not to believe that.\n"
+        "No, no, no.\p"
+        "You recognized right away that I was\n"
+        "someone extraordinary.\p"
+        "That is why you spoke to me, is it not?\n"
+        "Your power of observation is fearsome!\p"
+        "Quite admirable, you are!")
+	setspeaker("Shady man")
+		msgbox("Now that my cover has been blown, let\n"
+        "me introduce myself.\p"
+        "I am a globe-trotting elite of the\n"
+        "International Police.\p"
+        "My name... Ah, no, I shall inform you\n"
+        "only of my code name.\p"
+        "My code name, it is Looker.\n"
+        "It is what they all call me.\p")
+		setspeaker(SP_NAME_LOOKER)
+        msgbox("Incidentally, is the saying, “Don’t be\n"
+        "a thief!” familiar to you?",MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1)
+    {
+		setspeaker(SP_NAME_LOOKER)
+        msgbox("Yes, that is correct.\n"
+        "Taking what belongs to others is wrong.")
+	}
+	elif(var(VAR_RESULT) == 0)
+    {
+		setspeaker(SP_NAME_LOOKER)
+        msgbox("No? You claim to not know it?\n"
+        "How could that be?\p"
+        "Perhaps your mama has said it, but you\n"
+        "have forgotten it, like usual?\p"
+        "Now listen, my friends. It is wrong to\n"
+        "take what belongs to others.")
+	}
+	setspeaker(SP_NAME_LOOKER)
+        msgbox("Unfortunately, there are apparently\n"
+        "those who do not heed those words.\p"
+        "In Sinnoh, in fact, there are criminals\n"
+        "stealing the Pokémon of others.\p"
+        "I have, therefore, been on the lookout\n"
+        "for characters arousing my suspicion.\p"
+        "Incidentally, you are Trainers, yes?\n"
+        "Perhaps you can make use of this?")
+		waitmessage
+		giveitem(ITEM_FAME_CHECKER)
+	setspeaker(SP_NAME_LOOKER)
+		msgbox("That Vs. Recorder, it is a nifty device\n"
+        "for recording a match.\p"
+        "I obtained it because it is quite\n"
+        "popular these days.\p"
+        "But myself, I do not do Pokémon\n"
+        "battling very often.\p"
+        "It will be in better hands with you.",MSGBOX_AUTOCLOSE)
+		waitmessage
+		applymovement(LookerJubilife, moves(face_left,delay_16,delay_8,face_right,delay_16,face_down))
+		waitmovement
+	setspeaker(SP_NAME_LOOKER)
+		msgbox("Also, I have a request.\p"
+        "If you were to see me again, I ask that\n"
+        "you not talk to me, for I am on duty.\p"
+        "...Actually, yes, yes, you may speak to\n"
+        "me. You must.\p"
+        "Not because I am lonely, no, no!\n"
+        "You must inform me of bad guys!\l"
+        "You must inform me of any happenings!",MSGBOX_AUTOCLOSE)
+		waitmessage
+		applymovement(LookerJubilife, moves(walk_fast_right*3,face_left,delay_16,walk_fast_up*5))
+		applymovement(JubLuda, moves(face_right,delay_16,delay_4,face_up))
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right,delay_16,delay_4,face_up))
+		waitmovementall
+		removeobject(LookerJubilife)
+		fadedefaultbgm
+		checkplayergender
+    if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox("...Working for the International\n"
+        "Police must be hard.",MSGBOX_AUTOCLOSE)
+		waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Working for the International\n"
+        "Police sounds hard.",MSGBOX_AUTOCLOSE)
+		waitmessage
+    }
+	applymovement(JubLuda, moves(walk_left,walk_down,walk_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+	waitmovementall
+	if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox("{PLAYER}, here it is.\n"
+        "It’s the Trainers’ School.\l"
+        "The name says it all!",MSGBOX_AUTOCLOSE)
+		waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("{PLAYER}, here we are.\n"
+        "This is the Trainers’ School.\l"
+        "The name says it all!",MSGBOX_AUTOCLOSE)
+		waitmessage
+    }
+	applymovement(JubLuda, moves(walk_up,walk_right*2))
+	waitmovement
+	if(var(VAR_RESULT) == 0)
+    {
+        //Dawn Script if Player Male
+        setspeaker(SP_NAME_DAWN)
+        msgbox("I saw your friend Barry go in\n"
+        "earlier.\p"
+        "He could still be in there studying.\n"
+        "OK, bye now!",MSGBOX_AUTOCLOSE)
+		waitmessage
+    }
+    elif(var(VAR_RESULT) == 1)
+    {
+        //Lucas Script if Player female
+        setspeaker(SP_NAME_LUCAS)
+        msgbox("Your pal Barry went in earlier.\n"
+        "He might still be studying in there.\p"
+        "OK, see you around!",MSGBOX_AUTOCLOSE)
+		waitmessage
+    }
+	applymovement(JubLuda, moves(walk_down*6))
+	waitmovement
+	removeobject(JubLuda)
+	setflag(FLAG_LUDA_JUBILIFE)
+	setvar(VAR_JUBILIFE_STATE,1)
+	releaseall
+	//call(Jubilife_Enterence_LuDa_Event_Cont)
+}
+
+script Jubilife_lookerStop {
+	lock
+	setspeaker(SP_NAME_LOOKER)
+	applymovement(LookerJubilifeBlock, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovement
+	setspeaker(SP_NAME_LOOKER)
+        msgbox("Hello, my friend.\n"
+        "Have you visited the Trainers’ School?\p"
+        "Did your friend not guide you there\n"
+        "earlier?",MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+	waitmovement
+	release
+}
+

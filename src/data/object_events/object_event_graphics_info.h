@@ -1494,7 +1494,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MartEmployee = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RooftopSaleWoman = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_DP_MARTLADY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_DP_MARTLADY,
     .size = 256,
     .width = 16,

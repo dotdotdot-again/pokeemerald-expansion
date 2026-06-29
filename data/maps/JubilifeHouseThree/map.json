@@ -2,7 +2,7 @@
   "id": "MAP_JUBILIFE_HOUSE_THREE",
   "name": "JubilifeHouseThree",
   "layout": "LAYOUT_JUBILIFE_HOUSE_THREE",
-  "music": "MUS_RUSTBORO",
+  "music": "MUS_DP_JUBILIFE_DAY",
   "region_map_section": "MAPSEC_RUSTBORO_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

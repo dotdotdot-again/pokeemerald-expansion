@@ -94,7 +94,7 @@
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
+#define FLAG_LUDA_JUBILIFE    0x4B // Unused Flag
 #define LUDA_ROUTE_202_AGAIN    0x4C // Unused Flag
 #define LUDA_ROUTE_202    0x4D // Unused Flag
 #define LUDA_SANDGEM_LAB     0x4E // Unused Flag
@@ -351,7 +351,7 @@
 #define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
 #define FLAG_WONDER_CARD_UNUSED_2            0x13E //Rowan Route 201?
 #define FLAG_WONDER_CARD_UNUSED_3            0x13F 
-#define FLAG_WONDER_CARD_UNUSED_4            0x140
+#define FLAG_WONDER_CARD_UNUSED_4            0x140 //Jubilife Barry in School
 #define FLAG_WONDER_CARD_UNUSED_5            0x141
 #define FLAG_WONDER_CARD_UNUSED_6            0x142
 #define FLAG_WONDER_CARD_UNUSED_7            0x143
