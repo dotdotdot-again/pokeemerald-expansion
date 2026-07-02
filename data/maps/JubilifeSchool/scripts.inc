@@ -52,8 +52,10 @@ JubilifeSchool_Barry_Stuff_1:
 # 59 "data/maps/JubilifeSchool/scripts.pory"
 	setflag FLAG_WONDER_CARD_UNUSED_4
 # 60 "data/maps/JubilifeSchool/scripts.pory"
-	removeobject SchoolBarry
+	clearflag FLAG_JUBILIFE_POKETKCH
 # 61 "data/maps/JubilifeSchool/scripts.pory"
+	removeobject SchoolBarry
+# 62 "data/maps/JubilifeSchool/scripts.pory"
 	releaseall
 	return
 

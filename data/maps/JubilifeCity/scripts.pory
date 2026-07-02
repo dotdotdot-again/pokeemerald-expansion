@@ -49,6 +49,7 @@ script Jubilife_Enterence_LuDa_Event_Right  {
 }
 
 script Jubilife_Enterence_LuDa_Event_Cont {
+	setflag(FLAG_JUBILIFE_POKETKCH)
 	checkplayergender
 	if(var(VAR_RESULT) == 0)
     {
@@ -356,6 +357,28 @@ script Jubilife_lookerStop {
         "earlier?",MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+	waitmovement
+	release
+}
+
+script Jubilife_TradeStation_Stop {
+	lock
+	if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == TRUE)
+	{
+
+	}
+	applymovement(4, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovement
+        msgbox("Past here is the Global Terminal, your\n"
+        "gateway to the world!\p"
+        "Oh, I’m sorry, you don’t have\n"
+        "any Gym Badges.\p"
+        "The Global Terminal is off-limits if you\n"
+        "don’t have a Gym Badge. Sorry!",MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
 	waitmovement
 	release
 }

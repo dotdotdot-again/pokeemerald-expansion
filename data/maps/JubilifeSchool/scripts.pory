@@ -57,6 +57,7 @@ script JubilifeSchool_Barry_Stuff {
     }
     setvar(VAR_JUBILIFE_STATE,2)
     setflag(FLAG_WONDER_CARD_UNUSED_4)
+    clearflag(FLAG_JUBILIFE_POKETKCH)
     removeobject(SchoolBarry)
     releaseall
     

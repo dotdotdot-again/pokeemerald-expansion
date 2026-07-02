@@ -831,7 +831,7 @@ static const s16 sBattlerHealthboxCoords[BATTLE_COORDS_COUNT][MAX_BATTLERS_COUNT
     [BATTLE_COORDS_SINGLES] =
     {
         [B_POSITION_PLAYER_LEFT]   = { 158, 88 },
-        [B_POSITION_OPPONENT_LEFT] = { 44,  30 },
+        [B_POSITION_OPPONENT_LEFT] = { 32,  30 },
     },
     [BATTLE_COORDS_DOUBLES] =
     {
@@ -1814,7 +1814,10 @@ static void UpdateStatusIconInHealthbox(u8 healthboxSpriteId)
     }
     else
     {
-        statusGfxPtr = GetHealthboxElementGfxPtr(HEALTHBOX_GFX_39);
+        if (GetBattlerSide(battler) == B_SIDE_PLAYER)
+            statusGfxPtr = GetHealthboxElementGfxPtr(HEALTHBOX_GFX_39);
+        else
+            statusGfxPtr = GetHealthboxElementGfxPtr(HEALTHBOX_GFX_40);
 
         for (i = 0; i < 3; i++)
             CpuCopy32(statusGfxPtr, (void *)(OBJ_VRAM0 + (gSprites[healthboxSpriteId].oam.tileNum + tileNumAdder + i) * TILE_SIZE_4BPP), 32);
@@ -2804,8 +2807,8 @@ static const struct SpriteSheet sSpriteSheet_MoveInfoWindow =
 
 #define LAST_USED_BALL_X_F    14
 #define LAST_USED_BALL_X_0    -14
-#define LAST_USED_BALL_Y      ((IsDoubleBattle()) ? 78 : 68)
-#define LAST_USED_BALL_Y_BNC  ((IsDoubleBattle()) ? 76 : 66)
+#define LAST_USED_BALL_Y      ((IsDoubleBattle()) ? 80 : 70)
+#define LAST_USED_BALL_Y_BNC  ((IsDoubleBattle()) ? 78 : 68)
 
 #define LAST_BALL_WIN_X_F       (LAST_USED_BALL_X_F - 0)
 #define LAST_BALL_WIN_X_0       (LAST_USED_BALL_X_0 - 0)
