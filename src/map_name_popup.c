@@ -32,6 +32,10 @@ enum MapPopUp_Themes
     MAPPOPUP_THEME_BRICK,
     MAPPOPUP_THEME_UNDERWATER,
     MAPPOPUP_THEME_STONE2,
+    MAPPOPUP_THEME_FLORAL,
+    MAPPOPUP_THEME_FOREST,
+    MAPPOPUP_THEME_POND,
+    MAPPOPUP_THEME_PLAT,
 };
 
 enum MapPopUp_Themes_BW
@@ -51,12 +55,16 @@ EWRAM_DATA u8 gPopupTaskId = 0;
 // .rodata
 static const u8 sMapPopUp_Table[][960] =
 {
-    [MAPPOPUP_THEME_WOOD]       = INCBIN_U8("graphics/map_popup/wood.4bpp"),
-    [MAPPOPUP_THEME_MARBLE]     = INCBIN_U8("graphics/map_popup/marble.4bpp"),
-    [MAPPOPUP_THEME_STONE]      = INCBIN_U8("graphics/map_popup/stone.4bpp"),
-    [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick.4bpp"),
-    [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater.4bpp"),
+    [MAPPOPUP_THEME_WOOD]       = INCBIN_U8("graphics/map_popup/wood.4bpp"), //Routes
+    [MAPPOPUP_THEME_MARBLE]     = INCBIN_U8("graphics/map_popup/marble.4bpp"), //City
+    [MAPPOPUP_THEME_STONE]      = INCBIN_U8("graphics/map_popup/stone.4bpp"), //Cave
+    [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick.4bpp"), //Towns
+    [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater.4bpp"), //Water Routes
     [MAPPOPUP_THEME_STONE2]     = INCBIN_U8("graphics/map_popup/stone2.4bpp"),
+    [MAPPOPUP_THEME_FLORAL]     = INCBIN_U8("graphics/map_popup/floral.4bpp"), //IDK
+    [MAPPOPUP_THEME_FOREST]     = INCBIN_U8("graphics/map_popup/forest.4bpp"), //Forests
+    [MAPPOPUP_THEME_POND]     = INCBIN_U8("graphics/map_popup/pond.4bpp"), //Lakes
+    [MAPPOPUP_THEME_PLAT]     = INCBIN_U8("graphics/map_popup/plat.4bpp"), //IDK
 };
 
 static const u8 sMapPopUp_OutlineTable[][960] =
@@ -67,6 +75,10 @@ static const u8 sMapPopUp_OutlineTable[][960] =
     [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick_outline.4bpp"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater_outline.4bpp"),
     [MAPPOPUP_THEME_STONE2]     = INCBIN_U8("graphics/map_popup/stone2_outline.4bpp"),
+    [MAPPOPUP_THEME_FLORAL]     = INCBIN_U8("graphics/map_popup/floral_outline.4bpp"),
+    [MAPPOPUP_THEME_FOREST]     = INCBIN_U8("graphics/map_popup/forest_outline.4bpp"),
+    [MAPPOPUP_THEME_POND]     = INCBIN_U8("graphics/map_popup/pond_outline.4bpp"),
+    [MAPPOPUP_THEME_PLAT]     = INCBIN_U8("graphics/map_popup/plat_outline.4bpp"),
 };
 
 static const u16 sMapPopUp_PaletteTable[][16] =
@@ -77,6 +89,10 @@ static const u16 sMapPopUp_PaletteTable[][16] =
     [MAPPOPUP_THEME_BRICK]      = INCBIN_U16("graphics/map_popup/brick_outline.gbapal"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U16("graphics/map_popup/underwater_outline.gbapal"),
     [MAPPOPUP_THEME_STONE2]     = INCBIN_U16("graphics/map_popup/stone2_outline.gbapal"),
+    [MAPPOPUP_THEME_FLORAL]     = INCBIN_U16("graphics/map_popup/floral.gbapal"),
+    [MAPPOPUP_THEME_FOREST]     = INCBIN_U16("graphics/map_popup/forest.gbapal"),
+    [MAPPOPUP_THEME_POND]     = INCBIN_U16("graphics/map_popup/pond.gbapal"),
+    [MAPPOPUP_THEME_PLAT]     = INCBIN_U16("graphics/map_popup/plat.gbapal"),
 };
 
 static const u16 sMapPopUp_Palette_Underwater[16] = INCBIN_U16("graphics/map_popup/underwater.gbapal");
@@ -86,31 +102,31 @@ static const u16 sMapPopUp_Palette_Underwater[16] = INCBIN_U16("graphics/map_pop
 // and this is then handled by subtracting KANTO_MAPSEC_COUNT here and in LoadMapNamePopUpWindowBg.
 static const u8 sMapSectionToThemeId[MAPSEC_COUNT - KANTO_MAPSEC_COUNT - 1] =
 {
-    [MAPSEC_LITTLEROOT_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_OLDALE_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_DEWFORD_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_LAVARIDGE_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_FALLARBOR_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_VERDANTURF_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_PACIFIDLOG_TOWN] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_PETALBURG_CITY] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_LITTLEROOT_TOWN] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_OLDALE_TOWN] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_DEWFORD_TOWN] = MAPPOPUP_THEME_FLORAL,
+    [MAPSEC_LAVARIDGE_TOWN] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_FALLARBOR_TOWN] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_VERDANTURF_TOWN] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_PACIFIDLOG_TOWN] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_PETALBURG_CITY] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_SLATEPORT_CITY] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_MAUVILLE_CITY] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_RUSTBORO_CITY] = MAPPOPUP_THEME_MARBLE,
-    [MAPSEC_FORTREE_CITY] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_FORTREE_CITY] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_LILYCOVE_CITY] = MAPPOPUP_THEME_MARBLE,
-    [MAPSEC_MOSSDEEP_CITY] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_MOSSDEEP_CITY] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_SOOTOPOLIS_CITY] = MAPPOPUP_THEME_MARBLE,
-    [MAPSEC_EVER_GRANDE_CITY] = MAPPOPUP_THEME_BRICK,
+    [MAPSEC_EVER_GRANDE_CITY] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_ROUTE_101] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_102] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_103] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_104] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_ROUTE_105] = MAPPOPUP_THEME_UNDERWATER,
-    [MAPSEC_ROUTE_106] = MAPPOPUP_THEME_UNDERWATER,
-    [MAPSEC_ROUTE_107] = MAPPOPUP_THEME_UNDERWATER,
-    [MAPSEC_ROUTE_108] = MAPPOPUP_THEME_UNDERWATER,
-    [MAPSEC_ROUTE_109] = MAPPOPUP_THEME_UNDERWATER,
+    [MAPSEC_ROUTE_105] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_ROUTE_106] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_ROUTE_107] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_ROUTE_108] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_ROUTE_109] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_110] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_111] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_112] = MAPPOPUP_THEME_WOOD,
@@ -123,7 +139,7 @@ static const u8 sMapSectionToThemeId[MAPSEC_COUNT - KANTO_MAPSEC_COUNT - 1] =
     [MAPSEC_ROUTE_119] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_120] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_121] = MAPPOPUP_THEME_WOOD,
-    [MAPSEC_ROUTE_122] = MAPPOPUP_THEME_UNDERWATER,
+    [MAPSEC_ROUTE_122] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_123] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_ROUTE_124] = MAPPOPUP_THEME_UNDERWATER,
     [MAPSEC_ROUTE_125] = MAPPOPUP_THEME_UNDERWATER,
@@ -145,7 +161,7 @@ static const u8 sMapSectionToThemeId[MAPSEC_COUNT - KANTO_MAPSEC_COUNT - 1] =
     [MAPSEC_MT_CHIMNEY] = MAPPOPUP_THEME_STONE,
     [MAPSEC_SAFARI_ZONE] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_BATTLE_FRONTIER] = MAPPOPUP_THEME_MARBLE,
-    [MAPSEC_PETALBURG_WOODS] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_PETALBURG_WOODS] = MAPPOPUP_THEME_FOREST,
     [MAPSEC_RUSTURF_TUNNEL] = MAPPOPUP_THEME_STONE,
     [MAPSEC_ABANDONED_SHIP] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_NEW_MAUVILLE] = MAPPOPUP_THEME_MARBLE,
