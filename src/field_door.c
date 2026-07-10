@@ -135,6 +135,10 @@ static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/d
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_MyDoor[] = INCBIN_U8("graphics/door_anims/DP_sliding_single.4bpp");
 static const u8 sDoorAnimTiles_MyWoodDoor[] = INCBIN_U8("graphics/door_anims/DP_wooden_door.4bpp");
+static const u8 sDoorAnimTiles_SandgemDoor[] = INCBIN_U8("graphics/door_anims/DP_wooden_door.4bpp");
+static const u8 sDoorAnimTiles_SandgemLabDoor[] = INCBIN_U8("graphics/door_anims/DP_lab_door.4bpp");
+static const u8 sDoorAnimTiles_Jubilife_Blue_Door[] = INCBIN_U8("graphics/door_anims/DP_Blue_Door.4bpp");
+static const u8 sDoorAnimTiles_Jubilife_TV_Door[] = INCBIN_U8("graphics/door_anims/DP_Double_Sliding_Door.4bpp");
 
 #if IS_FRLG
 
@@ -294,6 +298,11 @@ static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 static const u8 myDoorPal[] = {2, 2, 2, 2, 2, 2, 2, 2};
 static const u8 woodenDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 SandgemDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 SandgemLabDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 JubilifeBlueDoorPal[] = {8, 8, 8, 8, 8, 10, 10, 10};
+static const u8 JubilifeTVDoorDoorPal[] = {12, 12, 12, 12, 12, 12, 12, 12};
+
 
 #if IS_FRLG
 
@@ -392,6 +401,10 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Roof,               &gTileset_TrainerHill, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1,           &gTileset_PorytilesPrimaryPlatGBA, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_MyDoor, myDoorPal},
     {METATILE_PorytilesSecondaryPlatGBATwinleaf_TwinleadDoor,           &gTileset_PorytilesSecondaryPlatGBATwinleaf, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_MyWoodDoor, woodenDoorPal},
+    {METATILE_PorytilesSecondaryPlatGBASandgem_Sandgem_Door,           &gTileset_PorytilesSecondaryPlatGBASandgem, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_SandgemDoor, SandgemDoorPal},
+    {METATILE_PorytilesSecondaryPlatGBASandgem_Lab_Door,           &gTileset_PorytilesSecondaryPlatGBASandgem, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_SandgemLabDoor, SandgemLabDoorPal},
+    {METATILE_PorytilesSecondaryPlatGBAJubilife_Jubilife_Blue_Door,           &gTileset_PorytilesSecondaryPlatGBAJubilife, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_Jubilife_Blue_Door, JubilifeBlueDoorPal},
+    {METATILE_PorytilesSecondaryPlatGBAJubilife_TV_Door,           &gTileset_PorytilesSecondaryPlatGBAJubilife, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Jubilife_TV_Door, JubilifeTVDoorDoorPal},
 #else
     {METATILE_GeneralFrlg_Door,                             &gTileset_General_Frlg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_GeneralFrlg, sDoorAnimPalettes_GeneralFrlg},
     {METATILE_GeneralFrlg_SlidingSingleDoor,                &gTileset_General_Frlg, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_SlidingSingle, sDoorAnimPalettes_SlidingSingle},

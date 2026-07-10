@@ -56,10 +56,10 @@
 #define BARRY_INTRO_THREE    0x22 // Barry in Intro 3
 #define FLAG_UNUSED_0x023    0x23 // Derby Flag
 #define FLAG_UNUSED_0x024    0x24 // Derby Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
+#define FLAG_CLOWN_TWO    0x25 // Unused Flag
+#define FLAG_CLOWN_ONE    0x26 // Unused Flag
+#define FLAG_CLOWN_THREE    0x27 // Unused Flag
+#define FLAG_BARRY_R203    0x28 // Barry on Route 203
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag

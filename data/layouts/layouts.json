@@ -10297,8 +10297,8 @@
     {
       "id": "LAYOUT_JUBILIFE_GATE",
       "name": "Jubilife_Gate_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 12,
+      "height": 11,
       "primary_tileset": "gTileset_PorytilesPimaryPlatGBA_Indoor",
       "secondary_tileset": "gTileset_PorytilesPLatGBA_Gates",
       "border_filepath": "data/layouts/Jubilife_Gate/border.bin",

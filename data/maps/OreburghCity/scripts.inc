@@ -32,6 +32,18 @@ Oreburgh_Younger_at_entrence::
 	return
 
 
+OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine::
+# 27 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 28 "data/maps/OreburghCity/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 29 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine_Text_0, MSGBOX_AUTOCLOSE
+# 43 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
 Oreburgh_TownSign_one_Text_0:
 # 5 "data/maps/OreburghCity/scripts.pory"
 	.string "Oreburgh City\n"
@@ -48,3 +60,20 @@ Oreburgh_Younger_at_entrence_Text_0:
 	.string "Can I see your Trainer Case?\n"
 	.string "It's got the Gym Badge you just\n"
 	.string "won, right?$"
+
+OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine_Text_0:
+# 29 "data/maps/OreburghCity/scripts.pory"
+	.string "Hunh?\p"
+	.string "Oh, it’s you, {PLAYER}!\n"
+	.string "You finally got here?♀"
+	.string "You’re slow like always.\p"
+	.string "But anyway, the Gym Leader’s tough!\n"
+	.string "Like, seriously serious!\p"
+	.string "If the Gym Leader’s this tough,\n"
+	.string "I wonder how he compares to my dad...\p"
+	.string "Huh?\n"
+	.string "I just drifted there.\p"
+	.string "Anyway, the Gym Leader’s gone off\n"
+	.string "to the coal mine.\p"
+	.string "If you want to take on the Gym Leader,\n"
+	.string "you’d better go off to the mine!$"

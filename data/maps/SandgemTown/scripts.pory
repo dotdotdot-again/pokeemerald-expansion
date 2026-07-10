@@ -8,7 +8,7 @@ mapscripts SandgemTown_MapScripts {
 
 script OnTransition_Sandgem{
 	
-	setvar(VAR_TEMP_2,0)
+	
     
 }
 
@@ -19,7 +19,7 @@ script EveryFrame_Sandgem {
 
     }
     else{
-    setvar(VAR_TEMP_2, 1)
+    
     }
 }
 

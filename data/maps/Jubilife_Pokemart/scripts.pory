@@ -11,10 +11,54 @@ script Jubilife_Pokemart_Guy{
     end
 }
 
+script Jubilife_Pokemart_Woman{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Jubilife_Secondary)
+    msgbox("Please come again.")
+    release
+    end
+}
+
 mart Jubilife_Basic {
-	ITEM_LAVA_COOKIE
-	ITEM_MOOMOO_MILK
-	ITEM_RARE_CANDY
-	ITEM_LEMONADE
-	ITEM_BERRY_JUICE
+	ITEM_POKE_BALL
+	ITEM_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+}
+
+mart Jubilife_Secondary {
+	ITEM_HEAL_BALL
+    ITEM_REPEL
+}
+
+script JubilifeCityMart_Text_WastedMoneyOnPokeBalls {
+    lock
+    msgbox("Aww, man.\n"
+        "I wasted money on some Poké Balls.\p"
+        "I should’ve lowered the HP of wild\n"
+        "Pokémon more before throwing them.",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityMart_Text_PackSomePotions {
+    lock
+    msgbox("The one thing you must remember is to\n"
+        "pack some Potions.\p"
+        "If all your Pokémon faint, it’ll be\n"
+        "lights out for you, too!",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityMart_Text_JustUseARepel {
+    lock
+    msgbox("Potions are important, but sometimes,\n"
+        "it’s better to simply avoid battles.\p"
+        "If you want to avoid wild Pokémon for a\n"
+        "while, just use a Repel.\p"
+        "After all, if you don’t battle, your\n"
+        "Pokémon can’t lose HP.",MSGBOX_NPC)
+    release
 }

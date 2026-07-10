@@ -1,1 +1,27 @@
 mapscripts JubilifeHouseOne_F2_MapScripts {}
+
+script JubilifeCitySouthHouse2F_SomeKindsOfPokemonEvolveWhenTheyGetStrongerFromBattling {
+    lock
+    msgbox("Did you know?\p"
+        "Some kinds of Pokémon evolve when\n"
+        "they get stronger from battling!\p"
+        "When they evolve, they can take on\n"
+        "completely different forms!",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCitySouthHouse2F_EvolutionMakesPokemonJustThatMuchMoreFascinating {
+    lock
+    msgbox("Evolution makes Pokémon just that\n"
+        "much more fascinating.\p"
+        "The mysteries of evolution... Can that\n"
+        "dandy Prof. Rowan unravel them?",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCitySouthHouse2F_DidntProfRowanConductResearchWithProfOak {
+    lock
+    msgbox("Didn’t Prof. Rowan conduct research\n"
+        "with Prof. Oak of the Kanto region?",MSGBOX_NPC)
+    release
+}

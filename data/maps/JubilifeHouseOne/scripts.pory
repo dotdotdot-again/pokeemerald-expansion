@@ -1,1 +1,33 @@
 mapscripts JubilifeHouseOne_MapScripts {}
+
+
+script JubilifeCitySouthHouse1F_PokemonAreWonderfulDeeplyMysteriousCreatures {
+    lock
+    msgbox("Pokémon are wonderful, deeply\n"
+        "mysterious creatures.\p"
+        "But to Trainers, the key thing is to do\n"
+        "battle with their Pokémon.\p"
+        "That’s what it boils down to.",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCitySouthHouse1F_TalkToEveryoneYouSee {
+    lock
+    msgbox("Hello there, Trainer!\p"
+        "If you get stumped and don’t know\n"
+        "what to do...\p"
+        "Talk to people!\n"
+        "Talk to everyone you see!\p"
+        "Go places!\n"
+        "Go wherever you can!\p"
+        "You’ll find many new places by\n"
+        "doing just that.",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCitySouthHouse1F_PachirisuKukkuuh {
+    lock
+    playmoncry(SPECIES_PACHIRISU,0)
+    msgbox("Kukkuuh!",MSGBOX_NPC)
+    release
+}

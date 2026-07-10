@@ -62,5 +62,10 @@ extern const struct Tileset gTileset_SeaCottage;
 extern const struct Tileset gTileset_TrainerTower;
 extern const struct Tileset gTileset_PorytilesPrimaryPlatGBA;
 extern const struct Tileset gTileset_PorytilesSecondaryPlatGBATwinleaf;
+extern const struct Tileset gTileset_PorytilesSecondaryPlatGBASandgem;
+extern const struct Tileset gTileset_PorytilesSecondaryPlatGBAJubilife;
+extern const struct Tileset gTileset_PorytilesPlatGBAOreBurgh;
+extern const struct Tileset gTileset_PorytilesSecondaryPlatGBAEterna;
+extern const struct Tileset gTileset_PorytilesSecondaryPlatGBAWestSpecials;
 
 #endif //GUARD_tilesets_H

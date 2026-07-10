@@ -12,8 +12,6 @@ SandgemTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 
 OnTransition_Sandgem::
-# 11 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_2, 0
 	return
 
 
@@ -21,8 +19,6 @@ EveryFrame_Sandgem::
 # 16 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 1
 	goto_if_eq EveryFrame_Sandgem_1
-# 22 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_2, 1
 	return
 
 EveryFrame_Sandgem_1:

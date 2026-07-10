@@ -361,6 +361,24 @@ script Jubilife_lookerStop {
 	release
 }
 
+script Jubilife_lookerStopTwo {
+	lock
+	setspeaker(SP_NAME_LOOKER)
+	applymovement(LookerJubilifeBlock, moves(emote_exclamation_mark))
+    playse(SE_PIN) 
+    waitse
+	waitmovement
+	setspeaker(SP_NAME_LOOKER)
+        msgbox("Tell me, have you not obtained\n"
+        "a Pokétch?\p"
+        "I believe a Pokétch is now free in\n"
+        "exchange for some Coupons?",MSGBOX_AUTOCLOSE)
+	waitmessage
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+	waitmovement
+	release
+}
+
 script Jubilife_TradeStation_Stop {
 	lock
 	if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == TRUE)
@@ -371,15 +389,445 @@ script Jubilife_TradeStation_Stop {
     playse(SE_PIN) 
     waitse
 	waitmovement
-        msgbox("Past here is the Global Terminal, your\n"
-        "gateway to the world!\p"
+        msgbox("Past here is the Local Trading Terminal\n"
+        "your gateway to the community!\p"
         "Oh, I’m sorry, you don’t have\n"
         "any Gym Badges.\p"
-        "The Global Terminal is off-limits if you\n"
-        "don’t have a Gym Badge. Sorry!",MSGBOX_AUTOCLOSE)
+        "The Local Trading Terminal is off-limits\n"
+        " if you don’t have a Gym Badge. Sorry!",MSGBOX_AUTOCLOSE)
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
 	waitmovement
 	release
 }
 
+script Jubilife_Poketkch_man {
+	lockall
+	applymovement(poketch_president_outside, moves(face_down,emote_exclamation_mark))
+	playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(poketch_president_outside, moves(walk_down*3))
+	waitmovement
+	call(Jubilife_Poketkch_man_Cont)
+}
+
+script Jubilife_Poketkch_man_Right {
+	lockall
+	applymovement(poketch_president_outside, moves(face_down,emote_exclamation_mark))
+	playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(poketch_president_outside, moves(walk_right,walk_down*3))
+	waitmovement
+	call(Jubilife_Poketkch_man_Cont)
+}
+
+script Jubilife_Poketkch_man_far_Right {
+	lockall
+	applymovement(poketch_president_outside, moves(face_down,emote_exclamation_mark))
+	playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(poketch_president_outside, moves(walk_right*2,walk_down*3))
+	waitmovement
+	call(Jubilife_Poketkch_man_Cont)
+}
+
+script Jubilife_Poketkch_man_left {
+	lockall
+	applymovement(poketch_president_outside, moves(face_down,emote_exclamation_mark))
+	playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(poketch_president_outside, moves(walk_left,walk_down*3))
+	waitmovement
+	call(Jubilife_Poketkch_man_Cont)
+}
+
+script Jubilife_Poketkch_man_far_left {
+	lockall
+	applymovement(poketch_president_outside, moves(face_down,emote_exclamation_mark))
+	playse(SE_PIN) 
+    waitse
+	waitmovement
+	applymovement(poketch_president_outside, moves(walk_left*2,walk_down*3))
+	waitmovement
+	call(Jubilife_Poketkch_man_Cont)
+}
+
+
+script Jubilife_Poketkch_man_Cont {
+	msgbox("Oh, oh, oh?\p"
+        "You call yourself a Pokémon Trainer?\n"
+        "And yet you have no Pokétch?\p"
+        "That is, Pokémon Watch, or Pokétch\n"
+        "for short!\p"
+        "Oh my, you are a rare case\n"
+        "indeed!")
+		msgbox("You see, I invented, and now\n"
+        "manufacture, Pokétches.\p"
+        "Not only that, I’m now conducting\n"
+        "the Pokétch promotional campaign!\p"
+        "All you have to do is find three\n"
+        "clowns in Jubilife City.\p"
+        "If you can find them...\n"
+        "I will gift you with a Pokétch!",MSGBOX_AUTOCLOSE)
+	setvar(VAR_JUBILIFE_STATE,3)
+	releaseall
+}
+
+script Jubilife_Poketkch_man_During_Hunt {
+	if(flag(FLAG_CLOWN_TWO) == TRUE && flag(FLAG_CLOWN_ONE) == TRUE && flag(FLAG_CLOWN_THREE) == TRUE)
+	{
+		lockall
+		applymovement(poketch_president_outside, moves(face_player))
+		msgbox("OK, let me count your Coupons!\n"
+        "I’ll use the Pokétch here...\p"
+        "One, two, three!\n"
+        "Bravo! I say, bravo!\p"
+        "In return for these Coupons,\n"
+        "I present you this Pokémon Watch,\l"
+        "or Pokétch for short!")
+		waitmessage
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox("{PLAYER} received\n"
+        "the {COLOR RED}{SHADOW LIGHT_RED}Pokétch{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!")
+		waitfanfare
+		removeitem(ITEM_EON_TICKET)
+		removeitem(ITEM_MYSTIC_TICKET)
+		removeitem(ITEM_AURORA_TICKET)
+		setflag(FLAG_SYS_POKENAV_GET)
+		msgbox("You can add apps to your Pokétch\n"
+        "to make it even more versatile!\p"
+        "Touch the Pokétch screen and find the\n"
+        "apps that are right for you!",MSGBOX_AUTOCLOSE)
+		waitmessage
+    	getobjectfacingdirection(OBJ_EVENT_ID_PLAYER,VAR_JUBILIFE_STATE)
+		   if(var(VAR_JUBILIFE_STATE) == 1)
+			{
+				applymovement(poketch_president_outside, moves(walk_left*1,walk_up*7))
+				waitmovement
+			}
+			else
+			{
+				applymovement(poketch_president_outside, moves(walk_up*7))
+				waitmovement  
+			}
+		removeobject(poketch_president_outside)
+		setvar(VAR_JUBILIFE_STATE,4)
+		setflag(FLAG_JUBILIFE_POKETKCH)
+		releaseall
+		
+	}
+	else
+	{
+	lock
+		msgbox("The three clowns will each ask you\n"
+        "a skill-testing question.\p"
+        "The questions will all have to do\n"
+        "with Pokémon.\p"
+        "After all, a Pokétch is a tool for\n"
+        "Pokémon Trainers.\p"
+        "Collect a Coupon from each clown,\n"
+        "then come see me, OK?",MSGBOX_NPC)
+	release
+
+	}
+
+}
+
+script Clown_Two_text {
+	lock
+	if(flag(FLAG_CLOWN_TWO) == FALSE)
+	{
+		applymovement(Clown_Two, moves(face_player))
+		msgbox("Hi! I’m a Pokétch campaign clown!\n"
+        "Let’s roll out my question!\p"
+        "Does a Pokémon grow by defeating\n"
+        "others and gaining Exp. Points?",MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1)
+		{
+			msgbox("Ding-ding!\n"
+			"You’re absolutely correct!")
+			msgbox("Pokémon grow stronger by defeating\n"
+			"other Pokémon in battle.\p"
+			"Some Pokémon even grow into an\n"
+			"entirely different form in a process\l"
+			"known as evolution.")
+			msgbox("Here you go!\n"
+			"Your Pokétch Coupon!")
+			waitmessage
+			setflag(FLAG_CLOWN_TWO)
+			giveitem(ITEM_EON_TICKET)
+		}
+		elif(var(VAR_RESULT) == 0)
+		{
+			msgbox("Bzzzzt!\n"
+			"That’s the wrong answer...",MSGBOX_AUTOCLOSE)
+			waitmessage
+		}
+	}
+	else
+	{
+			msgbox("Pokémon grow stronger by defeating\n"
+			"other Pokémon in battle.\p"
+			"Some Pokémon even grow into an\n"
+			"entirely different form in a process\l"
+			"known as evolution.",MSGBOX_NPC)
+			waitmessage
+
+	}
+	release
+}
+
+script Clown_One_text {
+	lock
+	if(flag(FLAG_CLOWN_ONE) == FALSE)
+	{
+		applymovement(Clown_One, moves(face_player))
+		msgbox("Hi! I’m a Pokétch campaign clown!\n"
+        "Let’s roll out my question!\p"
+        "Just like Pokémon types, the moves\n"
+        "of Pokémon also have types?",MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1)
+		{
+		msgbox("Ding-ding!\n"
+		"You’re absolutely correct!")
+		msgbox("If the Pokémon’s type matches its\n"
+        "move’s type, that move is made much\l"
+        "more powerful!")
+			msgbox("Here you go!\n"
+			"Your Pokétch Coupon!")
+			waitmessage
+			setflag(FLAG_CLOWN_ONE)
+			giveitem(ITEM_MYSTIC_TICKET)
+		}
+		elif(var(VAR_RESULT) == 0)
+		{
+			msgbox("Bzzzzt!\n"
+			"That’s the wrong answer...",MSGBOX_AUTOCLOSE)
+			waitmessage
+		}
+	}
+	else
+	{
+			msgbox("If the Pokémon’s type matches its\n"
+        "move’s type, that move is made much\l"
+        "more powerful!",MSGBOX_NPC)
+			waitmessage
+
+	}
+	release
+}
+
+script Clown_Three_text {
+	lock
+	if(flag(FLAG_CLOWN_THREE) == FALSE)
+	{
+		applymovement(Clown_Three, moves(face_player))
+		msgbox("Hi! I’m a Pokétch campaign clown!\n"
+        "Let’s roll out my question!\p"
+        "Can a Pokémon hold an item?",MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1)
+		{
+		msgbox("Ding-ding!\n"
+		"You’re absolutely correct!")
+		msgbox("A Pokémon may hold a single item.\p"
+        "Some items become effective as soon\n"
+        "as they are held by a Pokémon.\p"
+        "Berries are eaten by Pokémon as\n"
+        "necessary during battle.\p")
+			msgbox("Here you go!\n"
+			"Your Pokétch Coupon!")
+			waitmessage
+			setflag(FLAG_CLOWN_THREE)
+			giveitem(ITEM_AURORA_TICKET)
+		}
+		elif(var(VAR_RESULT) == 0)
+		{
+			msgbox("Bzzzzt!\n"
+			"That’s the wrong answer...",MSGBOX_AUTOCLOSE)
+			waitmessage
+		}
+	}
+	else
+	{
+			msgbox("If the Pokémon’s type matches its\n"
+        "move’s type, that move is made much\l"
+        "more powerful!",MSGBOX_NPC)
+			waitmessage
+
+	}
+	release
+}
+
+
+//sings
+
+script JubilifeCity_Text_MapSign {
+	lock
+	msgbox("Jubilife City\n"
+        "City of Joy",MSGBOX_SIGN)
+	release
+}
+
+script JubilifeCity_Text_JubilifeCondominiumsTenantsWanted {
+	lock
+	msgbox("Jubilife Condominiums\n"
+        "Tenants Wanted!",MSGBOX_SIGN)
+	release
+}
+
+script JubilifeCity_Text_ThePoketchCompanyPokemonWatchesForTheWorld {
+	lock
+	msgbox("The Pokétch Company\n"
+        "Pokémon Watches for the World!",MSGBOX_SIGN)
+	release
+}
+
+
+script JubilifeCity_Text_TrainersSchoolTheFirstStepForTrainers {
+	lock
+	msgbox("Trainers’ School\n"
+        "The First Step for Trainers!",MSGBOX_SIGN)
+	release
+}
+
+script JubilifeCity_Text_JubilifeTVTheFunAndGamesTVStation {
+	lock
+	msgbox("Jubilife TV\n"
+        "The Fun-and-Games TV Station!",MSGBOX_SIGN)
+	release
+}
+
+script JubilifeCity_Text_TheLocalTerminal {
+	lock
+	msgbox("The Local Terminal\n"
+        "Your Gateway to the Community",MSGBOX_SIGN)
+	release
+}
+
+//NPCs
+
+script JubilifeCity_Text_HelloTrainerDoYouKnowMuchAboutPokemon {
+	lock
+	applymovement(3, moves(face_player))
+	msgbox("Hello, Trainer!\n"
+        "Do you know much about Pokémon?",MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 1)
+    {
+        msgbox("Ah, I see!\n"
+        "You are knowledgeable!\p"
+        "I imagine you wouldn’t see the need\n"
+        "to visit the Trainers’ School, then.\p"
+        "But do visit if you have the time.\n"
+        "You may discover something new!",MSGBOX_AUTOCLOSE)
+		waitmessage
+	}
+	elif(var(VAR_RESULT) == 0)
+    {
+        msgbox("Oh, you’re not knowledgeable...\n"
+        "But not to worry!\l"
+        "There’s the Trainers’ School.\p"
+        "The school will teach you the\n"
+        "basics of Pokémon.",MSGBOX_AUTOCLOSE)
+		waitmessage
+	}
+	release
+}
+
+script JubilifeCity_Text_ImTradingPokemonWithMyBuddy {
+	lock
+	msgbox("I’m trading Pokémon with my buddy!",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_TextIMadeMyPokemonHoldAnItemBeforeTradingIt {
+	lock
+	msgbox("I made my Pokémon hold an item before\n"
+        "trading it.\p"
+        "That will make the other Trainer\n"
+        "double happy!",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_Text_AtMostYouCanHaveSixPokemonWithYou {
+	lock
+	msgbox("OK, set six Poké Balls in my\n"
+        "belt...\p"
+        "Yeah, that’ll do it. At most, you\n"
+        "can have six Pokémon with you.",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_Text_JubilifeCitysBuiltOnLandTheyCarvedOutOfAMountain {
+	lock
+	msgbox("Jubilife City’s built on land they\n"
+        "carved out of a mountain.\p"
+        "The people and Pokémon of Oreburgh\n"
+        "City helped out with that undertaking.",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_Text_HiyaWheredYouComeFrom {
+	lock
+	msgbox("Hiya, where’d you come from?\p"
+        "...\p"
+        "Twinleaf Town, huh...\n"
+        "It’s a nice place. Quiet and all.\p"
+        "Jubilife City is a big place, so it\n"
+        "might be a bit of a shock to you.",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_Text_DidYouSeeMeOnTV {
+	lock
+	msgbox("Did you see me on TV?\n"
+        "I was in an interview!",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_Text_WhenYouWalkWithYourPokemonTheyGraduallyGrowFriendlier {
+	lock
+	msgbox("When you walk with your Pokémon,\n"
+        "they gradually grow friendlier.",MSGBOX_NPC)
+	release
+}
+
+script JubilifeCity_Text_CanYouTellMeWhatTypeOfPokemonYouLike {
+	lock
+	applymovement(5, moves(face_player))
+	msgbox("The way you look...\n"
+        "You’re obviously a Trainer!\p"
+        "Can you tell me what type of Pokémon\n"
+        "you like?")
+	multichoice(25,5,MULTI_FIRE_WATER_GRASS,1)
+	closemessage
+	if(var(VAR_RESULT) == 0)
+    {
+        msgbox("The Fire type?\n"
+        "You must have a fiery personality.\p"
+        "You’d better watch out that fire isn’t\n"
+        "doused by water, though.",MSGBOX_AUTOCLOSE)
+		waitmessage
+	}
+	elif(var(VAR_RESULT) == 1)
+    {
+        msgbox("A person that likes the Water type\n"
+        "must be somewhat cool.\p"
+        "But beware of being drained dry by\n"
+        "thirsty grass.",MSGBOX_AUTOCLOSE)
+		waitmessage
+	}
+	elif(var(VAR_RESULT) == 1)
+    {
+        msgbox("You chose the Grass type?\n"
+        "No wonder you look so calm.\p"
+        "I think you need to watch out you don’t\n"
+        "get burned by fire.",MSGBOX_AUTOCLOSE)
+		waitmessage
+	}
+
+	release
+}

@@ -1,1 +1,63 @@
 mapscripts JubilifeHouseThree_MapScripts {}
+
+script JubilifeCityCondominiums1F_Text_IsntMyPoketchQuiteFetching {
+    lock
+    msgbox("Oh, hello, darlings.\n"
+        "Isn’t my Pokétch quite fetching?\p"
+        "It’s the latest design that just\n"
+        "came out.\p"
+        "I obtained it instantly, of course.\p"
+        "A Trainer would be simply lost without\n"
+        "a Pokétch, after all.",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityCondominiums1F_Text_PiikaPi {
+    lock
+    playmoncry(SPECIES_PIKACHU,0)
+    msgbox("Piika pi!",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityCondominiums1F_Text_Pachipachii {
+    lock
+    playmoncry(SPECIES_PACHIRISU,0)
+    msgbox("Pachipachii?",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityCondominiums1F_Text_YourPokemonIsQuiteAdorableTryMakingItHoldThis {
+    lock
+    if(flag(FLAG_RECEIVED_QUICK_CLAW) == FALSE)
+    {
+        msgbox("Oh, your Pokémon is quite adorable!\p"
+        "Here, try making it hold this\n"
+        "Quick Claw.\p",MSGBOX_NPC)
+    giveitem(ITEM_QUICK_CLAW)
+    setflag(FLAG_RECEIVED_QUICK_CLAW)
+    msgbox("A Pokémon holding that Quick Claw can\n"
+        "sometimes attack first, even if it is\l"
+        "normally a little bit slow.\p"
+        "There are other items that are only\n"
+        "useful when given to a Pokémon.\p"
+        "Try finding other items that you can\n"
+        "make your Pokémon hold.\p"
+        "...I sound like I’m a teacher or\n"
+        "something.",MSGBOX_AUTOCLOSE)
+    release
+
+    }
+    else{
+        msgbox("A Pokémon holding that Quick Claw can\n"
+        "sometimes attack first, even if it is\l"
+        "normally a little bit slow.\p"
+        "There are other items that are only\n"
+        "useful when given to a Pokémon.\p"
+        "Try finding other items that you can\n"
+        "make your Pokémon hold.\p"
+        "...I sound like I’m a teacher or\n"
+        "something.",MSGBOX_NPC)
+    }
+
+}
+

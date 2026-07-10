@@ -10,29 +10,77 @@ script testBattle {
     end
 }
 
-script testPokedex {
-    lock
-    msgbox("How many pokedex pokemon you got?",MSGBOX_AUTOCLOSE)
+script Route202_Youngster_Tristan {
+
+    trainerbattle_single(TRAINER_CALVIN_1, "You’re a Pokémon Trainer, and so am I!\n"
+                "Our eyes met, so battle we must!\p", "Too strong!\n"
+                "Too strong!")
+    msgbox("Don’t be shy about talking to\n"
+                "Trainers you’d like to battle.\p"
+                "Pokémon grow stronger and stronger\n"
+                "from battling.",MSGBOX_NPC)
     waitmessage
-    if(var(VAR_RESULT) == 0)
-    {
-        msgbox("You have zero pokemon",MSGBOX_AUTOCLOSE)
-        waitmessage
-    }
-    elif(var(VAR_RESULT) == 1)
-    {
-        msgbox("You have 1 pokemon",MSGBOX_AUTOCLOSE)
-        waitmessage
-    }
-    elif(var(VAR_RESULT) == 2)
-    {
-        msgbox("You have 2 pokemon",MSGBOX_AUTOCLOSE)
-        waitmessage
-    }
-    else{
-        msgbox("You have more than 2 pokemon",MSGBOX_AUTOCLOSE)
-        waitmessage
-    }
+    end
+}
+
+script Route202_Lass_Natalie {
+
+    trainerbattle_single(TRAINER_TIANA, "I spy, with my little eye...\n"
+                "A Trainer!\p"
+                "A battle, please!", "Oh, boo!\n"
+                "I can’t win!")
+    msgbox("My Pokémon are all tuckered out!\n"
+                "I need to go to a Pokémon Center!",MSGBOX_NPC)
+    waitmessage
+    end
+}
+
+script Route202_Youngster_Logan {
+
+    trainerbattle_single(TRAINER_BILLY, "Let’s have a Pokémon battle!\n",
+                "Humph! But I’m gonna win!", "You beat me?!\n"
+                "You’ve got talent!")
+    msgbox("It was fun battling!\n"
+                "Yup! I’m going to battle everyone!",MSGBOX_NPC)
+    waitmessage
+    end
+}
+
+script Route202_Text_Rt202JubilifeCity {
+    lock
+    msgbox("Rt. 202\n"
+        "{UP_ARROW} Jubilife City",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route202_Text_TrainerTipsPokemonInvolvedInBattleEarnExpPoints {
+    lock
+    msgbox("Trainer Tips!\p"
+        "All Pokémon that are involved in\n"
+        "a battle earn Exp. Points!\p"
+        "The more your Pokémon battle,\n"
+        "the stronger they will become.",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route202_Text_Rt202SandgemTown {
+    lock
+    msgbox("Rt. 202\n"
+        "{DOWN_ARROW}Sandgem Town",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route202_Text_SomePokemonOnlyAppearInTheMorning {
+    lock
+    msgbox("Some Pokémon only appear in the\n"
+        "morning.\p"
+        "Some only come out at night.\p"
+        "I’ll keep looking till I’ve seen them\n"
+        "all!",MSGBOX_NPC)
+    waitmessage
     release
 }
 

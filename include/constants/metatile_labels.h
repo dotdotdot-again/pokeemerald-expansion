@@ -583,6 +583,14 @@
 #define METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1       0x07A
 #define METATILE_PorytilesPrimaryPlatGBA_ReflectiveWater  0x0A6
 
+// gTileset_PorytilesSecondaryPlatGBAJubilife
+#define METATILE_PorytilesSecondaryPlatGBAJubilife_Jubilife_Blue_Door  0x252
+#define METATILE_PorytilesSecondaryPlatGBAJubilife_TV_Door             0x2EC
+
+// gTileset_PorytilesSecondaryPlatGBASandgem
+#define METATILE_PorytilesSecondaryPlatGBASandgem_Lab_Door      0x2A2
+#define METATILE_PorytilesSecondaryPlatGBASandgem_Sandgem_Door  0x221
+
 // gTileset_PorytilesSecondaryPlatGBATwinleaf
 #define METATILE_PorytilesSecondaryPlatGBATwinleaf_TwinleadDoor  0x221
 

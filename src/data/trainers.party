@@ -94,34 +94,32 @@ Geodude
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Jubilife Galactic Grunt 1 */
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Poochyena
-Level: 32
+Stunky (M)
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Jubilife Galactic Grunt 2 */
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
 Name: GRUNT
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 31
+Glameow (F)
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
@@ -5124,8 +5122,9 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Ice Beam
 - Rest
 
+/*Jubilife - Trainers School School Kid Harrison*/
 === TRAINER_JERRY_1 ===
-Name: JERRY
+Name: Harrison
 Class: School Kid
 Pic: School Kid M
 Gender: Male
@@ -5133,8 +5132,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Ralts
-Level: 9
+Starly
+Level: 6
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_TED ===
@@ -5243,8 +5242,9 @@ Medicham
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/*Jubilife - Trainers School School Kid Christine*/
 === TRAINER_KAREN_1 ===
-Name: KAREN
+Name: Christine
 Class: School Kid
 Pic: School Kid F
 Gender: Female
@@ -5252,8 +5252,8 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 9
+Bidoof
+Level: 6
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_GEORGIA ===
@@ -5940,8 +5940,8 @@ Hariyama
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-/*Platinum Trainers*/
 
+/*Route 202 Youngster Tristian*/
 === TRAINER_CALVIN_1 ===
 Name: Tristan
 Class: Youngster
@@ -5954,9 +5954,11 @@ AI: Check Bad Move
 Starly
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Careful
 
+/*Route 202 Youngster Logan*/
 === TRAINER_BILLY ===
-Name: BILLY
+Name: Logan
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5964,30 +5966,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+Burmy
 Level: 5
+Ability: Shed Skin
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_JOSH ===
-Name: JOSH
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move
-
-Geodude
-Level: 10
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Nature: Impish
 - Tackle
 
-=== TRAINER_TOMMY ===
-Name: TOMMY
+/*Route 203 Youngster Michael*/
+=== TRAINER_JOSH ===
+Name: Michael
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -5995,16 +5983,31 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+Kricketot (M)
+Level: 7 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Zubat (M)
+Level: 6 
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+/*Route 203 Youngster Dallas*/
+=== TRAINER_TOMMY ===
+Name: Dallas
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Shinx
 Level: 8
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
+/*Route 203 Youngster Sebastian*/
 === TRAINER_JOEY ===
-Name: JOEY
+Name: Sebastian
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6013,11 +6016,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Machop
-Level: 9
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/*Route ??? Youngster Austin*/
 === TRAINER_BEN ===
-Name: BEN
+Name: Austin
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6025,21 +6029,24 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 17
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Headbutt
-- Sand Attack
-- Growl
-- Thunderbolt
+Buizel
+Level: 18
+Ability: Swift Swim
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Bold
 
-Gulpin
-Level: 17
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Amnesia
-- Sludge
-- Yawn
-- Pound
+Luxio
+Level: 18
+Ability: Rivalry
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Bashful
+
+Gligar 
+Level: 21
+Ability: Hyper Cutter
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Naughty
+
 
 === TRAINER_QUINCY ===
 Name: QUINCY
@@ -9517,26 +9524,28 @@ Turtwig
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/*DP Barry Route 203 Piplup*/
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
-Name: BRENDAN
+Name: Barry
 Class: Rival
-Pic: Brendan
+Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Starly (M)
+Level: 7
+Ability: Keen Eye
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Growl
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Turtwig (M)
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tackle
+- Withdraw
 
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
 Name: BRENDAN
@@ -9569,31 +9578,32 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Chimchar
+Chimchar (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-
+/*DP Barry Route 203 Trutwig*/
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
-Name: BRENDAN
+Name: Barry
 Class: Rival
-Pic: Brendan
+Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Starly (M)
+Level: 7
+Ability: Keen Eye
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Growl
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Combusken
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Chimchar (M)
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Leer
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -9630,27 +9640,29 @@ Piplup
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-
+/*DP Barry Route 203 if you pick Chimchar*/
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
-Name: BRENDAN
+Name: Barry
 Class: Rival
-Pic: Brendan
+Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Starly (M)
+Level: 7
+Ability: Keen Eye
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Growl
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Piplup (M)
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Growl
 
-Marshtomp
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRENDAN
@@ -11051,42 +11063,59 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
+/*Route 202 Lass Natalie*/
 === TRAINER_TIANA ===
-Name: TIANA
+Name: Natalie
 Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_BASIC_TRAINER
 
-Zigzagoon
-Level: 4
+Bidoof
+Level: 5
+Ability: Simple
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Quiet
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
+/*Route 202 Lass Kaitlin*/
 === TRAINER_HALEY_1 ===
-Name: HALEY
+Name: Kaitlin
 Class: Lass
 Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: AI_FLAG_BASIC_TRAINER
 
-Lotad
-Level: 6
+Bidoof (F)
+Level: 4
+Ability: Simple
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Rash
 
-Shroomish
-Level: 6
+Budew (F)
+Level: 4
+Ability: Natural Cure
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Mild
 
+Starly (F)
+Level: 4
+Ability: Keen Eye
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Quirky
+
+Abra (F)
+Level: 4
+Ability: Synchronize
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Docile
+
+/*Route 202 Lass Madeline*/
 === TRAINER_JANICE ===
-Name: JANICE
+Name: Madeline
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11094,9 +11123,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 9
+Psyduck (F)
+Level: 8
+Ability: Damp
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Relaxed
 
 === TRAINER_VIVI ===
 Name: VIVI

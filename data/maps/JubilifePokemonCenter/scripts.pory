@@ -15,3 +15,43 @@ script Jubilife_PokeCenter_Nurse {
 script PCtestThing {
     special(ShowPokemonStorageSystemPC)
 }
+
+script JubilifeCityPokecenter1F_Text_AllTypesHaveStrengthsAndWeaknesses {
+    lock
+    msgbox("You know how Pokémon have types like\n"
+        "Water, Fire, and Grass?\p"
+        "Well, all types have strengths and\n"
+        "weaknesses against other types.",MSGBOX_NPC)
+    release
+}
+
+//change later
+script JubilifeCityPokecenter1F_Text_InTheUnionRoomUpstairsYouCanChatAndTradeWithOtherPeople {
+    lock
+    msgbox("In the Union Room upstairs, you can\n"
+        "chat and trade with other people.\p"
+        "And that’s not all you can do.\n"
+        "Check it out! <change text later>",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityPokecenter1F_Text_YouCanStillCatchAPokemonIfYouAlreadyHaveSixTravelingWithYou {
+    lock
+    msgbox("You can still catch a Pokémon if you\n"
+        "already have six traveling with you.\p"
+        "It automatically gets sent to the PC\n"
+        "network in Pokémon Centers.\p"
+        "Knowing that, I can keep on catching\n"
+        "more and more Pokémon!\p"
+        "It’ll make it more fun to check\n"
+        "the PC in any Pokémon Center!",MSGBOX_NPC)
+    release
+}
+
+script JubilifeCityPokecenter1F_SomethingIsMissing {
+    lock
+    msgbox("I feel like somethings\n"
+    "missing here?",MSGBOX_NPC)
+    release
+}
+

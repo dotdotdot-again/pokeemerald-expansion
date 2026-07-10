@@ -1163,6 +1163,11 @@ const u8 gText_Answer[] = _("ANSWER");
 const u8 gText_PokeBalls[] = _("POKé BALLS");
 const u8 gText_Berry[] = _("BERRY");
 const u8 gText_Berries[] = _("BERRIES");
+//My Multi Choice
+const u8 gText_Fire[] = _("Fire");
+const u8 gText_Water[] = _("Water");
+const u8 gText_Grass[] = _("Grass");
+
 //// side quest data
 //generic strings
 const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nis now {STR_VAR_2}.");

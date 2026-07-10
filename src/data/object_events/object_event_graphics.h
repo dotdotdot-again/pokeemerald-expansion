@@ -544,7 +544,7 @@ const u16 gObjectEventPal_DP_MartMan[] = INCBIN_U16("graphics/object_events/pics
 const u16 gObjectEventPal_DP_MartLady[] = INCBIN_U16("graphics/object_events/pics/people/rooftop_sale_woman.gbapal");
 const u16 gObjectEventPal_DP_Mom[] = INCBIN_U16("graphics/object_events/pics/people/mom.gbapal");
 const u16 gObjectEventPal_DP_Lass[] = INCBIN_U16("graphics/object_events/pics/people/lass.gbapal");
-const u16 gObjectEventPal_DP_Clown[] = INCBIN_U16("graphics/object_events/pics/people/mauville_old_man_1.gbapal");
+const u16 gObjectEventPal_DP_Clown[] = INCBIN_U16("graphics/object_events/pics/people/scott.gbapal");
 
 const u16 gObjectEventPal_DP_Sign[] = INCBIN_U16("graphics/object_events/pics/misc/gym_sign.gbapal");
 const u16 gObjectEventPal_DP_HoneyTree[] = INCBIN_U16("graphics/object_events/pics/misc/honey_tree.gbapal");

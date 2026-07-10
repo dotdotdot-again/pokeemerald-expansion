@@ -1,1 +1,88 @@
 mapscripts Jubilife_Gate_MapScripts {}
+
+script Route218GateToJubilifeCity_Text_OldRodGoodRight {
+    lockall
+    applymovement(1, moves(face_player))
+    if(flag(FLAG_RECEIVED_OLD_ROD) == true)
+    {
+    msgbox("You should fish wherever there is\n"
+        "a body of water.\p"
+        "Oh, and by the way, did you need\n"
+        "any tips on using that fishing rod?",MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 1)
+            {
+                msgbox("First, you face any body of water,\n"
+                "then you use your fishing rod.\p"
+                "Next, you focus!\n"
+                "If a Pokémon bites, “!” appears.\l"
+                "That’s your cue to reel it in!")
+                waitmessage
+                releaseall
+            }
+            elif(var(VAR_RESULT) == 0)
+            {
+                msgbox("When you’re fishing for Pokémon,\n"
+                    "the first hurdle is getting a bite.\p"
+                    "When you reel the Pokémon in, you’ve\n"
+                    "got to battle it.\p"
+                    "So, fishing gives you twice the fun!")
+                    waitmessage
+                    releaseall
+            }
+    }
+    else{
+            msgbox("Yes, sir!\n"
+            "An Old Rod is a good thing!\p"
+            "You think so too, am I right?",MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 1)
+        {
+            msgbox("Yes! Good answer!\n"
+            "We can be friends!\p"
+            "Here you go.\n"
+            "That’s my Old Rod!",MSGBOX_AUTOCLOSE)
+            waitmessage
+            giveitem(ITEM_OLD_ROD)
+            setflag(FLAG_RECEIVED_OLD_ROD)
+            msgbox("You should fish wherever there is\n"
+            "a body of water.\p"
+            "Oh, and by the way, did you need\n"
+            "any tips on using that fishing rod?",MSGBOX_YESNO)
+                if(var(VAR_RESULT) == 1)
+                    {
+                        msgbox("First, you face any body of water,\n"
+                        "then you use your fishing rod.\p"
+                        "Next, you focus!\n"
+                        "If a Pokémon bites, “!” appears.\l"
+                        "That’s your cue to reel it in!")
+                        waitmessage
+                        releaseall
+                    }
+                    elif(var(VAR_RESULT) == 0)
+                    {
+                        msgbox("When you’re fishing for Pokémon,\n"
+                            "the first hurdle is getting a bite.\p"
+                            "When you reel the Pokémon in, you’ve\n"
+                            "got to battle it.\p"
+                            "So, fishing gives you twice the fun!")
+                            waitmessage
+                            releaseall
+                    }
+        }
+        elif(var(VAR_RESULT) == 0)
+        {
+            msgbox("Oh, really?\n"
+            "You don’t like to fish?",MSGBOX_AUTOCLOSE)
+            waitmessage
+            releaseall
+        }
+
+    }
+}
+
+script Route218GateToJubilifeCity_Text_GreatFishingHole {
+    lockall
+    msgbox("Route 218 up ahead is a great fishing\n"
+        "hole that’s almost unknown to people.",MSGBOX_NPC)
+            waitmessage
+            releaseall
+}
