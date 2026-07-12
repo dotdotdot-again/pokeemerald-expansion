@@ -48,4 +48,8 @@ void InitTilesetAnim_PorytilesSecondaryPlatGBAJubilife(void);
 
 void InitTilesetAnim_WestOthers(void);
 
+void InitTilesetAnim_PorytilesSecondaryTwinleaf(void);
+
+void InitTilesetAnim_PorytilesSecondarySandgem(void);
+
 #endif // GUARD_TILESET_ANIMS_H

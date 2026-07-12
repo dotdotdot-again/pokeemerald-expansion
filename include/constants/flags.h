@@ -664,9 +664,9 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
+#define FLAG_SCHOOL_STUDENT_ONE  0x264 // Used for the kid in the trainer school that fights you
+#define FLAG_SCHOOL_STUDENT_TWO  0x265 // Used for the other kid in the trainer school that fights you
+#define FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION  0x266 // Used for the kid in the trainer school that fights you and after he gives you a potion
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
@@ -1050,11 +1050,11 @@
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
 // Item Ball Flags
-#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
-#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
+#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8 //Jubilife Potion
+#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9 //Jubilife Trainer School Item
+#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA//Route 204 Parlyz Heal
+#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB//Route 204 HP Up
+#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC//Route 204 Sea Incence
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF

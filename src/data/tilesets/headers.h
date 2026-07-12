@@ -1561,7 +1561,7 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBATwinleaf =
     .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBATwinleaf,
     .metatiles = gMetatiles_PorytilesSecondaryPlatGBATwinleaf,
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBATwinleaf,
-    .callback = NULL,
+    .callback = InitTilesetAnim_PorytilesSecondaryTwinleaf,
 };
 
 const struct Tileset gTileset_PorytilesSecondaryPlatGBASandgem =
@@ -1572,7 +1572,7 @@ const struct Tileset gTileset_PorytilesSecondaryPlatGBASandgem =
     .palettes = gTilesetPalettes_PorytilesSecondaryPlatGBASandgem,
     .metatiles = gMetatiles_PorytilesSecondaryPlatGBASandgem,
     .metatileAttributes = gMetatileAttributes_PorytilesSecondaryPlatGBASandgem,
-    .callback = NULL,
+    .callback = InitTilesetAnim_PorytilesSecondarySandgem,
 };
 
 const struct Tileset gTileset_PorytilesSecondaryPlatGBAJubilife =

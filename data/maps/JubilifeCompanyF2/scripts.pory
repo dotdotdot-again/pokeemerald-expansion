@@ -1,1 +1,33 @@
 mapscripts JubilifeCompanyF2_MapScripts {}
+
+script PoketchCo2F_Text_WellTryToThinkLikeATrainerAndFindWhatPoketchAppsWouldBeGood {
+    lock
+    msgbox("We’ll try to think like a Trainer and find\n"
+        "what Pokétch apps would be good.",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo2F_Text_PokemonWatchThatsPoketchForShort {
+    lock
+    msgbox("Pokémon Watch!\n"
+        "That’s Pokétch for short.\p"
+        "Say it the long way and...\n"
+        "What does Pokémon stand for again?\p"
+        "Anyway, I’m the father of the\n"
+        "president of the Pokétch Company!",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo2F_Text_ClefairyCleffy {
+    lock
+    playmoncry(SPECIES_CLEFAIRY,0)
+    msgbox("Cleffy?",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo2F_Text_PachirisuPatchii {
+    lock
+    playmoncry(SPECIES_PACHIRISU,0)
+    msgbox("Patchii?",MSGBOX_NPC)
+    release
+}

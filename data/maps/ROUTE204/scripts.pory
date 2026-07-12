@@ -1,0 +1,21 @@
+mapscripts ROUTE204_MapScripts {}
+
+script Route204South_Text_Rt204JubilifeCity {
+    lock
+    msgbox("Rt. 204\n"
+        "Jubilife City",MSGBOX_SIGN)
+}
+
+script Route204South_Text_RavagedPath {
+    lock
+    msgbox("Rt. 204\n"
+        "Jubilife City",MSGBOX_SIGN)
+}
+
+script Route204South_Text_ThereAreBouldersBlockingTheWayInsideTheCavern {
+    lock
+    msgbox("There are boulders blocking the way\n"
+        "inside the cavern...\p"
+        "I think a Pokémon’s hidden move will be\n"
+        "able to smash those boulders, though.",MSGBOX_NPC)
+}

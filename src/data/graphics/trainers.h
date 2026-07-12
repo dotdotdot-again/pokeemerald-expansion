@@ -145,11 +145,11 @@ const u16 gTrainerPalette_LeaderTateAndLiza[] = INCBIN_U16("graphics/trainers/fr
 const u32 gTrainerFrontPic_LeaderJuan[] = INCBIN_U32("graphics/trainers/front_pics/leader_juan.4bpp.smol");
 const u16 gTrainerPalette_LeaderJuan[] = INCBIN_U16("graphics/trainers/front_pics/leader_juan.gbapal");
 
-const u32 gTrainerFrontPic_SchoolKidM[] = INCBIN_U32("graphics/trainers/front_pics/school_kid_m.4bpp.smol");
-const u16 gTrainerPalette_SchoolKidM[] = INCBIN_U16("graphics/trainers/front_pics/school_kid_m.gbapal");
+const u32 gTrainerFrontPic_SchoolKidM[] = INCBIN_U32("graphics/trainers/front_pics/DP_School_Kid_M.4bpp.smol");
+const u16 gTrainerPalette_SchoolKidM[] = INCBIN_U16("graphics/trainers/front_pics/DP_School_Kid_M.gbapal");
 
-const u32 gTrainerFrontPic_SchoolKidF[] = INCBIN_U32("graphics/trainers/front_pics/school_kid_f.4bpp.smol");
-const u16 gTrainerPalette_SchoolKidF[] = INCBIN_U16("graphics/trainers/front_pics/school_kid_f.gbapal");
+const u32 gTrainerFrontPic_SchoolKidF[] = INCBIN_U32("graphics/trainers/front_pics/DP_School_Kid_F.4bpp.smol");
+const u16 gTrainerPalette_SchoolKidF[] = INCBIN_U16("graphics/trainers/front_pics/DP_School_Kid_F.gbapal");
 
 const u32 gTrainerFrontPic_SrAndJr[] = INCBIN_U32("graphics/trainers/front_pics/sr_and_jr.4bpp.smol");
 const u16 gTrainerPalette_SrAndJr[] = INCBIN_U16("graphics/trainers/front_pics/sr_and_jr.gbapal");
@@ -232,8 +232,8 @@ const u16 gTrainerPalette_PokemonRangerF[] = INCBIN_U16("graphics/trainers/front
 const u32 gTrainerFrontPic_MagmaLeaderMaxie[] = INCBIN_U32("graphics/trainers/front_pics/magma_leader_maxie.4bpp.smol");
 const u16 gTrainerPalette_MagmaLeaderMaxie[] = INCBIN_U16("graphics/trainers/front_pics/magma_leader_maxie.gbapal");
 
-const u32 gTrainerFrontPic_Lass[] = INCBIN_U32("graphics/trainers/front_pics/lass.4bpp.smol");
-const u16 gTrainerPalette_Lass[] = INCBIN_U16("graphics/trainers/front_pics/lass.gbapal");
+const u32 gTrainerFrontPic_Lass[] = INCBIN_U32("graphics/trainers/front_pics/DP_Lass.4bpp.smol");
+const u16 gTrainerPalette_Lass[] = INCBIN_U16("graphics/trainers/front_pics/DP_Lass.gbapal");
 
 const u32 gTrainerFrontPic_YoungCouple[] = INCBIN_U32("graphics/trainers/front_pics/young_couple.4bpp.smol");
 const u16 gTrainerPalette_YoungCouple[] = INCBIN_U16("graphics/trainers/front_pics/young_couple.gbapal");

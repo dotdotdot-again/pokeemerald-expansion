@@ -5129,6 +5129,7 @@ Class: School Kid
 Pic: School Kid M
 Gender: Male
 Music: Male
+Items: X Attack
 Double Battle: No
 AI: Check Bad Move
 
@@ -5249,6 +5250,7 @@ Class: School Kid
 Pic: School Kid F
 Gender: Female
 Music: Girl
+Items: Potion
 Double Battle: No
 AI: Check Bad Move
 

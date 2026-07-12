@@ -1,1 +1,36 @@
 mapscripts JubilifeCompanyF3_MapScripts {}
+
+script PoketchCo3F_Text_MyHusbandsThePresident {
+    lock
+    msgbox("My husband’s the president.\p"
+        "We started out in a small workshop\n"
+        "where he made what he liked.\p"
+        "Now we’re making something that makes\n"
+        "the world happy. Imagine that!",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo3F_Text_TheresAGirlsModelAndABoysModel {
+    lock
+    msgbox("Do you have a Pokétch?\p"
+        "There’s a girl’s model and a boy’s\n"
+        "model, each in different colors.",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo3F_Text_PeopleEverywhereMakePoketchApps {
+    lock
+    msgbox("People everywhere make Pokétch apps.\p"
+        "You’ll be able to get new apps from\n"
+        "surprising sources.\p"
+        "The PCs here have guides on the\n"
+        "various Pokétch apps.",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo3F_Text_ThereAreDescriptionsOfPoketchApps1 {
+    lock
+    msgbox("There are descriptions of Pokétch\n"
+        "apps.",MSGBOX_SIGN)
+    release
+}

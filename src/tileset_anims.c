@@ -1614,3 +1614,93 @@ void InitTilesetAnim_WestOthers(void)
     sSecondaryTilesetAnimCounterMax = 256;
     sSecondaryTilesetAnimCallback = TilesetAnim_westOthers;
 }
+
+
+//Twinlead
+
+//lake
+const u16 gTilesetAnims_lake_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/00.4bpp");
+const u16 gTilesetAnims_lake_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/01.4bpp");
+const u16 gTilesetAnims_lake_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/02.4bpp");
+const u16 gTilesetAnims_lake_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/03.4bpp");
+const u16 gTilesetAnims_lake_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/04.4bpp");
+const u16 gTilesetAnims_lake_Frame5[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/05.4bpp");
+const u16 gTilesetAnims_lake_Frame6[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/06.4bpp");
+const u16 gTilesetAnims_lake_Frame7[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbatwinleaf/anim/lake_animation/07.4bpp");
+
+const u16 *const gTilesetAnims_lake[] = {
+    gTilesetAnims_lake_Frame0,
+    gTilesetAnims_lake_Frame1,
+    gTilesetAnims_lake_Frame2,
+    gTilesetAnims_lake_Frame3,
+    gTilesetAnims_lake_Frame4,
+    gTilesetAnims_lake_Frame5,
+    gTilesetAnims_lake_Frame6,
+    gTilesetAnims_lake_Frame7
+};
+
+static void QueueAnimTiles_lake(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_lake);
+    AppendTilesetAnimToBuffer(gTilesetAnims_lake[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(512)), 4 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_lake(u16 timer)
+{
+    if (timer % 8 == 0) {
+        QueueAnimTiles_lake(timer / 8);
+    }
+}
+
+void InitTilesetAnim_PorytilesSecondaryTwinleaf(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 256;
+    sSecondaryTilesetAnimCallback = TilesetAnim_lake;
+}
+
+
+
+//sandgem
+
+//shore
+const u16 gTilesetAnims_lake_Shore0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/00.4bpp");
+const u16 gTilesetAnims_lake_Shore1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/01.4bpp");
+const u16 gTilesetAnims_lake_Shore2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/02.4bpp");
+const u16 gTilesetAnims_lake_Shore3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/03.4bpp");
+const u16 gTilesetAnims_lake_Shore4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/04.4bpp");
+const u16 gTilesetAnims_lake_Shore5[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/05.4bpp");
+const u16 gTilesetAnims_lake_Shore6[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/06.4bpp");
+const u16 gTilesetAnims_lake_Shore7[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbasandgem/anim/shore/07.4bpp");
+
+const u16 *const gTilesetAnims_shore[] = {
+    gTilesetAnims_lake_Shore0,
+    gTilesetAnims_lake_Shore1,
+    gTilesetAnims_lake_Shore2,
+    gTilesetAnims_lake_Shore3,
+    gTilesetAnims_lake_Shore4,
+    gTilesetAnims_lake_Shore5,
+    gTilesetAnims_lake_Shore6,
+    gTilesetAnims_lake_Shore7
+};
+
+static void QueueAnimTiles_shore(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_shore);
+    AppendTilesetAnimToBuffer(gTilesetAnims_shore[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(512)), 4 * TILE_SIZE_4BPP);
+}
+
+static void TilesetAnim_sore(u16 timer)
+{
+    if (timer % 16 == 0) {
+        QueueAnimTiles_shore(timer / 16);
+    }
+}
+
+void InitTilesetAnim_PorytilesSecondarySandgem(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = 256;
+    sSecondaryTilesetAnimCallback = TilesetAnim_sore;
+}
+

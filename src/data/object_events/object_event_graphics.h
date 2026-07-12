@@ -561,6 +561,8 @@ const u16 gObjectEventPal_DP_Gardenia[] = INCBIN_U16("graphics/object_events/pic
 
 const u16 gObjectEventPal_DP_TrashCan[] = INCBIN_U16("graphics/object_events/pics/misc/ruby.gbapal");
 
+const u16 gObjectEventPal_DP_PokeballPal[] = INCBIN_U16("graphics/object_events/pics/misc/ball_poke.gbapal");
+
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/substitute.gbapal");

@@ -1,1 +1,46 @@
 mapscripts JubilifeCompanyF1_MapScripts {}
+
+script PoketchCo1F_Text_WelcomeToThePoketchCompany {
+    lock
+    msgbox("Welcome to the Pokétch Company.\p"
+        "We’re actually a family-run business,\n"
+        "so we’re not very impressive.",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo1F_Text_OhYouCanBeSureIWillKeepDevelopingPoketchApps {
+    lock
+    msgbox("Oh, you can be sure I will keep\n"
+        "developing Pokétch apps.\p"
+        "Just like Pokémon, my Pokétch is\n"
+        "something that evolves!",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo1F_Text_HeyDoYouWatchTV {
+    lock
+    msgbox("Hey, do you watch TV?\n"
+        "“Pokétch Detective” is a great show.\p"
+        "Seeing that program compels me to use\n"
+        "my Pokétch more!",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo1F_Text_WithTV {
+    lock
+    msgbox("Hello!\n"
+    "I'm with Jubilife TV!",MSGBOX_NPC)
+    release
+}
+
+script PoketchCo1F_Text_President {
+    lock
+    msgbox("Hi, hi!\p"
+    "I'm the president of the Pok\etch\n"
+    "Company!\p"
+    "I'm developing a new Pok\etch app.\n"
+    "but it's not quite done.",MSGBOX_NPC)
+    release
+}
+
+

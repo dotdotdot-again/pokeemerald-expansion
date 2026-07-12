@@ -60,7 +60,193 @@ script JubilifeSchool_Barry_Stuff {
     clearflag(FLAG_JUBILIFE_POKETKCH)
     removeobject(SchoolBarry)
     releaseall
+}
+
+//NPCs
+
+script TrainersSchool_Text_PokemonUseItems {
+    lock
+    msgbox("Pokémon are smart enough to use\n"
+        "items they’re holding.\p"
+        "But they won’t know what to do with\n"
+        "man-made items like Potions and\l"
+        "Antidotes.",MSGBOX_NPC)
+    release
+}
+
+script TrainersSchool_Text_LearnedAboutPokemonTypes {
+    lock
+    msgbox("We learned about Pokémon types\n"
+        "today. Umm...\p"
+        "Grass is weak to Fire,\p"
+        "Fire is weak to Water,\p"
+        "and Water is weak to Grass!",MSGBOX_NPC)
+    release
+}
+
+script TrainersSchool_Text_DevelopAtOwnPace {
+    lock
+    msgbox("It’s perfectly fine for Trainers and\n"
+        "Pokémon to develop at their own pace.\p"
+        "If there is anything you’re not familiar\n"
+        "with, you can look it up here.",MSGBOX_NPC)
+    release
+}
+
+script TrainersSchool_Text_WroteAnEssay {
+    lock
+    msgbox("I wrote an essay in my notebook on \n"
+        "what makes a true Pokémon Trainer.",MSGBOX_NPC)
+    release
+}
+
+//trainers
+
+script TrainersSchool_Text_CanWeBattleYou {
+    lock
+    if(flag(FLAG_SCHOOL_STUDENT_ONE) == TRUE && flag(FLAG_SCHOOL_STUDENT_TWO) == FALSE)
+    {
+    msgbox("It’s hard to win if you don’t have\n"
+        "some Pokémon to choose from.",MSGBOX_NPC)
+
+    }
+    elif(flag(FLAG_SCHOOL_STUDENT_ONE) == TRUE && flag(FLAG_SCHOOL_STUDENT_TWO) == TRUE && flag(FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION) == FALSE)
+    {
+    msgbox("Whew! You’re really good!\p"
+        "We’ve been studying every day, but\n"
+        "we were no match for you at all!\p"
+        "You’d be able to use this Potion\n"
+        "properly. Here you go!")
+        waitmessage
+        giveitem(ITEM_POTION)
+        setflag(FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION)
+        msgbox("When a Potion is used, it restores the\n"
+        "HP, the health, of a Pokémon.\p"
+        "Being a good Trainer isn’t only about\n"
+        "ordering your Pokémon around.\p"
+        "A superior Trainer knows how to use\n"
+        "items to the full advantage!",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(flag(FLAG_SCHOOL_STUDENT_ONE) == TRUE && flag(FLAG_SCHOOL_STUDENT_TWO) == TRUE && flag(FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION) == TRUE)
+    {
+        msgbox("When a Potion is used, it restores the\n"
+        "HP, the health, of a Pokémon.\p"
+        "Being a good Trainer isn’t only about\n"
+        "ordering your Pokémon around.\p"
+        "A superior Trainer knows how to use\n"
+        "items to the full advantage!",MSGBOX_AUTOCLOSE)
+        waitmessage
+    }
+    elif(flag(FLAG_SCHOOL_STUDENT_ONE) == FALSE)
+    {
+        applymovement(2, moves(face_player))
+        msgbox("Doing it is the best way to learn!\n"
+            "Can we get a battle with you?",MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 1)
+        {
+            msgbox("Go!\n"
+            "My Pokémon, go!")
+            waitmessage
+            trainerbattle_no_intro(TRAINER_JERRY_1, "Ugh...\nI didn't use items effectively")
+            setflag(FLAG_SCHOOL_STUDENT_ONE)
+                if(flag(FLAG_SCHOOL_STUDENT_ONE) == TRUE && flag(FLAG_SCHOOL_STUDENT_TWO) == TRUE && flag(FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION) == FALSE)
+                {
+                msgbox("Whew! You’re really good!\p"
+                    "We’ve been studying every day, but\n"
+                    "we were no match for you at all!\p"
+                    "You’d be able to use this Potion\n"
+                    "properly. Here you go!")
+                    waitmessage
+                    giveitem(ITEM_POTION)
+                    setflag(FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION)
+                    msgbox("When a Potion is used, it restores the\n"
+                    "HP, the health, of a Pokémon.\p"
+                    "Being a good Trainer isn’t only about\n"
+                    "ordering your Pokémon around.\p"
+                    "A superior Trainer knows how to use\n"
+                    "items to the full advantage!",MSGBOX_AUTOCLOSE)
+                    waitmessage
+                } 
+                else{
+                    msgbox("It’s hard to win if you don’t have\n"
+                    "some Pokémon to choose from.",MSGBOX_AUTOCLOSE)
+                    waitmessage
+                }          
+            
+        }
+        elif(var(VAR_RESULT) == 0)
+        {
+            msgbox("Aww! But battling is the best way\n"
+            "to learn about Pokémon!",MSGBOX_AUTOCLOSE)
+        }
+    }
+
+    release
+}
+
+
+script TrainersSchool_Text_MayWeBattle {
+    lock
+    if(flag(FLAG_SCHOOL_STUDENT_TWO) == TRUE)
+    {
+    msgbox("I wonder if we could have done better\n"
+        "against you?\p"
+        "Like if I used Potions right when we\n"
+        "needed to.",MSGBOX_NPC)
+        waitmessage
+    }
+    elif(flag(FLAG_SCHOOL_STUDENT_TWO) == FALSE)
+    {
+        applymovement(6, moves(face_player))
+        msgbox("I just became friends with my\n"
+            "Pokémon.\p"
+            "I’m not sure if we can do this\n"
+            "properly, but may we battle?",MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 1)
+        {
+            msgbox("I need to try the things I learned\n"
+            "before I forget them!")
+            waitmessage
+            trainerbattle_no_intro(TRAINER_KAREN_1, "I like to study a lot...\nI thought I could win...")
+            setflag(FLAG_SCHOOL_STUDENT_TWO)
+            if (flag(FLAG_SCHOOL_STUDENT_ONE) == FALSE)
+            {
+            msgbox("I wonder if we could have done better\n"
+        "against you?\p"
+        "Like if I used Potions right when we\n"
+        "needed to.",MSGBOX_AUTOCLOSE)
+            waitmessage
+            }
+            else{
+                msgbox("We were actually confident that we\n"
+                "would do pretty good.\p"
+                "But I’m completely impressed by how\n"
+                "tough you are.\p"
+                "If you’d like, talk to my friend and\n"
+                "get a nice item from him.",MSGBOX_AUTOCLOSE)
+                waitmessage
+            }
+            
+            
+        }
+        elif(var(VAR_RESULT) == 0)
+        {
+            msgbox("Boo!\n"
+            "Where’s your sense of adventure?\p"
+            "Don’t be shy about talking to people\n"
+            "and getting into battles!",MSGBOX_AUTOCLOSE)
+            waitmessage
+        }
+
+    }
     
 
-
+    release
 }
+
+
+
+
+
+
