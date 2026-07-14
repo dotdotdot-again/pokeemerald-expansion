@@ -121,8 +121,8 @@ const u16 gTrainerPalette_EliteFourGlacia[] = INCBIN_U16("graphics/trainers/fron
 const u32 gTrainerFrontPic_EliteFourDrake[] = INCBIN_U32("graphics/trainers/front_pics/elite_four_drake.4bpp.smol");
 const u16 gTrainerPalette_EliteFourDrake[] = INCBIN_U16("graphics/trainers/front_pics/elite_four_drake.gbapal");
 
-const u32 gTrainerFrontPic_LeaderRoxanne[] = INCBIN_U32("graphics/trainers/front_pics/leader_roxanne.4bpp.smol");
-const u16 gTrainerPalette_LeaderRoxanne[] = INCBIN_U16("graphics/trainers/front_pics/leader_roxanne.gbapal");
+const u32 gTrainerFrontPic_LeaderRoxanne[] = INCBIN_U32("graphics/trainers/front_pics/DP_Roark.4bpp.smol");
+const u16 gTrainerPalette_LeaderRoxanne[] = INCBIN_U16("graphics/trainers/front_pics/DP_Roark.gbapal");
 
 const u32 gTrainerFrontPic_LeaderBrawly[] = INCBIN_U32("graphics/trainers/front_pics/leader_brawly.4bpp.smol");
 const u16 gTrainerPalette_LeaderBrawly[] = INCBIN_U16("graphics/trainers/front_pics/leader_brawly.gbapal");

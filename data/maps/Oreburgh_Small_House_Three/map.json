@@ -2,7 +2,7 @@
   "id": "MAP_OREBURGH_SMALL_HOUSE_THREE",
   "name": "Oreburgh_Small_House_Three",
   "layout": "LAYOUT_OREBURGH_SMALL_HOUSE_THREE",
-  "music": "MUS_SLATEPORT",
+  "music": "MUS_DP_OREBURGH_DAY",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

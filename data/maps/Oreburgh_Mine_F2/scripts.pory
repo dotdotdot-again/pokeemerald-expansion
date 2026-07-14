@@ -1,1 +1,33 @@
 mapscripts Oreburgh_Mine_F2_MapScripts {}
+
+script MineF2_Roark_Event {
+    lockall
+    applymovement(Roark_Mine, moves(face_down,delay_16,delay_16,face_right,delay_16))
+    waitmovement
+    setspeaker(SP_NAME_ROARK)
+    msgbox("OK, stand back and watch this.\p"
+        "Using the hidden move Rock Smash,\n"
+        "a boulder blocking your way...",MSGBOX_AUTOCLOSE)
+    waitmessage
+    playse(SE_M_ROCK_THROW)
+    applymovement(1,moves(rock_smash_break) )
+    waitmovementall
+    removeobject(1)
+    setflag(FLAG_TEMP_11)
+    waitse
+    applymovement(Roark_Mine, moves(face_down))
+    setspeaker(SP_NAME_ROARK)
+    msgbox("Fallen boulders need to be smashed\n"
+        "so they’re out of the way.\p"
+        "If you could get the Badge from\n"
+        "the Gym in town, you’d be able\l"
+        "to do this too.\p"
+        "Of course, you’d have to beat the\n"
+        "Gym Leader first. That’d be me!",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Roark_Mine, moves(walk_right*8))
+    waitmovement
+    removeobject(Roark_Mine)
+    setflag(FLAG_ROARK_OUT_OF_THE_MINE)
+    releaseall 
+}

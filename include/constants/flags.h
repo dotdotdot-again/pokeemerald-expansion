@@ -667,7 +667,7 @@
 #define FLAG_SCHOOL_STUDENT_ONE  0x264 // Used for the kid in the trainer school that fights you
 #define FLAG_SCHOOL_STUDENT_TWO  0x265 // Used for the other kid in the trainer school that fights you
 #define FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION  0x266 // Used for the kid in the trainer school that fights you and after he gives you a potion
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
+#define FLAG_ROARK_OUT_OF_THE_MINE  0x267 // After getting Roarck out of the mine
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag

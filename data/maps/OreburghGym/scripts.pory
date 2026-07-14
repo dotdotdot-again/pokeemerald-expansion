@@ -1,1 +1,159 @@
 mapscripts OreburghGym_MapScripts {}
+
+
+script Roarck_Gym {
+lockall
+if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
+{
+    applymovement(3, moves(face_player))
+    setspeaker(SP_NAME_ROARK)
+    msgbox("Welcome!\n"
+        "This is the Oreburgh Pokémon Gym!\p"
+        "I’m Roark, the Gym Leader!\p"
+        "I’m but one Trainer who decided to\n"
+        "walk proudly with Rock-type Pokémon!\p"
+        "As the Gym Leader, I need to see\n"
+        "your potential as a Trainer.\p"
+        "And, I’ll need to see the toughness\n"
+        "of the Pokémon that battle with you!",MSGBOX_AUTOCLOSE)
+        waitmessage
+    trainerbattle_no_intro(TRAINER_ROXANNE_1, "W-what? That can’t be!\n"
+                "My buffed-up Pokémon!")
+       setspeaker(SP_NAME_ROARK)
+    msgbox("This is embarrassing...\p"
+        "I went and lost to a Trainer who\n"
+        "didn’t have a single Gym Badge...\p"
+        "But that’s tough. You were strong,\n"
+        "and I was weak. That’s all there is.\p"
+        "According to Pokémon League rules,\n"
+        "I have to give you our Gym Badge\l"
+        "since you’ve beaten me, the Leader.\p"
+        "Here’s your official Pokémon League\n"
+        "Coal Badge.")
+    waitmessage
+    msgbox("{PLAYER} received\n"
+        "the Coal Badge from Roark!")
+    call(Common_EventScript_PlayGymBadgeFanfare)
+    waitmessage
+    setflag(FLAG_DEFEATED_RUSTBORO_GYM)
+	setflag(FLAG_BADGE01_GET) 
+    setvar(VAR_0x8008, 1)
+    call(Common_EventScript_SetGymTrainers) 
+        setspeaker(SP_NAME_ROARK)
+    msgbox("Having that Coal Badge means your\n"
+        "Pokémon can now use the hidden move\l"
+        "Rock Smash outside of battle.\p"
+        "You should also take this, too.")
+    waitmessage
+    giveitem(ITEM_TM_ROCK_TOMB)
+         setspeaker(SP_NAME_ROARK)
+    msgbox("That TM contains\n"
+        "the move Stealth Rock.\p"
+        "It’s a move that inflicts damage on\n"
+        "foes that switch into battle.\p"
+        "Incidentally, a TM will teach its move\n"
+        "to a Pokémon instantly.\p"
+        "But a TM will break when you use it,\n"
+        "so make certain you want a Pokémon\l"
+        "to learn that move.",MSGBOX_AUTOCLOSE)
+    waitmessage     
+    }
+    elif(flag(FLAG_DEFEATED_RUSTBORO_GYM) == TRUE)
+    {
+        setspeaker(SP_NAME_ROARK)
+        msgbox("In this region of Sinnoh, there are\n"
+            "seven other Gym Leaders.\p"
+            "I should warn you--they’re a lot\n"
+            "tougher than I am!",MSGBOX_NPC)
+        waitmessage
+    }
+releaseall
+}
+
+script OreburghGym__GymGuide {
+    lock
+    if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
+    {
+        msgbox("Howdy!\n"
+        "How’s it going, Champ-to-be?\p"
+        "That’s what I said to a really\n"
+        "impatient boy earlier, too.\p"
+        "The Gym Leader is a user of\n"
+        "Rock-type Pokémon.\p"
+        "Well, listen. Rock-type Pokémon\n"
+        "really hate water, all right?\p"
+        "They’re also weak to Grass-type\n"
+        "moves.\p"
+        "Gee, they sure have weaknesses!\p"
+        "But don’t think it will be easy.\p"
+        "You don’t get to be a Gym Leader\n"
+        "without covering for weaknesses.\p"
+        "Going after a Rock-type Pokémon\n"
+        "with a Fire-type Pokémon won’t be\l"
+        "easy, either.\p"
+        "That’s all the advice I can give.\n"
+        "Thanks for listening!",MSGBOX_NPC)
+        waitmessage
+
+    }
+    else
+    {
+        msgbox("Howdy!\n"
+        "Oh! {PLAYER}!\n"
+        "You’ve taken care of the Gym Leader!\p"
+        "So, did my advice come in handy\n"
+        "or what?\p"
+        "If my advice was useful, it’d be\n"
+        "great if you’d become my fan!",MSGBOX_NPC)
+        waitmessage
+
+    }
+    release   
+}
+
+script OreburghGym_Text_GymStatue {
+       lock
+    if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
+    {
+        msgbox("Oreburgh City Pokémon Gym\n"
+        "Leader: Roark\p"
+        "Certified Trainers:\n"
+        "Barry",MSGBOX_SIGN)
+        waitmessage
+
+    }
+    else
+    {
+        msgbox("Oreburgh City Pokémon Gym\n"
+        "Leader: Roark\p"
+        "Certified Trainers:\n"
+        "Barry\l"
+        "{PLAYER}",MSGBOX_SIGN)
+        waitmessage
+
+    }
+    release 
+    
+}
+
+script OreburghGym_Jonathon {
+    lock
+    trainerbattle_single(TRAINER_JAYLEN, "You avoided the long way around?\n"
+                "Let’s see why you’d do that!", "Now I understand why you decided to\n"
+                "battle with me.")
+    msgbox("You should go whichever way you\n"
+                "want, shortcut or the long way!",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script OreburghGym_Darius {
+    lock
+    trainerbattle_single(TRAINER_DILLON, "Only those who want to win can\n"
+                "challenge a Pokémon Gym!", "Gggh...\n"
+                "This is humiliating!")
+    msgbox("One day, I’m going to become a tough\n"
+                "Trainer like you.",MSGBOX_NPC)
+    waitmessage
+    release
+}

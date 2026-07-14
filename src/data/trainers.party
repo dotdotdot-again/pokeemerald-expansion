@@ -4786,39 +4786,48 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Crunch
 
+/*Roark Gym Fight 1*/
 === TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+Name: Roark
 Class: Leader
 Pic: Leader Roxanne
-Gender: Female
-Music: Female
+Gender: Male
+Music: Male
 Items: Potion / Potion
 Double Battle: No
 AI: Basic Trainer
+Mugshot: Yellow
 
-Geodude
+Onix (M)
 Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
+Ability: Sturdy
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heavy
+Nature: Bold
+- Stealth Rock
 - Rock Throw
-- Rock Tomb
+- Tackle
+- Rage
 
-Geodude
+Rolycoly (M)
 Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Steam Engine
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Nature: Lax
 - Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+- Stealth Rock
+- Smack Down
+- Rapid Spin
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Cranidos (M) @ Oran Berry
+Level: 14
+Ability: Mold Breaker
+Nature: Jolly
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Headbutt
+- Pursuit
+- Leer
+- Take Down
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -6102,8 +6111,9 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aerial Ace
 - Brick Break
 
+/* Oreburgh Gym Youngster Jonathon */
 === TRAINER_JAYLEN ===
-Name: JAYLEN
+Name: Jonathon
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6111,12 +6121,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Trapinch
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+SPECIES_GEODUDE_ALOLA
+Level: 11
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Tackle
+- Charge
 
+/* Oreburgh Gym Youngster Darius */
 === TRAINER_DILLON ===
-Name: DILLON
+Name: Darius
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6124,9 +6137,19 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+SPECIES_GEODUDE
+Level: 9
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Tackle
+- Defense Curl
+
+SPECIES_ONIX
+Level: 9
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Rock Throw
+- Tackle
+- Harden
+- Bind
 
 === TRAINER_CALVIN_2 ===
 Name: CALVIN

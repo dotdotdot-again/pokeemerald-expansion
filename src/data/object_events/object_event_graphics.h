@@ -492,7 +492,7 @@ const u16 gObjectEventPal_DP_Fisherman[] = INCBIN_U16("graphics/object_events/pa
 const u16 gObjectEventPal_DP_GalacticGruntF[] = INCBIN_U16("graphics/object_events/palettes/DP_galactic_grunt_f.gbapal");
 const u16 gObjectEventPal_DP_GalacticGruntM[] = INCBIN_U16("graphics/object_events/palettes/DP_galactic_grunt_m.gbapal");
 const u16 gObjectEventPal_DP_Gentleman[] = INCBIN_U16("graphics/object_events/palettes/DP_gentleman.gbapal");
-const u16 gObjectEventPal_DP_Hiker[] = INCBIN_U16("graphics/object_events/palettes/DP_hiker.gbapal");
+const u16 gObjectEventPal_DP_Hiker[] = INCBIN_U16("graphics/object_events/pics/people/hiker_frlg.gbapal");
 const u16 gObjectEventPal_DP_Jupiter[] = INCBIN_U16("graphics/object_events/palettes/DP_jupiter.gbapal");
 const u16 gObjectEventPal_DP_Lady[] = INCBIN_U16("graphics/object_events/palettes/DP_lady.gbapal");
 const u16 gObjectEventPal_DP_Looker[] = INCBIN_U16("graphics/object_events/palettes/DP_looker.gbapal");
@@ -562,6 +562,12 @@ const u16 gObjectEventPal_DP_Gardenia[] = INCBIN_U16("graphics/object_events/pic
 const u16 gObjectEventPal_DP_TrashCan[] = INCBIN_U16("graphics/object_events/pics/misc/ruby.gbapal");
 
 const u16 gObjectEventPal_DP_PokeballPal[] = INCBIN_U16("graphics/object_events/pics/misc/ball_poke.gbapal");
+
+const u16 gObjectEventPal_DP_Woman_Three[] = INCBIN_U16("graphics/object_events/pics/people/woman_3_frlg.gbapal");
+
+const u16 gObjectEventPal_DP_Schoolgirl[] = INCBIN_U16("graphics/object_events/pics/people/girl_1.gbapal");
+
+const u16 gObjectEventPal_DP_President[] = INCBIN_U16("graphics/object_events/pics/people/man_2.gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
 const u16 gObjectEventPaletteLight2[] = INCBIN_U16("graphics/object_events/palettes/light2.gbapal");

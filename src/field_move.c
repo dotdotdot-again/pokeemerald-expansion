@@ -18,7 +18,7 @@ static bool32 IsFieldMoveUnlocked_Cut(void)
     if (IS_FRLG)
         return FlagGet(FLAG_BADGE02_GET);
 
-    return FlagGet(FLAG_BADGE01_GET);
+    return FlagGet(FLAG_BADGE02_GET);
 }
 
 static bool32 IsFieldMoveUnlocked_Flash(void)
@@ -34,7 +34,7 @@ static bool32 IsFieldMoveUnlocked_RockSmash(void)
     if (IS_FRLG)
         return FlagGet(FLAG_BADGE06_GET);
 
-    return FlagGet(FLAG_BADGE03_GET);
+    return FlagGet(FLAG_BADGE01_GET);
 }
 
 static bool32 IsFieldMoveUnlocked_Strength(void)

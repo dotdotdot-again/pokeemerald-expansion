@@ -2,7 +2,7 @@
   "id": "MAP_OREBURGH_POKEMON_CENTER",
   "name": "OreburghPokemonCenter",
   "layout": "LAYOUT_OREBURGH_POKEMON_CENTER",
-  "music": "MUS_POKE_CENTER",
+  "music": "MUS_DP_POKE_CENTER_DAY",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

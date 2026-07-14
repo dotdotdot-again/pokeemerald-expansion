@@ -2,7 +2,7 @@
   "id": "MAP_OREBURGH_MUSEUM",
   "name": "Oreburgh_museum",
   "layout": "LAYOUT_OREBURGH_MUSEUM",
-  "music": "MUS_SLATEPORT",
+  "music": "MUS_DP_OREBURGH_DAY",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
