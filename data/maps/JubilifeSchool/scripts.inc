@@ -54,8 +54,10 @@ JubilifeSchool_Barry_Stuff_1:
 # 60 "data/maps/JubilifeSchool/scripts.pory"
 	clearflag FLAG_JUBILIFE_POKETKCH
 # 61 "data/maps/JubilifeSchool/scripts.pory"
-	removeobject SchoolBarry
+	clearflag FLAG_CLOWNS
 # 62 "data/maps/JubilifeSchool/scripts.pory"
+	removeobject SchoolBarry
+# 63 "data/maps/JubilifeSchool/scripts.pory"
 	releaseall
 	return
 
@@ -68,238 +70,238 @@ JubilifeSchool_Barry_Stuff_2:
 
 
 TrainersSchool_Text_PokemonUseItems::
-# 68 "data/maps/JubilifeSchool/scripts.pory"
-	lock
 # 69 "data/maps/JubilifeSchool/scripts.pory"
+	lock
+# 70 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_PokemonUseItems_Text_0, MSGBOX_NPC
-# 74 "data/maps/JubilifeSchool/scripts.pory"
+# 75 "data/maps/JubilifeSchool/scripts.pory"
 	release
 	return
 
 
 TrainersSchool_Text_LearnedAboutPokemonTypes::
-# 78 "data/maps/JubilifeSchool/scripts.pory"
-	lock
 # 79 "data/maps/JubilifeSchool/scripts.pory"
+	lock
+# 80 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_LearnedAboutPokemonTypes_Text_0, MSGBOX_NPC
-# 84 "data/maps/JubilifeSchool/scripts.pory"
+# 85 "data/maps/JubilifeSchool/scripts.pory"
 	release
 	return
 
 
 TrainersSchool_Text_DevelopAtOwnPace::
-# 88 "data/maps/JubilifeSchool/scripts.pory"
-	lock
 # 89 "data/maps/JubilifeSchool/scripts.pory"
+	lock
+# 90 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_DevelopAtOwnPace_Text_0, MSGBOX_NPC
-# 93 "data/maps/JubilifeSchool/scripts.pory"
+# 94 "data/maps/JubilifeSchool/scripts.pory"
 	release
 	return
 
 
 TrainersSchool_Text_WroteAnEssay::
-# 97 "data/maps/JubilifeSchool/scripts.pory"
-	lock
 # 98 "data/maps/JubilifeSchool/scripts.pory"
+	lock
+# 99 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_WroteAnEssay_Text_0, MSGBOX_NPC
-# 100 "data/maps/JubilifeSchool/scripts.pory"
+# 101 "data/maps/JubilifeSchool/scripts.pory"
 	release
 	return
 
 
 TrainersSchool_Text_CanWeBattleYou::
-# 106 "data/maps/JubilifeSchool/scripts.pory"
-	lock
 # 107 "data/maps/JubilifeSchool/scripts.pory"
+	lock
+# 108 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_ONE, TrainersSchool_Text_CanWeBattleYou_17
 TrainersSchool_Text_CanWeBattleYou_14:
-# 113 "data/maps/JubilifeSchool/scripts.pory"
+# 114 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_ONE, TrainersSchool_Text_CanWeBattleYou_13
 TrainersSchool_Text_CanWeBattleYou_9:
-# 131 "data/maps/JubilifeSchool/scripts.pory"
+# 132 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_ONE, TrainersSchool_Text_CanWeBattleYou_8
 TrainersSchool_Text_CanWeBattleYou_6:
-# 141 "data/maps/JubilifeSchool/scripts.pory"
+# 142 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_unset FLAG_SCHOOL_STUDENT_ONE, TrainersSchool_Text_CanWeBattleYou_5
 TrainersSchool_Text_CanWeBattleYou_1:
-# 185 "data/maps/JubilifeSchool/scripts.pory"
+# 186 "data/maps/JubilifeSchool/scripts.pory"
 	release
 	return
 
 TrainersSchool_Text_CanWeBattleYou_2:
-# 109 "data/maps/JubilifeSchool/scripts.pory"
+# 110 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_0, MSGBOX_NPC
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_3:
-# 115 "data/maps/JubilifeSchool/scripts.pory"
+# 116 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_1
-# 120 "data/maps/JubilifeSchool/scripts.pory"
-	waitmessage
 # 121 "data/maps/JubilifeSchool/scripts.pory"
-	giveitem ITEM_POTION
+	waitmessage
 # 122 "data/maps/JubilifeSchool/scripts.pory"
-	setflag FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION
+	giveitem ITEM_POTION
 # 123 "data/maps/JubilifeSchool/scripts.pory"
+	setflag FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION
+# 124 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_2, MSGBOX_AUTOCLOSE
-# 129 "data/maps/JubilifeSchool/scripts.pory"
+# 130 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_4:
-# 133 "data/maps/JubilifeSchool/scripts.pory"
+# 134 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_2, MSGBOX_AUTOCLOSE
-# 139 "data/maps/JubilifeSchool/scripts.pory"
+# 140 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_5:
-# 143 "data/maps/JubilifeSchool/scripts.pory"
-	applymovement 2, JubilifeSchool_Barry_Stuff_Movement_0
 # 144 "data/maps/JubilifeSchool/scripts.pory"
+	applymovement 2, JubilifeSchool_Barry_Stuff_Movement_0
+# 145 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_3, MSGBOX_YESNO
-# 146 "data/maps/JubilifeSchool/scripts.pory"
+# 147 "data/maps/JubilifeSchool/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq TrainersSchool_Text_CanWeBattleYou_20
-# 178 "data/maps/JubilifeSchool/scripts.pory"
+# 179 "data/maps/JubilifeSchool/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq TrainersSchool_Text_CanWeBattleYou_21
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_7:
-# 131 "data/maps/JubilifeSchool/scripts.pory"
+# 132 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION, TrainersSchool_Text_CanWeBattleYou_4
 	goto TrainersSchool_Text_CanWeBattleYou_6
 
 TrainersSchool_Text_CanWeBattleYou_8:
-# 131 "data/maps/JubilifeSchool/scripts.pory"
+# 132 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_TWO, TrainersSchool_Text_CanWeBattleYou_7
 	goto TrainersSchool_Text_CanWeBattleYou_6
 
 TrainersSchool_Text_CanWeBattleYou_12:
-# 113 "data/maps/JubilifeSchool/scripts.pory"
+# 114 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_unset FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION, TrainersSchool_Text_CanWeBattleYou_3
 	goto TrainersSchool_Text_CanWeBattleYou_9
 
 TrainersSchool_Text_CanWeBattleYou_13:
-# 113 "data/maps/JubilifeSchool/scripts.pory"
+# 114 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_TWO, TrainersSchool_Text_CanWeBattleYou_12
 	goto TrainersSchool_Text_CanWeBattleYou_9
 
 TrainersSchool_Text_CanWeBattleYou_17:
-# 107 "data/maps/JubilifeSchool/scripts.pory"
+# 108 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_unset FLAG_SCHOOL_STUDENT_TWO, TrainersSchool_Text_CanWeBattleYou_2
 	goto TrainersSchool_Text_CanWeBattleYou_14
 
 TrainersSchool_Text_CanWeBattleYou_20:
-# 148 "data/maps/JubilifeSchool/scripts.pory"
+# 149 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_4
-# 150 "data/maps/JubilifeSchool/scripts.pory"
-	waitmessage
 # 151 "data/maps/JubilifeSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_JERRY_1, TrainersSchool_Text_CanWeBattleYou_Text_5
+	waitmessage
 # 152 "data/maps/JubilifeSchool/scripts.pory"
-	setflag FLAG_SCHOOL_STUDENT_ONE
+	trainerbattle_no_intro TRAINER_JERRY_1, TrainersSchool_Text_CanWeBattleYou_Text_5
 # 153 "data/maps/JubilifeSchool/scripts.pory"
+	setflag FLAG_SCHOOL_STUDENT_ONE
+# 154 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_ONE, TrainersSchool_Text_CanWeBattleYou_27
 TrainersSchool_Text_CanWeBattleYou_25:
-# 172 "data/maps/JubilifeSchool/scripts.pory"
+# 173 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_0, MSGBOX_AUTOCLOSE
-# 174 "data/maps/JubilifeSchool/scripts.pory"
+# 175 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_21:
-# 180 "data/maps/JubilifeSchool/scripts.pory"
+# 181 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_6, MSGBOX_AUTOCLOSE
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_24:
-# 155 "data/maps/JubilifeSchool/scripts.pory"
+# 156 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_1
-# 160 "data/maps/JubilifeSchool/scripts.pory"
-	waitmessage
 # 161 "data/maps/JubilifeSchool/scripts.pory"
-	giveitem ITEM_POTION
+	waitmessage
 # 162 "data/maps/JubilifeSchool/scripts.pory"
-	setflag FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION
+	giveitem ITEM_POTION
 # 163 "data/maps/JubilifeSchool/scripts.pory"
+	setflag FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION
+# 164 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_CanWeBattleYou_Text_2, MSGBOX_AUTOCLOSE
-# 169 "data/maps/JubilifeSchool/scripts.pory"
+# 170 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_CanWeBattleYou_1
 
 TrainersSchool_Text_CanWeBattleYou_26:
-# 153 "data/maps/JubilifeSchool/scripts.pory"
+# 154 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_unset FLAG_SCHOOL_STUDENT_ONE_AFTERPOTION, TrainersSchool_Text_CanWeBattleYou_24
 	goto TrainersSchool_Text_CanWeBattleYou_25
 
 TrainersSchool_Text_CanWeBattleYou_27:
-# 153 "data/maps/JubilifeSchool/scripts.pory"
+# 154 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_TWO, TrainersSchool_Text_CanWeBattleYou_26
 	goto TrainersSchool_Text_CanWeBattleYou_25
 
 
 TrainersSchool_Text_MayWeBattle::
-# 190 "data/maps/JubilifeSchool/scripts.pory"
-	lock
 # 191 "data/maps/JubilifeSchool/scripts.pory"
+	lock
+# 192 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_set FLAG_SCHOOL_STUDENT_TWO, TrainersSchool_Text_MayWeBattle_2
-# 199 "data/maps/JubilifeSchool/scripts.pory"
+# 200 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_unset FLAG_SCHOOL_STUDENT_TWO, TrainersSchool_Text_MayWeBattle_3
 TrainersSchool_Text_MayWeBattle_1:
-# 245 "data/maps/JubilifeSchool/scripts.pory"
+# 246 "data/maps/JubilifeSchool/scripts.pory"
 	release
 	return
 
 TrainersSchool_Text_MayWeBattle_2:
-# 193 "data/maps/JubilifeSchool/scripts.pory"
+# 194 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_MayWeBattle_Text_0, MSGBOX_NPC
-# 197 "data/maps/JubilifeSchool/scripts.pory"
+# 198 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_MayWeBattle_1
 
 TrainersSchool_Text_MayWeBattle_3:
-# 201 "data/maps/JubilifeSchool/scripts.pory"
-	applymovement 6, JubilifeSchool_Barry_Stuff_Movement_0
 # 202 "data/maps/JubilifeSchool/scripts.pory"
+	applymovement 6, JubilifeSchool_Barry_Stuff_Movement_0
+# 203 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_MayWeBattle_Text_1, MSGBOX_YESNO
-# 206 "data/maps/JubilifeSchool/scripts.pory"
+# 207 "data/maps/JubilifeSchool/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq TrainersSchool_Text_MayWeBattle_6
-# 233 "data/maps/JubilifeSchool/scripts.pory"
+# 234 "data/maps/JubilifeSchool/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq TrainersSchool_Text_MayWeBattle_7
 	goto TrainersSchool_Text_MayWeBattle_1
 
 TrainersSchool_Text_MayWeBattle_6:
-# 208 "data/maps/JubilifeSchool/scripts.pory"
+# 209 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_MayWeBattle_Text_2
-# 210 "data/maps/JubilifeSchool/scripts.pory"
-	waitmessage
 # 211 "data/maps/JubilifeSchool/scripts.pory"
-	trainerbattle_no_intro TRAINER_KAREN_1, TrainersSchool_Text_MayWeBattle_Text_3
+	waitmessage
 # 212 "data/maps/JubilifeSchool/scripts.pory"
-	setflag FLAG_SCHOOL_STUDENT_TWO
+	trainerbattle_no_intro TRAINER_KAREN_1, TrainersSchool_Text_MayWeBattle_Text_3
 # 213 "data/maps/JubilifeSchool/scripts.pory"
+	setflag FLAG_SCHOOL_STUDENT_TWO
+# 214 "data/maps/JubilifeSchool/scripts.pory"
 	goto_if_unset FLAG_SCHOOL_STUDENT_ONE, TrainersSchool_Text_MayWeBattle_10
-# 222 "data/maps/JubilifeSchool/scripts.pory"
+# 223 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_MayWeBattle_Text_4, MSGBOX_AUTOCLOSE
-# 228 "data/maps/JubilifeSchool/scripts.pory"
+# 229 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_MayWeBattle_1
 
 TrainersSchool_Text_MayWeBattle_7:
-# 235 "data/maps/JubilifeSchool/scripts.pory"
+# 236 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_MayWeBattle_Text_5, MSGBOX_AUTOCLOSE
-# 239 "data/maps/JubilifeSchool/scripts.pory"
+# 240 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_MayWeBattle_1
 
 TrainersSchool_Text_MayWeBattle_10:
-# 215 "data/maps/JubilifeSchool/scripts.pory"
+# 216 "data/maps/JubilifeSchool/scripts.pory"
 	msgbox TrainersSchool_Text_MayWeBattle_Text_0, MSGBOX_AUTOCLOSE
-# 219 "data/maps/JubilifeSchool/scripts.pory"
+# 220 "data/maps/JubilifeSchool/scripts.pory"
 	waitmessage
 	goto TrainersSchool_Text_MayWeBattle_1
 
@@ -388,7 +390,7 @@ JubilifeSchool_Barry_Stuff_Text_3:
 	.string "See you around$"
 
 TrainersSchool_Text_PokemonUseItems_Text_0:
-# 69 "data/maps/JubilifeSchool/scripts.pory"
+# 70 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Pokémon are smart enough to use\n"
 	.string "items they’re holding.\p"
 	.string "But they won’t know what to do with\n"
@@ -396,7 +398,7 @@ TrainersSchool_Text_PokemonUseItems_Text_0:
 	.string "Antidotes.$"
 
 TrainersSchool_Text_LearnedAboutPokemonTypes_Text_0:
-# 79 "data/maps/JubilifeSchool/scripts.pory"
+# 80 "data/maps/JubilifeSchool/scripts.pory"
 	.string "We learned about Pokémon types\n"
 	.string "today. Umm...\p"
 	.string "Grass is weak to Fire,\p"
@@ -404,24 +406,24 @@ TrainersSchool_Text_LearnedAboutPokemonTypes_Text_0:
 	.string "and Water is weak to Grass!$"
 
 TrainersSchool_Text_DevelopAtOwnPace_Text_0:
-# 89 "data/maps/JubilifeSchool/scripts.pory"
+# 90 "data/maps/JubilifeSchool/scripts.pory"
 	.string "It’s perfectly fine for Trainers and\n"
 	.string "Pokémon to develop at their own pace.\p"
 	.string "If there is anything you’re not familiar\n"
 	.string "with, you can look it up here.$"
 
 TrainersSchool_Text_WroteAnEssay_Text_0:
-# 98 "data/maps/JubilifeSchool/scripts.pory"
+# 99 "data/maps/JubilifeSchool/scripts.pory"
 	.string "I wrote an essay in my notebook on \n"
 	.string "what makes a true Pokémon Trainer.$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_0:
-# 109 "data/maps/JubilifeSchool/scripts.pory"
+# 110 "data/maps/JubilifeSchool/scripts.pory"
 	.string "It’s hard to win if you don’t have\n"
 	.string "some Pokémon to choose from.$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_1:
-# 115 "data/maps/JubilifeSchool/scripts.pory"
+# 116 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Whew! You’re really good!\p"
 	.string "We’ve been studying every day, but\n"
 	.string "we were no match for you at all!\p"
@@ -429,7 +431,7 @@ TrainersSchool_Text_CanWeBattleYou_Text_1:
 	.string "properly. Here you go!$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_2:
-# 123 "data/maps/JubilifeSchool/scripts.pory"
+# 124 "data/maps/JubilifeSchool/scripts.pory"
 	.string "When a Potion is used, it restores the\n"
 	.string "HP, the health, of a Pokémon.\p"
 	.string "Being a good Trainer isn’t only about\n"
@@ -438,49 +440,49 @@ TrainersSchool_Text_CanWeBattleYou_Text_2:
 	.string "items to the full advantage!$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_3:
-# 144 "data/maps/JubilifeSchool/scripts.pory"
+# 145 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Doing it is the best way to learn!\n"
 	.string "Can we get a battle with you?$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_4:
-# 148 "data/maps/JubilifeSchool/scripts.pory"
+# 149 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Go!\n"
 	.string "My Pokémon, go!$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_5:
-# 151 "data/maps/JubilifeSchool/scripts.pory"
+# 152 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Ugh...\nI didn't use items effectively$"
 
 TrainersSchool_Text_CanWeBattleYou_Text_6:
-# 180 "data/maps/JubilifeSchool/scripts.pory"
+# 181 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Aww! But battling is the best way\n"
 	.string "to learn about Pokémon!$"
 
 TrainersSchool_Text_MayWeBattle_Text_0:
-# 193 "data/maps/JubilifeSchool/scripts.pory"
+# 194 "data/maps/JubilifeSchool/scripts.pory"
 	.string "I wonder if we could have done better\n"
 	.string "against you?\p"
 	.string "Like if I used Potions right when we\n"
 	.string "needed to.$"
 
 TrainersSchool_Text_MayWeBattle_Text_1:
-# 202 "data/maps/JubilifeSchool/scripts.pory"
+# 203 "data/maps/JubilifeSchool/scripts.pory"
 	.string "I just became friends with my\n"
 	.string "Pokémon.\p"
 	.string "I’m not sure if we can do this\n"
 	.string "properly, but may we battle?$"
 
 TrainersSchool_Text_MayWeBattle_Text_2:
-# 208 "data/maps/JubilifeSchool/scripts.pory"
+# 209 "data/maps/JubilifeSchool/scripts.pory"
 	.string "I need to try the things I learned\n"
 	.string "before I forget them!$"
 
 TrainersSchool_Text_MayWeBattle_Text_3:
-# 211 "data/maps/JubilifeSchool/scripts.pory"
+# 212 "data/maps/JubilifeSchool/scripts.pory"
 	.string "I like to study a lot...\nI thought I could win...$"
 
 TrainersSchool_Text_MayWeBattle_Text_4:
-# 222 "data/maps/JubilifeSchool/scripts.pory"
+# 223 "data/maps/JubilifeSchool/scripts.pory"
 	.string "We were actually confident that we\n"
 	.string "would do pretty good.\p"
 	.string "But I’m completely impressed by how\n"
@@ -489,7 +491,7 @@ TrainersSchool_Text_MayWeBattle_Text_4:
 	.string "get a nice item from him.$"
 
 TrainersSchool_Text_MayWeBattle_Text_5:
-# 235 "data/maps/JubilifeSchool/scripts.pory"
+# 236 "data/maps/JubilifeSchool/scripts.pory"
 	.string "Boo!\n"
 	.string "Where’s your sense of adventure?\p"
 	.string "Don’t be shy about talking to people\n"

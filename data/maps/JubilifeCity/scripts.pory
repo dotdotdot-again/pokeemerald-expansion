@@ -50,6 +50,7 @@ script Jubilife_Enterence_LuDa_Event_Right  {
 
 script Jubilife_Enterence_LuDa_Event_Cont {
 	setflag(FLAG_JUBILIFE_POKETKCH)
+	setflag(FLAG_CLOWNS)
 	checkplayergender
 	if(var(VAR_RESULT) == 0)
     {
@@ -517,6 +518,7 @@ script Jubilife_Poketkch_man_During_Hunt {
 		removeobject(poketch_president_outside)
 		setvar(VAR_JUBILIFE_STATE,4)
 		setflag(FLAG_JUBILIFE_POKETKCH)
+		setflag(FLAG_JUBILIFE_LOOKER_BLOCK)
 		releaseall
 		
 	}
@@ -583,7 +585,7 @@ script Clown_Two_text {
 
 script Clown_One_text {
 	lock
-	if(flag(FLAG_CLOWN_ONE) == FALSE)
+	if(flag(FLAG_CLOWN_ONE) == FALSE && flag(FLAG_CLOWNS) == FALSE)
 	{
 		applymovement(Clown_One, moves(face_player))
 		msgbox("Hi! I’m a Pokétch campaign clown!\n"
@@ -609,6 +611,10 @@ script Clown_One_text {
 			"That’s the wrong answer...",MSGBOX_AUTOCLOSE)
 			waitmessage
 		}
+	}
+	elif(flag(FLAG_CLOWNS) == TRUE && flag(FLAG_CLOWN_ONE) == FALSE){
+		msgbox("Go to School...",MSGBOX_NPC)
+			waitmessage
 	}
 	else
 	{
@@ -669,6 +675,7 @@ script JubilifeCity_Text_MapSign {
 	lock
 	msgbox("Jubilife City\n"
         "City of Joy",MSGBOX_SIGN)
+	setflag(FLAG_CLOWNS)
 	release
 }
 
