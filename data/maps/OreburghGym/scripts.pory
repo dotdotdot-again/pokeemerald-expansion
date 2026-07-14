@@ -31,9 +31,10 @@ if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
         "Here’s your official Pokémon League\n"
         "Coal Badge.")
     waitmessage
+    call(Common_EventScript_PlayGymBadgeFanfare)
     msgbox("{PLAYER} received\n"
         "the Coal Badge from Roark!")
-    call(Common_EventScript_PlayGymBadgeFanfare)
+    waitfanfare
     waitmessage
     setflag(FLAG_DEFEATED_RUSTBORO_GYM)
 	setflag(FLAG_BADGE01_GET) 

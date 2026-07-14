@@ -203,22 +203,24 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [POCKET_ITEMS] =        COMPOUND_STRING("ITEMS"),
-    [POCKET_POKE_BALLS] =   COMPOUND_STRING("POKé BALLS"),
+    [POCKET_ITEMS] =        COMPOUND_STRING("Items"),
+    [POCKET_MEDICINE] =        COMPOUND_STRING("Medicine"),
+    [POCKET_POKE_BALLS] =   COMPOUND_STRING("Poké Balls"),
+    [POCKET_BATTLE_ITEMS] =        COMPOUND_STRING("Held Items"),
     [POCKET_TM_HM]  =       COMPOUND_STRING("TMs & HMs"),
-    [POCKET_BERRIES] =      COMPOUND_STRING("BERRIES"),
-    [POCKET_KEY_ITEMS] =    COMPOUND_STRING("KEY ITEMS")
+    [POCKET_BERRIES] =      COMPOUND_STRING("Berries"),
+    [POCKET_KEY_ITEMS] =    COMPOUND_STRING("Key Items")
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x03}{STR_VAR_2}");
 const u8 gText_NumberItem_HM[] = _("{CLEAR_TO 0x11}{STR_VAR_1}{CLEAR 0x05}{STR_VAR_2}");
 
-const u8 gText_ShopBuy[] = _("BUY");
-const u8 gText_ShopSell[] = _("SELL");
-const u8 gText_ShopQuit[] = _("QUIT");
+const u8 gText_ShopBuy[] = _("Buy");
+const u8 gText_ShopSell[] = _("Sell");
+const u8 gText_ShopQuit[] = _("Quit");
 const u8 gText_ThatItemIsSoldOut[] = _("I'm sorry, but that item is sold out.{PAUSE_UNTIL_PRESS}");
-const u8 gText_SoldOut[] = _("SOLD OUT");
-const u8 gText_InBagVar1[] = _("IN BAG: {STR_VAR_1}");
+const u8 gText_SoldOut[] = _("Sold Oout");
+const u8 gText_InBagVar1[] = _("In Bag: {STR_VAR_1}");
 const u8 gText_QuitShopping[] = _("Quit shopping.");
 const u8 gText_Var1CertainlyHowMany[] = _("{STR_VAR_1}? Certainly.\nHow many would you like?");
 const u8 gText_Var1CertainlyHowMany2[] = _("{STR_VAR_1}? Certainly.\nHow many would you like?");
@@ -1124,7 +1126,7 @@ const u8 gText_MoveRelearnerPkmnForgotMoveAndLearnedNew[] = _("{STR_VAR_1} forgo
 const u8 gText_MoveRelearnedPkmnDidNotLearnMove[] = _("{STR_VAR_1} did not learn the\nmove {STR_VAR_2}."); // Unused
 const u8 gText_MoveRelearnerGiveUp[] = _("Give up trying to teach a new\nmove to {STR_VAR_1}?");
 const u8 gText_MoveRelearnerWhichMoveToForget[] = _("Which move should be\nforgotten?\p");
-const u8 gText_MoveRelearnerBattleMoves[] = _("BATTLE MOVES");
+const u8 gText_MoveRelearnerBattleMoves[] = _("Battle Moves");
 const u8 gText_MoveRelearnerContestMovesTitle[] = _("CONTEST MOVES");
 const u8 gText_MoveRelearnerType[] = _("TYPE/"); // Unused
 const u8 gText_MoveRelearnerPP[] = _("PP/");
@@ -1156,13 +1158,15 @@ const u8 gText_Sunny3[] = _("SUNNY3"); // Unused
 const u8 gText_HeavyRain[] = _("HEAVY RAIN"); // Unused
 const u8 gText_Seafloor2[] = _("SEAFLOOR2"); // Unused
 const u8 gText_DelAll[] = _("DEL. ALL");
-const u8 gText_Cancel5[] = _("CANCEL");
+const u8 gText_Cancel5[] = _("Cancel");
 const u8 gText_Ok2[] = _("OK");
 const u8 gText_Quiz[] = _("QUIZ");
 const u8 gText_Answer[] = _("ANSWER");
-const u8 gText_PokeBalls[] = _("POKé BALLS");
-const u8 gText_Berry[] = _("BERRY");
-const u8 gText_Berries[] = _("BERRIES");
+const u8 gText_PokeBalls[] = _("Poké Balls");
+const u8 gText_Berry[] = _("Berry");
+const u8 gText_Berries[] = _("Berries");
+const u8 gText_Medicine[] = _("Medicine");
+const u8 gText_BattleItems[] = _("Held Items");
 //My Multi Choice
 const u8 gText_Fire[] = _("Fire");
 const u8 gText_Water[] = _("Water");
