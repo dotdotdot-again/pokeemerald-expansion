@@ -1,1 +1,25 @@
 mapscripts OreburghHouseThree_MapScripts {}
+
+script OreburghCityEastHouse1F_Text_WhyNotTryTrainingInTheOreburghMine {
+    lock
+    msgbox("Hiya! Your Pokémon could use some\n"
+        "toughening up.\p"
+        "Why not try training in\n"
+        "the Oreburgh Mine?",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityEastHouse1F_Text_IAlwaysHaveARottenTimeTryingToDecideWhichMovesMyPokemonShouldLearn {
+    lock
+    msgbox("I always have a rotten time trying\n"
+        "to decide which moves my Pokémon\l"
+        "should learn.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityEastHouse1F_Text_YouRemindMeSoMuchOfTheTimeIGotMyFirstPokemon {
+    lock
+    msgbox("You remind me so much of the time\n"
+        "I got my first Pokémon.",MSGBOX_NPC)
+    release
+}

@@ -362,6 +362,7 @@ script Jubilife_lookerStop {
 	release
 }
 
+
 script Jubilife_lookerStopTwo {
 	lock
 	setspeaker(SP_NAME_LOOKER)
@@ -377,6 +378,34 @@ script Jubilife_lookerStopTwo {
 	waitmessage
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
 	waitmovement
+	release
+}
+
+script Jubilife_lookerStopTalk {
+	lock
+	if(var(VAR_JUBILIFE_STATE) == 1)
+	{
+		setspeaker(SP_NAME_LOOKER)
+        msgbox("Ah, it is you! Have no fear.\n"
+        "There are no shady characters about.\p"
+        "Incidentally, have you visited the\n"
+        "Trainers’ School?\p"
+        "Did your friend not guide you there\n"
+        "earlier?",MSGBOX_NPC)
+		waitmessage
+	}
+	elif(var(VAR_JUBILIFE_STATE) == 3)
+	{
+		setspeaker(SP_NAME_LOOKER)
+        msgbox("Ah, it is you! Have no fear.\n"
+        "There are no shady characters about.\p"
+        "Incidentally, have you not obtained\n"
+        "a Pokétch?\p"
+        "I believe a Pokétch is now free in\n"
+        "exchange for some Coupons?",MSGBOX_NPC)
+		waitmessage
+	}
+
 	release
 }
 
@@ -613,7 +642,10 @@ script Clown_One_text {
 		}
 	}
 	elif(flag(FLAG_CLOWNS) == TRUE && flag(FLAG_CLOWN_ONE) == FALSE){
-		msgbox("Go to School...",MSGBOX_NPC)
+		msgbox("Hi, there. You should stick around.\n"
+        "We’re doing a Pokétch campaign soon.\p"
+        "Before it starts, I think you should\n"
+        "brush up at the Trainers’ School.",MSGBOX_NPC)
 			waitmessage
 	}
 	else
@@ -675,7 +707,7 @@ script JubilifeCity_Text_MapSign {
 	lock
 	msgbox("Jubilife City\n"
         "City of Joy",MSGBOX_SIGN)
-	setflag(FLAG_CLOWNS)
+	//setflag(FLAG_CLOWNS)
 	release
 }
 

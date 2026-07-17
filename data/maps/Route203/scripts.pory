@@ -65,3 +65,104 @@ script Route203_Barry_Encounter_Count {
         setflag(FLAG_BARRY_R203)
         setvar(VAR_JUBILIFE_STATE,5)
 }
+
+script Route203_Youngster_Michael {
+    trainerbattle_single(TRAINER_JOSH, "I get my get-up-and-go from my\n"
+                "Pokémon!\p"
+                "Here we go!\n"
+                "KRICKETOT! ZUBAT!", "Ack! My Pokémon...")
+    msgbox("Keep out of the grass or dodge the\n"
+                "eyes of Trainers...?\p"
+                "I always have a tough time choosing.",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script Route203_Youngster_Dallas {
+    trainerbattle_single(TRAINER_TOMMY, "I’m never apart from my SHINX.\n"
+                "Our bond is strong!", "So sad...\n"
+                "And so crushed...")
+    msgbox("I don’t bear grudges over losing.\n"
+            "But I promise I’ll get tougher!",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+
+script Route203_Youngster_Sebastian {
+    trainerbattle_single(TRAINER_JOEY, "Before I challenge the Pokémon Gym\n"
+                "Leader, I’ll test my strength on you!", "I guess it means I’m not ready for\n"
+                "the Gym challenge yet...")
+    msgbox("I guess if you don’t have a single\n"
+                "Gym Badge, you’re a total nobody...",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script Route203_Lass_Kaitlin {
+    trainerbattle_single(TRAINER_HALEY_1, "I found a Trainer while looking for\n"
+                "some Pokémon!", "Hunh? You’re finished so soon?")
+    msgbox("I walk through tall grass until I\n"
+                "find the Pokémon I want.",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script Route203_Lass_Madeline {
+    trainerbattle_single(TRAINER_JANICE, "I got a nifty-keen Gym Badge from\n"
+                "the Gym Leader in Oreburgh City!", "Oh, I lost! Lalala!")
+    msgbox("I’m collecting lots of Gym Badges.\n"
+                "They’re so sparkly and pretty!",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script Route203_Text_Rt203JubilifeCity {
+    lock
+    msgbox("Rt. 203\n"
+        "{LEFT_ARROW}Jubilife City",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route203_Text_Rt203OreburghCity {
+    lock
+    msgbox("Rt. 203\n"
+        "{RIGHT_ARROW}Oreburgh City",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route203_Text_TrainerTipsIfAPokemonIsAboutToEvolveItCanBeInstantlyStopped {
+    lock
+    msgbox("Trainer Tips!\p"
+        "If a Pokémon is about to evolve,\n"
+        "it can be instantly stopped.\p"
+        "Press the B Button during evolution\n"
+        "to startle the Pokémon into stopping.\p"
+        "That is how evolution can be\n"
+        "canceled.",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route203_Text_TrainerTipsPokemonMovesUseEnergyCalledPowerPoints {
+    lock
+    msgbox("Trainer Tips!\p"
+        "Pokémon moves use energy called\n"
+        "Power Points, or PP for short.\p"
+        "If the PP of moves runs low, head for\n"
+        "any Pokémon Center.",MSGBOX_SIGN)
+    waitmessage
+    release
+}
+
+script Route203_Text_YourFavoritePokemonShouldBePlacedAtTheTop {
+    lock
+    msgbox("Your favorite Pokémon should be placed\n"
+        "at the top left of your party list.\p"
+        "That way, it will be the first to go out\n"
+        "in a battle.",MSGBOX_NPC)
+    waitmessage
+    release
+}

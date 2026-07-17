@@ -367,6 +367,12 @@
       "map": "MAP_JUBILIFE_CITY",
       "x": 54,
       "y": 35
+    },
+    {
+      "id": "HEAL_LOCATION_OREBURGH_CITY",
+      "map": "MAP_OREBURGH_CITY",
+      "x": 47,
+      "y": 19
     }
   ]
 }

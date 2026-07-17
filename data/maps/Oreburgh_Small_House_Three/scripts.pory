@@ -1,1 +1,11 @@
 mapscripts Oreburgh_Small_House_Three_MapScripts {}
+
+script OreburghCitySouthHouse_Text_YoureTakingATourOfOurCoalMine {
+    lock
+    msgbox("You’re taking a tour of our coal mine?\p"
+        "Wonderful!\n"
+        "That’s excellent of you.\p"
+        "It’s always good to learn about new\n"
+        "things and broaden your horizons!",MSGBOX_NPC)
+    release
+}

@@ -504,8 +504,9 @@ Zubat
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Oreburgh Gate BF1 Veteran Grant */
 === TRAINER_FREDRICK ===
-Name: FREDRICK
+Name: Grant
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -513,12 +514,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Makuhita
-Level: 30
+Riolu (M)
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Machoke
-Level: 30
+Staraptor (M)
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Gardevoir (M)
+Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MATT ===
@@ -3541,35 +3546,38 @@ Magneton
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/*Oreburgh Mine BF2 Mason*/
 === TRAINER_COLE ===
-Name: COLE
-Class: Kindler
+Name: Mason
+Class: TRAINER_CLASS_ENGINEER_FRLG
 Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Geodude
+Level: 9
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/*Oreburgh Mine BF2 Colin*/
 === TRAINER_JEFF ===
-Name: JEFF
-Class: Kindler
+Name: Colin
+Class: TRAINER_CLASS_ENGINEER_FRLG
 Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Geodude (M)
+Level: 6
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Machop (M)
+Level: 8
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
 
 === TRAINER_AXLE ===
 Name: AXLE
@@ -4789,7 +4797,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 /*Roark Gym Fight 1*/
 === TRAINER_ROXANNE_1 ===
 Name: Roark
-Class: Leader
+Class: TRAINER_CLASS_LEADER_ROARK
 Pic: Leader Roxanne
 Gender: Male
 Music: Male
@@ -5962,7 +5970,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Starly
+Starly (M)
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Careful
@@ -5977,7 +5985,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Burmy
+Burmy (M)
 Level: 5
 Ability: Shed Skin
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -6223,8 +6231,9 @@ Mightyena
 Level: 36
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/*Route 204 Youngster Tyler*/
 === TRAINER_EDDIE ===
-Name: EDDIE
+Name: Tyler
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -6232,13 +6241,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 14
+Magikarp (M)
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zigzagoon
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALLEN ===
 Name: ALLEN
@@ -11098,13 +11104,13 @@ Music: Female
 Double Battle: No
 AI: AI_FLAG_BASIC_TRAINER
 
-Bidoof
+Bidoof (F)
 Level: 5
 Ability: Simple
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Quiet
 
-/*Route 202 Lass Kaitlin*/
+/*Route 203 Lass Kaitlin*/
 === TRAINER_HALEY_1 ===
 Name: Kaitlin
 Class: Lass
@@ -11138,7 +11144,7 @@ Ability: Synchronize
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Docile
 
-/*Route 202 Lass Madeline*/
+/*Route 203 Lass Madeline*/
 === TRAINER_JANICE ===
 Name: Madeline
 Class: Lass
@@ -11247,8 +11253,9 @@ Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Route 204 Lass Sarah */
 === TRAINER_SALLY ===
-Name: SALLY
+Name: Sarah
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11256,12 +11263,13 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
-Level: 16
+Shinx (F)
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/* Route 204 Lass Samantha */
 === TRAINER_ROBIN ===
-Name: ROBIN
+Name: Samantha
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -11269,17 +11277,10 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Skitty
-Level: 14
+Budew (F)
+Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Marill
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANDREA ===
 Name: ANDREA
@@ -12057,8 +12058,9 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 - Smokescreen
 
+/* Oreburgh Gate Campter Curtis */
 === TRAINER_FLINT ===
-Name: FLINT
+Name: Curtis
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -12066,16 +12068,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Swellow
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Starly (M)
+Level: 7
 
-Xatu
-Level: 29
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Shinx (M)
+Level: 7
 
+/* Oreburgh Gate Picnicker Diana */
 === TRAINER_ASHLEY ===
-Name: ASHLEY
+Name: Diana
 Class: Picnicker
 Pic: Picnicker
 Gender: Female
@@ -12083,17 +12084,9 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bidoof (F)
+Level: 9
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_WALLY_MAUVILLE ===
 Name: WALLY

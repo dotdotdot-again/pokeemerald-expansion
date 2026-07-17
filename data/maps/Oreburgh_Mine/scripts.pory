@@ -1,1 +1,20 @@
 mapscripts Oreburgh_Mine_MapScripts {}
+
+script OreburghMineB1F_Text_EveryoneThatWorksInTheCoalMineKeepsTheirOwnPokemonWithThem {
+    lock
+    msgbox("Everyone that works in the coal mine\n"
+        "keeps their own Pokémon with them.\p"
+        "You may be challenged to battles!\n"
+        "Hahaha!",MSGBOX_NPC)
+    release
+}
+
+script OreburghMineB1F_Text_IFoundWhatIThoughtWereSomeRocksThenTheyStartedMoving {
+    lock
+    msgbox("I found what I thought were some\n"
+        "rocks, then they started moving!\p"
+        "They were Pokémon that looked just\n"
+        "like rocks!",MSGBOX_NPC)
+    release
+}
+

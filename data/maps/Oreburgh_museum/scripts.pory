@@ -1,1 +1,130 @@
 mapscripts Oreburgh_museum_MapScripts {}
+
+script MiningMuseum_Text_WelcomeToMuseum {
+    lock
+    msgbox("Hello! Welcome to the Oreburgh\n"
+        "Mining Museum!",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_FossilResearcherGreeting {
+    lock
+    msgbox("Hello, hello!\n"
+        "How are you?\p"
+        "I study Pokémon Fossils!\n"
+        "Me! Right here and now!\p",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_CoalExhibit1 {
+    lock
+    msgbox("Whoa! So this is coal?\n"
+        "I never expected something this big!\p"
+        "And that color!\n"
+        "It really is as black as they say!",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_CoalExhibit2 {
+    lock
+    msgbox("Wow! The Pokémon that carried this\n"
+        "must be terribly strong!",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_MineExtendsUnderSea {
+    lock
+    msgbox("Well, how about that!\p"
+        "The Oreburgh Mine extends under\n"
+        "the seafloor!",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_MineHistory {
+    lock
+    msgbox("The history of Oreburgh Mine...\p"
+        "You could call it a history of effort\n"
+        "and friendship between people\l"
+        "and Pokémon.",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_UndergroundManInfo {
+    lock
+    msgbox("It’s a little far from here, but there\n"
+        "is a city called Eterna City.\p"
+        "I’ve heard a curious person named the\n"
+        "Underground Man lives there.\p"
+        "With a name like that, he must be an\n"
+        "authority on the Underground.",MSGBOX_NPC)
+    release
+}
+
+script MiningMuseum_Text_HowCoalIsMade1 {
+    lock
+    msgbox("How Coal Is Made   1:\p"
+        "In a time long before history,\n"
+        "vegetative matter was swept along\p"
+        "by rain and rivers. It came to be\n"
+        "buried under the ground.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_HowCoalIsMade2 {
+    lock
+    msgbox("How Coal Is Made   2:\p"
+        "The buried plant matter was\n"
+        "forced ever deeper under the ground\p"
+        "due to tremors and fissures caused\n"
+        "by the shifting landmasses.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_HowCoalIsMade3 {
+    lock
+    msgbox("How Coal Is Made   3:\p"
+        "Deep under the ground, the\n"
+        "plant matter was subjected to heavy\p"
+        "pressure and the heat of magma.\n"
+        "It gradually turned into coal.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_SamplesDifferentRegions {
+    lock
+    msgbox("Samples of coal from different regions\n"
+        "are displayed.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_CategorizedCoalSamples {
+    lock
+    msgbox("The box contains categorized samples\n"
+        "of coal.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_MiningLamps {
+    lock
+    msgbox("Different kinds of lamps are\n"
+        "displayed.\p"
+        "They appear to have been worn\n"
+        "on someone’s head while underground.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_MiningTools {
+    lock
+    msgbox("Badly scarred wooden tools are\n"
+        "displayed.\p"
+        "They apparently dug out coal using\n"
+        "these tools in the olden days.",MSGBOX_SIGN)
+    release
+}
+
+script MiningMuseum_Text_MineWorkerItems {
+    lock
+    msgbox("The everyday items and tools of\n"
+        "past mine workers are displayed.",MSGBOX_SIGN)
+    release
+}

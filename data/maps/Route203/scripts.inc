@@ -97,6 +97,126 @@ Route203_Barry_Encounter_Count::
 	return
 
 
+Route203_Youngster_Michael::
+# 70 "data/maps/Route203/scripts.pory"
+	trainerbattle_single TRAINER_JOSH, Route203_Youngster_Michael_Text_0, Route203_Youngster_Michael_Text_1
+# 74 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Youngster_Michael_Text_2, MSGBOX_NPC
+# 77 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 78 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Youngster_Dallas::
+# 82 "data/maps/Route203/scripts.pory"
+	trainerbattle_single TRAINER_TOMMY, Route203_Youngster_Dallas_Text_0, Route203_Youngster_Dallas_Text_1
+# 85 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Youngster_Dallas_Text_2, MSGBOX_NPC
+# 87 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 88 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Youngster_Sebastian::
+# 93 "data/maps/Route203/scripts.pory"
+	trainerbattle_single TRAINER_JOEY, Route203_Youngster_Sebastian_Text_0, Route203_Youngster_Sebastian_Text_1
+# 96 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Youngster_Sebastian_Text_2, MSGBOX_NPC
+# 98 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 99 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Lass_Kaitlin::
+# 103 "data/maps/Route203/scripts.pory"
+	trainerbattle_single TRAINER_HALEY_1, Route203_Lass_Kaitlin_Text_0, Route203_Lass_Kaitlin_Text_1
+# 105 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Lass_Kaitlin_Text_2, MSGBOX_NPC
+# 107 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 108 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Lass_Madeline::
+# 112 "data/maps/Route203/scripts.pory"
+	trainerbattle_single TRAINER_JANICE, Route203_Lass_Madeline_Text_0, Route203_Lass_Madeline_Text_1
+# 114 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Lass_Madeline_Text_2, MSGBOX_NPC
+# 116 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 117 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Text_Rt203JubilifeCity::
+# 121 "data/maps/Route203/scripts.pory"
+	lock
+# 122 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Text_Rt203JubilifeCity_Text_0, MSGBOX_SIGN
+# 124 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 125 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Text_Rt203OreburghCity::
+# 129 "data/maps/Route203/scripts.pory"
+	lock
+# 130 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Text_Rt203OreburghCity_Text_0, MSGBOX_SIGN
+# 132 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 133 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Text_TrainerTipsIfAPokemonIsAboutToEvolveItCanBeInstantlyStopped::
+# 137 "data/maps/Route203/scripts.pory"
+	lock
+# 138 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Text_TrainerTipsIfAPokemonIsAboutToEvolveItCanBeInstantlyStopped_Text_0, MSGBOX_SIGN
+# 145 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 146 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Text_TrainerTipsPokemonMovesUseEnergyCalledPowerPoints::
+# 150 "data/maps/Route203/scripts.pory"
+	lock
+# 151 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Text_TrainerTipsPokemonMovesUseEnergyCalledPowerPoints_Text_0, MSGBOX_SIGN
+# 156 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 157 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_Text_YourFavoritePokemonShouldBePlacedAtTheTop::
+# 161 "data/maps/Route203/scripts.pory"
+	lock
+# 162 "data/maps/Route203/scripts.pory"
+	msgbox Route203_Text_YourFavoritePokemonShouldBePlacedAtTheTop_Text_0, MSGBOX_NPC
+# 166 "data/maps/Route203/scripts.pory"
+	waitmessage
+# 167 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
 # 7 "data/maps/Route203/scripts.pory"
 Route203_Barry_Encounter_Movement_0:
 # 7 "data/maps/Route203/scripts.pory"
@@ -192,3 +312,113 @@ Route203_Barry_Encounter_Count_Text_0:
 	.string "the Oreburgh City Pokémon Gym!\p"
 	.string "I’m gonna toughen up for that,\n"
 	.string "totally!$"
+
+Route203_Youngster_Michael_Text_0:
+# 70 "data/maps/Route203/scripts.pory"
+	.string "I get my get-up-and-go from my\n"
+	.string "Pokémon!\p"
+	.string "Here we go!\n"
+	.string "KRICKETOT! ZUBAT!$"
+
+Route203_Youngster_Michael_Text_1:
+# 73 "data/maps/Route203/scripts.pory"
+	.string "Ack! My Pokémon...$"
+
+Route203_Youngster_Michael_Text_2:
+# 74 "data/maps/Route203/scripts.pory"
+	.string "Keep out of the grass or dodge the\n"
+	.string "eyes of Trainers...?\p"
+	.string "I always have a tough time choosing.$"
+
+Route203_Youngster_Dallas_Text_0:
+# 82 "data/maps/Route203/scripts.pory"
+	.string "I’m never apart from my SHINX.\n"
+	.string "Our bond is strong!$"
+
+Route203_Youngster_Dallas_Text_1:
+# 83 "data/maps/Route203/scripts.pory"
+	.string "So sad...\n"
+	.string "And so crushed...$"
+
+Route203_Youngster_Dallas_Text_2:
+# 85 "data/maps/Route203/scripts.pory"
+	.string "I don’t bear grudges over losing.\n"
+	.string "But I promise I’ll get tougher!$"
+
+Route203_Youngster_Sebastian_Text_0:
+# 93 "data/maps/Route203/scripts.pory"
+	.string "Before I challenge the Pokémon Gym\n"
+	.string "Leader, I’ll test my strength on you!$"
+
+Route203_Youngster_Sebastian_Text_1:
+# 94 "data/maps/Route203/scripts.pory"
+	.string "I guess it means I’m not ready for\n"
+	.string "the Gym challenge yet...$"
+
+Route203_Youngster_Sebastian_Text_2:
+# 96 "data/maps/Route203/scripts.pory"
+	.string "I guess if you don’t have a single\n"
+	.string "Gym Badge, you’re a total nobody...$"
+
+Route203_Lass_Kaitlin_Text_0:
+# 103 "data/maps/Route203/scripts.pory"
+	.string "I found a Trainer while looking for\n"
+	.string "some Pokémon!$"
+
+Route203_Lass_Kaitlin_Text_1:
+# 104 "data/maps/Route203/scripts.pory"
+	.string "Hunh? You’re finished so soon?$"
+
+Route203_Lass_Kaitlin_Text_2:
+# 105 "data/maps/Route203/scripts.pory"
+	.string "I walk through tall grass until I\n"
+	.string "find the Pokémon I want.$"
+
+Route203_Lass_Madeline_Text_0:
+# 112 "data/maps/Route203/scripts.pory"
+	.string "I got a nifty-keen Gym Badge from\n"
+	.string "the Gym Leader in Oreburgh City!$"
+
+Route203_Lass_Madeline_Text_1:
+# 113 "data/maps/Route203/scripts.pory"
+	.string "Oh, I lost! Lalala!$"
+
+Route203_Lass_Madeline_Text_2:
+# 114 "data/maps/Route203/scripts.pory"
+	.string "I’m collecting lots of Gym Badges.\n"
+	.string "They’re so sparkly and pretty!$"
+
+Route203_Text_Rt203JubilifeCity_Text_0:
+# 122 "data/maps/Route203/scripts.pory"
+	.string "Rt. 203\n"
+	.string "{LEFT_ARROW}Jubilife City$"
+
+Route203_Text_Rt203OreburghCity_Text_0:
+# 130 "data/maps/Route203/scripts.pory"
+	.string "Rt. 203\n"
+	.string "{RIGHT_ARROW}Oreburgh City$"
+
+Route203_Text_TrainerTipsIfAPokemonIsAboutToEvolveItCanBeInstantlyStopped_Text_0:
+# 138 "data/maps/Route203/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "If a Pokémon is about to evolve,\n"
+	.string "it can be instantly stopped.\p"
+	.string "Press the B Button during evolution\n"
+	.string "to startle the Pokémon into stopping.\p"
+	.string "That is how evolution can be\n"
+	.string "canceled.$"
+
+Route203_Text_TrainerTipsPokemonMovesUseEnergyCalledPowerPoints_Text_0:
+# 151 "data/maps/Route203/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "Pokémon moves use energy called\n"
+	.string "Power Points, or PP for short.\p"
+	.string "If the PP of moves runs low, head for\n"
+	.string "any Pokémon Center.$"
+
+Route203_Text_YourFavoritePokemonShouldBePlacedAtTheTop_Text_0:
+# 162 "data/maps/Route203/scripts.pory"
+	.string "Your favorite Pokémon should be placed\n"
+	.string "at the top left of your party list.\p"
+	.string "That way, it will be the first to go out\n"
+	.string "in a battle.$"

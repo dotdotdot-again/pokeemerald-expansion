@@ -1,1 +1,49 @@
 mapscripts OreburghHouseThree_F2_MapScripts {}
+
+script OreburghCityEastHouse2F_Text_HereIWantYouToHaveThis {
+    lock
+    if(flag(FLAG_ITEM_ROUTE_114_PROTEIN) == FALSE)
+    {
+    msgbox("Wow... Your Pokémon’s eyes are\n"
+        "twinkling brightly!\p"
+        "Seeing that makes me happy!\n"
+        "Here, I want you to have this!\p",MSGBOX_NPC)
+    waitmessage
+    giveitem(ITEM_GREAT_BALL)
+    setflag(FLAG_ITEM_ROUTE_114_PROTEIN)
+    msgbox("You know how Pokémon stay inside\n"
+        "their Poké Balls?\p"
+        "I try to think about what would be\n"
+        "the best Poké Balls for them.",MSGBOX_NPC)
+    }
+    else
+    {
+    msgbox("You know how Pokémon stay inside\n"
+        "their Poké Balls?\p"
+        "I try to think about what would be\n"
+        "the best Poké Balls for them.",MSGBOX_NPC)
+    }
+
+    release
+}
+
+script OreburghCityEastHouse2F_Text_TheOreburghMineIsOperatedWithTheUtmostCare {
+    lock
+    msgbox("The Oreburgh Mine is operated\n"
+        "with the utmost care.\p"
+        "We avoid causing any damage to\n"
+        "the natural habitats of Pokémon.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityEastHouse2F_Text_CoalIsCarriedOutOfTheOreburghMineOnAFullyAutomatedSystem {
+    lock
+    msgbox("Coal is carried out of Oreburgh Mine on\n"
+        "a fully automated system.\p"
+        "Machines do all the work automatically.\n"
+        "So, it’s all very easy.",MSGBOX_NPC)
+    release
+}
+
+
+

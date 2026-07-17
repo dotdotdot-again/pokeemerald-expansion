@@ -1,1 +1,78 @@
-mapscripts OreburghPokemonCenter_MapScripts {}
+mapscripts OreburghPokemonCenter_MapScripts {
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script Oreburgh_PokeCenter_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    setrespawn(HEAL_LOCATION_OREBURGH_CITY)
+    release
+    end
+}
+
+script OreburghCityPokecenter1F_Text_SwitchOnThePCAtAnyPokemonCenter {
+    lock
+    msgbox("Switch on the PC at any Pokémon\n"
+        "Center.\p"
+        "Connect to “Someone’s PC” and access\n"
+        "the Pokémon Storage System.\p"
+        "That’s all you need to do to store\n"
+        "or bring out your Pokémon.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityPokecenter1F_Text_WhatIsYourFavoriteKindOfTrainerCanYouTellMe {
+    lock
+    msgbox("Hmmm...!\p"
+        "What is your favorite kind of Trainer?\n"
+        "Can you tell me?\p",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityPokecenter1F_Text_Kid {
+    lock
+    msgbox("The games downstairs are so fun!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityPokecenter1F_Text_GBA_Kid_one {
+    lock
+    msgbox("I'm fighting my friend!\n"
+    "In a video game of course",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityPokecenter1F_Text_GBA_Kid_two {
+    lock
+    msgbox("He always takes these fights\n"
+    "so seriously.\p"
+    "It's just a game dude.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityPokecenter1F_Text_WhatOrWhoIsThisTeamGalacticItsAMystery {
+    lock
+    msgbox("Hmmm!\n"
+        "What, or who, is this Team Galactic?!\p"
+        "They make wonderful claims of a dream\n"
+        "energy source on one hand...\p"
+        "But rumor has it, they steal Pokémon\n"
+        "from others by force.\p"
+        "It’s a mystery! They’re mysterious!\n"
+        "Isn’t anyone investigating them?",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityPokecenter1F_Text_Youliketoplaygames {
+    lock
+    msgbox("Hmmm\p"
+    "You seem like someone that likes to\n"
+    "play games.\p"
+    "You should check out the new basement\n"
+    "area.\p",MSGBOX_NPC)
+    release
+}
+
+

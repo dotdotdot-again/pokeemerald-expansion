@@ -48,6 +48,102 @@ MineF2_Roark_Event::
 	return
 
 
+Oreburgh_Mine_Worker_Mason::
+# 36 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 37 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	trainerbattle_single TRAINER_COLE, Oreburgh_Mine_Worker_Mason_Text_0, Oreburgh_Mine_Worker_Mason_Text_1
+# 39 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox Oreburgh_Mine_Worker_Mason_Text_2, MSGBOX_NPC
+# 41 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	waitmessage
+# 42 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+Oreburgh_Mine_Worker_Colin::
+# 46 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 47 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	trainerbattle_single TRAINER_JEFF, Oreburgh_Mine_Worker_Colin_Text_0, Oreburgh_Mine_Worker_Colin_Text_1
+# 50 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox Oreburgh_Mine_Worker_Colin_Text_2, MSGBOX_NPC
+# 53 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	waitmessage
+# 54 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+OreburghMineB2F_Text_IMetTheseMachopOnRoute207::
+# 58 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 59 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox OreburghMineB2F_Text_IMetTheseMachopOnRoute207_Text_0, MSGBOX_NPC
+# 62 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+OreburghMineB2F_Text_MachopMaaacho::
+# 66 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 67 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	playmoncry SPECIES_MACHOP, 0
+# 68 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox OreburghMineB2F_Text_MachopMaaacho_Text_0, MSGBOX_NPC
+# 69 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+OreburghMineB2F_Text_MachopChopChop::
+# 73 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 74 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	playmoncry SPECIES_MACHOP, 0
+# 75 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox OreburghMineB2F_Text_MachopChopChop_Text_0, MSGBOX_NPC
+# 76 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+OreburghMineB2F_Text_MachopChopmacho::
+# 80 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 81 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	playmoncry SPECIES_MACHOP, 0
+# 82 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox OreburghMineB2F_Text_MachopChopmacho_Text_0, MSGBOX_NPC
+# 83 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+OreburghMineB2F_Text_Rolycoly::
+# 87 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 88 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	playmoncry SPECIES_ROLYCOLY, 0
+# 89 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox OreburghMineB2F_Text_Rolycoly_Text_0, MSGBOX_NPC
+# 90 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
+OreburghMineB2F_Text_New_Roly_NPC::
+# 94 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	lock
+# 95 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	msgbox OreburghMineB2F_Text_New_Roly_NPC_Text_0, MSGBOX_NPC
+# 98 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	release
+	return
+
+
 # 5 "data/maps/Oreburgh_Mine_F2/scripts.pory"
 MineF2_Roark_Event_Movement_0:
 # 5 "data/maps/Oreburgh_Mine_F2/scripts.pory"
@@ -109,3 +205,61 @@ MineF2_Roark_Event_Text_1:
 	.string "to do this too.\p"
 	.string "Of course, you’d have to beat the\n"
 	.string "Gym Leader first. That’d be me!$"
+
+Oreburgh_Mine_Worker_Mason_Text_0:
+# 37 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "I’m gonna let you in on a secret...\n"
+	.string "I snuck my Pokémon to work!$"
+
+Oreburgh_Mine_Worker_Mason_Text_1:
+# 38 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Well, now aren’t you something!$"
+
+Oreburgh_Mine_Worker_Mason_Text_2:
+# 39 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "OK, OK, time for work! I’ll work up\n"
+	.string "a thirst with my Pokémon!$"
+
+Oreburgh_Mine_Worker_Colin_Text_0:
+# 47 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Fine, all righty then.\n"
+	.string "Just a quick battle on my break!$"
+
+Oreburgh_Mine_Worker_Colin_Text_1:
+# 48 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Wahaha!\n"
+	.string "Mercy, I cry mercy!$"
+
+Oreburgh_Mine_Worker_Colin_Text_2:
+# 50 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "I’d better get on back to work...\p"
+	.string "You know, I’d rather be traveling\n"
+	.string "around with Pokémon the way you do.$"
+
+OreburghMineB2F_Text_IMetTheseMachopOnRoute207_Text_0:
+# 59 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "I met these MACHOP on Route 207.\p"
+	.string "They’ve now become my most trusted\n"
+	.string "partners!$"
+
+OreburghMineB2F_Text_MachopMaaacho_Text_0:
+# 68 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Maaacho!$"
+
+OreburghMineB2F_Text_MachopChopChop_Text_0:
+# 75 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Chopchop!$"
+
+OreburghMineB2F_Text_MachopChopmacho_Text_0:
+# 82 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Chopmacho!$"
+
+OreburghMineB2F_Text_Rolycoly_Text_0:
+# 89 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "Roll!$"
+
+OreburghMineB2F_Text_New_Roly_NPC_Text_0:
+# 95 "data/maps/Oreburgh_Mine_F2/scripts.pory"
+	.string "These Rolycoly sure are useful!\p"
+	.string "I love seeing people and Pokémon\n"
+	.string "working together so well!$"

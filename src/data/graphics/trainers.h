@@ -85,14 +85,14 @@ const u16 gTrainerPalette_MagmaGruntF[] = INCBIN_U16("graphics/trainers/front_pi
 const u32 gTrainerFrontPic_Guitarist[] = INCBIN_U32("graphics/trainers/front_pics/guitarist.4bpp.smol");
 const u16 gTrainerPalette_Guitarist[] = INCBIN_U16("graphics/trainers/front_pics/guitarist.gbapal");
 
-const u32 gTrainerFrontPic_Kindler[] = INCBIN_U32("graphics/trainers/front_pics/kindler.4bpp.smol");
-const u16 gTrainerPalette_Kindler[] = INCBIN_U16("graphics/trainers/front_pics/kindler.gbapal");
+const u32 gTrainerFrontPic_Kindler[] = INCBIN_U32("graphics/trainers/front_pics/DP_Worker.4bpp.smol");
+const u16 gTrainerPalette_Kindler[] = INCBIN_U16("graphics/trainers/front_pics/DP_Worker.gbapal");
 
-const u32 gTrainerFrontPic_Camper[] = INCBIN_U32("graphics/trainers/front_pics/camper.4bpp.smol");
-const u16 gTrainerPalette_Camper[] = INCBIN_U16("graphics/trainers/front_pics/camper.gbapal");
+const u32 gTrainerFrontPic_Camper[] = INCBIN_U32("graphics/trainers/front_pics/DP_Camper.4bpp.smol");
+const u16 gTrainerPalette_Camper[] = INCBIN_U16("graphics/trainers/front_pics/DP_Camper.gbapal");
 
-const u32 gTrainerFrontPic_Picnicker[] = INCBIN_U32("graphics/trainers/front_pics/picnicker.4bpp.smol");
-const u16 gTrainerPalette_Picnicker[] = INCBIN_U16("graphics/trainers/front_pics/picnicker.gbapal");
+const u32 gTrainerFrontPic_Picnicker[] = INCBIN_U32("graphics/trainers/front_pics/DP_Picnicker.4bpp.smol");
+const u16 gTrainerPalette_Picnicker[] = INCBIN_U16("graphics/trainers/front_pics/DP_Picnicker.gbapal");
 
 const u32 gTrainerFrontPic_BugManiac[] = INCBIN_U32("graphics/trainers/front_pics/bug_maniac.4bpp.smol");
 const u16 gTrainerPalette_BugManiac[] = INCBIN_U16("graphics/trainers/front_pics/bug_maniac.gbapal");

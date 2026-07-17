@@ -1,1 +1,46 @@
 mapscripts OreburghHouseOne_F2_MapScripts {}
+
+script OreburghCityNorthwestHouse2F_Text_GivingNicknamesToPokemonIsTheWayToGo {
+    lock
+    msgbox("Giving nicknames to Pok\emon is\n"
+        "the way to go.\p"
+        "It makes you feel as if they're your\n"
+        "very own.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthwestHouse2F_Text_ButHeNamedOurPsyduckYellowJustBecauseOfItsColor {
+    lock
+    msgbox("But he named our Psyduck \qoYellow\qc\n"
+        "just because of its color...\p"
+        "I don’t understand the logic behind\n"
+        "that at all.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthwestHouse2F_Text_HereTakeThisIfYoudLike {
+    lock
+    if(flag(FLAG_ITEM_ROUTE_114_RARE_CANDY) == false)
+    {
+    msgbox("Are you catching Pokémon?\n"
+        "Here, take this if you’d like.",MSGBOX_NPC)
+    giveitem(ITEM_DUSK_BALL)
+    setflag(FLAG_ITEM_ROUTE_114_RARE_CANDY)
+    }
+    else
+    {
+    msgbox("The Dusk Ball is a Poké Ball designed\n"
+        "for use in darkness.\p"
+        "It works better if you use it at\n"
+        "night or in a cave.",MSGBOX_NPC)
+    }
+    release
+}
+
+script OreburghCityNorthwestHouse2F_Text_YellowDuuuck {
+    lock
+    playmoncry(SPECIES_PSYDUCK,0)
+    setspeaker("Yellow")
+    msgbox("Duuuck?",MSGBOX_NPC)
+    release
+}

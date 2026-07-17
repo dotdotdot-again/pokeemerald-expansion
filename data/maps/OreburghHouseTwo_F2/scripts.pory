@@ -1,1 +1,26 @@
 mapscripts OreburghHouseTwo_F2_MapScripts {}
+
+script OreburghCityNorthHouse2F_Text_AllPokemonHaveASpecialPowerCalledAnAbility {
+    lock
+    msgbox("All Pokémon have a special power\n"
+        "called an ability.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthHouse2F_Text_MyFavoritePokemonAbilityIsMyPachirisusPickup {
+    lock
+    msgbox("My favorite Pokémon ability is my\n"
+        "Pachirisu’s Pickup.\p"
+        "My darling picks up a lot of dropped\n"
+        "items without me noticing!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude {
+    lock
+    msgbox("The view is good from the second floor,\n"
+        "but it’s a pain going outside.\p"
+        "If you don’t mind, how about showing me\n"
+        "a Pokémon called Geodude?",MSGBOX_NPC)
+    release
+}

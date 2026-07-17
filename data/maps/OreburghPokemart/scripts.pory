@@ -1,1 +1,54 @@
 mapscripts OreburghPokemart_MapScripts {}
+
+script Oreburgh_Pokemart_Guy{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Oreburg_Basic)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+script Oreburgh_Pokemart_Woman{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Oreburg_Secondary)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+mart Oreburg_Basic {
+	ITEM_POKE_BALL
+	ITEM_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+}
+
+mart Oreburg_Secondary {
+	ITEM_HEAL_BALL
+    ITEM_NET_BALL
+    ITEM_LURE
+}
+
+script OreburghCityMart_Text_MoreBadgesMoreItems {
+    lock
+    msgbox("The Badges that Pokémon Gyms give you\n"
+        "are a measure of a Trainer’s worth.\p"
+        "By getting more Badges, you get to\n"
+        "buy more items in Poké Marts.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityMart_Text_TwoStaffOfferDifferentMerchandise {
+    lock
+    msgbox("The Poké Mart is staffed by a lady and\n"
+        "a young fellow.\p"
+        "They offer different kinds of\n"
+        "merchandise. Did you know?",MSGBOX_NPC)
+    release
+}

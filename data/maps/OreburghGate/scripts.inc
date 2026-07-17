@@ -61,6 +61,30 @@ OreburghGate1F_Text_SoLetMeMakeAGiftOfThisHiddenMachineToYou_1:
 	return
 
 
+Oreburgh_Gate_Campter_Curtis::
+# 63 "data/maps/OreburghGate/scripts.pory"
+	trainerbattle_single TRAINER_FLINT, Oreburgh_Gate_Campter_Curtis_Text_0, Oreburgh_Gate_Campter_Curtis_Text_1
+# 66 "data/maps/OreburghGate/scripts.pory"
+	msgbox Oreburgh_Gate_Campter_Curtis_Text_2, MSGBOX_NPC
+# 68 "data/maps/OreburghGate/scripts.pory"
+	waitmessage
+# 69 "data/maps/OreburghGate/scripts.pory"
+	release
+	return
+
+
+Oreburgh_Gate_Picnicker_Diana::
+# 73 "data/maps/OreburghGate/scripts.pory"
+	trainerbattle_single TRAINER_ASHLEY, Oreburgh_Gate_Picnicker_Diana_Text_0, Oreburgh_Gate_Picnicker_Diana_Text_1
+# 76 "data/maps/OreburghGate/scripts.pory"
+	msgbox Oreburgh_Gate_Picnicker_Diana_Text_2, MSGBOX_NPC
+# 78 "data/maps/OreburghGate/scripts.pory"
+	waitmessage
+# 79 "data/maps/OreburghGate/scripts.pory"
+	release
+	return
+
+
 # 5 "data/maps/OreburghGate/scripts.pory"
 OreburghGate_Trigger_one_Movement_0:
 # 5 "data/maps/OreburghGate/scripts.pory"
@@ -107,3 +131,33 @@ OreburghGate1F_Text_SoLetMeMakeAGiftOfThisHiddenMachineToYou_Text_1:
 	.string "friend of Pokémon!\p"
 	.string "So, let me make a gift of this Hidden\n"
 	.string "Machine to you!$"
+
+Oreburgh_Gate_Campter_Curtis_Text_0:
+# 63 "data/maps/OreburghGate/scripts.pory"
+	.string "We Trainers will accept challenges\n"
+	.string "anywhere! It’s what we do.$"
+
+Oreburgh_Gate_Campter_Curtis_Text_1:
+# 64 "data/maps/OreburghGate/scripts.pory"
+	.string "Hmm...\n"
+	.string "Insufficiently raised?$"
+
+Oreburgh_Gate_Campter_Curtis_Text_2:
+# 66 "data/maps/OreburghGate/scripts.pory"
+	.string "Pokémon can appear anywhere in a cave.\n"
+	.string "It’s not like the tall grass by roads.$"
+
+Oreburgh_Gate_Picnicker_Diana_Text_0:
+# 73 "data/maps/OreburghGate/scripts.pory"
+	.string "To celebrate my getting through this\n"
+	.string "cave, I’m going to battle you!$"
+
+Oreburgh_Gate_Picnicker_Diana_Text_1:
+# 74 "data/maps/OreburghGate/scripts.pory"
+	.string "Well, I guess losing is something\n"
+	.string "to commemorate, too...$"
+
+Oreburgh_Gate_Picnicker_Diana_Text_2:
+# 76 "data/maps/OreburghGate/scripts.pory"
+	.string "Getting through that cave feels\n"
+	.string "like an adventure.$"

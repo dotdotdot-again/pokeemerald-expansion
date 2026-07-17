@@ -42,9 +42,9 @@ const u32 gBattleEnvironmentTiles_Cave[] = INCBIN_U32("graphics/battle_environme
 const u16 gBattleEnvironmentPalette_Cave[] = INCBIN_U16("graphics/battle_environment/cave/palette.gbapal");
 const u32 gBattleEnvironmentTilemap_Cave[] = INCBIN_U32("graphics/battle_environment/cave/map.bin.smolTM");
 
-const u32 gBattleEnvironmentTiles_Building[] = INCBIN_U32("graphics/battle_environment/building/tiles.4bpp.smol");
-const u16 gBattleEnvironmentPalette_Building[] = INCBIN_U16("graphics/battle_environment/building/palette.gbapal");
-const u32 gBattleEnvironmentTilemap_Building[] = INCBIN_U32("graphics/battle_environment/building/map.bin.smolTM");
+const u32 gBattleEnvironmentTiles_Building[] = INCBIN_U32("graphics/battle_environment/inside/tiles.4bpp.smol");
+const u16 gBattleEnvironmentPalette_Building[] = INCBIN_U16("graphics/battle_environment/inside/palette.gbapal");
+const u32 gBattleEnvironmentTilemap_Building[] = INCBIN_U32("graphics/battle_environment/inside/map.bin.smolTM");
 
 const u16 gBattleEnvironmentPalette_BuildingGym[] = INCBIN_U16("graphics/battle_environment/building/gym.gbapal");
 const u16 gBattleEnvironmentPalette_BuildingLeader[] = INCBIN_U16("graphics/battle_environment/building/leader.gbapal");
@@ -98,3 +98,11 @@ const u32 gBattleEnvironmentAnimTilemap_Building[] = INCBIN_U32("graphics/battle
 
 const u32 gBattleEnvironmentAnimTiles_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_tiles.4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCBIN_U32("graphics/battle_environment/sky/anim_map.bin.smolTM");
+
+const u32 gBattleEnvironmentTiles_DPgym[] = INCBIN_U32("graphics/battle_environment/gym/tiles.4bpp.smol");
+const u16 gBattleEnvironmentPalette_DPgym[] = INCBIN_U16("graphics/battle_environment/gym/palette.gbapal");
+const u32 gBattleEnvironmentTilemap_DPgym[] = INCBIN_U32("graphics/battle_environment/gym/map.bin.smolTM");
+
+const u16 gBattleEnvironmentPalette_GymOne[] = INCBIN_U16("graphics/battle_environment/inside/GymOne.gbapal");
+const u16 gBattleEnvironmentPalette_RoarkFight[] = INCBIN_U16("graphics/battle_environment/gym/roark.gbapal");
+

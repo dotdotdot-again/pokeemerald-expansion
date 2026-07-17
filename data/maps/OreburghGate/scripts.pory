@@ -58,3 +58,25 @@ script OreburghGate1F_Text_SoLetMeMakeAGiftOfThisHiddenMachineToYou {
     }
 
 }
+
+script Oreburgh_Gate_Campter_Curtis {
+    trainerbattle_single(TRAINER_FLINT, "We Trainers will accept challenges\n"
+                "anywhere! It’s what we do.", "Hmm...\n"
+                "Insufficiently raised?")
+    msgbox("Pokémon can appear anywhere in a cave.\n"
+                "It’s not like the tall grass by roads.",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script Oreburgh_Gate_Picnicker_Diana {
+    trainerbattle_single(TRAINER_ASHLEY, "To celebrate my getting through this\n"
+                "cave, I’m going to battle you!", "Well, I guess losing is something\n"
+                "to commemorate, too...")
+    msgbox("Getting through that cave feels\n"
+                "like an adventure.",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+

@@ -135,10 +135,14 @@ static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/d
 static const u16 sDoorNullPalette49[16] = {};
 static const u8 sDoorAnimTiles_MyDoor[] = INCBIN_U8("graphics/door_anims/DP_sliding_single.4bpp");
 static const u8 sDoorAnimTiles_MyWoodDoor[] = INCBIN_U8("graphics/door_anims/DP_wooden_door.4bpp");
-static const u8 sDoorAnimTiles_SandgemDoor[] = INCBIN_U8("graphics/door_anims/DP_wooden_door.4bpp");
+static const u8 sDoorAnimTiles_SandgemDoor[] = INCBIN_U8("graphics/door_anims/DP_wooden_door_sandgem.4bpp");
 static const u8 sDoorAnimTiles_SandgemLabDoor[] = INCBIN_U8("graphics/door_anims/DP_lab_door.4bpp");
 static const u8 sDoorAnimTiles_Jubilife_Blue_Door[] = INCBIN_U8("graphics/door_anims/DP_Blue_Door.4bpp");
 static const u8 sDoorAnimTiles_Jubilife_TV_Door[] = INCBIN_U8("graphics/door_anims/DP_Double_Sliding_Door.4bpp");
+static const u8 sDoorAnimTiles_Oreburgh_Green_Door[] = INCBIN_U8("graphics/door_anims/DP_Oreburgh_Door_Green.4bpp");
+static const u8 sDoorAnimTiles_Oreburgh_Grey_Door[] = INCBIN_U8("graphics/door_anims/DP_Oreburgh_Door.4bpp");
+static const u8 sDoorAnimTiles_Oreburgh_Gym_Door[] = INCBIN_U8("graphics/door_anims/DP_Double_Sliding_Door_Blue_Oreburgh.4bpp");
+
 
 #if IS_FRLG
 
@@ -296,12 +300,15 @@ static const u8 sDoorAnimPalettes_BattleDomePreBattleRoom[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
-static const u8 myDoorPal[] = {2, 2, 2, 2, 2, 2, 2, 2};
-static const u8 woodenDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
-static const u8 SandgemDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
-static const u8 SandgemLabDoorPal[] = {9, 9, 9, 9, 9, 9, 9, 9};
-static const u8 JubilifeBlueDoorPal[] = {8, 8, 8, 8, 8, 10, 10, 10};
-static const u8 JubilifeTVDoorDoorPal[] = {12, 12, 12, 12, 12, 12, 12, 12};
+static const u8 myDoorPal[] = {5, 5, 5, 5, 5, 5, 5, 5};
+static const u8 woodenDoorPal[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 SandgemDoorPal[] = {7, 7, 7, 7, 7, 7, 7, 7};
+static const u8 SandgemLabDoorPal[] = {11, 11, 11, 11, 11, 11, 11, 11};
+static const u8 JubilifeBlueDoorPal[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 JubilifeTVDoorDoorPal[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 OreburghGreenDooorPal[] = {12, 12, 12, 12, 12, 12, 12, 12};
+static const u8 OreburghGreyDooorPal[] = {12, 12, 12, 12, 12, 12, 12, 12};
+static const u8 OreburghGymDooorPal[] = {5, 5, 5, 5, 5, 5, 5, 5};
 
 
 #if IS_FRLG
@@ -405,6 +412,9 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_PorytilesSecondaryPlatGBASandgem_Lab_Door,           &gTileset_PorytilesSecondaryPlatGBASandgem, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_SandgemLabDoor, SandgemLabDoorPal},
     {METATILE_PorytilesSecondaryPlatGBAJubilife_Jubilife_Blue_Door,           &gTileset_PorytilesSecondaryPlatGBAJubilife, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_Jubilife_Blue_Door, JubilifeBlueDoorPal},
     {METATILE_PorytilesSecondaryPlatGBAJubilife_TV_Door,           &gTileset_PorytilesSecondaryPlatGBAJubilife, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Jubilife_TV_Door, JubilifeTVDoorDoorPal},
+    {METATILE_PorytilesPlatGBAOreBurgh_Oreburgh_green_door,           &gTileset_PorytilesPlatGBAOreBurgh, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_Oreburgh_Green_Door, OreburghGreenDooorPal},
+    {METATILE_PorytilesPlatGBAOreBurgh_Oreburgh_grey_door,           &gTileset_PorytilesPlatGBAOreBurgh, DOOR_SOUND_NORMAL, 1, sDoorAnimTiles_Oreburgh_Grey_Door, OreburghGreyDooorPal},
+    {METATILE_PorytilesPlatGBAOreBurgh_Oreburgh_gym_door,           &gTileset_PorytilesPlatGBAOreBurgh, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Oreburgh_Gym_Door, OreburghGymDooorPal},
 #else
     {METATILE_GeneralFrlg_Door,                             &gTileset_General_Frlg, DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_GeneralFrlg, sDoorAnimPalettes_GeneralFrlg},
     {METATILE_GeneralFrlg_SlidingSingleDoor,                &gTileset_General_Frlg, DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_SlidingSingle, sDoorAnimPalettes_SlidingSingle},

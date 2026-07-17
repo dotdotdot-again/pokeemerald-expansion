@@ -1,1 +1,33 @@
 mapscripts OreburghHouseOne_MapScripts {}
+
+script OreburghCityNorthwestHouse1F_Text_RoarkLetsUsTrainOurPokemonInTheMine {
+    lock
+    msgbox("Roark lets us train our Pokémon in\n"
+        "the mine.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthwestHouse1F_Text_AGymLeaderIsntLikeJustAnyTrainerYouMeet {
+    lock
+    msgbox("A Gym Leader isn’t like just any Trainer\n"
+        "you meet.\p"
+        "Obviously, they’re a lot tougher.\n"
+        "A lot.\p"
+        "I’d take as many Pokémon as possible\n"
+        "if I were you.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthwestHouse1F_Text_ThereAreEightGymLeadersInTheSinnohRegion {
+    lock
+    msgbox("There are eight Gym Leaders in the\n"
+        "Sinnoh region.\p"
+        "The objective for Trainers is to get\n"
+        "Gym Badges from them all.\p"
+        "That means you have to defeat all of\n"
+        "them in battles at their Gyms!",MSGBOX_NPC)
+    release
+}
+
+
+

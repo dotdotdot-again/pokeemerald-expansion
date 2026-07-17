@@ -1,1 +1,31 @@
 mapscripts OreburghHouseTwo_MapScripts {}
+
+script OreburghCityNorthHouse1F_Text_WouldYouBeWillingToTradeYourMachopForMyAbra {
+    lock
+    msgbox("Listen, listen. Do you have a Pokémon\n"
+        "called MACHOP?\p"
+        "Would you be willing to trade your\n"
+        "MACHOP for my ABRA?INSERT TRADE EVENT",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthHouse1F_Text_APokemonObtainedInATradeGrowsQuickly {
+    lock
+    msgbox("A Pokémon obtained in a trade grows\n"
+        "quickly.\p"
+        "But if a Pokémon grows too much, it may\n"
+        "ignore the Trainer.\p"
+        "Of course, it won’t matter if you have\n"
+        "lots of Gym Badges.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthHouse1F_Text_WhenYouTradeAPokemonTheItemItsHoldingIsTradedAsWell {
+    lock
+    msgbox("When you trade a Pokémon, the item it’s\n"
+        "holding is traded as well.\p"
+        "That’s pretty cool, huh?\p"
+        "It means you can send an item as a gift\n"
+        "along with your Pokémon in a trade!",MSGBOX_NPC)
+    release
+}

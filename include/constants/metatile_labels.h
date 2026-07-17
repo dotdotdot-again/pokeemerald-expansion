@@ -579,6 +579,11 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Bottom                      0x2AD
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
+// gTileset_PorytilesPlatGBAOreBurgh
+#define METATILE_PorytilesPlatGBAOreBurgh_Oreburgh_green_door  0x23C
+#define METATILE_PorytilesPlatGBAOreBurgh_Oreburgh_grey_door   0x29A
+#define METATILE_PorytilesPlatGBAOreBurgh_Oreburgh_gym_door    0x23F
+
 // gTileset_PorytilesPrimaryPlatGBA
 #define METATILE_PorytilesPrimaryPlatGBA_MyNewDoor1       0x07A
 #define METATILE_PorytilesPrimaryPlatGBA_ReflectiveWater  0x0A6

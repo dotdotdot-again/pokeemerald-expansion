@@ -82,7 +82,8 @@
     "gMapGroup_IndoorJubilife",
     "gMapGroup_IndoorOreburgh",
     "gMapGroup_IndoorFloaroma",
-    "gMapGroup_IndoorEterna"
+    "gMapGroup_IndoorEterna",
+    "gMapGroup_MoreAccurateMaps"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1303,5 +1304,6 @@
     "Eterna_Galatic_BuildingF3",
     "Eterna_Galatic_BuildingF4",
     "Eterna_Galatic_Building_Backroom"
-  ]
+  ],
+  "gMapGroup_MoreAccurateMaps": []
 }

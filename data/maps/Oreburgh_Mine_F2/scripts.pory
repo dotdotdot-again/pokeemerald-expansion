@@ -31,3 +31,72 @@ script MineF2_Roark_Event {
     setflag(FLAG_ROARK_OUT_OF_THE_MINE)
     releaseall 
 }
+
+script Oreburgh_Mine_Worker_Mason {
+    lock
+    trainerbattle_single(TRAINER_COLE, "I’m gonna let you in on a secret...\n"
+                "I snuck my Pokémon to work!", "Well, now aren’t you something!")
+    msgbox("OK, OK, time for work! I’ll work up\n"
+                "a thirst with my Pokémon!",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script Oreburgh_Mine_Worker_Colin {
+    lock
+    trainerbattle_single(TRAINER_JEFF, "Fine, all righty then.\n"
+                "Just a quick battle on my break!", "Wahaha!\n"
+                "Mercy, I cry mercy!")
+    msgbox("I’d better get on back to work...\p"
+                "You know, I’d rather be traveling\n"
+                "around with Pokémon the way you do.",MSGBOX_NPC)
+    waitmessage
+    release
+}
+
+script OreburghMineB2F_Text_IMetTheseMachopOnRoute207 {
+    lock
+    msgbox("I met these MACHOP on Route 207.\p"
+        "They’ve now become my most trusted\n"
+        "partners!",MSGBOX_NPC)
+    release
+}
+
+script OreburghMineB2F_Text_MachopMaaacho {
+    lock
+    playmoncry(SPECIES_MACHOP,0)
+    msgbox("Maaacho!",MSGBOX_NPC)
+    release
+}
+
+script OreburghMineB2F_Text_MachopChopChop {
+    lock
+    playmoncry(SPECIES_MACHOP,0)
+    msgbox("Chopchop!",MSGBOX_NPC)
+    release
+}
+
+script OreburghMineB2F_Text_MachopChopmacho {
+    lock
+    playmoncry(SPECIES_MACHOP,0)
+    msgbox("Chopmacho!",MSGBOX_NPC)
+    release
+}
+
+script OreburghMineB2F_Text_Rolycoly {
+    lock
+    playmoncry(SPECIES_ROLYCOLY,0)
+    msgbox("Roll!",MSGBOX_NPC)
+    release
+}
+
+script OreburghMineB2F_Text_New_Roly_NPC {
+    lock
+    msgbox("These Rolycoly sure are useful!\p"
+    "I love seeing people and Pok\emon\n"
+    "working together so well!",MSGBOX_NPC)
+    release
+}
+
+
+

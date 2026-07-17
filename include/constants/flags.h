@@ -1055,16 +1055,16 @@
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA//Route 204 Parlyz Heal
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB//Route 204 HP Up
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC//Route 204 Sea Incence
-#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
-#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
-#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
+#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED//Route 203 Pokeball
+#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE//Route 203 Repel
+#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF//Route 203 X-Defend
+#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0//Oreburgh Dire Hit
+#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1//Oreburgh Yellow Shard
+#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 //Oreburgh Super Potion Gift
+#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3 //Oreburgh Mine b1f Poke ball
+#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4 //Oreburgh Mine b2f Rope
+#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5 //Oreburgh Mine b2f Potion
+#define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6 //Oreburgh Dusk ball gift
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9

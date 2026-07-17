@@ -15,6 +15,21 @@ script Oreburgh_GymSign {
     release
 }
 
+script OreburghCity_Text_OreburghMiningMuseumCoalMiningAndYou {
+    lock
+    msgbox("Oreburgh Mining Museum\n"
+        "\qoCoal Mining and You!\qc",MSGBOX_SIGN)
+    release
+}
+
+
+script OreburghCity_Text_OreburghMineBewareOfBusyPokemon {
+    lock
+    msgbox("Oreburgh Mine\n"
+        "Beware of Busy Pokémon!",MSGBOX_SIGN)
+    release
+}
+
 script Oreburgh_Younger_at_entrence {
     lock
     msgbox("Can I see your Trainer Case?\n"
@@ -43,3 +58,138 @@ script OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine {
     release
 
 }
+
+// NPCs
+script OreburghCity_Text_HaveYouSeenTheVents {
+    lock
+    msgbox("Have you seen the vents?\n"
+        "They release steam from down below.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_TheseVentsExchangeTheHotAirDownBelowWithTheFreshAirOutside {
+    lock
+    msgbox("These vents exchange the hot air\n"
+        "down below with the fresh air outside.\p"
+        "Looking down them gives me the urge\n"
+        "to start yelling into ’em! Hello!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_TMsAreSingleUseOnlyButHMsCanBeUsedOverAndOver {
+    lock
+    msgbox("TMs are single use only, but HMs\n"
+        "can be used over and over.\p"
+        "It’s tricky trying to decide which\n"
+        "Pokémon should learn what moves.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttention {
+    lock
+    msgbox("When I run around with my Running\n"
+        "Shoes on, I’m the center of attention!\p"
+        "...At least that’s what it feels like.\n"
+        "There’s always someone looking at me.",MSGBOX_NPC)
+    release
+}
+
+
+script OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine {
+    lock
+    if(flag(FLAG_ROARK_OUT_OF_THE_MINE) == FALSE)
+    {
+    msgbox("The Gym Leader went off to work in\n"
+        "the mine.",MSGBOX_NPC)
+    }
+    else
+    {
+
+    }
+    release
+}
+
+script OreburghCity_Text_ThatsWhatFossilsAre {
+    lock
+    msgbox("Natural time capsules buried many,\n"
+        "many years ago...\p"
+        "That’s what Fossils are.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_UpAheadTheresAHugeMountainThatTowersAboveEverything {
+    lock
+    msgbox("Up ahead there’s a huge mountain\n"
+        "that towers above everything.\p"
+        "It divides Sinnoh into two distinct\n"
+        "halves.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_EveryonesProudOfTheMine {
+    lock
+    msgbox("Everyone’s proud of the mine.\p"
+        "They’re digging for coal under the\n"
+        "sea as we speak...\p"
+        "It’s amazing how they do it!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_ChopChopMachopChopChopAwayOnRocks {
+    lock
+    msgbox("Chop, chop, MACHOP!\n"
+        "Chop, chop away on rocks!~",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_ThisPileOfDirtySandIsCalledASlagHeap {
+    lock
+    msgbox("This pile of dirty sand is called\n"
+        "a slag heap.\p"
+        "It’s the waste from sorting coal.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_HereTakeOneOfThese {
+    lock
+    if(flag(FLAG_ITEM_ROUTE_111_HP_UP) == FALSE)
+    {
+    msgbox("There’s no question. This is hard,\n"
+        "hard work.\p"
+        "But working alongside Pokémon...\n"
+        "It gives me a boost somehow.\p"
+        "Here, take one of these.",MSGBOX_NPC)
+        waitmessage
+    giveitem(ITEM_SUPER_POTION)
+    setflag(FLAG_ITEM_ROUTE_111_HP_UP)
+    }
+    else
+    {
+    msgbox("Feeling hale and hearty puts a smile\n"
+        "on my face. And that makes me happy.",MSGBOX_NPC)
+    }
+    release
+}
+
+script OreburghCity_Text_MachopMachoChopo {
+    lock
+    playmoncry(SPECIES_MACHOP,0)
+    msgbox("Macho! Chopo!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_MachopGwoohGogogooh {
+    lock
+    playmoncry(SPECIES_MACHOP,0)
+    msgbox("Gwooh! Gogogooh!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCity_Text_MachopPigyooh {
+    lock
+    playmoncry(SPECIES_MACHOP,0)
+    msgbox("Pigyooh!",MSGBOX_NPC)
+    release
+}
+
+

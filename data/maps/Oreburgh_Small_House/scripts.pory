@@ -1,1 +1,35 @@
 mapscripts Oreburgh_Small_House_MapScripts {}
+
+script OreburghCityWestHouse_Text_YouKnowHowPokemonHaveDifferentNaturesLikeWeHavePersonalities {
+    lock
+    msgbox("You know how Pokémon have different\n"
+        "natures like we have personalities?\p"
+        "I don’t think it’s surprising to see\n"
+        "Pokémon have different forms.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityWestHouse_Text_HaveYouEverSeenOrHeardAboutDifferentlyColoredPokemon {
+    lock
+    msgbox("Have you ever seen or heard about\n"
+        "Pokémon with different forms?\p"
+        "For instance, a regular Geodude is\n"
+        "a Rock and Ground type, correct?\p"
+        "Well, in the Alola region it's a\n"
+        "Rock and Electric type!\p"
+        "Alolan Geodudes have also been found\n"
+        "in Mt. Coronet recently!\p" 
+        "My friend told me it's due to the\n"
+        "Mountains special magnetic field\l"
+        "or something like that.\n"
+        "It's that cool!",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityWestHouse_Text_Geo {
+    lock
+    playmoncry(SPECIES_GEODUDE,0)
+    msgbox("Geo!!!",MSGBOX_NPC)
+    release
+}
+

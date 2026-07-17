@@ -265,8 +265,8 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
         .camouflageBlend = BUILDING_CAMOUFLAGE_BLEND,
         .entry = ENVIRONMENT_ENTRY(Building),
-        .background = ENVIRONMENT_BACKGROUND(Building),
-        .palette = {gBattleEnvironmentPalette_BuildingLeader, gBattleEnvironmentPalette_BuildingLeader, gBattleEnvironmentPalette_BuildingLeader, gBattleEnvironmentPalette_BuildingLeader},
+        .background = ENVIRONMENT_BACKGROUND(DPgym),
+        .palette = {gBattleEnvironmentPalette_DPgym, gBattleEnvironmentPalette_DPgym, gBattleEnvironmentPalette_DPgym, gBattleEnvironmentPalette_DPgym},
         .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
     },
 
@@ -528,6 +528,32 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .camouflageType = TYPE_PSYCHIC,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
     },
+
+    [BATTLE_ENVIRONMENT_LEADER_ROARK] =
+    {
+        .name = _("Leader Roark"),
+        .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
+        .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
+        .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
+        .camouflageBlend = BUILDING_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(DPgym),
+        .palette = {gBattleEnvironmentPalette_RoarkFight, gBattleEnvironmentPalette_RoarkFight, gBattleEnvironmentPalette_RoarkFight, gBattleEnvironmentPalette_RoarkFight},
+        .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
+    },
+
+    [BATTLE_ENVIRONMENT_GYM_ONE] =
+    {
+        .name = _("Gym One"),
+        .secretPowerAnimation = BUILDING_SECRET_POWER_ANIMATION,
+        .secretPowerEffect = BUILDING_SECRET_POWER_EFFECT,
+        .camouflageType = BUILDING_CAMOUFLAGE_TYPE,
+        .camouflageBlend = BUILDING_CAMOUFLAGE_BLEND,
+        .entry = ENVIRONMENT_ENTRY(Building),
+        .background = ENVIRONMENT_BACKGROUND(Building),
+        .palette = {gBattleEnvironmentPalette_GymOne, gBattleEnvironmentPalette_GymOne, gBattleEnvironmentPalette_GymOne, gBattleEnvironmentPalette_GymOne},
+        .battleIntroSlide = BUILDING_BATTLE_INTRO_SLIDE,
+    },
 };
 
 static const struct {
@@ -541,5 +567,6 @@ static const struct {
     {MAP_BATTLE_SCENE_PHOEBE,   BATTLE_ENVIRONMENT_PHOEBE},
     {MAP_BATTLE_SCENE_GLACIA,   BATTLE_ENVIRONMENT_GLACIA},
     {MAP_BATTLE_SCENE_DRAKE,    BATTLE_ENVIRONMENT_DRAKE},
-    {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER}
+    {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER},
+    {MAP_BATTLE_SCENE_GYM_ONE,  BATTLE_ENVIRONMENT_GYM_ONE}
 };

@@ -914,6 +914,8 @@ static u8 GetBattleEnvironmentOverride(void)
         u32 trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
         if (trainerClass == TRAINER_CLASS_LEADER)
             return BATTLE_ENVIRONMENT_LEADER;
+        else if (trainerClass == TRAINER_CLASS_LEADER_ROARK)
+            return BATTLE_ENVIRONMENT_LEADER_ROARK;
         else if (trainerClass == TRAINER_CLASS_CHAMPION)
             return BATTLE_ENVIRONMENT_CHAMPION;
     }

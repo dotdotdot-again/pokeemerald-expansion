@@ -381,7 +381,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_HIKER_FRLG] =           { _("HIKER"), 9 },
     [TRAINER_CLASS_BIKER_FRLG] =           { _("BIKER"), 5 },
     [TRAINER_CLASS_BURGLAR_FRLG] =         { _("BURGLAR"), 22 },
-    [TRAINER_CLASS_ENGINEER_FRLG] =        { _("ENGINEER"), 12 },
+    [TRAINER_CLASS_ENGINEER_FRLG] =        { _("WORKER"), 12 },
     [TRAINER_CLASS_FISHERMAN_FRLG] =       { _("FISHERMAN"), 9, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_DIVE : BALL_LURE },
     [TRAINER_CLASS_SWIMMER_M_FRLG] =       { _("SWIMMER♂"), 1 },
     [TRAINER_CLASS_CUE_BALL_FRLG] =        { _("CUE BALL"), 6 },
@@ -420,6 +420,8 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_RUIN_MANIAC_FRLG] =     { _("RUIN MANIAC"), 12 },
     [TRAINER_CLASS_LADY_FRLG] =            { _("LADY"), 50 },
     [TRAINER_CLASS_PAINTER_FRLG] =         { _("PAINTER"), 4 },
+
+    [TRAINER_CLASS_LEADER_ROARK] = { _("GYM LEADER"), 25, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_ULTRA : BALL_POKE },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
@@ -5392,6 +5394,9 @@ static void HandleEndTurn_BattleWon(void)
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
         case TRAINER_CLASS_LEADER:
+            PlayBGM(MUS_VICTORY_GYM_LEADER);
+            break;
+        case TRAINER_CLASS_LEADER_ROARK:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
             break;
         default:
