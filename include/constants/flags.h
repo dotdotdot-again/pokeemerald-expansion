@@ -1065,8 +1065,8 @@
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4 //Oreburgh Mine b2f Rope
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5 //Oreburgh Mine b2f Potion
 #define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6 //Oreburgh Dusk ball gift
-#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
-#define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8
+#define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7 //Oreburgh Great ball gift
+#define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8 //Route 207 Poke ball
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
 #define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
 #define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB

@@ -1,0 +1,6 @@
+mapscripts Route202_2_MapScripts {}
+
+script Route219_Sign {
+    lock
+    msgbox("",MSGBOX_SIGN)
+}

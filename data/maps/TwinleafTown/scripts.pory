@@ -1,7 +1,28 @@
 mapscripts TwinleafTown_MapScripts {
     MAP_SCRIPT_ON_TRANSITION:OnTransitionTwinleaf
-}
+    MAP_SCRIPT_ON_LOAD {
+    setflag(FLAG_TEMP_2)
+    setflag(FLAG_TEMP_3)
+    setflag(FLAG_TEMP_4)
 
+            random(5)
+        switch(var(VAR_RESULT)) {
+            case 0:
+                // This will display only the bird(s) using FLAG_TEMP_1
+                clearflag(FLAG_TEMP_2)
+            case 1:
+                // This will display only the bird(s) using FLAG_TEMP_2
+                clearflag(FLAG_TEMP_3)
+            case 2:
+
+            case 3:
+                // Adding a little variety by having several birds at once in this case
+                clearflag(FLAG_TEMP_2)
+                clearflag(FLAG_TEMP_3)
+            case 5:
+        }
+    }
+}
 
 
 script OnTransitionTwinleaf

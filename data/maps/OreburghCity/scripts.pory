@@ -1,4 +1,70 @@
-mapscripts OreburghCity_MapScripts {}
+mapscripts OreburghCity_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        // Set all the flags used by the birds so that they start out all hidden
+        setflag(FLAG_TEMP_1)
+        setflag(FLAG_TEMP_2)
+        setflag(FLAG_TEMP_3)
+        setflag(FLAG_TEMP_4)
+        setflag(FLAG_TEMP_5)
+        setflag(FLAG_TEMP_6)
+        setflag(FLAG_TEMP_7)
+        special(GetTimeOfDaySpecial)
+        copyvar(VAR_TEMP_1,VAR_RESULT)
+
+        random(4)
+        switch(var(VAR_RESULT)) {
+            case 0:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_5)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_1)
+                    }
+            case 1:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_6)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_3)
+                        clearflag(FLAG_TEMP_2)
+                    }
+                
+            case 2:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_7)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_4)
+                    }
+            case 3:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_5)
+                        clearflag(FLAG_TEMP_6)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_1)
+                        clearflag(FLAG_TEMP_3)
+                    }
+        }
+    }
+}
+
+script timeTest {
+    lock
+    special(GetTimeOfDaySpecial)
+    buffernumberstring(STR_VAR_1,VAR_RESULT)
+    msgbox("Time of day is {STR_VAR_1}" ,MSGBOX_NPC)
+    release
+    
+}
 
 script Oreburgh_TownSign_one {
     lock
@@ -191,5 +257,9 @@ script OreburghCity_Text_MachopPigyooh {
     msgbox("Pigyooh!",MSGBOX_NPC)
     release
 }
+
+
+//Bird stuff
+
 
 

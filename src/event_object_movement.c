@@ -9817,11 +9817,15 @@ static void GetGroundEffectFlags_TallGrassOnSpawn(struct ObjectEvent *objEvent, 
 {
     if (MetatileBehavior_IsTallGrass(objEvent->currentMetatileBehavior))
         *flags |= GROUND_EFFECT_FLAG_TALL_GRASS_ON_SPAWN;
+    else if (MetatileBehavior_IsMtTallGrass(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_TALL_GRASS_ON_SPAWN;
 }
 
 static void GetGroundEffectFlags_TallGrassOnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
 {
     if (MetatileBehavior_IsTallGrass(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE;
+    else if (MetatileBehavior_IsMtTallGrass(objEvent->currentMetatileBehavior))
         *flags |= GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE;
 }
 
@@ -9948,6 +9952,7 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
 
     static const MetatileFunc metatileFuncs[] = {
         MetatileBehavior_IsTallGrass,
+        MetatileBehavior_IsMtTallGrass,
         MetatileBehavior_IsLongGrass,
         MetatileBehavior_IsPuddle,
         MetatileBehavior_IsSurfableWaterOrUnderwater,

@@ -1,1 +1,10 @@
 mapscripts Route207_MapScripts {}
+
+script Route207_Text_ThatSlopesTooSlippery {
+    lock
+    msgbox("That slope’s too slippery.\n"
+        "You’ll need a Bike to get up.\p"
+        "You don’t have a Bicycle?\n"
+        "There’s a Cycle Shop in Eterna City.",MSGBOX_NPC)
+    release
+}

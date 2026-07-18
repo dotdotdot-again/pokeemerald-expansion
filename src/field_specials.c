@@ -80,6 +80,7 @@
 #include "naming_screen.h"
 #include "rogue_voltorbflip.h"
 #include "chooseboxmon.h"
+#include "constants/trainer_types.h"
 
 #define TAG_ITEM_ICON 5500
 
@@ -5784,4 +5785,9 @@ bool8 CheckAddCoins(void)
         return FALSE;
     else
         return TRUE;
+}
+
+void GetTimeOfDaySpecial(void)
+{
+	gSpecialVar_Result = GetTimeOfDay();
 }

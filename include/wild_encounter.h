@@ -34,6 +34,8 @@ struct WildEncounterTypes
     const struct WildPokemonInfo *rockSmashMonsInfo;
     const struct WildPokemonInfo *fishingMonsInfo;
     const struct WildPokemonInfo *hiddenMonsInfo;
+    const struct WildPokemonInfo *nightMonsInfo;
+    const struct WildPokemonInfo *honeyMonsInfo;
 };
 
 struct WildPokemonHeader

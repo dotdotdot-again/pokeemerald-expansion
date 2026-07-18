@@ -719,8 +719,10 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
 
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
-    if (MetatileBehavior_IsTallGrass(tileBehavior))
+    if (MetatileBehavior_IsTallGrass(tileBehavior) && !MetatileBehavior_IsMtTallGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_GRASS;
+    if (MetatileBehavior_IsMtTallGrass(tileBehavior))
+        return BATTLE_ENVIRONMENT_MOUNTAIN;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
         return BATTLE_ENVIRONMENT_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))

@@ -4,6 +4,60 @@ mapscripts SandgemTown_MapScripts {
 	VAR_TEMP_2, 0:EveryFrame_Sandgem
 	]
 
+    MAP_SCRIPT_ON_LOAD {
+        // Set all the flags used by the birds so that they start out all hidden
+        setflag(FLAG_TEMP_3)
+        setflag(FLAG_TEMP_4)
+        setflag(FLAG_TEMP_5)
+        setflag(FLAG_TEMP_6)
+        setflag(FLAG_TEMP_7)
+        special(GetTimeOfDaySpecial)
+        copyvar(VAR_TEMP_1,VAR_RESULT)
+
+        random(4)
+        switch(var(VAR_RESULT)) {
+            case 0:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_3)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_3)
+                    }
+            case 1:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_4)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_4)
+                    }
+                
+            case 2:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_5)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_5)
+                    }
+            case 3:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_6)
+                        clearflag(FLAG_TEMP_6)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_6)
+                        clearflag(FLAG_TEMP_6)
+                    }
+        }
+    }    
+
 }
 
 script OnTransition_Sandgem{
