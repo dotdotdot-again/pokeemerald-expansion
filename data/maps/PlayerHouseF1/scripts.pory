@@ -15,6 +15,7 @@ script EveryFrameMom {
     if(var(VAR_TWINLEAF_INTRO_STATE) == 2)
     {
         lockall
+        setrespawn(HEAL_LOCATION_PLAYER_HOUSE_F1)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
         waitmovement
         applymovement(Mom, moves(emote_exclamation_mark))
@@ -32,6 +33,14 @@ script EveryFrameMom {
         waitmovement
         setvar(VAR_TWINLEAF_INTRO_STATE, 3)
         releaseall
+    }
+    elif(var(VAR_TWINLEAF_INTRO_STATE) == 7)
+    {
+        //fadescreen(FADE_TO_BLACK)
+        setobjectxy(Mom,2,4)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+        //fadescreen(FADE_TO_FROM)
+        call(after_starter)
     }
     else
     {
@@ -87,11 +96,15 @@ script TalkMom {
     msgbox("{PLAYER} obtained\n"
         "the {COLOR BLUE}{SHADOW LIGHT_BLUE}Mom's Journal{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!")
 	waitfanfare
+    setflag(FLAG_SYS_QUEST_MENU_GET)
     setspeaker(SP_NAME_MOM)
-        msgbox("That’s a Journal. It keeps a record\n"
-        "of your daily events.\p"
+        msgbox("That’s a Journal. You can use it to\n"
+        "keep a record of your daily events.\p"
         "Check it, and you’ll be able to\n"
-        "remember what you did last.",MSGBOX_AUTOCLOSE)
+        "remember what you need to do.\p"
+        "I can also be helpful to keep track of\n"
+        "any tasks or requests your given on\l"
+        "a record adventure.",MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(Mom, moves(face_away_player))
     waitmovement

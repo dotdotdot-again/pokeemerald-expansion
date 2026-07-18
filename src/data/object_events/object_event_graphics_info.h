@@ -2106,7 +2106,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CableCar = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist2 = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
+    .paletteTag = OBJ_EVENT_PAL_DP_NEW_PROF,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

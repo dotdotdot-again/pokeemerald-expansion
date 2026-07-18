@@ -59,11 +59,21 @@ mapscripts OreburghCity_MapScripts {
 
 script timeTest {
     lock
-    special(GetTimeOfDaySpecial)
-    buffernumberstring(STR_VAR_1,VAR_RESULT)
-    msgbox("Time of day is {STR_VAR_1}" ,MSGBOX_NPC)
+    setflag(FLAG_SYS_QUEST_MENU_GET)
+    msgbox("Here is quest!",MSGBOX_NPC)
+    questmenu(QUEST_MENU_SET_ACTIVE,QUEST_1)
+    //specialvar(VAR_RESULT,countMons)
+    //buffernumberstring(STR_VAR_1,VAR_RESULT)
+    //msgbox("You have {STR_VAR_1} Pokemon",MSGBOX_NPC)
+    waitmessage
     release
-    
+}
+
+script questTest {
+    lock
+    msgbox("Quest Done!",MSGBOX_NPC)
+    questmenu(QUEST_MENU_COMPLETE_QUEST,QUEST_1)
+    release
 }
 
 script Oreburgh_TownSign_one {

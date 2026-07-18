@@ -648,3 +648,4 @@ gSpecials::
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
 	def_special GetTimeOfDaySpecial
+	def_special countMons

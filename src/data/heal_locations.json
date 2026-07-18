@@ -373,6 +373,18 @@
       "map": "MAP_OREBURGH_CITY",
       "x": 47,
       "y": 19
+    },
+    {
+      "id": "HEAL_LOCATION_PLAYER_HOUSE_F1",
+      "map": "MAP_PLAYER_HOUSE_F1",
+      "x": 2,
+      "y": 6
+    },
+    {
+      "id": "HEAL_LOCATION_PLAYER_HOUSE_F2",
+      "map": "MAP_PLAYER_HOUSE_F2",
+      "x": 5,
+      "y": 5
     }
   ]
 }

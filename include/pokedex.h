@@ -15,6 +15,7 @@ s8 GetSetPokedexFlag(enum NationalDexOrder nationalDexNo, u8 caseID);
 void DrawFootprint(u8 windowId, enum Species species);
 u16 CreateMonSpriteFromNationalDexNumber(enum NationalDexOrder nationalNum, s16 x, s16 y, u16 paletteSlot);
 bool16 HasAllRegionalMons(void);
+u16 countMons(void);
 bool16 HasAllHoennMons(void);
 bool16 HasAllKantoMons(void);
 void ResetPokedexScrollPositions(void);

@@ -4632,6 +4632,20 @@ bool16 HasAllHoennMons(void)
     return TRUE;
 }
 
+u16 countMons(void)
+{
+    u16 count = 0;
+    u16 i;
+
+    for (i = 0; i < HOENN_DEX_COUNT - 1; i++)
+    {
+        if (GetSetPokedexFlag(HoennToNationalOrder(i + 1), FLAG_GET_CAUGHT))
+            count++;
+    }
+    
+    return count;
+}
+
 bool16 HasAllKantoMons(void)
 {
     u32 i, j;
