@@ -57,11 +57,18 @@ mapscripts OreburghCity_MapScripts {
     }
 }
 
+script Oreburgh_Snake {
+    
+    
+    
+}
+
 script timeTest {
     lock
+    setvar(VAR_PLAYER_POINTS,0)
     setflag(FLAG_SYS_QUEST_MENU_GET)
     msgbox("Here is quest!",MSGBOX_NPC)
-    questmenu(QUEST_MENU_SET_ACTIVE,QUEST_1)
+    questmenu(QUEST_MENU_SET_ACTIVE,QUEST_COMPLETE_DEX)
     //specialvar(VAR_RESULT,countMons)
     //buffernumberstring(STR_VAR_1,VAR_RESULT)
     //msgbox("You have {STR_VAR_1} Pokemon",MSGBOX_NPC)
@@ -71,8 +78,30 @@ script timeTest {
 
 script questTest {
     lock
-    msgbox("Quest Done!",MSGBOX_NPC)
-    questmenu(QUEST_MENU_COMPLETE_QUEST,QUEST_1)
+    setvar(VAR_TEMP_5,0)
+    buffernumberstring(STR_VAR_1, VAR_PLAYER_POINTS)
+    msgbox("you have {STR_VAR_1} points!\nplay my game!",MSGBOX_NPC)
+    //questmenu(QUEST_MENU_COMPLETE_QUEST,QUEST_COMPLETE_DEX)
+    //giveitem(ITEM_COIN_CASE)
+    special(StartSnake)
+    waitstate
+    while{
+        if(var(GAME_CORNER_VAR_WINNINGS) == 0)
+        {
+            break
+        }
+        addvar(VAR_PLAYER_POINTS, 1)
+        addvar(VAR_TEMP_5, 1)
+        if(var(VAR_TEMP_5) == GAME_CORNER_VAR_WINNINGS)
+        {
+            break
+        }
+    }
+    buffernumberstring(STR_VAR_2, GAME_CORNER_VAR_WINNINGS)
+    buffernumberstring(STR_VAR_1, VAR_PLAYER_POINTS)
+    msgbox("You got {STR_VAR_2}\n"
+    "You have {STR_VAR_1} points",MSGBOX_NPC)
+    setvar(GAME_CORNER_VAR_WINNINGS,0)
     release
 }
 

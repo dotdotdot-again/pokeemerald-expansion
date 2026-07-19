@@ -1181,7 +1181,7 @@ const u8 gText_QuestActive[] =_("active");
 //Quest One
 const u8 gText_SideQuestName_1[] = _("Complete the Pokédex");
 const u8 gText_SideQuestDesc_1[] = _("Catch every single Pokémon in the\n Sinnoh Dex for Professor Rowan");
-const u8 gText_SideQuestDoneDesc_1[] = _("Completed Quest 1");
+const u8 gText_SideQuestDoneDesc_1[] = _("You caught every Pokémon in the\n Sinnoh Dex! Good job {PLAYER}!");
 const u8 gText_SideQuestMap1[] = _("Sinnoh");
 
 //Quest One Sub Quests
@@ -1198,18 +1198,76 @@ const u8 gText_SubQuest1_Desc4[] = _("Catch 100 Pokémon");
 const u8 gText_SubQuest1_Desc5[] = _("Catch 151 Pokémon");
 const u8 gText_SubQuest1_Desc6[] = _("Catch 200 Pokémon");
 
-//names
+//Gym Quests
+const u8 gText_SideQuestName_2[] = _("Defeat the Oreburgh City Gym");
+const u8 gText_SideQuestMap2[] = _("Oreburgh City");
+const u8 gText_SideQuestDesc_2[] = _("Follow Barry to Oreburgh City and\ntake on the gym leader.");
+const u8 gText_SideQuestDoneDesc_2[] = _("I SMAHSED the Oreburgh City Gym!");
 
-const u8 gText_SideQuestName_2[] = _("Side Quest 2");
-const u8 gText_SideQuestName_3[] = _("Side Quest 3");
-const u8 gText_SideQuestName_4[] = _("Side Quest 4");
-const u8 gText_SideQuestName_5[] = _("Side Quest 5");
-const u8 gText_SideQuestName_6[] = _("Side Quest 6");
-const u8 gText_SideQuestName_7[] = _("Side Quest 7");
-const u8 gText_SideQuestName_8[] = _("Side Quest 8");
-const u8 gText_SideQuestName_9[] = _("Side Quest 9");
-const u8 gText_SideQuestName_10[] = _("Side Quest 10");
-const u8 gText_SideQuestName_11[] = _("Side Quest 11");
+const u8 gText_SideQuestName_3[] = _("Defeat the Eterna City Gym!");
+const u8 gText_SideQuestMap3[] = _("Eterna City");
+const u8 gText_SideQuestDesc_3[] = _("Not avalible on this buld");
+const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
+
+const u8 gText_SideQuestName_4[] = _("Ghost Gym");
+const u8 gText_SideQuestMap4[] = _("Map 4");
+const u8 gText_SideQuestDesc_4[] = _("Description 4");
+const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
+
+const u8 gText_SideQuestName_5[] = _("Fighting Gym");
+const u8 gText_SideQuestMap5[] = _("Map 5");
+const u8 gText_SideQuestDesc_5[] = _("Description 5");
+const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");
+
+const u8 gText_SideQuestName_6[] = _("Water Gym");
+const u8 gText_SideQuestMap6[] = _("Map 6");
+const u8 gText_SideQuestDesc_6[] = _("Description 6");
+const u8 gText_SideQuestDoneDesc_6[] = _("Completed Quest 6");
+
+const u8 gText_SideQuestName_7[] = _("Steel Gym");
+const u8 gText_SideQuestMap7[] = _("Map 7");
+const u8 gText_SideQuestDesc_7[] = _("Description 7");
+const u8 gText_SideQuestDoneDesc_7[] = _("Completed Quest 7");
+
+const u8 gText_SideQuestName_8[] = _("Ice Gym");
+const u8 gText_SideQuestMap8[] = _("Map 8");
+const u8 gText_SideQuestDesc_8[] = _("Description 8");
+const u8 gText_SideQuestDoneDesc_8[] = _("Completed Quest 8");
+
+const u8 gText_SideQuestName_9[] = _("Electric Gym");
+const u8 gText_SideQuestMap9[] = _("Map 9");
+const u8 gText_SideQuestDesc_9[] = _("Description 9");
+const u8 gText_SideQuestDoneDesc_9[] = _("Completed Quest 9");
+
+
+
+
+
+
+
+
+
+
+
+//Side Quests
+const u8 gText_SideQuestName_10[] = _("Show some guy a Phanpy");
+const u8 gText_SideQuestDesc_10[] = _("Some guy wants me to show him\n" 
+                                    "a Phanpy. Seems easy enough to do\n"
+                                    "so might as well.");
+const u8 gText_SideQuestMap10[] = _("Oreburgh City");
+const u8 gText_SideQuestDoneDesc_10[] = _("Showed some guy a Phanpy");
+
+const u8 gText_SideQuestName_11[] = _("Give a kid an Alolan Geodude");
+const u8 gText_SideQuestDesc_11[] = _("Description 11");
+const u8 gText_SideQuestDoneDesc_11[] = _("Completed Quest 11");
+const u8 gText_SideQuestMap11[] = _("Oreburgh City");
+
+
+//names of unassinged quests
+
+
+
+
 const u8 gText_SideQuestName_12[] = _("Side Quest 12");
 const u8 gText_SideQuestName_13[] = _("Side Quest 13");
 const u8 gText_SideQuestName_14[] = _("Side Quest 14");
@@ -1231,17 +1289,6 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-
-const u8 gText_SideQuestDesc_2[] = _("Description 2");
-const u8 gText_SideQuestDesc_3[] = _("Description 3");
-const u8 gText_SideQuestDesc_4[] = _("Description 4");
-const u8 gText_SideQuestDesc_5[] = _("Description 5");
-const u8 gText_SideQuestDesc_6[] = _("Description 6");
-const u8 gText_SideQuestDesc_7[] = _("Description 7");
-const u8 gText_SideQuestDesc_8[] = _("Description 8");
-const u8 gText_SideQuestDesc_9[] = _("Description 9");
-const u8 gText_SideQuestDesc_10[] = _("Description 10");
-const u8 gText_SideQuestDesc_11[] = _("Description 11");
 const u8 gText_SideQuestDesc_12[] = _("Description 12");
 const u8 gText_SideQuestDesc_13[] = _("Description 13");
 const u8 gText_SideQuestDesc_14[] = _("Description 14");
@@ -1264,16 +1311,10 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
 
-const u8 gText_SideQuestDoneDesc_2[] = _("Completed Quest 2");
-const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
-const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
-const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");
-const u8 gText_SideQuestDoneDesc_6[] = _("Completed Quest 6");
-const u8 gText_SideQuestDoneDesc_7[] = _("Completed Quest 7");
-const u8 gText_SideQuestDoneDesc_8[] = _("Completed Quest 8");
-const u8 gText_SideQuestDoneDesc_9[] = _("Completed Quest 9");
-const u8 gText_SideQuestDoneDesc_10[] = _("Completed Quest 10");
-const u8 gText_SideQuestDoneDesc_11[] = _("Completed Quest 11");
+
+
+
+
 const u8 gText_SideQuestDoneDesc_12[] = _("Completed Quest 12");
 const u8 gText_SideQuestDoneDesc_13[] = _("Completed Quest 13");
 const u8 gText_SideQuestDoneDesc_14[] = _("Completed Quest 14");
@@ -1296,16 +1337,9 @@ const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 
 //map
 
-const u8 gText_SideQuestMap2[] = _("Map 2");
-const u8 gText_SideQuestMap3[] = _("Map 3");
-const u8 gText_SideQuestMap4[] = _("Map 4");
-const u8 gText_SideQuestMap5[] = _("Map 5");
-const u8 gText_SideQuestMap6[] = _("Map 6");
-const u8 gText_SideQuestMap7[] = _("Map 7");
-const u8 gText_SideQuestMap8[] = _("Map 8");
-const u8 gText_SideQuestMap9[] = _("Map 9");
-const u8 gText_SideQuestMap10[] = _("Map 10");
-const u8 gText_SideQuestMap11[] = _("Map 11");
+
+
+
 const u8 gText_SideQuestMap12[] = _("Map 12");
 const u8 gText_SideQuestMap13[] = _("Map 13");
 const u8 gText_SideQuestMap14[] = _("Map 14");

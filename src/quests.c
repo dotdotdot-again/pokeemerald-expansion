@@ -240,54 +240,54 @@ static const struct SubQuest sSubQuestsDex[POKEDEX_SUB_QUEST_COUNT] =
 	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_DP_ROWAN,
 	      OBJECT,
-	      sText_Found
+	      sText_Caught
 	),
 
 	sub_quest(
 	      1,
 	      gText_SubQuest1_Name2,
 	      gText_SubQuest1_Desc2,
-	      gText_SideQuestMap2,
+	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_DP_ROWAN,
 	      OBJECT,
-	      sText_Found
+	      sText_Caught
 	),
 
 	sub_quest(
 	      2,
 	      gText_SubQuest1_Name3,
 	      gText_SubQuest1_Desc3,
-	      gText_SideQuestMap3,
+	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_DP_ROWAN,
 	      OBJECT,
-	      sText_Found
+	      sText_Caught
 	),
 
 	sub_quest(
 	      3,
 	      gText_SubQuest1_Name4,
 	      gText_SubQuest1_Desc4,
-	      gText_SideQuestMap4,
+	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_DP_ROWAN,
 	      OBJECT,
-	      sText_Found
+	      sText_Caught
 	),
 
 	sub_quest(
 	      4,
 	      gText_SubQuest1_Name5,
 	      gText_SubQuest1_Desc5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
+	      gText_SideQuestMap1,
+	      OBJ_EVENT_GFX_DP_ROWAN,
 	      OBJECT,
-	      sText_Found
+	      sText_Caught
 	),
 
 	sub_quest(
 	      5,
 	      gText_SubQuest1_Name6,
 	      gText_SubQuest1_Desc6,
-	      gText_SideQuestMap6,
+	      gText_SideQuestMap1,
 	      OBJ_EVENT_GFX_WALLY,
 	      OBJECT,
 	      sText_Found
@@ -649,8 +649,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_10,
 	      gText_SideQuestDoneDesc_10,
 	      gText_SideQuestMap10,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
+	      SPECIES_PHANPY,
+	      PKMN,
 	      NULL,
 	      0
 	),
@@ -1254,9 +1254,7 @@ static void PlaceTopMenuScrollIndicatorArrows(void)
 		listSize = sStateDataPtr->maxShowed;
 	}
 
-	sStateDataPtr->scrollIndicatorArrowPairId =
-	      AddScrollIndicatorArrowPairParameterized(2, 94, 8, 90,
-	                  (listSize - sStateDataPtr->maxShowed), 110, 110, &sListMenuState.scroll);
+	sStateDataPtr->scrollIndicatorArrowPairId =AddScrollIndicatorArrowPairParameterized(2, 94, 8, 90,(listSize - sStateDataPtr->maxShowed), 110, 110, &sListMenuState.scroll);
 }
 
 static void SetInitializedFlag(u8 a0)
@@ -1535,8 +1533,7 @@ u8 *DefineQuestOrder()
 		{
 			for (d = c + 1; d < QUEST_COUNT; d++)
 			{
-				if (StringCompare(sSideQuests[sortedList[c]].name,
-				                  sSideQuests[sortedList[d]].name) > 0)
+				if (StringCompare(sSideQuests[sortedList[c]].name,sSideQuests[sortedList[d]].name) > 0)
 				{
 					placeholderVariable = sortedList[c];
 					sortedList[c] = sortedList[d];
@@ -1866,24 +1863,20 @@ void PopulateEmptyRow(u8 countQuest)
 }
 void PrependQuestNumber(u8 countQuest)
 {
-	questNamePointer = ConvertIntToDecimalStringN(questNameArray[countQuest],
-	                   countQuest + 1, STR_CONV_MODE_LEFT_ALIGN, 2);
-	questNamePointer = StringAppend(questNamePointer,
-	                                sText_DotSpace);
+	questNamePointer = ConvertIntToDecimalStringN(questNameArray[countQuest],countQuest + 1, STR_CONV_MODE_LEFT_ALIGN, 2);
+	questNamePointer = StringAppend(questNamePointer,sText_DotSpace);
 }
 
 void SetFavoriteQuest(u8 countQuest)
 {
-	questNamePointer = StringAppend(questNameArray[countQuest],
-	                                sText_ColorGreen);
+	questNamePointer = StringAppend(questNameArray[countQuest],sText_ColorGreen);
 }
 
 void PopulateQuestName(u8 countQuest)
 {
 	if (QuestMenu_GetSetQuestState(countQuest, FLAG_GET_UNLOCKED))
 	{
-		questNamePointer = StringAppend(questNameArray[countQuest],
-		                                sSideQuests[countQuest].name);
+		questNamePointer = StringAppend(questNameArray[countQuest],sSideQuests[countQuest].name);
 		AddSubQuestButton(countQuest);
 	}
 	else
@@ -2215,8 +2208,7 @@ static void QuestMenu_DestroySprite(u8 idx)
 		}
 	}
 }
-static void GenerateStateAndPrint(u8 windowId, u32 questId,
-                                  u8 y)
+static void GenerateStateAndPrint(u8 windowId, u32 questId,u8 y)
 {
 	u8 colorIndex;
 
@@ -2239,8 +2231,7 @@ u8 GenerateSubquestState(u8 questId)
 {
 	u8 parentQuest = sStateDataPtr->parentQuest;
 
-	if (QuestMenu_GetSetSubquestState(parentQuest, FLAG_GET_COMPLETED,
-	                                  questId))
+	if (QuestMenu_GetSetSubquestState(parentQuest, FLAG_GET_COMPLETED,questId))
 	{
 		StringCopy(gStringVar4, sSideQuests[parentQuest].subquests[questId].type);
 	}
@@ -2288,7 +2279,7 @@ static void GenerateAndPrintHeader(void)
 	GenerateNumeratorNumQuests();
 	GenerateMenuContext();
 
-	PrintNumQuests();
+	//PrintNumQuests();
 	PrintMenuContext();
 
 	if (!IsSubquestMode())

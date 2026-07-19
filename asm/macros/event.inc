@@ -1353,7 +1353,7 @@
 	.macro hidemoneybox
 	.byte SCR_OP_HIDEMONEYBOX
 	.byte 0  @ \x
-	.byte 0  @ \y
+	.byte 0  @ \yheckpartymon
 	.endm
 
 	@ Updates the window created by showmoneybox. Consumption of the x and y arguments was dummied out.

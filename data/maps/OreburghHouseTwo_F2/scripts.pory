@@ -1,9 +1,29 @@
-mapscripts OreburghHouseTwo_F2_MapScripts {}
+mapscripts OreburghHouseTwo_F2_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        setflag(FLAG_TEMP_5)
+
+        returnqueststate(QUEST_SHOW_A_PHANPY)
+        switch (var(VAR_RESULT)) {
+            case 1:
+                setflag(FLAG_TEMP_5)
+            case 4:
+                clearflag(FLAG_TEMP_5)
+        }
+        
+    }
+}
 
 script OreburghCityNorthHouse2F_Text_AllPokemonHaveASpecialPowerCalledAnAbility {
     lock
     msgbox("All Pokémon have a special power\n"
         "called an ability.",MSGBOX_NPC)
+    release
+}
+
+script OreburghCityNorthHouse2F_Text_Phanpy {
+    lock
+    playmoncry(SPECIES_PHANPY,0)
+    msgbox("Phan Phan",MSGBOX_NPC)
     release
 }
 
@@ -17,10 +37,44 @@ script OreburghCityNorthHouse2F_Text_MyFavoritePokemonAbilityIsMyPachirisusPicku
 }
 
 script OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude {
-    lock
-    msgbox("The view is good from the second floor,\n"
-        "but it’s a pain going outside.\p"
-        "If you don’t mind, how about showing me\n"
-        "a Pokémon called Geodude?",MSGBOX_NPC)
-    release
+    lockall
+    returnqueststate(QUEST_SHOW_A_PHANPY)
+    switch (var(VAR_RESULT)) {
+        case 1:
+            setspeaker("Some Guy")
+            msgbox("The view is good from the second floor,\n"
+                "but it’s a pain going outside.\p"
+                "If you don’t mind, how about showing me\n"
+                "a Pokémon called Phanpy?",MSGBOX_NPC)
+            waitmessage
+            startquest(QUEST_SHOW_A_PHANPY)
+        case 2:
+            setspeaker("Some Guy")
+            msgbox("The view is good from the second floor,\n"
+                "but it’s a pain going outside.\p"
+                "If you don’t mind, how about showing me\n"
+                "a Pokémon called Phanpy?",MSGBOX_NPC)
+            waitmessage
+            checkspecies(SPECIES_PHANPY,NO_PARTY_SCREEN)
+            if(var(VAR_RESULT) == TRUE)
+            {
+            setspeaker("Some Guy")
+            msgbox("Oh, that Pokémon!\n"
+            "thats a Phanpy!\p"
+            "It's so cute...\p"
+            "That does it!\n"
+            "I’ll go out and catch Pokémon, too!\p"
+            "Thank you, my friend!\n"
+            "This is a token of my thanks!",MSGBOX_NPC)
+            giveitem(ITEM_HEAVY_BALL,5)
+            completequest(QUEST_SHOW_A_PHANPY)
+            }
+        case 4:
+            setspeaker("That Phanpy Guy")
+            msgbox("Hey there!\p"
+            "Thanks again for showing me how\n"
+            "amazing Phanpy is!",MSGBOX_NPC)
+            waitmessage
+    }
+    releaseall
 }

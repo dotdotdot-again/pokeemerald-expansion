@@ -15,16 +15,16 @@
 #define QUEST_MENU_BUFFER_QUEST_NAME    10   //buffers a quest name to gStringVar1
 
 // quest number defines
-#define QUEST_1          0 //Complete the Pokedex
-#define QUEST_2          1
-#define QUEST_3          2
-#define QUEST_4          3
-#define QUEST_5          4
-#define QUEST_6          5
-#define QUEST_7          6
-#define QUEST_8          7
-#define QUEST_9          8
-#define QUEST_10         9
+#define QUEST_COMPLETE_DEX          0 //Complete the Pokedex
+#define QUEST_GET_FIRST_BADGE          1
+#define QUEST_GET_SECOND_BADGE          2
+#define QUEST_GET_THIRD_BADGE          3
+#define QUEST_GET_FOURTH_BADGE          4
+#define QUEST_GET_FITH_BADGE          5
+#define QUEST_GET_SEVENTH_BADGE          6
+#define QUEST_GET_FINAL_BADGE          7
+#define QUEST_DEFEAT_THE_E4          8
+#define QUEST_SHOW_A_PHANPY         9
 #define QUEST_11        10
 #define QUEST_12        11
 #define QUEST_13        12
