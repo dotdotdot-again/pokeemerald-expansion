@@ -1377,7 +1377,7 @@ static u8 CreatePokecenterMonitorSprite(s16 x, s16 y)
 {
     u8 spriteId;
     struct Sprite *sprite;
-    if (IS_FRLG)
+    if (!IS_FRLG)
     {
         spriteId = CreateSpriteAtEnd(&sSpriteTemplate_PokecenterMonitor_FrLg, x + 4, y, 0);
     }

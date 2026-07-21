@@ -134,33 +134,33 @@ questTest::
 	buffernumberstring STR_VAR_1, VAR_PLAYER_POINTS
 # 83 "data/maps/OreburghCity/scripts.pory"
 	msgbox questTest_Text_0, MSGBOX_NPC
-# 86 "data/maps/OreburghCity/scripts.pory"
-	special StartSnake
 # 87 "data/maps/OreburghCity/scripts.pory"
+	callnative PlayGengarPinballGame
+# 88 "data/maps/OreburghCity/scripts.pory"
 	waitstate
 questTest_2:
-# 89 "data/maps/OreburghCity/scripts.pory"
+# 90 "data/maps/OreburghCity/scripts.pory"
 	compare GAME_CORNER_VAR_WINNINGS, 0
 	goto_if_eq questTest_5
-# 93 "data/maps/OreburghCity/scripts.pory"
-	addvar VAR_PLAYER_POINTS, 1
 # 94 "data/maps/OreburghCity/scripts.pory"
-	addvar VAR_TEMP_5, 1
+	addvar VAR_PLAYER_POINTS, 1
 # 95 "data/maps/OreburghCity/scripts.pory"
+	addvar VAR_TEMP_5, 1
+# 96 "data/maps/OreburghCity/scripts.pory"
 	compare VAR_TEMP_5, GAME_CORNER_VAR_WINNINGS
 	goto_if_eq questTest_7
 	goto questTest_2
 
 questTest_1:
-# 100 "data/maps/OreburghCity/scripts.pory"
-	buffernumberstring STR_VAR_2, GAME_CORNER_VAR_WINNINGS
 # 101 "data/maps/OreburghCity/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_PLAYER_POINTS
+	buffernumberstring STR_VAR_2, GAME_CORNER_VAR_WINNINGS
 # 102 "data/maps/OreburghCity/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PLAYER_POINTS
+# 103 "data/maps/OreburghCity/scripts.pory"
 	msgbox questTest_Text_1, MSGBOX_NPC
-# 104 "data/maps/OreburghCity/scripts.pory"
-	setvar GAME_CORNER_VAR_WINNINGS, 0
 # 105 "data/maps/OreburghCity/scripts.pory"
+	setvar GAME_CORNER_VAR_WINNINGS, 0
+# 106 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
@@ -171,230 +171,502 @@ questTest_7:
 	goto questTest_1
 
 
-Oreburgh_TownSign_one::
-# 109 "data/maps/OreburghCity/scripts.pory"
-	lock
+hyperTrainTest::
 # 110 "data/maps/OreburghCity/scripts.pory"
-	msgbox Oreburgh_TownSign_one_Text_0, MSGBOX_SIGN
-# 112 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-Oreburgh_GymSign::
-# 116 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 117 "data/maps/OreburghCity/scripts.pory"
-	msgbox Oreburgh_GymSign_Text_0, MSGBOX_SIGN
-# 120 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-OreburghCity_Text_OreburghMiningMuseumCoalMiningAndYou::
-# 124 "data/maps/OreburghCity/scripts.pory"
-	lock
+# 111 "data/maps/OreburghCity/scripts.pory"
+	msgbox hyperTrainTest_Text_0, MSGBOX_YESNO
+# 113 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq hyperTrainTest_2
 # 125 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_OreburghMiningMuseumCoalMiningAndYou_Text_0, MSGBOX_SIGN
+	compare VAR_RESULT, 0
+	goto_if_eq hyperTrainTest_3
+hyperTrainTest_1:
+# 130 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+hyperTrainTest_2:
+# 114 "data/maps/OreburghCity/scripts.pory"
+	checkitem ITEM_BOTTLE_CAP, 0
+# 115 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq hyperTrainTest_6
+# 121 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq hyperTrainTest_7
+	goto hyperTrainTest_1
+
+hyperTrainTest_3:
+# 126 "data/maps/OreburghCity/scripts.pory"
+	msgbox hyperTrainTest_Text_3, MSGBOX_NPC
 # 127 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
+	waitmessage
+	goto hyperTrainTest_1
+
+hyperTrainTest_6:
+# 116 "data/maps/OreburghCity/scripts.pory"
+	msgbox hyperTrainTest_Text_1, MSGBOX_NPC
+# 118 "data/maps/OreburghCity/scripts.pory"
+	waitmessage
+# 119 "data/maps/OreburghCity/scripts.pory"
+	call theMainHyperTrainingPart
+	goto hyperTrainTest_1
+
+hyperTrainTest_7:
+# 122 "data/maps/OreburghCity/scripts.pory"
+	msgbox hyperTrainTest_Text_2, MSGBOX_NPC
+	goto hyperTrainTest_1
 
 
-OreburghCity_Text_OreburghMineBewareOfBusyPokemon::
-# 132 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 133 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_OreburghMineBewareOfBusyPokemon_Text_0, MSGBOX_SIGN
+theMainHyperTrainingPart::
+# 134 "data/maps/OreburghCity/scripts.pory"
+	special ChoosePartyMon
 # 135 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-Oreburgh_Younger_at_entrence::
-# 139 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 140 "data/maps/OreburghCity/scripts.pory"
-	msgbox Oreburgh_Younger_at_entrence_Text_0, MSGBOX_NPC
+	waitstate
+# 136 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
+	goto_if_eq theMainHyperTrainingPart_1
+# 141 "data/maps/OreburghCity/scripts.pory"
+	multichoice 22, 2, MULTI_PICK_A_STAT, 6
+# 142 "data/maps/OreburghCity/scripts.pory"
+	switch VAR_RESULT
 # 143 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine::
-# 147 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 148 "data/maps/OreburghCity/scripts.pory"
-	setspeaker SP_NAME_BARRY
-# 149 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine_Text_0, MSGBOX_AUTOCLOSE
+	case 0, theMainHyperTrainingPart_5
 # 163 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-OreburghCity_Text_HaveYouSeenTheVents::
-# 169 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 170 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_HaveYouSeenTheVents_Text_0, MSGBOX_NPC
+	case 1, theMainHyperTrainingPart_6
 # 172 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-OreburghCity_Text_TheseVentsExchangeTheHotAirDownBelowWithTheFreshAirOutside::
-# 176 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 177 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_TheseVentsExchangeTheHotAirDownBelowWithTheFreshAirOutside_Text_0, MSGBOX_NPC
+	case 2, theMainHyperTrainingPart_7
 # 181 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-OreburghCity_Text_TMsAreSingleUseOnlyButHMsCanBeUsedOverAndOver::
-# 185 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 186 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_TMsAreSingleUseOnlyButHMsCanBeUsedOverAndOver_Text_0, MSGBOX_NPC
+	case 3, theMainHyperTrainingPart_8
 # 190 "data/maps/OreburghCity/scripts.pory"
-	release
-	return
-
-
-OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttention::
-# 194 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 195 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttention_Text_0, MSGBOX_NPC
+	case 4, theMainHyperTrainingPart_9
 # 199 "data/maps/OreburghCity/scripts.pory"
+	case 5, theMainHyperTrainingPart_10
+# 208 "data/maps/OreburghCity/scripts.pory"
+	case 6, theMainHyperTrainingPart_11
+	return
+
+theMainHyperTrainingPart_1:
+# 137 "data/maps/OreburghCity/scripts.pory"
+	msgbox hyperTrainTest_Text_3, MSGBOX_NPC
+# 138 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
-
-OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine::
-# 204 "data/maps/OreburghCity/scripts.pory"
-	lock
-# 205 "data/maps/OreburghCity/scripts.pory"
-	goto_if_unset FLAG_ROARK_OUT_OF_THE_MINE, OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_2
-OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_1:
-# 214 "data/maps/OreburghCity/scripts.pory"
-	release
+theMainHyperTrainingPart_5:
+# 144 "data/maps/OreburghCity/scripts.pory"
+	canhypertrain STAT_HP, VAR_0x8004
+# 145 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq theMainHyperTrainingPart_13
+# 150 "data/maps/OreburghCity/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 151 "data/maps/OreburghCity/scripts.pory"
+	playse SE_USE_ITEM
+# 152 "data/maps/OreburghCity/scripts.pory"
+	waitse
+# 153 "data/maps/OreburghCity/scripts.pory"
+	playse SE_USE_ITEM
+# 154 "data/maps/OreburghCity/scripts.pory"
+	waitse
+# 155 "data/maps/OreburghCity/scripts.pory"
+	playse SE_USE_ITEM
+# 156 "data/maps/OreburghCity/scripts.pory"
+	waitse
+# 157 "data/maps/OreburghCity/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 158 "data/maps/OreburghCity/scripts.pory"
+	waitse
+# 159 "data/maps/OreburghCity/scripts.pory"
+	hypertrain STAT_HP, VAR_0x8004
+# 160 "data/maps/OreburghCity/scripts.pory"
+	removeitem ITEM_BOTTLE_CAP, 1
+# 161 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_1, MSGBOX_NPC
 	return
 
-OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_2:
+theMainHyperTrainingPart_6:
+# 164 "data/maps/OreburghCity/scripts.pory"
+	canhypertrain STAT_ATK, VAR_0x8004
+# 165 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq theMainHyperTrainingPart_16
+# 170 "data/maps/OreburghCity/scripts.pory"
+	hypertrain STAT_ATK, VAR_0x8004
+# 171 "data/maps/OreburghCity/scripts.pory"
+	removeitem ITEM_BOTTLE_CAP, 1
+	return
+
+theMainHyperTrainingPart_7:
+# 173 "data/maps/OreburghCity/scripts.pory"
+	canhypertrain STAT_DEF, VAR_0x8004
+# 174 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq theMainHyperTrainingPart_19
+# 179 "data/maps/OreburghCity/scripts.pory"
+	hypertrain STAT_DEF, VAR_0x8004
+# 180 "data/maps/OreburghCity/scripts.pory"
+	removeitem ITEM_BOTTLE_CAP, 1
+	return
+
+theMainHyperTrainingPart_8:
+# 182 "data/maps/OreburghCity/scripts.pory"
+	canhypertrain STAT_SPATK, VAR_0x8004
+# 183 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq theMainHyperTrainingPart_22
+# 188 "data/maps/OreburghCity/scripts.pory"
+	hypertrain STAT_SPATK, VAR_0x8004
+# 189 "data/maps/OreburghCity/scripts.pory"
+	removeitem ITEM_BOTTLE_CAP, 1
+	return
+
+theMainHyperTrainingPart_9:
+# 191 "data/maps/OreburghCity/scripts.pory"
+	canhypertrain STAT_SPDEF, VAR_0x8004
+# 192 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq theMainHyperTrainingPart_25
+# 197 "data/maps/OreburghCity/scripts.pory"
+	hypertrain STAT_SPDEF, VAR_0x8004
+# 198 "data/maps/OreburghCity/scripts.pory"
+	removeitem ITEM_BOTTLE_CAP, 1
+	return
+
+theMainHyperTrainingPart_10:
+# 200 "data/maps/OreburghCity/scripts.pory"
+	canhypertrain STAT_SPEED, VAR_0x8004
+# 201 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq theMainHyperTrainingPart_28
+# 206 "data/maps/OreburghCity/scripts.pory"
+	hypertrain STAT_SPEED, VAR_0x8004
 # 207 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_Text_0, MSGBOX_NPC
-	goto OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_1
+	removeitem ITEM_BOTTLE_CAP, 1
+	return
+
+theMainHyperTrainingPart_11:
+# 209 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_2, MSGBOX_NPC
+	return
+
+theMainHyperTrainingPart_13:
+# 147 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_0, MSGBOX_NPC
+	return
+
+theMainHyperTrainingPart_16:
+# 167 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_0, MSGBOX_NPC
+	return
+
+theMainHyperTrainingPart_19:
+# 176 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_0, MSGBOX_NPC
+	return
+
+theMainHyperTrainingPart_22:
+# 185 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_0, MSGBOX_NPC
+	return
+
+theMainHyperTrainingPart_25:
+# 194 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_0, MSGBOX_NPC
+	return
+
+theMainHyperTrainingPart_28:
+# 203 "data/maps/OreburghCity/scripts.pory"
+	msgbox theMainHyperTrainingPart_Text_0, MSGBOX_NPC
+	return
 
 
-OreburghCity_Text_ThatsWhatFossilsAre::
+testingAgian::
 # 218 "data/maps/OreburghCity/scripts.pory"
 	lock
 # 219 "data/maps/OreburghCity/scripts.pory"
-	msgbox OreburghCity_Text_ThatsWhatFossilsAre_Text_0, MSGBOX_NPC
+	msgbox testingAgian_Text_0, MSGBOX_NPC
+# 220 "data/maps/OreburghCity/scripts.pory"
+	callnative HyperTrain
+# 221 "data/maps/OreburghCity/scripts.pory"
+	msgbox testingAgian_Text_1, MSGBOX_NPC
 # 222 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
-OreburghCity_Text_UpAheadTheresAHugeMountainThatTowersAboveEverything::
+gameTwo::
 # 226 "data/maps/OreburghCity/scripts.pory"
 	lock
 # 227 "data/maps/OreburghCity/scripts.pory"
+	setvar VAR_TEMP_5, 0
+# 228 "data/maps/OreburghCity/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PLAYER_POINTS
+# 229 "data/maps/OreburghCity/scripts.pory"
+	msgbox questTest_Text_0, MSGBOX_NPC
+# 232 "data/maps/OreburghCity/scripts.pory"
+	callnative PlayDiglettPinballGame
+# 233 "data/maps/OreburghCity/scripts.pory"
+	waitstate
+gameTwo_2:
+# 235 "data/maps/OreburghCity/scripts.pory"
+	compare GAME_CORNER_VAR_WINNINGS, 0
+	goto_if_eq gameTwo_5
+# 239 "data/maps/OreburghCity/scripts.pory"
+	addvar VAR_PLAYER_POINTS, 1 * 2
+# 240 "data/maps/OreburghCity/scripts.pory"
+	addvar VAR_TEMP_5, 1
+# 241 "data/maps/OreburghCity/scripts.pory"
+	compare VAR_TEMP_5, GAME_CORNER_VAR_WINNINGS
+	goto_if_eq gameTwo_7
+	goto gameTwo_2
+
+gameTwo_1:
+# 246 "data/maps/OreburghCity/scripts.pory"
+	buffernumberstring STR_VAR_2, GAME_CORNER_VAR_WINNINGS
+# 247 "data/maps/OreburghCity/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_PLAYER_POINTS
+# 248 "data/maps/OreburghCity/scripts.pory"
+	msgbox questTest_Text_1, MSGBOX_NPC
+# 250 "data/maps/OreburghCity/scripts.pory"
+	setvar GAME_CORNER_VAR_WINNINGS, 0
+# 251 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+gameTwo_5:
+	goto gameTwo_1
+
+gameTwo_7:
+	goto gameTwo_1
+
+
+Oreburgh_TownSign_one::
+# 255 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 256 "data/maps/OreburghCity/scripts.pory"
+	msgbox Oreburgh_TownSign_one_Text_0, MSGBOX_SIGN
+# 258 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+Oreburgh_GymSign::
+# 262 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 263 "data/maps/OreburghCity/scripts.pory"
+	msgbox Oreburgh_GymSign_Text_0, MSGBOX_SIGN
+# 266 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_OreburghMiningMuseumCoalMiningAndYou::
+# 270 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 271 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_OreburghMiningMuseumCoalMiningAndYou_Text_0, MSGBOX_SIGN
+# 273 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_OreburghMineBewareOfBusyPokemon::
+# 278 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 279 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_OreburghMineBewareOfBusyPokemon_Text_0, MSGBOX_SIGN
+# 281 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+Oreburgh_Younger_at_entrence::
+# 285 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 286 "data/maps/OreburghCity/scripts.pory"
+	msgbox Oreburgh_Younger_at_entrence_Text_0, MSGBOX_NPC
+# 289 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine::
+# 293 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 294 "data/maps/OreburghCity/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 295 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine_Text_0, MSGBOX_AUTOCLOSE
+# 309 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_HaveYouSeenTheVents::
+# 315 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 316 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_HaveYouSeenTheVents_Text_0, MSGBOX_NPC
+# 318 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_TheseVentsExchangeTheHotAirDownBelowWithTheFreshAirOutside::
+# 322 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 323 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_TheseVentsExchangeTheHotAirDownBelowWithTheFreshAirOutside_Text_0, MSGBOX_NPC
+# 327 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_TMsAreSingleUseOnlyButHMsCanBeUsedOverAndOver::
+# 331 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 332 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_TMsAreSingleUseOnlyButHMsCanBeUsedOverAndOver_Text_0, MSGBOX_NPC
+# 336 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttention::
+# 340 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 341 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttention_Text_0, MSGBOX_NPC
+# 345 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine::
+# 350 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 351 "data/maps/OreburghCity/scripts.pory"
+	goto_if_unset FLAG_ROARK_OUT_OF_THE_MINE, OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_2
+OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_1:
+# 360 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_2:
+# 353 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_Text_0, MSGBOX_NPC
+	goto OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_1
+
+
+OreburghCity_Text_ThatsWhatFossilsAre::
+# 364 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 365 "data/maps/OreburghCity/scripts.pory"
+	msgbox OreburghCity_Text_ThatsWhatFossilsAre_Text_0, MSGBOX_NPC
+# 368 "data/maps/OreburghCity/scripts.pory"
+	release
+	return
+
+
+OreburghCity_Text_UpAheadTheresAHugeMountainThatTowersAboveEverything::
+# 372 "data/maps/OreburghCity/scripts.pory"
+	lock
+# 373 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_UpAheadTheresAHugeMountainThatTowersAboveEverything_Text_0, MSGBOX_NPC
-# 231 "data/maps/OreburghCity/scripts.pory"
+# 377 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
 OreburghCity_Text_EveryonesProudOfTheMine::
-# 235 "data/maps/OreburghCity/scripts.pory"
+# 381 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 236 "data/maps/OreburghCity/scripts.pory"
+# 382 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_EveryonesProudOfTheMine_Text_0, MSGBOX_NPC
-# 240 "data/maps/OreburghCity/scripts.pory"
+# 386 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
 OreburghCity_Text_ChopChopMachopChopChopAwayOnRocks::
-# 244 "data/maps/OreburghCity/scripts.pory"
+# 390 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 245 "data/maps/OreburghCity/scripts.pory"
+# 391 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_ChopChopMachopChopChopAwayOnRocks_Text_0, MSGBOX_NPC
-# 247 "data/maps/OreburghCity/scripts.pory"
+# 393 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
 OreburghCity_Text_ThisPileOfDirtySandIsCalledASlagHeap::
-# 251 "data/maps/OreburghCity/scripts.pory"
+# 397 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 252 "data/maps/OreburghCity/scripts.pory"
+# 398 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_ThisPileOfDirtySandIsCalledASlagHeap_Text_0, MSGBOX_NPC
-# 255 "data/maps/OreburghCity/scripts.pory"
+# 401 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
 OreburghCity_Text_HereTakeOneOfThese::
-# 259 "data/maps/OreburghCity/scripts.pory"
+# 405 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 260 "data/maps/OreburghCity/scripts.pory"
+# 406 "data/maps/OreburghCity/scripts.pory"
 	goto_if_unset FLAG_ITEM_ROUTE_111_HP_UP, OreburghCity_Text_HereTakeOneOfThese_2
-# 273 "data/maps/OreburghCity/scripts.pory"
+# 419 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_HereTakeOneOfThese_Text_1, MSGBOX_NPC
 OreburghCity_Text_HereTakeOneOfThese_1:
-# 276 "data/maps/OreburghCity/scripts.pory"
+# 422 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 OreburghCity_Text_HereTakeOneOfThese_2:
-# 262 "data/maps/OreburghCity/scripts.pory"
+# 408 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_HereTakeOneOfThese_Text_0, MSGBOX_NPC
-# 267 "data/maps/OreburghCity/scripts.pory"
+# 413 "data/maps/OreburghCity/scripts.pory"
 	waitmessage
-# 268 "data/maps/OreburghCity/scripts.pory"
+# 414 "data/maps/OreburghCity/scripts.pory"
 	giveitem ITEM_SUPER_POTION
-# 269 "data/maps/OreburghCity/scripts.pory"
+# 415 "data/maps/OreburghCity/scripts.pory"
 	setflag FLAG_ITEM_ROUTE_111_HP_UP
 	goto OreburghCity_Text_HereTakeOneOfThese_1
 
 
 OreburghCity_Text_MachopMachoChopo::
-# 280 "data/maps/OreburghCity/scripts.pory"
+# 426 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 281 "data/maps/OreburghCity/scripts.pory"
+# 427 "data/maps/OreburghCity/scripts.pory"
 	playmoncry SPECIES_MACHOP, 0
-# 282 "data/maps/OreburghCity/scripts.pory"
+# 428 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_MachopMachoChopo_Text_0, MSGBOX_NPC
-# 283 "data/maps/OreburghCity/scripts.pory"
+# 429 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
 OreburghCity_Text_MachopGwoohGogogooh::
-# 287 "data/maps/OreburghCity/scripts.pory"
+# 433 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 288 "data/maps/OreburghCity/scripts.pory"
+# 434 "data/maps/OreburghCity/scripts.pory"
 	playmoncry SPECIES_MACHOP, 0
-# 289 "data/maps/OreburghCity/scripts.pory"
+# 435 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_MachopGwoohGogogooh_Text_0, MSGBOX_NPC
-# 290 "data/maps/OreburghCity/scripts.pory"
+# 436 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
 
 OreburghCity_Text_MachopPigyooh::
-# 294 "data/maps/OreburghCity/scripts.pory"
+# 440 "data/maps/OreburghCity/scripts.pory"
 	lock
-# 295 "data/maps/OreburghCity/scripts.pory"
+# 441 "data/maps/OreburghCity/scripts.pory"
 	playmoncry SPECIES_MACHOP, 0
-# 296 "data/maps/OreburghCity/scripts.pory"
+# 442 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_Text_MachopPigyooh_Text_0, MSGBOX_NPC
-# 297 "data/maps/OreburghCity/scripts.pory"
+# 443 "data/maps/OreburghCity/scripts.pory"
 	release
 	return
 
@@ -408,39 +680,80 @@ questTest_Text_0:
 	.string "you have {STR_VAR_1} points!\nplay my game!$"
 
 questTest_Text_1:
-# 102 "data/maps/OreburghCity/scripts.pory"
+# 103 "data/maps/OreburghCity/scripts.pory"
 	.string "You got {STR_VAR_2}\n"
 	.string "You have {STR_VAR_1} points$"
 
+hyperTrainTest_Text_0:
+# 111 "data/maps/OreburghCity/scripts.pory"
+	.string "Do you want me to hyper train one of\n"
+	.string "your Pokémon's stats?\p$"
+
+hyperTrainTest_Text_1:
+# 116 "data/maps/OreburghCity/scripts.pory"
+	.string "Ok, that'll just be one bottle cap.\n"
+	.string "Which Pokémon would you like to train?$"
+
+hyperTrainTest_Text_2:
+# 122 "data/maps/OreburghCity/scripts.pory"
+	.string "Sorry you don't have any bottle caps.$"
+
+hyperTrainTest_Text_3:
+# 126 "data/maps/OreburghCity/scripts.pory"
+	.string "Have a nice day.$"
+
+theMainHyperTrainingPart_Text_0:
+# 147 "data/maps/OreburghCity/scripts.pory"
+	.string "sorgy too high$"
+
+theMainHyperTrainingPart_Text_1:
+# 161 "data/maps/OreburghCity/scripts.pory"
+	.string "All done!\n"
+	.string "Have a nice day.$"
+
+theMainHyperTrainingPart_Text_2:
+# 209 "data/maps/OreburghCity/scripts.pory"
+	.string "Change your mind?\n"
+	.string "That's ok, here's your bottle cap back\l"
+	.string "have a nice day.$"
+
+testingAgian_Text_0:
+# 219 "data/maps/OreburghCity/scripts.pory"
+	.string "hyper training test!$"
+
+testingAgian_Text_1:
+# 221 "data/maps/OreburghCity/scripts.pory"
+	.string "bye bye$"
+
 Oreburgh_TownSign_one_Text_0:
-# 110 "data/maps/OreburghCity/scripts.pory"
+# 256 "data/maps/OreburghCity/scripts.pory"
 	.string "Oreburgh City\n"
 	.string "City of Energy$"
 
 Oreburgh_GymSign_Text_0:
-# 117 "data/maps/OreburghCity/scripts.pory"
+# 263 "data/maps/OreburghCity/scripts.pory"
 	.string "Oreburgh City Pokémon Gym\n"
 	.string "Leader: Roark\l"
 	.string "“Call me Roark the Rock!”$"
 
 OreburghCity_Text_OreburghMiningMuseumCoalMiningAndYou_Text_0:
-# 125 "data/maps/OreburghCity/scripts.pory"
+# 271 "data/maps/OreburghCity/scripts.pory"
 	.string "Oreburgh Mining Museum\n"
 	.string "“Coal Mining and You!”$"
 
 OreburghCity_Text_OreburghMineBewareOfBusyPokemon_Text_0:
-# 133 "data/maps/OreburghCity/scripts.pory"
+# 279 "data/maps/OreburghCity/scripts.pory"
 	.string "Oreburgh Mine\n"
 	.string "Beware of Busy Pokémon!$"
 
 Oreburgh_Younger_at_entrence_Text_0:
-# 140 "data/maps/OreburghCity/scripts.pory"
+# 286 "data/maps/OreburghCity/scripts.pory"
 	.string "Can I see your Trainer Case?\n"
 	.string "It's got the Gym Badge you just\n"
 	.string "won, right?$"
 
 OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine_Text_0:
-# 149 "data/maps/OreburghCity/scripts.pory"
+# 295 "data/maps/OreburghCity/scripts.pory"
 	.string "Hunh?\p"
 	.string "Oh, it’s you, {PLAYER}!\n"
 	.string "You finally got here?♀"
@@ -457,69 +770,69 @@ OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine_Text_0:
 	.string "you’d better go off to the mine!$"
 
 OreburghCity_Text_HaveYouSeenTheVents_Text_0:
-# 170 "data/maps/OreburghCity/scripts.pory"
+# 316 "data/maps/OreburghCity/scripts.pory"
 	.string "Have you seen the vents?\n"
 	.string "They release steam from down below.$"
 
 OreburghCity_Text_TheseVentsExchangeTheHotAirDownBelowWithTheFreshAirOutside_Text_0:
-# 177 "data/maps/OreburghCity/scripts.pory"
+# 323 "data/maps/OreburghCity/scripts.pory"
 	.string "These vents exchange the hot air\n"
 	.string "down below with the fresh air outside.\p"
 	.string "Looking down them gives me the urge\n"
 	.string "to start yelling into ’em! Hello!$"
 
 OreburghCity_Text_TMsAreSingleUseOnlyButHMsCanBeUsedOverAndOver_Text_0:
-# 186 "data/maps/OreburghCity/scripts.pory"
+# 332 "data/maps/OreburghCity/scripts.pory"
 	.string "TMs are single use only, but HMs\n"
 	.string "can be used over and over.\p"
 	.string "It’s tricky trying to decide which\n"
 	.string "Pokémon should learn what moves.$"
 
 OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttention_Text_0:
-# 195 "data/maps/OreburghCity/scripts.pory"
+# 341 "data/maps/OreburghCity/scripts.pory"
 	.string "When I run around with my Running\n"
 	.string "Shoes on, I’m the center of attention!\p"
 	.string "...At least that’s what it feels like.\n"
 	.string "There’s always someone looking at me.$"
 
 OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine_Text_0:
-# 207 "data/maps/OreburghCity/scripts.pory"
+# 353 "data/maps/OreburghCity/scripts.pory"
 	.string "The Gym Leader went off to work in\n"
 	.string "the mine.$"
 
 OreburghCity_Text_ThatsWhatFossilsAre_Text_0:
-# 219 "data/maps/OreburghCity/scripts.pory"
+# 365 "data/maps/OreburghCity/scripts.pory"
 	.string "Natural time capsules buried many,\n"
 	.string "many years ago...\p"
 	.string "That’s what Fossils are.$"
 
 OreburghCity_Text_UpAheadTheresAHugeMountainThatTowersAboveEverything_Text_0:
-# 227 "data/maps/OreburghCity/scripts.pory"
+# 373 "data/maps/OreburghCity/scripts.pory"
 	.string "Up ahead there’s a huge mountain\n"
 	.string "that towers above everything.\p"
 	.string "It divides Sinnoh into two distinct\n"
 	.string "halves.$"
 
 OreburghCity_Text_EveryonesProudOfTheMine_Text_0:
-# 236 "data/maps/OreburghCity/scripts.pory"
+# 382 "data/maps/OreburghCity/scripts.pory"
 	.string "Everyone’s proud of the mine.\p"
 	.string "They’re digging for coal under the\n"
 	.string "sea as we speak...\p"
 	.string "It’s amazing how they do it!$"
 
 OreburghCity_Text_ChopChopMachopChopChopAwayOnRocks_Text_0:
-# 245 "data/maps/OreburghCity/scripts.pory"
+# 391 "data/maps/OreburghCity/scripts.pory"
 	.string "Chop, chop, MACHOP!\n"
 	.string "Chop, chop away on rocks!~$"
 
 OreburghCity_Text_ThisPileOfDirtySandIsCalledASlagHeap_Text_0:
-# 252 "data/maps/OreburghCity/scripts.pory"
+# 398 "data/maps/OreburghCity/scripts.pory"
 	.string "This pile of dirty sand is called\n"
 	.string "a slag heap.\p"
 	.string "It’s the waste from sorting coal.$"
 
 OreburghCity_Text_HereTakeOneOfThese_Text_0:
-# 262 "data/maps/OreburghCity/scripts.pory"
+# 408 "data/maps/OreburghCity/scripts.pory"
 	.string "There’s no question. This is hard,\n"
 	.string "hard work.\p"
 	.string "But working alongside Pokémon...\n"
@@ -527,18 +840,18 @@ OreburghCity_Text_HereTakeOneOfThese_Text_0:
 	.string "Here, take one of these.$"
 
 OreburghCity_Text_HereTakeOneOfThese_Text_1:
-# 273 "data/maps/OreburghCity/scripts.pory"
+# 419 "data/maps/OreburghCity/scripts.pory"
 	.string "Feeling hale and hearty puts a smile\n"
 	.string "on my face. And that makes me happy.$"
 
 OreburghCity_Text_MachopMachoChopo_Text_0:
-# 282 "data/maps/OreburghCity/scripts.pory"
+# 428 "data/maps/OreburghCity/scripts.pory"
 	.string "Macho! Chopo!$"
 
 OreburghCity_Text_MachopGwoohGogogooh_Text_0:
-# 289 "data/maps/OreburghCity/scripts.pory"
+# 435 "data/maps/OreburghCity/scripts.pory"
 	.string "Gwooh! Gogogooh!$"
 
 OreburghCity_Text_MachopPigyooh_Text_0:
-# 296 "data/maps/OreburghCity/scripts.pory"
+# 442 "data/maps/OreburghCity/scripts.pory"
 	.string "Pigyooh!$"

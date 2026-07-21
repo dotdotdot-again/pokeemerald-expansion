@@ -1,1 +1,209 @@
 mapscripts OreburghPokemonCenter_F2_MapScripts {}
+
+script OreburghPokemonCenter_F2_Welcome {
+    lock
+    msgbox("Hello and welcome to the Pok\emon\n"
+    "trainer assistance club!",MSGBOX_NPC)
+    release
+}
+
+script OreburghPokemonCenter_F2_Shop{
+    lock
+    faceplayer
+    message("Welcome to the Trainer assistance club\n"
+    "How may I serve you?")
+    waitmessage
+    pokemart(blueMints)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+mart blueMints {
+    ITEM_BOLD_MINT
+    ITEM_IMPISH_MINT
+    ITEM_LAX_MINT
+    ITEM_RELAXED_MINT
+    ITEM_SERIOUS_MINT
+}
+
+script moveTester {
+    lock
+    msgbox("testing move tutur stuff",MSGBOX_NPC)
+    move_tutor(MOVE_THUNDER_PUNCH,"want teach msg","mon selectMSG",declineJmp,TaughtJmp)
+    
+    
+}
+
+script declineJmp {
+    msgbox("decline Jump?",MSGBOX_NPC)
+    release
+}
+
+script TaughtJmp {
+    msgbox("taught jump?",MSGBOX_NPC)
+    release
+}
+
+
+script Oreburgh_Move_Relearn {
+    lock
+    //setmoverelearnerstate(MOVE_RELEARNER_EGG_MOVES)
+    setmoverelearnerstate(MOVE_RELEARNER_LEVEL_UP_MOVES)
+    msgbox("Hello, would you like me to help your\n"
+    "Pok\emon remember a move?",MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 1)
+            {
+                checkspecies_choose(OPEN_PARTY_SCREEN)
+                if(var(VAR_RESULT) == PARTY_NOTHING_CHOSEN)
+                {
+                    msgbox("Have a nice day.",MSGBOX_NPC)
+                    release
+                }
+                else
+                {
+                    special(IsSelectedMonEgg)
+                    if(var(VAR_RESULT) == TRUE)
+                    {
+                    msgbox("Sorry I can't teach a move to an egg",MSGBOX_NPC)
+                    release 
+                    }
+                    else
+                    {
+                        special(HasMovesToRelearn)
+                            if(var(VAR_RESULT) == TRUE)
+                            {
+                                special(TeachMoveRelearnerMove)
+                                waitstate
+                                release
+                            }
+                            elif(var(VAR_RESULT) == FALSE)
+                            {
+                                msgbox("Sorry, it seems this Pok\emon doesn't\n"
+                                "have any movies it can relearn.",MSGBOX_NPC)
+                                release 
+                            }
+                            else
+                            { msgbox("Have a nice day.",MSGBOX_NPC)
+                                release 
+                            }
+                    }
+                }
+            }
+            elif(var(VAR_RESULT) == 0)
+            {
+                    msgbox("Have a nice day.",MSGBOX_NPC)
+                    release
+            }
+
+
+}
+
+script hyperTrainTestReal {
+    lock
+    msgbox("Do you want me to hyper train one of\n"
+    "your Pok\emon's stats?\p",MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 1) {
+        checkitem(ITEM_BOTTLE_CAP,1)
+        if(var(VAR_RESULT) == 1) {
+            msgbox("Ok, that'll just be one bottle cap.\n"
+            "Which Pok\emon would you like to train?",MSGBOX_NPC)
+            waitmessage
+            call(theMainHyperTrainingRealPart2)
+        }
+        elif(var(VAR_RESULT) == 0) {
+             msgbox("Sorry you don't have any bottle caps.",MSGBOX_NPC)
+        }
+    }
+    elif(var(VAR_RESULT) == 0) {
+        msgbox("Have a nice day.",MSGBOX_NPC)
+        waitmessage
+    }
+
+    release
+}
+
+script theMainHyperTrainingRealPart2 {
+    special(ChoosePartyMon)
+    waitstate
+        if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
+            msgbox("Have a nice day.",MSGBOX_NPC)
+            release
+        }
+        else{
+            multichoice(18,2,MULTI_PICK_A_STAT,6)
+            switch(var(VAR_RESULT)) {
+                case 0:
+                canhypertrain(STAT_HP,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                fadescreen(FADE_TO_BLACK)
+                playse(SE_USE_ITEM)
+                waitse
+                playse(SE_USE_ITEM)
+                waitse
+                playse(SE_USE_ITEM)
+                waitse
+                fadescreen(FADE_FROM_BLACK)
+                waitse
+                hypertrain(STAT_HP,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                msgbox("All done!\n"
+                "Have a nice day.",MSGBOX_NPC)
+                case 1:
+                canhypertrain(STAT_ATK,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_ATK,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 2:
+                canhypertrain(STAT_DEF,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_DEF,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 3:
+                canhypertrain(STAT_SPATK,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_SPATK,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 4:
+                canhypertrain(STAT_SPDEF,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_SPDEF,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 5:
+                canhypertrain(STAT_SPEED,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_SPEED,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 6:
+                msgbox("Change your mind?\n"
+                "That's ok, here's your bottle cap back\l"
+                "have a nice day.",MSGBOX_NPC)
+            }
+        }
+    
+}
+

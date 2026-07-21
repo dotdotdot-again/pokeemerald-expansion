@@ -1171,6 +1171,14 @@ const u8 gText_BattleItems[] = _("Held Items");
 const u8 gText_Fire[] = _("Fire");
 const u8 gText_Water[] = _("Water");
 const u8 gText_Grass[] = _("Grass");
+//Hyper Training
+const u8 gText_Hyper_HP[] = _("HP");
+const u8 gText_Hyper_Atk[] = _("Attack");
+const u8 gText_Hyper_Def[] = _("Defence");
+const u8 gText_Hyper_SpAtk[] = _("Sp.Attack");
+const u8 gText_Hyper_SpDef[] = _("Sp.Defence");
+const u8 gText_Hyper_Spd[] = _("Speed");
+const u8 gText_Hyper_Nvm[] = _("Nevermind");
 
 //// side quest data
 //generic strings

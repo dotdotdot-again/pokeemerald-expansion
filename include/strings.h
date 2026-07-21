@@ -2358,5 +2358,13 @@ extern const u8 gText_Fire[];
 extern const u8 gText_Water[];
 extern const u8 gText_Grass[];
 
+extern const u8 gText_Hyper_HP[];
+extern const u8 gText_Hyper_Atk[];
+extern const u8 gText_Hyper_Def[];
+extern const u8 gText_Hyper_SpAtk[];
+extern const u8 gText_Hyper_SpDef[];
+extern const u8 gText_Hyper_Spd[];
+extern const u8 gText_Hyper_Nvm[];
+
 
 #endif // GUARD_STRINGS_H

@@ -1,1 +1,38 @@
 mapscripts SandgemPokemonCenter_F2_MapScripts {}
+
+script Sandgem_Pokecenter_F2_ShopOne{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Oreburg_Secondary)
+    msgbox("Please come again.")
+    release
+    end
+}
+
+mart Sandgem_F2_ShopOne {
+	ITEM_SERIOUS_MINT
+	ITEM_TIMID_MINT
+	ITEM_HASTY_MINT
+	ITEM_JOLLY_MINT
+    ITEM_NAIVE_MINT
+}
+
+script Sandgem_Pokecenter_F2_ShopTwo{
+    lock
+    faceplayer
+    message("How may I serve you?")
+    waitmessage
+    pokemart(Oreburg_Secondary)
+    msgbox("Please come again.")
+    release
+    end
+}
+mart Sandgem_F2_ShopTwo {
+	ITEM_SERIOUS_MINT
+	ITEM_TIMID_MINT
+	ITEM_HASTY_MINT
+	ITEM_JOLLY_MINT
+    ITEM_NAIVE_MINT
+}

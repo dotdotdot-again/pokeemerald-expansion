@@ -83,7 +83,8 @@ script questTest {
     msgbox("you have {STR_VAR_1} points!\nplay my game!",MSGBOX_NPC)
     //questmenu(QUEST_MENU_COMPLETE_QUEST,QUEST_COMPLETE_DEX)
     //giveitem(ITEM_COIN_CASE)
-    special(StartSnake)
+    //special(StartFlappyBird)
+    callnative(PlayGengarPinballGame)
     waitstate
     while{
         if(var(GAME_CORNER_VAR_WINNINGS) == 0)
@@ -91,6 +92,151 @@ script questTest {
             break
         }
         addvar(VAR_PLAYER_POINTS, 1)
+        addvar(VAR_TEMP_5, 1)
+        if(var(VAR_TEMP_5) == GAME_CORNER_VAR_WINNINGS)
+        {
+            break
+        }
+    }
+    buffernumberstring(STR_VAR_2, GAME_CORNER_VAR_WINNINGS)
+    buffernumberstring(STR_VAR_1, VAR_PLAYER_POINTS)
+    msgbox("You got {STR_VAR_2}\n"
+    "You have {STR_VAR_1} points",MSGBOX_NPC)
+    setvar(GAME_CORNER_VAR_WINNINGS,0)
+    release
+}
+
+script hyperTrainTest {
+    lock
+    msgbox("Do you want me to hyper train one of\n"
+    "your Pok\emon's stats?\p",MSGBOX_YESNO)
+    if(var(VAR_RESULT) == 1) {
+        checkitem(ITEM_BOTTLE_CAP,0)
+        if(var(VAR_RESULT) == 1) {
+            msgbox("Ok, that'll just be one bottle cap.\n"
+            "Which Pok\emon would you like to train?",MSGBOX_NPC)
+            waitmessage
+            call(theMainHyperTrainingPart)
+        }
+        elif(var(VAR_RESULT) == 0) {
+             msgbox("Sorry you don't have any bottle caps.",MSGBOX_NPC)
+        }
+    }
+    elif(var(VAR_RESULT) == 0) {
+        msgbox("Have a nice day.",MSGBOX_NPC)
+        waitmessage
+    }
+
+    release
+}
+
+script theMainHyperTrainingPart {
+    special(ChoosePartyMon)
+    waitstate
+        if(var(VAR_0x8004) == PARTY_NOTHING_CHOSEN){
+            msgbox("Have a nice day.",MSGBOX_NPC)
+            release
+        }
+        else{
+            multichoice(22,2,MULTI_PICK_A_STAT,6)
+            switch(var(VAR_RESULT)) {
+                case 0:
+                canhypertrain(STAT_HP,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                fadescreen(FADE_TO_BLACK)
+                playse(SE_USE_ITEM)
+                waitse
+                playse(SE_USE_ITEM)
+                waitse
+                playse(SE_USE_ITEM)
+                waitse
+                fadescreen(FADE_FROM_BLACK)
+                waitse
+                hypertrain(STAT_HP,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                msgbox("All done!\n"
+                "Have a nice day.",MSGBOX_NPC)
+                case 1:
+                canhypertrain(STAT_ATK,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_ATK,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 2:
+                canhypertrain(STAT_DEF,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_DEF,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 3:
+                canhypertrain(STAT_SPATK,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_SPATK,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 4:
+                canhypertrain(STAT_SPDEF,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_SPDEF,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 5:
+                canhypertrain(STAT_SPEED,VAR_0x8004)
+                if(var(VAR_RESULT) == FALSE)
+                {
+                    msgbox("sorgy too high",MSGBOX_NPC)
+                    break
+                }
+                hypertrain(STAT_SPEED,VAR_0x8004)
+                removeitem(ITEM_BOTTLE_CAP,1)
+                case 6:
+                msgbox("Change your mind?\n"
+                "That's ok, here's your bottle cap back\l"
+                "have a nice day.",MSGBOX_NPC)
+            }
+        }
+    
+}
+
+script testingAgian {
+        lock
+    msgbox("hyper training test!",MSGBOX_NPC)
+    callnative(HyperTrain)
+    msgbox("bye bye",MSGBOX_NPC)
+    release
+}
+
+script gameTwo {
+    lock
+    setvar(VAR_TEMP_5,0)
+    buffernumberstring(STR_VAR_1, VAR_PLAYER_POINTS)
+    msgbox("you have {STR_VAR_1} points!\nplay my game!",MSGBOX_NPC)
+    //questmenu(QUEST_MENU_COMPLETE_QUEST,QUEST_COMPLETE_DEX)
+    //giveitem(ITEM_COIN_CASE)
+    callnative(PlayDiglettPinballGame)
+    waitstate
+    while{
+        if(var(GAME_CORNER_VAR_WINNINGS) == 0)
+        {
+            break
+        }
+        addvar(VAR_PLAYER_POINTS, 1 * 2)
         addvar(VAR_TEMP_5, 1)
         if(var(VAR_TEMP_5) == GAME_CORNER_VAR_WINNINGS)
         {

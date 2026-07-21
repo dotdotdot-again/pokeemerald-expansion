@@ -190,7 +190,7 @@ void DrawMoneyBox(int amount, u8 x, u8 y)
 void HideMoneyBox(void)
 {
     RemoveMoneyLabelObject();
-    ClearStdWindowAndFrameToTransparent(sMoneyBoxWindowId, FALSE);
+    ClearStdWindowAndFrameToTransparent(sMoneyBoxWindowId, TRUE);
     CopyWindowToVram(sMoneyBoxWindowId, COPYWIN_GFX);
     RemoveWindow(sMoneyBoxWindowId);
 }

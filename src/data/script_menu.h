@@ -1134,6 +1134,17 @@ static const struct MenuAction sMultichoiceList_fire_water_grass[] =
     {gText_Grass},
 };
 
+static const struct MenuAction sMultichoiceList_hypertrain_stat[] =
+{
+    {gText_Hyper_HP},
+    {gText_Hyper_Atk},
+    {gText_Hyper_Def},
+    {gText_Hyper_SpAtk},
+    {gText_Hyper_SpDef},
+    {gText_Hyper_Spd},
+    {gText_Hyper_Nvm},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -1301,7 +1312,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
-    [MULTI_FIRE_WATER_GRASS]                    = MULTICHOICE(sMultichoiceList_fire_water_grass),
+    [MULTI_FIRE_WATER_GRASS]                           = MULTICHOICE(sMultichoiceList_fire_water_grass),
+    [MULTI_PICK_A_STAT]                                = MULTICHOICE(sMultichoiceList_hypertrain_stat),
 };
 
 const u8 *const gStdStrings[] =
