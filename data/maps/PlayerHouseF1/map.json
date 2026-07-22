@@ -41,6 +41,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_UNUSED_0x020"
+    },
+    {
+      "local_id": "Moms_Cat",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLAMEOW)",
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PlayerHouseF1_Meow",
+      "flag": "0"
     }
   ],
   "warp_events": [

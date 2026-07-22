@@ -248,7 +248,7 @@ script Jubilife_Enterence_LuDa_Event_Cont {
         "Incidentally, you are Trainers, yes?\n"
         "Perhaps you can make use of this?")
 		waitmessage
-		giveitem(ITEM_FAME_CHECKER)
+		giveitem(ITEM_RAINBOW_PASS)
 	setspeaker(SP_NAME_LOOKER)
 		msgbox("That Vs. Recorder, it is a nifty device\n"
         "for recording a match.\p"

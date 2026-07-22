@@ -276,3 +276,10 @@ script after_starter {
     releaseall
 }
 
+script PlayerHouseF1_Meow {
+    lock
+    playmoncry(SPECIES_GLAMEOW,0)
+    msgbox("Meorw!",MSGBOX_NPC)
+    release
+}
+

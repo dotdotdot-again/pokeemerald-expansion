@@ -367,6 +367,18 @@ after_starter::
 	return
 
 
+PlayerHouseF1_Meow::
+# 280 "data/maps/PlayerHouseF1/scripts.pory"
+	lock
+# 281 "data/maps/PlayerHouseF1/scripts.pory"
+	playmoncry SPECIES_GLAMEOW, 0
+# 282 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox PlayerHouseF1_Meow_Text_0, MSGBOX_NPC
+# 283 "data/maps/PlayerHouseF1/scripts.pory"
+	release
+	return
+
+
 # 19 "data/maps/PlayerHouseF1/scripts.pory"
 EveryFrameMom_Movement_0:
 # 19 "data/maps/PlayerHouseF1/scripts.pory"
@@ -716,3 +728,7 @@ after_starter_Text_0:
 	.string "His lab is in Sandgem Town, isn’t it?\p"
 	.string "Now that you have your own Pokémon,\n"
 	.string "the tall grass won’t be so threatening.$"
+
+PlayerHouseF1_Meow_Text_0:
+# 282 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Meorw!$"

@@ -130,7 +130,7 @@ Jubilife_Enterence_LuDa_Event_Cont_6:
 # 250 "data/maps/JubilifeCity/scripts.pory"
 	waitmessage
 # 251 "data/maps/JubilifeCity/scripts.pory"
-	giveitem ITEM_FAME_CHECKER
+	giveitem ITEM_RAINBOW_PASS
 # 252 "data/maps/JubilifeCity/scripts.pory"
 	setspeaker SP_NAME_LOOKER
 # 253 "data/maps/JubilifeCity/scripts.pory"
