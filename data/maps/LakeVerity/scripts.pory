@@ -2,9 +2,8 @@ mapscripts LakeVerity_MapScripts {}
 
 script meetCyrus_lake_ver {
     lockall
-    
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2))
-    applymovement(LakeVerBarry, moves(walk_up*2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,delay_16*6))
+    applymovement(LakeVerBarry, moves(walk_up*2,delay_16*6))
     waitmovementall
     setspeaker(SP_NAME_BARRY)
     msgbox("What's going on...?",MSGBOX_AUTOCLOSE)

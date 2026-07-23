@@ -48,7 +48,6 @@ gText_Birch_YourePlayer::
 	.string "OK...\n"
 	.string "So you're {PLAYER}{KUN}?\p"
 	.string "A fine name that is!\p"
-	.string "INSERT BARRY STUFF HERE LOL\p"
 	.string "$"
 
 gText_Birch_AreYouReady::

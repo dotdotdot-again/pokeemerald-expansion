@@ -165,7 +165,7 @@ static const struct WindowTemplate sWindowTemplate_StartClock = {
     .bg = 0, 
     .tilemapLeft = 1, 
     .tilemapTop = 1, 
-    .width = 13, // If you want to shorten the dates to Sat., Sun., etc., change this to 9
+    .width = 9, // If you want to shorten the dates to Sat., Sun., etc., change this to 9
     .height = 2, 
     .paletteNum = 15,
     .baseBlock = 0x30
@@ -496,15 +496,15 @@ static void ShowPyramidFloorWindow(void)
 }
 
 // If you want to shorten the dates to Sat., Sun., etc., change this to 70
-#define CLOCK_WINDOW_WIDTH 104
+#define CLOCK_WINDOW_WIDTH 70
 
-const u8 gText_Saturday[] = _("Saturday,");
-const u8 gText_Sunday[] = _("Sunday,");
-const u8 gText_Monday[] = _("Monday,");
-const u8 gText_Tuesday[] = _("Tuesday,");
-const u8 gText_Wednesday[] = _("Wednesday,");
-const u8 gText_Thursday[] = _("Thursday,");
-const u8 gText_Friday[] = _("Friday,");
+const u8 gText_Saturday[] = _("Sat,");
+const u8 gText_Sunday[] = _("Sun,");
+const u8 gText_Monday[] = _("Mon,");
+const u8 gText_Tuesday[] = _("Tue,");
+const u8 gText_Wednesday[] = _("Wed,");
+const u8 gText_Thursday[] = _("Thu,");
+const u8 gText_Friday[] = _("Fri,");
 
 const u8 *const gDayNameStringsTable[7] = {
     gText_Saturday,
@@ -570,11 +570,6 @@ static void RemoveExtraStartMenuWindows(void)
         //CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
         RemoveWindow(sSafariBallsWindowId);
     }
-    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
-    {
-        ClearStdWindowAndFrameToTransparent(sBattlePyramidFloorWindowId, FALSE);
-        RemoveWindow(sBattlePyramidFloorWindowId);
-    }
     
     ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
     // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
@@ -634,11 +629,10 @@ static bool32 InitStartMenuStep(void)
     case 3:
         if (GetSafariZoneFlag())
             ShowSafariBallsWindow();
-        if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
-            ShowPyramidFloorWindow();
         sInitStartMenuData[0]++;
         break;
     case 4:
+        //if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
         ShowTimeWindow();
         sInitStartMenuData[0]++;
         break;
@@ -809,7 +803,7 @@ static bool8 StartMenuPokemonCallback(void)
         return TRUE;
     }
 
-    if (!GetSafariZoneFlag() && !InBattlePyramid() && gSaveBlock2Ptr->playTimeSeconds == 0) 
+    if (!GetSafariZoneFlag() && gSaveBlock2Ptr->playTimeSeconds == 0) 
     {
         RemoveExtraStartMenuWindows();
         ShowTimeWindow();

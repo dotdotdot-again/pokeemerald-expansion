@@ -611,6 +611,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_DP_Schoolgirl,            OBJ_EVENT_PAL_DP_SCHOOLGIRL},
     {gObjectEventPal_DP_President,            OBJ_EVENT_PAL_DP_PRESIDENT},
     {gObjectEventPal_DP_New_Prof,            OBJ_EVENT_PAL_DP_NEW_PROF},
+    {gObjectEventPal_DP_Rowns_Bag,            OBJ_EVENT_PAL_ROWN_BAG},
 //#if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
     {gObjectEventPal_PlayerReflectionFrlg,  OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION},

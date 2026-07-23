@@ -38,6 +38,7 @@ script EveryFrameMom {
     {
         //fadescreen(FADE_TO_BLACK)
         setobjectxy(Mom,2,4)
+        setobjectxy(Moms_Cat,1,4)
         applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
         //fadescreen(FADE_TO_FROM)
         call(after_starter)
@@ -252,10 +253,10 @@ script triggerMomTryToLeave{
 }
 
 script after_starter {
-    applymovement(Mom, moves(walk_up,delay_16,walk_left,face_up,delay_16,walk_right*3,walk_down,walk_right,walk_down*3))
-    waitmovement
-    applymovement(Mom, moves(walk_right*2,walk_down,face_left))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3,walk_down,walk_down,walk_right))
+    playmoncry(SPECIES_GLAMEOW,0)
+    applymovement(Mom, moves(walk_up,delay_16,walk_left,face_up,delay_16,walk_right*3,walk_down,walk_right,walk_down*3,walk_right*2,walk_down,face_left))
+    applymovement(Moms_Cat, moves(jump_in_place_up*2,delay_16*3,walk_up,walk_right*3,walk_down,walk_right,walk_down*3,walk_right*3,walk_down,face_left,jump_in_place_left*2))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16*9,walk_right*3,walk_down,walk_down,walk_right))
     waitmovementall
     setspeaker(SP_NAME_MOM)
     msgbox("What’s the matter, dear?\p"
@@ -272,14 +273,56 @@ script after_starter {
         "His lab is in Sandgem Town, isn’t it?\p"
         "Now that you have your own Pokémon,\n"
         "the tall grass won’t be so threatening.")
+    setspeaker(SP_NAME_MOM)
+    msgbox("Oh, and why don't you try letting\n"
+        "your Pokémon walk around with you\l"
+        "outside of it's ball for a bit?\p"
+        "It may help the two of you grow\n"
+        "closer together.\p"
+        "And I'm sure they wouldn't mind\n"
+        "getting to stretch their legs\l"
+        "a little bit too.")
+    waitmessage
+    applymovement(Mom, moves(face_right))
+    setspeaker(SP_NAME_MOM)
+    msgbox("I know sweet little Glammy here loves\n"
+    "getting to walk around out of her ball,\l"
+    "don't you Glammy?")
+    waitmessage
+    playmoncry(SPECIES_GLAMEOW,0)
+    applymovement(Moms_Cat, moves(emote_heart,jump_in_place_left*2))
+    setspeaker("Glammy")
+    msgbox("Mrow Meow!")
+    waitmessage
+    applymovement(Mom, moves(face_left))
+    setspeaker(SP_NAME_MOM)
+    msgbox("And if you need any healing just come\n"
+    "back to me and I'll fix you two right up.",MSGBOX_AUTOCLOSE)
+    waitmessage
     setvar(VAR_TWINLEAF_INTRO_STATE, 8)
     releaseall
 }
 
 script PlayerHouseF1_Meow {
     lock
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 8){
     playmoncry(SPECIES_GLAMEOW,0)
-    msgbox("Meorw!",MSGBOX_NPC)
-    release
-}
+    setspeaker("Glammy")
+    applymovement(Moms_Cat, moves(emote_heart))
+    msgbox("Meorw Merooow!!\p"
+    "\qoGlammy seems happy you\n"
+    "are ok.\qc",MSGBOX_NPC)
 
+    }
+    else{
+    playmoncry(SPECIES_GLAMEOW,0)
+    setspeaker("Glammy")
+    applymovement(Moms_Cat, moves(emote_heart))
+    msgbox("Meorw!\p"
+    "\qoGlammy seems happy to\n"
+    "see you\qc",MSGBOX_NPC)
+    release
+
+    }
+
+}

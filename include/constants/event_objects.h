@@ -738,6 +738,7 @@ enum
 #define OBJ_EVENT_PAL_DP_SCHOOLGIRL                 0x11B0
 #define OBJ_EVENT_PAL_DP_PRESIDENT                 0x11B1
 #define OBJ_EVENT_PAL_DP_NEW_PROF                 0x11C1
+#define OBJ_EVENT_PAL_ROWN_BAG                 0x11D1
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #if OW_FOLLOWERS_POKEBALLS

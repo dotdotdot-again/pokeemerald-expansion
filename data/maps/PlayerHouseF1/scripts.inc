@@ -24,7 +24,7 @@ EveryFrameMom::
 # 37 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 7
 	goto_if_eq EveryFrameMom_2
-# 47 "data/maps/PlayerHouseF1/scripts.pory"
+# 48 "data/maps/PlayerHouseF1/scripts.pory"
 	setvar VAR_TEMP_2, 1
 	return
 
@@ -67,315 +67,367 @@ EveryFrameMom_2:
 # 40 "data/maps/PlayerHouseF1/scripts.pory"
 	setobjectxy Mom, 2, 4
 # 41 "data/maps/PlayerHouseF1/scripts.pory"
+	setobjectxy Moms_Cat, 1, 4
+# 42 "data/maps/PlayerHouseF1/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, EveryFrameMom_Movement_4
-# 43 "data/maps/PlayerHouseF1/scripts.pory"
+# 44 "data/maps/PlayerHouseF1/scripts.pory"
 	call after_starter
 	return
 
 
 TalkMom::
-# 52 "data/maps/PlayerHouseF1/scripts.pory"
+# 53 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 3
 	goto_if_eq TalkMom_1
-# 62 "data/maps/PlayerHouseF1/scripts.pory"
+# 63 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 4
 	goto_if_eq TalkMom_2
-# 62 "data/maps/PlayerHouseF1/scripts.pory"
+# 63 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 5
 	goto_if_eq TalkMom_2
-# 62 "data/maps/PlayerHouseF1/scripts.pory"
+# 63 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 6
 	goto_if_eq TalkMom_2
-# 70 "data/maps/PlayerHouseF1/scripts.pory"
+# 71 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 2
 	goto_if_eq TalkMom_3
-# 200 "data/maps/PlayerHouseF1/scripts.pory"
-	lock
 # 201 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	lock
 # 202 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_17, MSGBOX_NPC
+	setspeaker SP_NAME_MOM
 # 203 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
+	msgbox TalkMom_Text_17, MSGBOX_NPC
 # 204 "data/maps/PlayerHouseF1/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 205 "data/maps/PlayerHouseF1/scripts.pory"
-	special HealPlayerParty
-# 206 "data/maps/PlayerHouseF1/scripts.pory"
-	playfanfare MUS_HEAL
-# 207 "data/maps/PlayerHouseF1/scripts.pory"
-	waitfanfare
-# 208 "data/maps/PlayerHouseF1/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 209 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_18, MSGBOX_NPC
-# 210 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmessage
+# 205 "data/maps/PlayerHouseF1/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 206 "data/maps/PlayerHouseF1/scripts.pory"
+	special HealPlayerParty
+# 207 "data/maps/PlayerHouseF1/scripts.pory"
+	playfanfare MUS_HEAL
+# 208 "data/maps/PlayerHouseF1/scripts.pory"
+	waitfanfare
+# 209 "data/maps/PlayerHouseF1/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 210 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_18, MSGBOX_NPC
 # 211 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 212 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 TalkMom_1:
-# 54 "data/maps/PlayerHouseF1/scripts.pory"
-	lock
 # 55 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	lock
 # 56 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 57 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox TalkMom_Text_0, MSGBOX_NPC
-# 60 "data/maps/PlayerHouseF1/scripts.pory"
+# 61 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 TalkMom_2:
-# 64 "data/maps/PlayerHouseF1/scripts.pory"
-	lock
 # 65 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	lock
 # 66 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 67 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox TalkMom_Text_1, MSGBOX_NPC
-# 68 "data/maps/PlayerHouseF1/scripts.pory"
+# 69 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 TalkMom_3:
-# 72 "data/maps/PlayerHouseF1/scripts.pory"
-	lock
 # 73 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, TalkMom_Movement_0
+	lock
 # 74 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	applymovement Mom, TalkMom_Movement_0
 # 75 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 76 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox TalkMom_Text_2, MSGBOX_AUTOCLOSE
-# 79 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
 # 80 "data/maps/PlayerHouseF1/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	waitmessage
 # 81 "data/maps/PlayerHouseF1/scripts.pory"
-	special HealPlayerParty
+	fadescreen FADE_TO_BLACK
 # 82 "data/maps/PlayerHouseF1/scripts.pory"
-	playfanfare MUS_HEAL
+	special HealPlayerParty
 # 83 "data/maps/PlayerHouseF1/scripts.pory"
-	waitfanfare
+	playfanfare MUS_HEAL
 # 84 "data/maps/PlayerHouseF1/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 85 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
-# 86 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_3, MSGBOX_AUTOCLOSE
-# 94 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 95 "data/maps/PlayerHouseF1/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 96 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_4
-# 98 "data/maps/PlayerHouseF1/scripts.pory"
 	waitfanfare
+# 85 "data/maps/PlayerHouseF1/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 86 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 87 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_3, MSGBOX_AUTOCLOSE
+# 95 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 96 "data/maps/PlayerHouseF1/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 97 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_4
 # 99 "data/maps/PlayerHouseF1/scripts.pory"
-	setflag FLAG_SYS_QUEST_MENU_GET
+	waitfanfare
 # 100 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	setflag FLAG_SYS_QUEST_MENU_GET
 # 101 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 102 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox TalkMom_Text_5, MSGBOX_AUTOCLOSE
-# 108 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
 # 109 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, TalkMom_Movement_1
+	waitmessage
 # 110 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
+	applymovement Mom, TalkMom_Movement_1
 # 111 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	waitmovement
 # 112 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 113 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox TalkMom_Text_6, MSGBOX_AUTOCLOSE
-# 117 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
 # 118 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, TalkMom_Movement_0
+	waitmessage
 # 119 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
-# 120 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
-# 121 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_7, MSGBOX_AUTOCLOSE
-# 131 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 132 "data/maps/PlayerHouseF1/scripts.pory"
-	playse SE_DOOR
-# 133 "data/maps/PlayerHouseF1/scripts.pory"
-	clearflag FLAG_UNUSED_0x020
-# 134 "data/maps/PlayerHouseF1/scripts.pory"
-	addobject barryMom
-# 135 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, TalkMom_Movement_2
-# 136 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TalkMom_Movement_2
-# 137 "data/maps/PlayerHouseF1/scripts.pory"
-	playse SE_PIN
-# 138 "data/maps/PlayerHouseF1/scripts.pory"
-	waitse
-# 139 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovementall
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement barryMom, TalkMom_Movement_3
-# 141 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovementall
-# 142 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker TalkMom_Text_8
-# 143 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_9, MSGBOX_AUTOCLOSE
-# 145 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 146 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, TalkMom_Movement_4
-# 147 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
-# 148 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
-# 149 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_10, MSGBOX_AUTOCLOSE
-# 151 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 152 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker TalkMom_Text_8
-# 153 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_11, MSGBOX_AUTOCLOSE
-# 160 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 161 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
-# 162 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_12
-# 164 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 165 "data/maps/PlayerHouseF1/scripts.pory"
 	applymovement Mom, TalkMom_Movement_0
-# 166 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TalkMom_Movement_5
-# 167 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
-# 168 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_13, MSGBOX_AUTOCLOSE
-# 169 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 170 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement barryMom, TalkMom_Movement_0
-# 171 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EveryFrameMom_Movement_0
-# 172 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker TalkMom_Text_8
-# 173 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_14, MSGBOX_AUTOCLOSE
-# 177 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 178 "data/maps/PlayerHouseF1/scripts.pory"
-	giveitem ITEM_PARCEL
-# 179 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
-# 180 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_15, MSGBOX_AUTOCLOSE
-# 182 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 183 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker TalkMom_Text_8
-# 184 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox TalkMom_Text_16, MSGBOX_AUTOCLOSE
-# 189 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
-# 190 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement barryMom, TalkMom_Movement_6
-# 191 "data/maps/PlayerHouseF1/scripts.pory"
+# 120 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmovement
-# 192 "data/maps/PlayerHouseF1/scripts.pory"
+# 121 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 122 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_7, MSGBOX_AUTOCLOSE
+# 132 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 133 "data/maps/PlayerHouseF1/scripts.pory"
 	playse SE_DOOR
-# 193 "data/maps/PlayerHouseF1/scripts.pory"
-	setflag FLAG_UNUSED_0x020
-# 194 "data/maps/PlayerHouseF1/scripts.pory"
-	removeobject barryMom
-# 195 "data/maps/PlayerHouseF1/scripts.pory"
+# 134 "data/maps/PlayerHouseF1/scripts.pory"
+	clearflag FLAG_UNUSED_0x020
+# 135 "data/maps/PlayerHouseF1/scripts.pory"
+	addobject barryMom
+# 136 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, TalkMom_Movement_2
+# 137 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TalkMom_Movement_2
+# 138 "data/maps/PlayerHouseF1/scripts.pory"
+	playse SE_PIN
+# 139 "data/maps/PlayerHouseF1/scripts.pory"
 	waitse
+# 140 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovementall
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement barryMom, TalkMom_Movement_3
+# 142 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovementall
+# 143 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker TalkMom_Text_8
+# 144 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_9, MSGBOX_AUTOCLOSE
+# 146 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 147 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, TalkMom_Movement_4
+# 148 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovement
+# 149 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 150 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_10, MSGBOX_AUTOCLOSE
+# 152 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 153 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker TalkMom_Text_8
+# 154 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_11, MSGBOX_AUTOCLOSE
+# 161 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 162 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 163 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_12
+# 165 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 166 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, TalkMom_Movement_0
+# 167 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TalkMom_Movement_5
+# 168 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 169 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_13, MSGBOX_AUTOCLOSE
+# 170 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 171 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement barryMom, TalkMom_Movement_0
+# 172 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, EveryFrameMom_Movement_0
+# 173 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker TalkMom_Text_8
+# 174 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_14, MSGBOX_AUTOCLOSE
+# 178 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 179 "data/maps/PlayerHouseF1/scripts.pory"
+	giveitem ITEM_PARCEL
+# 180 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 181 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_15, MSGBOX_AUTOCLOSE
+# 183 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 184 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker TalkMom_Text_8
+# 185 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox TalkMom_Text_16, MSGBOX_AUTOCLOSE
+# 190 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 191 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement barryMom, TalkMom_Movement_6
+# 192 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmovement
+# 193 "data/maps/PlayerHouseF1/scripts.pory"
+	playse SE_DOOR
+# 194 "data/maps/PlayerHouseF1/scripts.pory"
+	setflag FLAG_UNUSED_0x020
+# 195 "data/maps/PlayerHouseF1/scripts.pory"
+	removeobject barryMom
 # 196 "data/maps/PlayerHouseF1/scripts.pory"
-	setvar VAR_SANDGEM_INTRO_STATE, 3
+	waitse
 # 197 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_SANDGEM_INTRO_STATE, 3
+# 198 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 
 PlayerHouseTVF1::
-# 216 "data/maps/PlayerHouseF1/scripts.pory"
+# 217 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 3
 	goto_if_eq PlayerHouseTVF1_1
 	return
 
 PlayerHouseTVF1_1:
-# 218 "data/maps/PlayerHouseF1/scripts.pory"
-	lock
 # 219 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker PlayerHouseTVF1_Text_0
+	lock
 # 220 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker PlayerHouseTVF1_Text_0
+# 221 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox PlayerHouseTVF1_Text_1, MSGBOX_SIGN
-# 228 "data/maps/PlayerHouseF1/scripts.pory"
+# 229 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 
 triggerMomTryToLeave::
-# 233 "data/maps/PlayerHouseF1/scripts.pory"
-	lockall
 # 234 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, triggerMomTryToLeave_Movement_0
+	lockall
 # 235 "data/maps/PlayerHouseF1/scripts.pory"
-	playse SE_PIN
+	applymovement Mom, triggerMomTryToLeave_Movement_0
 # 236 "data/maps/PlayerHouseF1/scripts.pory"
-	waitse
+	playse SE_PIN
 # 237 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EveryFrameMom_Movement_4
+	waitse
 # 238 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
+	applymovement OBJ_EVENT_ID_PLAYER, EveryFrameMom_Movement_4
 # 239 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	waitmovement
 # 240 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 241 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox triggerMomTryToLeave_Text_0
-# 247 "data/maps/PlayerHouseF1/scripts.pory"
-	closemessage
 # 248 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmessage
+	closemessage
 # 249 "data/maps/PlayerHouseF1/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 4
+	waitmessage
 # 250 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 4
+# 251 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
 
 after_starter::
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, after_starter_Movement_0
 # 256 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovement
+	playmoncry SPECIES_GLAMEOW, 0
 # 257 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Mom, after_starter_Movement_1
+	applymovement Mom, after_starter_Movement_0
 # 258 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, after_starter_Movement_2
+	applymovement Moms_Cat, after_starter_Movement_1
 # 259 "data/maps/PlayerHouseF1/scripts.pory"
-	waitmovementall
+	applymovement OBJ_EVENT_ID_PLAYER, after_starter_Movement_2
 # 260 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker SP_NAME_MOM
+	waitmovementall
 # 261 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 262 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox after_starter_Text_0
-# 275 "data/maps/PlayerHouseF1/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 8
 # 276 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 277 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox after_starter_Text_1
+# 285 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 286 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, after_starter_Movement_3
+# 287 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 288 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox after_starter_Text_2
+# 291 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 292 "data/maps/PlayerHouseF1/scripts.pory"
+	playmoncry SPECIES_GLAMEOW, 0
+# 293 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Moms_Cat, after_starter_Movement_4
+# 294 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker after_starter_Text_3
+# 295 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox after_starter_Text_4
+# 296 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 297 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Mom, after_starter_Movement_5
+# 298 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 299 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox after_starter_Text_5, MSGBOX_AUTOCLOSE
+# 301 "data/maps/PlayerHouseF1/scripts.pory"
+	waitmessage
+# 302 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 8
+# 303 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
 
 PlayerHouseF1_Meow::
-# 280 "data/maps/PlayerHouseF1/scripts.pory"
+# 307 "data/maps/PlayerHouseF1/scripts.pory"
 	lock
-# 281 "data/maps/PlayerHouseF1/scripts.pory"
+# 308 "data/maps/PlayerHouseF1/scripts.pory"
+	compare VAR_TWINLEAF_INTRO_STATE, 8
+	goto_if_eq PlayerHouseF1_Meow_1
+# 318 "data/maps/PlayerHouseF1/scripts.pory"
 	playmoncry SPECIES_GLAMEOW, 0
-# 282 "data/maps/PlayerHouseF1/scripts.pory"
-	msgbox PlayerHouseF1_Meow_Text_0, MSGBOX_NPC
-# 283 "data/maps/PlayerHouseF1/scripts.pory"
+# 319 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker after_starter_Text_3
+# 320 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_0
+# 321 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox PlayerHouseF1_Meow_Text_1, MSGBOX_NPC
+# 324 "data/maps/PlayerHouseF1/scripts.pory"
 	release
+	return
+
+PlayerHouseF1_Meow_1:
+# 309 "data/maps/PlayerHouseF1/scripts.pory"
+	playmoncry SPECIES_GLAMEOW, 0
+# 310 "data/maps/PlayerHouseF1/scripts.pory"
+	setspeaker after_starter_Text_3
+# 311 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_0
+# 312 "data/maps/PlayerHouseF1/scripts.pory"
+	msgbox PlayerHouseF1_Meow_Text_0, MSGBOX_NPC
 	return
 
 
@@ -429,104 +481,100 @@ EveryFrameMom_Movement_3:
 	face_up
 	step_end
 
-# 41 "data/maps/PlayerHouseF1/scripts.pory"
+# 42 "data/maps/PlayerHouseF1/scripts.pory"
 EveryFrameMom_Movement_4:
-# 41 "data/maps/PlayerHouseF1/scripts.pory"
+# 42 "data/maps/PlayerHouseF1/scripts.pory"
 	face_up
 	step_end
 
-# 73 "data/maps/PlayerHouseF1/scripts.pory"
+# 74 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_0:
-# 73 "data/maps/PlayerHouseF1/scripts.pory"
+# 74 "data/maps/PlayerHouseF1/scripts.pory"
 	face_player
 	step_end
 
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 110 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_1:
-# 109 "data/maps/PlayerHouseF1/scripts.pory"
+# 110 "data/maps/PlayerHouseF1/scripts.pory"
 	face_away_player
 	step_end
 
-# 135 "data/maps/PlayerHouseF1/scripts.pory"
+# 136 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_2:
-# 135 "data/maps/PlayerHouseF1/scripts.pory"
+# 136 "data/maps/PlayerHouseF1/scripts.pory"
 	face_down
-# 135 "data/maps/PlayerHouseF1/scripts.pory"
+# 136 "data/maps/PlayerHouseF1/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_3:
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_up
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
 	face_left
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
 	delay_16
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
 	face_right
-# 140 "data/maps/PlayerHouseF1/scripts.pory"
+# 141 "data/maps/PlayerHouseF1/scripts.pory"
 	delay_16
 	step_end
 
-# 146 "data/maps/PlayerHouseF1/scripts.pory"
+# 147 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_4:
-# 146 "data/maps/PlayerHouseF1/scripts.pory"
+# 147 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 166 "data/maps/PlayerHouseF1/scripts.pory"
+# 167 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_5:
-# 166 "data/maps/PlayerHouseF1/scripts.pory"
+# 167 "data/maps/PlayerHouseF1/scripts.pory"
 	face_original_direction
 	step_end
 
-# 190 "data/maps/PlayerHouseF1/scripts.pory"
+# 191 "data/maps/PlayerHouseF1/scripts.pory"
 TalkMom_Movement_6:
-# 190 "data/maps/PlayerHouseF1/scripts.pory"
+# 191 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
 	step_end
 
-# 234 "data/maps/PlayerHouseF1/scripts.pory"
+# 235 "data/maps/PlayerHouseF1/scripts.pory"
 triggerMomTryToLeave_Movement_0:
-# 234 "data/maps/PlayerHouseF1/scripts.pory"
+# 235 "data/maps/PlayerHouseF1/scripts.pory"
 	emote_exclamation_mark
-# 234 "data/maps/PlayerHouseF1/scripts.pory"
+# 235 "data/maps/PlayerHouseF1/scripts.pory"
 	face_down
 	step_end
 
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-after_starter_Movement_0:
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_up
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	delay_16
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_left
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	face_up
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	delay_16
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_right
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_right
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_right
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_down
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_right
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_down
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_down
-# 255 "data/maps/PlayerHouseF1/scripts.pory"
-	walk_down
-	step_end
-
 # 257 "data/maps/PlayerHouseF1/scripts.pory"
-after_starter_Movement_1:
+after_starter_Movement_0:
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_up
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_left
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	face_up
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 257 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
 # 257 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
 # 257 "data/maps/PlayerHouseF1/scripts.pory"
@@ -538,19 +586,111 @@ after_starter_Movement_1:
 	step_end
 
 # 258 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_1:
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	jump_in_place_up
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	jump_in_place_up
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_up
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_right
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	walk_down
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	face_left
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	jump_in_place_left
+# 258 "data/maps/PlayerHouseF1/scripts.pory"
+	jump_in_place_left
+	step_end
+
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 after_starter_Movement_2:
-# 258 "data/maps/PlayerHouseF1/scripts.pory"
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
+	delay_16
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 258 "data/maps/PlayerHouseF1/scripts.pory"
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 258 "data/maps/PlayerHouseF1/scripts.pory"
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
-# 258 "data/maps/PlayerHouseF1/scripts.pory"
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 258 "data/maps/PlayerHouseF1/scripts.pory"
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_down
-# 258 "data/maps/PlayerHouseF1/scripts.pory"
+# 259 "data/maps/PlayerHouseF1/scripts.pory"
 	walk_right
+	step_end
+
+# 286 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_3:
+# 286 "data/maps/PlayerHouseF1/scripts.pory"
+	face_right
+	step_end
+
+# 293 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_4:
+# 293 "data/maps/PlayerHouseF1/scripts.pory"
+	emote_heart
+# 293 "data/maps/PlayerHouseF1/scripts.pory"
+	jump_in_place_left
+# 293 "data/maps/PlayerHouseF1/scripts.pory"
+	jump_in_place_left
+	step_end
+
+# 297 "data/maps/PlayerHouseF1/scripts.pory"
+after_starter_Movement_5:
+# 297 "data/maps/PlayerHouseF1/scripts.pory"
+	face_left
+	step_end
+
+# 311 "data/maps/PlayerHouseF1/scripts.pory"
+PlayerHouseF1_Meow_Movement_0:
+# 311 "data/maps/PlayerHouseF1/scripts.pory"
+	emote_heart
 	step_end
 
 EveryFrameMom_Text_0:
@@ -561,26 +701,26 @@ EveryFrameMom_Text_0:
 	.string "he sure was in a hurry!$"
 
 TalkMom_Text_0:
-# 56 "data/maps/PlayerHouseF1/scripts.pory"
+# 57 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "You know how impatient\n"
 	.string "Barry is.\p"
 	.string "He took off before I could even\n"
 	.string "ask what it was about.$"
 
 TalkMom_Text_1:
-# 66 "data/maps/PlayerHouseF1/scripts.pory"
+# 67 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "What is it, dear?\n"
 	.string "Isn’t Barry waiting for you?$"
 
 TalkMom_Text_2:
-# 75 "data/maps/PlayerHouseF1/scripts.pory"
+# 76 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Welcome home, {PLAYER}.\n"
 	.string "Are you and your Pokémon healthy?\p"
 	.string "It’s so late right now...\n"
 	.string "Take a quick rest, dear.$"
 
 TalkMom_Text_3:
-# 86 "data/maps/PlayerHouseF1/scripts.pory"
+# 87 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "What is it, {PLAYER}?\p"
 	.string "...\p"
 	.string "Wow. Professor Rowan asked you\n"
@@ -591,12 +731,12 @@ TalkMom_Text_3:
 	.string "something that you’ll find useful.$"
 
 TalkMom_Text_4:
-# 96 "data/maps/PlayerHouseF1/scripts.pory"
+# 97 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "{PLAYER} obtained\n"
 	.string "the {COLOR BLUE}{SHADOW LIGHT_BLUE}Mom's Journal{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!$"
 
 TalkMom_Text_5:
-# 101 "data/maps/PlayerHouseF1/scripts.pory"
+# 102 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "That’s a Journal. You can use it to\n"
 	.string "keep a record of your daily events.\p"
 	.string "Check it, and you’ll be able to\n"
@@ -606,7 +746,7 @@ TalkMom_Text_5:
 	.string "a record adventure.$"
 
 TalkMom_Text_6:
-# 112 "data/maps/PlayerHouseF1/scripts.pory"
+# 113 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Gee, a journey full of adventure...\n"
 	.string "I envy you, kiddo.\p"
 	.string "Plus, you’re not alone.\n"
@@ -614,7 +754,7 @@ TalkMom_Text_6:
 	.string "I wish I could go instead!$"
 
 TalkMom_Text_7:
-# 121 "data/maps/PlayerHouseF1/scripts.pory"
+# 122 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "I’m just joking, dear!\n"
 	.string "Yup, {PLAYER}!\p"
 	.string "I’ll be all right by myself, so you\n"
@@ -627,21 +767,21 @@ TalkMom_Text_7:
 	.string "Pokémon you’ve caught, dear.$"
 
 TalkMom_Text_8:
-# 142 "data/maps/PlayerHouseF1/scripts.pory"
+# 143 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Barry's Mom$"
 
 TalkMom_Text_9:
-# 143 "data/maps/PlayerHouseF1/scripts.pory"
+# 144 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Excuse me.\n"
 	.string "Is my little Barry here?$"
 
 TalkMom_Text_10:
-# 149 "data/maps/PlayerHouseF1/scripts.pory"
+# 150 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Oh?\n"
 	.string "No, he’s not...$"
 
 TalkMom_Text_11:
-# 153 "data/maps/PlayerHouseF1/scripts.pory"
+# 154 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Oh...\n"
 	.string "Then, he must have left already...\l"
 	.string "What to do...\p"
@@ -651,28 +791,28 @@ TalkMom_Text_11:
 	.string "I at least wanted him to take this...$"
 
 TalkMom_Text_12:
-# 162 "data/maps/PlayerHouseF1/scripts.pory"
+# 163 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Not to worry, {PLAYER} will\n"
 	.string "deliver that to him.$"
 
 TalkMom_Text_13:
-# 168 "data/maps/PlayerHouseF1/scripts.pory"
+# 169 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Won’t you, {PLAYER}?$"
 
 TalkMom_Text_14:
-# 173 "data/maps/PlayerHouseF1/scripts.pory"
+# 174 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Oh, really?\n"
 	.string "You’d do that for me?\p"
 	.string "{PLAYER}, please take this to\n"
 	.string "Barry for me.$"
 
 TalkMom_Text_15:
-# 180 "data/maps/PlayerHouseF1/scripts.pory"
+# 181 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Bye-bye, {PLAYER}!\n"
 	.string "Enjoy your adventure!$"
 
 TalkMom_Text_16:
-# 184 "data/maps/PlayerHouseF1/scripts.pory"
+# 185 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Let me think...\p"
 	.string "Knowing my boy, he would probably\n"
 	.string "head straight to Jubilife City...\p"
@@ -680,19 +820,19 @@ TalkMom_Text_16:
 	.string "Barry.$"
 
 TalkMom_Text_17:
-# 202 "data/maps/PlayerHouseF1/scripts.pory"
+# 203 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Let me heal your pokemon for you.$"
 
 TalkMom_Text_18:
-# 209 "data/maps/PlayerHouseF1/scripts.pory"
+# 210 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Have fun sweetie.$"
 
 PlayerHouseTVF1_Text_0:
-# 219 "data/maps/PlayerHouseF1/scripts.pory"
+# 220 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "MC$"
 
 PlayerHouseTVF1_Text_1:
-# 220 "data/maps/PlayerHouseF1/scripts.pory"
+# 221 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Here we are!\n"
 	.string "It's the contest Digest!\p"
 	.string "The winner of today's Normal Rank\n"
@@ -703,7 +843,7 @@ PlayerHouseTVF1_Text_1:
 	.string "Let's meet again!$"
 
 triggerMomTryToLeave_Text_0:
-# 240 "data/maps/PlayerHouseF1/scripts.pory"
+# 241 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Oh, yes!\n"
 	.string "{PLAYER}!\p"
 	.string "Don’t go into the tall grass.\n"
@@ -713,7 +853,7 @@ triggerMomTryToLeave_Text_0:
 	.string "Well, take care, sweetie!$"
 
 after_starter_Text_0:
-# 261 "data/maps/PlayerHouseF1/scripts.pory"
+# 262 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "What’s the matter, dear?\p"
 	.string "...\p"
 	.string "Wow.\n"
@@ -729,6 +869,44 @@ after_starter_Text_0:
 	.string "Now that you have your own Pokémon,\n"
 	.string "the tall grass won’t be so threatening.$"
 
+after_starter_Text_1:
+# 277 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Oh, and why don't you try letting\n"
+	.string "your Pokémon walk around with you\l"
+	.string "outside of it's ball for a bit?\p"
+	.string "It may help the two of you grow\n"
+	.string "closer together.\p"
+	.string "And I'm sure they wouldn't mind\n"
+	.string "getting to stretch their legs\l"
+	.string "a little bit too.$"
+
+after_starter_Text_2:
+# 288 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "I know sweet little Glammy here loves\n"
+	.string "getting to walk around out of her ball,\l"
+	.string "don't you Glammy?$"
+
+after_starter_Text_3:
+# 294 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Glammy$"
+
+after_starter_Text_4:
+# 295 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Mrow Meow!$"
+
+after_starter_Text_5:
+# 299 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "And if you need any healing just come\n"
+	.string "back to me and I'll fix you two right up.$"
+
 PlayerHouseF1_Meow_Text_0:
-# 282 "data/maps/PlayerHouseF1/scripts.pory"
-	.string "Meorw!$"
+# 312 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Meorw Merooow!!\p"
+	.string "“Glammy seems happy you\n"
+	.string "are ok.”$"
+
+PlayerHouseF1_Meow_Text_1:
+# 321 "data/maps/PlayerHouseF1/scripts.pory"
+	.string "Meorw!\p"
+	.string "“Glammy seems happy to\n"
+	.string "see you”$"
