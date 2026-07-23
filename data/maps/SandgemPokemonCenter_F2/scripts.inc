@@ -12,7 +12,7 @@ Sandgem_Pokecenter_F2_ShopOne::
 # 7 "data/maps/SandgemPokemonCenter_F2/scripts.pory"
 	waitmessage
 # 8 "data/maps/SandgemPokemonCenter_F2/scripts.pory"
-	pokemart Oreburg_Secondary
+	pokemart Sandgem_F2_ShopOne
 # 9 "data/maps/SandgemPokemonCenter_F2/scripts.pory"
 	msgbox Sandgem_Pokecenter_F2_ShopOne_Text_1
 # 10 "data/maps/SandgemPokemonCenter_F2/scripts.pory"

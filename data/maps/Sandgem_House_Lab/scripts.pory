@@ -127,7 +127,13 @@ script Intro_In_Sandgem_Lab {
         "every kind of Pokémon you encounter.\p"
         "{PLAYER}, I ask that you go\n"
         "everywhere and meet every kind of\l"
-        "Pokémon in this region!")
+        "Pokémon in this region!\p"
+        "Also as an incentive I'll have my\n"
+        "assistant Roseanne give you rewards\l"
+        "after certain milestones.\p"
+        "Talk to her after you catch about\n"
+        "hmmmm lets say 30 Pokémon?\p"
+        "and she'll give you a fine reward.")
     waitmessage
     applymovement(LabLuda, moves(walk_in_place_left))
     waitmovement
@@ -156,11 +162,67 @@ script Intro_In_Sandgem_Lab {
         "countless Pokémon in this world.\p"
         "That means there are just as many\n"
         "thrills waiting for you out there!\p"
-        "Now go!\p"
-        "{PLAYER}, your grand adventure\n"
-        "begins right now!")
+        "Now go!")
     waitmessage
-    applymovement(LabLuda, moves(walk_in_place_left))
+    applymovement(Lab_Cedrus, moves(walk_down*3,walk_left*3))
+    msgbox("{PLAYER}, your grand adventure\n"
+        "begins rig-")
+    waitmovementall
+    setspeaker("Rude Woman")
+    msgbox("Proffesor Rowan.\p"
+    "I require your assistance with\n"
+    "something on your personal computer.",MSGBOX_AUTOCLOSE)
+    applymovement(LabLuda, moves(emote_exclamation_mark))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(emote_exclamation_mark))
+    applymovement(LabRowan, moves(emote_exclamation_mark))
+    playse(SE_PIN)
+    waitse
+    waitmovementall
+    waitmessage
+    applymovement(LabLuda, moves(face_up))
+    applymovement(LabRowan, moves(face_right))
+    setspeaker("Rude Woman")
+    msgbox("Should not take but a momment\n"
+    "of your time.")
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Um, well Professor Cedrus, I'd be glad to\n"
+    "but, as it so happens I'm a little well\l"
+    "preoccupied at this exact momment...")
+    waitmessage
+    closemessage
+    applymovement(Lab_Cedrus, moves(delay_8,face_down,delay_16*2,face_left,delay_16*2,face_down,delay_16*2,face_left,delay_16))
+    waitmovementall
+    setspeaker(SP_NAME_CEDRUS)
+    msgbox("I see...\p"
+    "My apologies.\p"
+    "I will be waiting by the your\n"
+    "personal computer when you are done.",MSGBOX_AUTOCLOSE)
+    waitmessage
+    applymovement(Lab_Cedrus, moves(walk_right*3,walk_up*3))
+    waitmovement
+    applymovement(LabLuda, moves(face_left))
+    applymovement(LabRowan, moves(face_down))
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Ahem...\p"
+    "Sorry about that {PLAYER},\n"
+    "she's... new around here.\n"
+    "Well technically she's only a temp here.\p"
+    "After today she'll mainly be doing\n"
+    "field research around the region.\p"
+    "There's a good chance you'll run into\n"
+    "her a few times on your journey in fact.\p"
+    "She was called in to aid us in the\n"
+    "research of a recent resurgence of\l"
+    "Pokémon thought to be long extinct.\p"
+    "Pokémon from back when this land was\n"
+    "still called Hisui.\p"
+    "Oh, sorry, your not here for a lecture.\p"
+    "In fact I'm pretty sure I was about to\n"
+    "see you off before we where intrupted.\p"
+    "Ahem...\p"
+    "{PLAYER}, your grand adventure\n"
+    "begins right now!")
+    waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
     checkplayergender
     if(var(VAR_RESULT) == 0)
@@ -221,7 +283,7 @@ script LuDa_Dad_Lab {
     {
         //Dawn Script if Player Male
         lock
-        setspeaker(SP_NAME_DAWN)
+        setspeaker("Dawn’s Father")
         msgbox("I’m Dawn’s father.\p"
         "I’ll be happy to assist you on your\n"
         "quest for the professor.\p"
@@ -231,10 +293,11 @@ script LuDa_Dad_Lab {
     }
     elif(var(VAR_RESULT) == 1)
     {
+
         //Lucas Script if Player female
         lock
-        setspeaker(SP_NAME_LUCAS)
-        msgbox("I’m Lucas’s father.\p"
+        setspeaker("Lucas’ Father")
+        msgbox("I’m Lucas’ father.\p"
         "I’ll be happy to assist you on your\n"
         "quest for the professor.\p"
         "Hahaha. Eh...\n"
@@ -244,21 +307,69 @@ script LuDa_Dad_Lab {
 }
 
 script Roseanne_Lab {
-lock
-setspeaker("Roseanne")
-msgbox("Professor Rowan invented a new\n"
+        lock
+        if(var(VAR_SANDGEM_INTRO_STATE) == 1){
+    setspeaker("Roseanne")
+    msgbox("Professor Rowan invented a new\n"
         "Pokédex while working alongside a\l"
         "professor from the Kanto region.\p"
         "Oh, my name is Roseanne.\p"
         "It’s an honor to be an assistant to\n"
         "our professor!",MSGBOX_NPC)
-release
+        release
+        } 
+        elif(var(VAR_SANDGEM_INTRO_STATE) > 1)
+        {
+        applymovement(3, moves(face_player))
+        setspeaker("Roseanne")
+        msgbox("Hello {PLAYER}\p" 
+        "Do you want me to check if you've\n"
+        "hit a reward milestone yet?",MSGBOX_YESNO)
+            if(var(VAR_RESULT) == 1){
+                setspeaker("Roseanne")
+                msgbox("Hmmm let me look here...\p")
+                specialvar(VAR_RESULT,countMons)
+                if(var(VAR_RESULT) >= 30){
+
+                }
+                else{
+                buffernumberstring(STR_VAR_1,VAR_RESULT)
+                msgbox("Sorry you only have {STR_VAR_1} \n"
+                "Pok\emon registred as caught.\p"
+                "That's not enough for a reward yet.",MSGBOX_AUTOCLOSE)
+                }
+
+            }
+            elif(var(VAR_RESULT) == 0){
+                msgbox("Ok, well you know where to find\n"
+                "me when you do.",MSGBOX_AUTOCLOSE)
+            }
+        }
+        else
+        {
+    setspeaker("Roseanne")
+    msgbox("Professor Rowan invented a new\n"
+        "Pokédex while working alongside a\l"
+        "professor from the Kanto region.\p"
+        "Oh, my name is Roseanne.\p"
+        "It’s an honor to be an assistant to\n"
+        "our professor!",MSGBOX_NPC)
+        release
+        }
 }
 
 script Lab_PC {
     lock
     msgbox("It's Rowan's Computer",MSGBOX_SIGN)
 release
+}
+
+script Ced_Lab {
+    lock
+    setspeaker(SP_NAME_CEDRUS)
+    msgbox("Sorry I am too busy to converse\n"
+    "right now.")
+    release
 }
 
 

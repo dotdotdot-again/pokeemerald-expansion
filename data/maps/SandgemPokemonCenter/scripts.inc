@@ -77,9 +77,9 @@ SandgemTownPokecenter1F_Text_DoYouSeeThatPCOverThere_Text_0:
 SandgemTownPokecenter1F_Text_TheTopFloorIs_Text_0:
 # 36 "data/maps/SandgemPokemonCenter/scripts.pory"
 	.string "The top floor of any Pokémon Center\n"
-	.string "is the Pokémon Communication Club.\p"
+	.string "is the Pokémon Trainer Club.\p"
 	.string "There, you can get all sorts of\n"
-	.string "useful items.$"
+	.string "useful items and resources.$"
 
 SandgemTownPokecenter1F_UndergoundGuy_Stop_Text_0:
 # 46 "data/maps/SandgemPokemonCenter/scripts.pory"

@@ -24,6 +24,7 @@ enum SpeakerNames {
     SP_NAME_JUPITER,
     SP_NAME_SATURN,
     SP_NAME_CHARON,
+    SP_NAME_CEDRUS,
     SP_NAME_COUNT
 };
 

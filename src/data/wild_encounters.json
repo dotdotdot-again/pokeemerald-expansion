@@ -37287,7 +37287,7 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_STARLY"
               },
               {
                 "min_level": 2,
@@ -37302,17 +37302,17 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_BIDOOF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 3,
                 "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_BIDOOF"
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_STARLY"
               },
               {
                 "min_level": 2,
@@ -39357,7 +39357,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 5,
@@ -39382,7 +39382,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 6,
@@ -39426,7 +39426,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 5,
@@ -39451,7 +39451,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 6,
@@ -39466,7 +39466,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 5,
@@ -39476,7 +39476,7 @@
               {
                 "min_level": 5,
                 "max_level": 8,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               }
             ]
           }
@@ -39495,7 +39495,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 5,
@@ -39520,7 +39520,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 6,
@@ -39564,7 +39564,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 5,
@@ -39589,7 +39589,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 6,

@@ -1,4 +1,47 @@
-mapscripts JubilifeCity_MapScripts {}
+mapscripts JubilifeCity_MapScripts {    MAP_SCRIPT_ON_LOAD {
+        // Set all the flags used by the birds so that they start out all hidden
+        setflag(FLAG_TEMP_2)
+        setflag(FLAG_TEMP_3)
+        setflag(FLAG_TEMP_4)
+        setflag(FLAG_TEMP_5)
+        setflag(FLAG_TEMP_6)
+        setflag(FLAG_TEMP_7)
+        special(GetTimeOfDaySpecial)
+        copyvar(VAR_TEMP_1,VAR_RESULT)
+
+        random(3)
+        switch(var(VAR_RESULT)) {
+            case 0:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_2)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_3)
+                    }
+            case 1:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_4)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_5)
+                    }
+                
+            case 2:
+                special(GetTimeOfDaySpecial)
+                    if(var(VAR_TEMP_1) == 3)
+                    {
+                        clearflag(FLAG_TEMP_6)
+                    }
+                    else{
+                        clearflag(FLAG_TEMP_7)
+                    }
+        }
+    }
+}
 
 script test_event{
 	lock
@@ -250,12 +293,18 @@ script Jubilife_Enterence_LuDa_Event_Cont {
 		waitmessage
 		giveitem(ITEM_RAINBOW_PASS)
 	setspeaker(SP_NAME_LOOKER)
-		msgbox("That Vs. Recorder, it is a nifty device\n"
-        "for recording a match.\p"
+		msgbox("That nifty is card used to\n"
+        "track points earned from varous games.\p"
+		"Games that can be played in the new\n"
+		"Pok\emon Center's basement area.\p"
         "I obtained it because it is quite\n"
         "popular these days.\p"
-        "But myself, I do not do Pokémon\n"
-        "battling very often.\p"
+        "But myself, I do not have time for\n"
+        "silly little games like that.\p"
+		"Plus most of the prizes are items for\n"
+		"trainers such as TMs and Held Items.\p "
+		"I do not do Pokémon battling very\n"
+		"often so I have no use for that stuff.\p"
         "It will be in better hands with you.",MSGBOX_AUTOCLOSE)
 		waitmessage
 		applymovement(LookerJubilife, moves(face_left,delay_16,delay_8,face_right,delay_16,face_down))

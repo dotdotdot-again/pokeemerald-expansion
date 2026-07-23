@@ -21,4 +21,5 @@ const u8 *const gSpeakerNamesTable[SP_NAME_COUNT] =
     [SP_NAME_JUPITER] = COMPOUND_STRING("Jupiter"),
     [SP_NAME_SATURN] = COMPOUND_STRING("Saturn"),
     [SP_NAME_CHARON] = COMPOUND_STRING("Charon"),
+    [SP_NAME_CEDRUS] = COMPOUND_STRING("Cedrus"),
 };

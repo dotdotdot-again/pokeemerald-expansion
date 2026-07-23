@@ -34,9 +34,9 @@ script SandgemTownPokecenter1F_Text_DoYouSeeThatPCOverThere {
 script SandgemTownPokecenter1F_Text_TheTopFloorIs {
     lock
     msgbox("The top floor of any Pokémon Center\n"
-        "is the Pokémon Communication Club.\p"
+        "is the Pokémon Trainer Club.\p"
         "There, you can get all sorts of\n"
-        "useful items.",MSGBOX_NPC)
+        "useful items and resources.",MSGBOX_NPC)
     release
 }
 

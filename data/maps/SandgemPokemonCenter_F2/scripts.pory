@@ -5,7 +5,7 @@ script Sandgem_Pokecenter_F2_ShopOne{
     faceplayer
     message("How may I serve you?")
     waitmessage
-    pokemart(Oreburg_Secondary)
+    pokemart(Sandgem_F2_ShopOne)
     msgbox("Please come again.")
     release
     end
