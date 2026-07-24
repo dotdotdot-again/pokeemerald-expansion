@@ -348,14 +348,15 @@ script OreburghCity_Text_WhenIRunAroundWithMyRunningShoesOnImTheCenterOfAttentio
 
 script OreburghCity_Text_TheGymLeaderWentOffToWorkInTheMine {
     lock
-    if(flag(FLAG_ROARK_OUT_OF_THE_MINE) == FALSE)
-    {
+    if(flag(FLAG_ROARK_OUT_OF_THE_MINE) == FALSE){
     msgbox("The Gym Leader went off to work in\n"
         "the mine.",MSGBOX_NPC)
     }
-    else
-    {
-
+    else{
+    msgbox("The Gym Leader is young, but he’s\n"
+        "the mine’s safety supervisor.\p"
+        "He’s an expert in more than just one\n"
+        "field!",MSGBOX_NPC)
     }
     release
 }

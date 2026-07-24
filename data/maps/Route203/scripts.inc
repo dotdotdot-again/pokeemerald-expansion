@@ -318,7 +318,7 @@ Route203_Youngster_Michael_Text_0:
 	.string "I get my get-up-and-go from my\n"
 	.string "Pokémon!\p"
 	.string "Here we go!\n"
-	.string "KRICKETOT! ZUBAT!$"
+	.string "Kricketot! Murkrow!$"
 
 Route203_Youngster_Michael_Text_1:
 # 73 "data/maps/Route203/scripts.pory"
@@ -332,7 +332,7 @@ Route203_Youngster_Michael_Text_2:
 
 Route203_Youngster_Dallas_Text_0:
 # 82 "data/maps/Route203/scripts.pory"
-	.string "I’m never apart from my SHINX.\n"
+	.string "I’m never apart from my Houndour.\n"
 	.string "Our bond is strong!$"
 
 Route203_Youngster_Dallas_Text_1:

@@ -61,7 +61,7 @@
 #define FLAG_CLOWN_THREE    0x27 // Unused Flag
 #define FLAG_BARRY_R203    0x28 // Barry on Route 203
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_ABRA_TRADE    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
@@ -551,11 +551,11 @@
 
 // Hidden Items
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
-#define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00)
-#define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01)
-#define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02)
-#define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03)
-#define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04)
+#define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00) //Jubilife Stardust
+#define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01) //Oreburgh Stardust
+#define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02) //Route 207 Moon Ball*
+#define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03) //Route 101 Tiny Mushroom
+#define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04) //Route 202 Potion
 #define FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM                   (FLAG_HIDDEN_ITEMS_START + 0x05)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL                (FLAG_HIDDEN_ITEMS_START + 0x06)
 #define FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL               (FLAG_HIDDEN_ITEMS_START + 0x07)
@@ -1051,14 +1051,14 @@
 
 // Item Ball Flags
 #define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8 //Jubilife Potion
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9 //Jubilife Trainer School Item
+#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9 //Jubilife Trainer School Bottle Cap
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA//Route 204 Parlyz Heal
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB//Route 204 HP Up
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC//Route 204 Sea Incence
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED//Route 203 Pokeball
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE//Route 203 Repel
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF//Route 203 X-Defend
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0//Oreburgh Dire Hit
+#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF//Route 203 Parlyz Heal
+#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0//Oreburgh Antidoe
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1//Oreburgh Yellow Shard
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 //Oreburgh Super Potion Gift
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3 //Oreburgh Mine b1f Poke ball
@@ -1068,8 +1068,8 @@
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7 //Oreburgh Great ball gift
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8 //Route 207 Poke ball
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9
-#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
+#define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA //Route 19 Heal Ball*
+#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB //Route 19 Lure Ball*
 #define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE

@@ -632,3 +632,70 @@ script testingSomethingSandgem {
     setflag(B_FLAG_FOLLOWERS_DISABLED)
 }
 
+script trade_test {
+    lock
+    if(flag(FLAG_ABRA_TRADE) == FALSE) {
+            specialvar(INGAME_TRADE_SEEL,GetInGameTradeSpeciesInfo)
+            msgbox("Wanna Trade? Bulba for Abra?",MSGBOX_YESNO)
+            if(var(VAR_RESULT) == 1){
+            msgbox("Cool!")
+            special(ChoosePartyMon)
+            waitse
+            if(var(VAR_RESULT) == PARTY_NOTHING_CHOSEN){
+                msgbox("Ok, bye bye",MSGBOX_AUTOCLOSE)
+                release
+            }
+            elif(var(VAR_RESULT) == SPECIES_BULBASAUR){
+                specialvar(VAR_RESULT,GetTradeSpecies)
+                special(CreateInGameTradePokemon)
+                special(DoInGameTradeScene)
+                waitstate
+                setflag(FLAG_ABRA_TRADE)
+                msgbox("thanks dawg",MSGBOX_AUTOCLOSE)
+            }
+            else{
+                msgbox("that ain't it dawg",MSGBOX_AUTOCLOSE)
+            }
+        }
+        elif(var(VAR_RESULT) == 0){
+            msgbox("Ok, bye bye",MSGBOX_AUTOCLOSE)
+        }
+    }
+    else{
+    msgbox("thx for trade",MSGBOX_NPC)
+    }
+release
+
+
+}
+
+script trade_test_second {
+    lock
+    ingame_trade(INGAME_TRADE_ABRA,"me want abra",jump_one,jump_two,trade_thx)
+    release
+    
+}
+
+script jump_one {
+    msgbox("jump one?")
+    release
+    
+}
+
+script jump_two {
+    msgbox("jump two?")
+    release
+    
+}
+
+text trade_dec {
+    "decline msg"
+}
+
+text trade_wrong {
+    "wrong msg"
+}
+
+text trade_thx {
+    "thx Msg"
+}

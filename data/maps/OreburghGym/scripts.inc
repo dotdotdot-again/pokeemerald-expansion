@@ -54,7 +54,7 @@ Roarck_Gym_2:
 # 48 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 # 49 "data/maps/OreburghGym/scripts.pory"
-	giveitem ITEM_TM_ROCK_TOMB
+	giveitem ITEM_TM_STEALTH_ROCK
 # 50 "data/maps/OreburghGym/scripts.pory"
 	setspeaker SP_NAME_ROARK
 # 51 "data/maps/OreburghGym/scripts.pory"

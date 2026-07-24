@@ -110,7 +110,7 @@ Route204_Lass_Samantha_Text_2:
 
 Route204_Youngster_Tyler_Text_0:
 # 46 "data/maps/ROUTE204/scripts.pory"
-	.string "I’ll beat you with the MAGIKARP my dad\n"
+	.string "I’ll beat you with the Pokémon my dad\n"
 	.string "gave me!$"
 
 Route204_Youngster_Tyler_Text_1:

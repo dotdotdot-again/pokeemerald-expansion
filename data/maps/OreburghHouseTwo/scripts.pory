@@ -6,6 +6,7 @@ script OreburghCityNorthHouse1F_Text_WouldYouBeWillingToTradeYourMachopForMyAbra
         "called MACHOP?\p"
         "Would you be willing to trade your\n"
         "MACHOP for my ABRA?INSERT TRADE EVENT",MSGBOX_NPC)
+        
     release
 }
 

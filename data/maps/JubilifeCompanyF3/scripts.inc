@@ -42,6 +42,36 @@ PoketchCo3F_Text_ThereAreDescriptionsOfPoketchApps1::
 	return
 
 
+PoketchCo3F_Text_Trash_Can_One::
+# 39 "data/maps/JubilifeCompanyF3/scripts.pory"
+	lock
+# 40 "data/maps/JubilifeCompanyF3/scripts.pory"
+	msgbox PoketchCo3F_Text_Trash_Can_One_Text_0, MSGBOX_SIGN
+# 41 "data/maps/JubilifeCompanyF3/scripts.pory"
+	release
+	return
+
+
+PoketchCo3F_Text_Trash_Can_Two::
+# 45 "data/maps/JubilifeCompanyF3/scripts.pory"
+	lock
+# 46 "data/maps/JubilifeCompanyF3/scripts.pory"
+	msgbox PoketchCo3F_Text_Trash_Can_Two_Text_0, MSGBOX_SIGN
+# 48 "data/maps/JubilifeCompanyF3/scripts.pory"
+	release
+	return
+
+
+PoketchCo3F_Text_Trash_Can_Three::
+# 52 "data/maps/JubilifeCompanyF3/scripts.pory"
+	lock
+# 53 "data/maps/JubilifeCompanyF3/scripts.pory"
+	msgbox PoketchCo3F_Text_Trash_Can_Three_Text_0, MSGBOX_SIGN
+# 54 "data/maps/JubilifeCompanyF3/scripts.pory"
+	release
+	return
+
+
 PoketchCo3F_Text_MyHusbandsThePresident_Text_0:
 # 5 "data/maps/JubilifeCompanyF3/scripts.pory"
 	.string "My husband’s the president.\p"
@@ -68,3 +98,16 @@ PoketchCo3F_Text_ThereAreDescriptionsOfPoketchApps1_Text_0:
 # 33 "data/maps/JubilifeCompanyF3/scripts.pory"
 	.string "There are descriptions of Pokétch\n"
 	.string "apps.$"
+
+PoketchCo3F_Text_Trash_Can_One_Text_0:
+# 40 "data/maps/JubilifeCompanyF3/scripts.pory"
+	.string "It's Trash.$"
+
+PoketchCo3F_Text_Trash_Can_Two_Text_0:
+# 46 "data/maps/JubilifeCompanyF3/scripts.pory"
+	.string "It's empty.\p"
+	.string "execpt for the trash$"
+
+PoketchCo3F_Text_Trash_Can_Three_Text_0:
+# 53 "data/maps/JubilifeCompanyF3/scripts.pory"
+	.string "It's full of empty.$"

@@ -46,7 +46,7 @@ if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
         "Rock Smash outside of battle.\p"
         "You should also take this, too.")
     waitmessage
-    giveitem(ITEM_TM_ROCK_TOMB)
+    giveitem(ITEM_TM_STEALTH_ROCK)
          setspeaker(SP_NAME_ROARK)
     msgbox("That TM contains\n"
         "the move Stealth Rock.\p"

@@ -13232,9 +13232,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM76"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Stealth Rock:\n"
-            "Sets floating stones that\n"
-            "hurt a foe switching in."),
+            "Sets floating stones\n"
+            " that hurt a foe\n"
+            " switching in."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -14593,8 +14593,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "A parcel entrusted\n"
-            "in your care for your\n"
-            "childhood friend barry."),
+            "to you for your\n"
+            "childhood friend."),
         .importance = 2,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

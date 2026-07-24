@@ -43,7 +43,7 @@ script Route204_Lass_Samantha {
 }
 
 script Route204_Youngster_Tyler {
-    trainerbattle_single(TRAINER_EDDIE, "I’ll beat you with the MAGIKARP my dad\n"
+    trainerbattle_single(TRAINER_EDDIE, "I’ll beat you with the Pok\emon my dad\n"
                 "gave me!", "But they’re Pokémon I got from my\n"
                 "dad...")
     msgbox("Who gave you your first Pokémon?\p"

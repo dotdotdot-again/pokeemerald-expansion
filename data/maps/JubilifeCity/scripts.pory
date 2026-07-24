@@ -9,7 +9,7 @@ mapscripts JubilifeCity_MapScripts {    MAP_SCRIPT_ON_LOAD {
         special(GetTimeOfDaySpecial)
         copyvar(VAR_TEMP_1,VAR_RESULT)
 
-        random(3)
+        random(2)
         switch(var(VAR_RESULT)) {
             case 0:
                 special(GetTimeOfDaySpecial)
@@ -28,16 +28,6 @@ mapscripts JubilifeCity_MapScripts {    MAP_SCRIPT_ON_LOAD {
                     }
                     else{
                         clearflag(FLAG_TEMP_5)
-                    }
-                
-            case 2:
-                special(GetTimeOfDaySpecial)
-                    if(var(VAR_TEMP_1) == 3)
-                    {
-                        clearflag(FLAG_TEMP_6)
-                    }
-                    else{
-                        clearflag(FLAG_TEMP_7)
                     }
         }
     }
@@ -261,7 +251,7 @@ script Jubilife_Enterence_LuDa_Event_Cont {
         "My name... Ah, no, I shall inform you\n"
         "only of my code name.\p"
         "My code name, it is Looker.\n"
-        "It is what they all call me.\p")
+        "It is what they all call me.")
 		setspeaker(SP_NAME_LOOKER)
         msgbox("Incidentally, is the saying, “Don’t be\n"
         "a thief!” familiar to you?",MSGBOX_YESNO)
@@ -293,8 +283,8 @@ script Jubilife_Enterence_LuDa_Event_Cont {
 		waitmessage
 		giveitem(ITEM_RAINBOW_PASS)
 	setspeaker(SP_NAME_LOOKER)
-		msgbox("That nifty is card used to\n"
-        "track points earned from varous games.\p"
+		msgbox("That nifty card is used to track\n"
+        "points earned from varous games.\p"
 		"Games that can be played in the new\n"
 		"Pok\emon Center's basement area.\p"
         "I obtained it because it is quite\n"

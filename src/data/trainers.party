@@ -3552,11 +3552,11 @@ Name: Mason
 Class: TRAINER_CLASS_ENGINEER_FRLG
 Pic: Kindler
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
+Geodude (M)
 Level: 9
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -3570,7 +3570,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude (M)
+Rolycoly (F)
+Ability: Steam Engine
 Level: 6
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -5972,6 +5973,7 @@ AI: Check Bad Move
 
 Starly (M)
 Level: 5
+Ability: Keen Eye
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Careful
 
@@ -5992,6 +5994,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Impish
 - Tackle
 
+
 /*Route 203 Youngster Michael*/
 === TRAINER_JOSH ===
 Name: Michael
@@ -6006,8 +6009,9 @@ Kricketot (M)
 Level: 7 
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat (M)
+Murkrow (M)
 Level: 6 
+Ability: Insomnia
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 /*Route 203 Youngster Dallas*/
@@ -6020,9 +6024,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Shinx
+Houndour (M)
 Level: 8
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Ability: Early Bird
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 /*Route 203 Youngster Sebastian*/
 === TRAINER_JOEY ===
@@ -6034,9 +6039,10 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Machop
+Clobbopus (F)
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Bold
 
 /*Route ??? Youngster Austin*/
 === TRAINER_BEN ===
@@ -6241,7 +6247,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp (M)
+Magikarp (F)
+Level: 8
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Feebas (M)
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11105,10 +11115,16 @@ Double Battle: No
 AI: AI_FLAG_BASIC_TRAINER
 
 Bidoof (F)
-Level: 5
+Level: 4
 Ability: Simple
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Quiet
+
+Buneary (F)
+Level: 4
+Ability: Run Away
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Timid
 
 /*Route 203 Lass Kaitlin*/
 === TRAINER_HALEY_1 ===
@@ -11126,7 +11142,7 @@ Ability: Simple
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Rash
 
-Budew (F)
+Budew (M)
 Level: 4
 Ability: Natural Cure
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -11138,9 +11154,9 @@ Ability: Keen Eye
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Quirky
 
-Abra (F)
+Hoothoot (M)
 Level: 4
-Ability: Synchronize
+Ability: Keen Eye
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Docile
 
@@ -11264,7 +11280,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Shinx (F)
-Level: 7
+Level: 6
+Ability: Rivalry
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wattrel (F)
+Level: 6
+Ability: Volt Absorb
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 /* Route 204 Lass Samantha */
@@ -12068,10 +12090,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Starly (M)
+Gligar (M)
+Ability: Hyper Cutter
 Level: 7
 
-Shinx (M)
+Shinx (F)
+Ability: Rivalry
 Level: 7
 
 /* Oreburgh Gate Picnicker Diana */
@@ -12085,7 +12109,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Bidoof (F)
-Level: 9
+Level: 10
 
 
 === TRAINER_WALLY_MAUVILLE ===

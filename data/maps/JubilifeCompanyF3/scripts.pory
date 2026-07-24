@@ -34,3 +34,22 @@ script PoketchCo3F_Text_ThereAreDescriptionsOfPoketchApps1 {
         "apps.",MSGBOX_SIGN)
     release
 }
+
+script PoketchCo3F_Text_Trash_Can_One {
+    lock
+    msgbox("It's Trash.",MSGBOX_SIGN)
+    release
+}
+
+script PoketchCo3F_Text_Trash_Can_Two {
+    lock
+    msgbox("It's empty.\p"
+    "execpt for the trash",MSGBOX_SIGN)
+    release
+}
+
+script PoketchCo3F_Text_Trash_Can_Three {
+    lock
+    msgbox("It's full of empty.",MSGBOX_SIGN)
+    release
+}

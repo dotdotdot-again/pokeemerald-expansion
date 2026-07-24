@@ -70,7 +70,7 @@ script Route203_Youngster_Michael {
     trainerbattle_single(TRAINER_JOSH, "I get my get-up-and-go from my\n"
                 "Pokémon!\p"
                 "Here we go!\n"
-                "KRICKETOT! ZUBAT!", "Ack! My Pokémon...")
+                "Kricketot! Murkrow!", "Ack! My Pokémon...")
     msgbox("Keep out of the grass or dodge the\n"
                 "eyes of Trainers...?\p"
                 "I always have a tough time choosing.",MSGBOX_NPC)
@@ -79,7 +79,7 @@ script Route203_Youngster_Michael {
 }
 
 script Route203_Youngster_Dallas {
-    trainerbattle_single(TRAINER_TOMMY, "I’m never apart from my SHINX.\n"
+    trainerbattle_single(TRAINER_TOMMY, "I’m never apart from my Houndour.\n"
                 "Our bond is strong!", "So sad...\n"
                 "And so crushed...")
     msgbox("I don’t bear grudges over losing.\n"

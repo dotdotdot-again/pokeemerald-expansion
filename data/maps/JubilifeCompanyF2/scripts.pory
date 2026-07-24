@@ -27,7 +27,7 @@ script PoketchCo2F_Text_ClefairyCleffy {
 
 script PoketchCo2F_Text_PachirisuPatchii {
     lock
-    playmoncry(SPECIES_PACHIRISU,0)
-    msgbox("Patchii?",MSGBOX_NPC)
+    playmoncry(SPECIES_TOGEDEMARU,0)
+    msgbox("Dedemari?",MSGBOX_NPC)
     release
 }

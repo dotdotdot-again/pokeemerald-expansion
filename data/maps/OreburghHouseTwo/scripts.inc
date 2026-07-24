@@ -7,27 +7,27 @@ OreburghCityNorthHouse1F_Text_WouldYouBeWillingToTradeYourMachopForMyAbra::
 	lock
 # 5 "data/maps/OreburghHouseTwo/scripts.pory"
 	msgbox OreburghCityNorthHouse1F_Text_WouldYouBeWillingToTradeYourMachopForMyAbra_Text_0, MSGBOX_NPC
-# 9 "data/maps/OreburghHouseTwo/scripts.pory"
+# 10 "data/maps/OreburghHouseTwo/scripts.pory"
 	release
 	return
 
 
 OreburghCityNorthHouse1F_Text_APokemonObtainedInATradeGrowsQuickly::
-# 13 "data/maps/OreburghHouseTwo/scripts.pory"
-	lock
 # 14 "data/maps/OreburghHouseTwo/scripts.pory"
+	lock
+# 15 "data/maps/OreburghHouseTwo/scripts.pory"
 	msgbox OreburghCityNorthHouse1F_Text_APokemonObtainedInATradeGrowsQuickly_Text_0, MSGBOX_NPC
-# 20 "data/maps/OreburghHouseTwo/scripts.pory"
+# 21 "data/maps/OreburghHouseTwo/scripts.pory"
 	release
 	return
 
 
 OreburghCityNorthHouse1F_Text_WhenYouTradeAPokemonTheItemItsHoldingIsTradedAsWell::
-# 24 "data/maps/OreburghHouseTwo/scripts.pory"
-	lock
 # 25 "data/maps/OreburghHouseTwo/scripts.pory"
+	lock
+# 26 "data/maps/OreburghHouseTwo/scripts.pory"
 	msgbox OreburghCityNorthHouse1F_Text_WhenYouTradeAPokemonTheItemItsHoldingIsTradedAsWell_Text_0, MSGBOX_NPC
-# 30 "data/maps/OreburghHouseTwo/scripts.pory"
+# 31 "data/maps/OreburghHouseTwo/scripts.pory"
 	release
 	return
 
@@ -40,7 +40,7 @@ OreburghCityNorthHouse1F_Text_WouldYouBeWillingToTradeYourMachopForMyAbra_Text_0
 	.string "MACHOP for my ABRA?INSERT TRADE EVENT$"
 
 OreburghCityNorthHouse1F_Text_APokemonObtainedInATradeGrowsQuickly_Text_0:
-# 14 "data/maps/OreburghHouseTwo/scripts.pory"
+# 15 "data/maps/OreburghHouseTwo/scripts.pory"
 	.string "A Pokémon obtained in a trade grows\n"
 	.string "quickly.\p"
 	.string "But if a Pokémon grows too much, it may\n"
@@ -49,7 +49,7 @@ OreburghCityNorthHouse1F_Text_APokemonObtainedInATradeGrowsQuickly_Text_0:
 	.string "lots of Gym Badges.$"
 
 OreburghCityNorthHouse1F_Text_WhenYouTradeAPokemonTheItemItsHoldingIsTradedAsWell_Text_0:
-# 25 "data/maps/OreburghHouseTwo/scripts.pory"
+# 26 "data/maps/OreburghHouseTwo/scripts.pory"
 	.string "When you trade a Pokémon, the item it’s\n"
 	.string "holding is traded as well.\p"
 	.string "That’s pretty cool, huh?\p"

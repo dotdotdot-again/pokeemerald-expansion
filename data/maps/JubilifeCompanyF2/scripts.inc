@@ -38,7 +38,7 @@ PoketchCo2F_Text_PachirisuPatchii::
 # 29 "data/maps/JubilifeCompanyF2/scripts.pory"
 	lock
 # 30 "data/maps/JubilifeCompanyF2/scripts.pory"
-	playmoncry SPECIES_PACHIRISU, 0
+	playmoncry SPECIES_TOGEDEMARU, 0
 # 31 "data/maps/JubilifeCompanyF2/scripts.pory"
 	msgbox PoketchCo2F_Text_PachirisuPatchii_Text_0, MSGBOX_NPC
 # 32 "data/maps/JubilifeCompanyF2/scripts.pory"
@@ -66,4 +66,4 @@ PoketchCo2F_Text_ClefairyCleffy_Text_0:
 
 PoketchCo2F_Text_PachirisuPatchii_Text_0:
 # 31 "data/maps/JubilifeCompanyF2/scripts.pory"
-	.string "Patchii?$"
+	.string "Dedemari?$"

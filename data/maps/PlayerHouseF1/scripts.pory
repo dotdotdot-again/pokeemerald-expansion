@@ -80,6 +80,7 @@ script TalkMom {
         waitmessage
         fadescreen(FADE_TO_BLACK)
         special(HealPlayerParty)
+        applymovement(Moms_Cat, moves(face_player))
         playfanfare(MUS_HEAL)
         waitfanfare
         fadescreen(FADE_FROM_BLACK)
@@ -95,19 +96,24 @@ script TalkMom {
         waitmessage
         playfanfare(MUS_OBTAIN_ITEM)
     msgbox("{PLAYER} obtained\n"
-        "the {COLOR BLUE}{SHADOW LIGHT_BLUE}Mom's Journal{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!")
+        "the{COLOR BLUE}{SHADOW LIGHT_BLUE}Journal{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!")
 	waitfanfare
     setflag(FLAG_SYS_QUEST_MENU_GET)
     setspeaker(SP_NAME_MOM)
-        msgbox("That’s a Journal. You can use it to\n"
-        "keep a record of your daily events.\p"
+        msgbox("That’s my old Journal.\n"
+        "You can use it to keep a record\l"
+        "of your daily events.\p"
         "Check it, and you’ll be able to\n"
         "remember what you need to do.\p"
-        "I can also be helpful to keep track of\n"
-        "any tasks or requests your given on\l"
-        "a record adventure.",MSGBOX_AUTOCLOSE)
+        "It can also be helpful to keep track of\n"
+        "any tasks or requests you're given on\l"
+        "your adventure.\p"
+        "In fact, let me write down that Pok\edex\n"
+        "task for you right now.")
     waitmessage
+    startquest(QUEST_COMPLETE_DEX)
     applymovement(Mom, moves(face_away_player))
+    applymovement(Moms_Cat, moves(face_left))
     waitmovement
     setspeaker(SP_NAME_MOM)
         msgbox("Gee, a journey full of adventure...\n"
@@ -121,7 +127,7 @@ script TalkMom {
         setspeaker(SP_NAME_MOM)
         msgbox("I’m just joking, dear!\n"
         "Yup, {PLAYER}!\p"
-        "I’ll be all right by myself, so you\n"
+        "I’ll be all right here with Glammy, so you\n"
         "go and enjoy your adventure!\p"
         "When you’re exposed to new things,\n"
         "and experience new sensations...\l"
@@ -305,14 +311,22 @@ script after_starter {
 
 script PlayerHouseF1_Meow {
     lock
-    if(var(VAR_TWINLEAF_INTRO_STATE) == 8){
+    if(var(VAR_TWINLEAF_INTRO_STATE) == 8 && var(VAR_SANDGEM_INTRO_STATE) > 2){
     playmoncry(SPECIES_GLAMEOW,0)
     setspeaker("Glammy")
     applymovement(Moms_Cat, moves(emote_heart))
     msgbox("Meorw Merooow!!\p"
     "\qoGlammy seems happy you\n"
     "are ok.\qc",MSGBOX_NPC)
-
+    }
+    elif(var(VAR_SANDGEM_INTRO_STATE) == 3){
+    playmoncry(SPECIES_GLAMEOW,0)
+    setspeaker("Glammy")
+    applymovement(Moms_Cat, moves(emote_double_exclamation_mark))
+    msgbox("Mrrow!!! Mmmmrow!\p"
+    "\qoGlammy seems sad to see you go\p"
+    "and a little jeleous of your new\n"
+    "Pok\emon.\qc",MSGBOX_NPC)
     }
     else{
     playmoncry(SPECIES_GLAMEOW,0)

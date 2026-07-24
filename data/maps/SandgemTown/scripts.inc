@@ -799,6 +799,102 @@ testingSomethingSandgem::
 	return
 
 
+trade_test::
+# 636 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 637 "data/maps/SandgemTown/scripts.pory"
+	goto_if_unset FLAG_ABRA_TRADE, trade_test_2
+# 665 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_5, MSGBOX_NPC
+trade_test_1:
+# 667 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+trade_test_2:
+# 638 "data/maps/SandgemTown/scripts.pory"
+	specialvar INGAME_TRADE_SEEL, GetInGameTradeSpeciesInfo
+# 639 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_0, MSGBOX_YESNO
+# 640 "data/maps/SandgemTown/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq trade_test_5
+# 660 "data/maps/SandgemTown/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq trade_test_6
+	goto trade_test_1
+
+trade_test_5:
+# 641 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_1
+# 642 "data/maps/SandgemTown/scripts.pory"
+	special ChoosePartyMon
+# 643 "data/maps/SandgemTown/scripts.pory"
+	waitse
+# 644 "data/maps/SandgemTown/scripts.pory"
+	compare VAR_RESULT, PARTY_NOTHING_CHOSEN
+	goto_if_eq trade_test_9
+# 648 "data/maps/SandgemTown/scripts.pory"
+	compare VAR_RESULT, SPECIES_BULBASAUR
+	goto_if_eq trade_test_10
+# 657 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_4, MSGBOX_AUTOCLOSE
+	goto trade_test_1
+
+trade_test_6:
+# 661 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_2, MSGBOX_AUTOCLOSE
+	goto trade_test_1
+
+trade_test_9:
+# 645 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_2, MSGBOX_AUTOCLOSE
+# 646 "data/maps/SandgemTown/scripts.pory"
+	release
+	goto trade_test_1
+
+trade_test_10:
+# 649 "data/maps/SandgemTown/scripts.pory"
+	specialvar VAR_RESULT, GetTradeSpecies
+# 650 "data/maps/SandgemTown/scripts.pory"
+	special CreateInGameTradePokemon
+# 651 "data/maps/SandgemTown/scripts.pory"
+	special DoInGameTradeScene
+# 652 "data/maps/SandgemTown/scripts.pory"
+	waitstate
+# 653 "data/maps/SandgemTown/scripts.pory"
+	setflag FLAG_ABRA_TRADE
+# 654 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_Text_3, MSGBOX_AUTOCLOSE
+	goto trade_test_1
+
+
+trade_test_second::
+# 673 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 674 "data/maps/SandgemTown/scripts.pory"
+	ingame_trade INGAME_TRADE_ABRA, trade_test_second_Text_0, jump_one, jump_two, trade_thx
+# 675 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+jump_one::
+# 680 "data/maps/SandgemTown/scripts.pory"
+	msgbox jump_one_Text_0
+# 681 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+jump_two::
+# 686 "data/maps/SandgemTown/scripts.pory"
+	msgbox jump_two_Text_0
+# 687 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
 # 82 "data/maps/SandgemTown/scripts.pory"
 Sandgem_LuDa_Walk_Mid_Movement_0:
 # 82 "data/maps/SandgemTown/scripts.pory"
@@ -1167,6 +1263,42 @@ SandgemTown_Text_PokemonCenterSign_Text_0:
 	.string "Heal Your Pokémon!\n"
 	.string "Pokémon Center$"
 
+trade_test_Text_0:
+# 639 "data/maps/SandgemTown/scripts.pory"
+	.string "Wanna Trade? Bulba for Abra?$"
+
+trade_test_Text_1:
+# 641 "data/maps/SandgemTown/scripts.pory"
+	.string "Cool!$"
+
+trade_test_Text_2:
+# 645 "data/maps/SandgemTown/scripts.pory"
+	.string "Ok, bye bye$"
+
+trade_test_Text_3:
+# 654 "data/maps/SandgemTown/scripts.pory"
+	.string "thanks dawg$"
+
+trade_test_Text_4:
+# 657 "data/maps/SandgemTown/scripts.pory"
+	.string "that ain't it dawg$"
+
+trade_test_Text_5:
+# 665 "data/maps/SandgemTown/scripts.pory"
+	.string "thx for trade$"
+
+trade_test_second_Text_0:
+# 674 "data/maps/SandgemTown/scripts.pory"
+	.string "me want abra$"
+
+jump_one_Text_0:
+# 680 "data/maps/SandgemTown/scripts.pory"
+	.string "jump one?$"
+
+jump_two_Text_0:
+# 686 "data/maps/SandgemTown/scripts.pory"
+	.string "jump two?$"
+
 SandgemTown_Text_DawnTheProfessorIsWaiting::
 # 485 "data/maps/SandgemTown/scripts.pory"
 	.string "Oh! There you are!\n"
@@ -1303,3 +1435,15 @@ SandgemTown_Text_LucasLetYourFamilyKnowYoureHelpingProfRowan::
 	.string "Pokémon at the Pokémon Center.\p"
 	.string "You’ll be safe then.\n"
 	.string "OK, be seeing you!$"
+
+trade_dec::
+# 691 "data/maps/SandgemTown/scripts.pory"
+	.string "decline msg$"
+
+trade_wrong::
+# 695 "data/maps/SandgemTown/scripts.pory"
+	.string "wrong msg$"
+
+trade_thx::
+# 699 "data/maps/SandgemTown/scripts.pory"
+	.string "thx Msg$"
