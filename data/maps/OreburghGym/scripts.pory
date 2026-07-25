@@ -47,6 +47,7 @@ if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
         "You should also take this, too.")
     waitmessage
     giveitem(ITEM_TM_STEALTH_ROCK)
+    questmenu(QUEST_MENU_SET_ACTIVE , QUEST_GET_FIRST_BADGE)
          setspeaker(SP_NAME_ROARK)
     msgbox("That TM contains\n"
         "the move Stealth Rock.\p"
@@ -54,9 +55,9 @@ if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
         "foes that switch into battle.\p"
         "Incidentally, a TM will teach its move\n"
         "to a Pokémon instantly.\p"
-        "But a TM will break when you use it,\n"
-        "so make certain you want a Pokémon\l"
-        "to learn that move.",MSGBOX_AUTOCLOSE)
+        "And unlike in the old days these\n"
+        "TM's won't break after one use.\p"
+        "So feel free to teach it\nto whoever you want!",MSGBOX_AUTOCLOSE)
     waitmessage     
     }
     elif(flag(FLAG_DEFEATED_RUSTBORO_GYM) == TRUE)

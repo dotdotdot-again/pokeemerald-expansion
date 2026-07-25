@@ -671,7 +671,18 @@ release
 
 script trade_test_second {
     lock
-    ingame_trade(INGAME_TRADE_ABRA,"me want abra",jump_one,jump_two,trade_thx)
+    msgbox("test".MSGBOX_NPC)
+    questmenu(QUEST_MENU_SET_ACTIVE,QUEST_GET_FIRST_BADGE)
+    //ingame_trade(INGAME_TRADE_ABRA,"me want abra",jump_one,jump_two,trade_thx)
+    release
+    
+}
+
+script trade_test_secondt {
+    lock
+    msgbox("test 2".MSGBOX_NPC)
+    questmenu(QUEST_MENU_COMPLETE_QUEST ,QUEST_GET_FIRST_BADGE)
+    //ingame_trade(INGAME_TRADE_ABRA,"me want abra",jump_one,jump_two,trade_thx)
     release
     
 }

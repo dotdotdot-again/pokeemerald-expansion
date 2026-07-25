@@ -30,3 +30,39 @@ script OreburghCityNorthHouse1F_Text_WhenYouTradeAPokemonTheItemItsHoldingIsTrad
         "along with your Pokémon in a trade!",MSGBOX_NPC)
     release
 }
+
+script Oreburgh_Trade_Girl {
+    lockall
+    if(flag(FLAG_RUSTBORO_NPC_TRADE_COMPLETED) == FALSE) {
+        applymovement(2, moves(face_player))
+        ingame_trade(INGAME_TRADE_ABRA,"Listen, listen. Do you have a Pokémon\n"
+        "called Machop?\p"
+        "Would you be willing to trade your\n"
+        "Machop for my Abra?",Oreburgh_Trade_Girl_Decline,Oreburgh_Trade_Girl_Wrong,"Thanks to Pokémon, I got to be\n"
+        "friends with you!")
+        waitmessage
+        setflag(FLAG_RUSTBORO_NPC_TRADE_COMPLETED)
+        closemessage
+        releaseall
+
+    }
+    else{
+        msgbox("Thanks to Pokémon, I got to be\n"
+        "friends with you!",MSGBOX_NPC)
+    }
+
+    
+}
+
+script Oreburgh_Trade_Girl_Wrong {
+    msgbox("What I asked for was a Machop...",MSGBOX_NPC)
+
+}
+
+script Oreburgh_Trade_Girl_Decline {
+    msgbox("Oh, OK...\n"
+        "Well, I can’t make you trade me.\p"
+        "But if you change your mind,\n"
+        "I’ll be right here waiting!",MSGBOX_NPC)
+
+}

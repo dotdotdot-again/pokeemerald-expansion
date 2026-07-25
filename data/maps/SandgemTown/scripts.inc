@@ -873,24 +873,38 @@ trade_test_second::
 # 673 "data/maps/SandgemTown/scripts.pory"
 	lock
 # 674 "data/maps/SandgemTown/scripts.pory"
-	ingame_trade INGAME_TRADE_ABRA, trade_test_second_Text_0, jump_one, jump_two, trade_thx
+	msgbox trade_test_second_Text_0
 # 675 "data/maps/SandgemTown/scripts.pory"
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_GET_FIRST_BADGE
+# 677 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+trade_test_secondt::
+# 682 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 683 "data/maps/SandgemTown/scripts.pory"
+	msgbox trade_test_secondt_Text_0
+# 684 "data/maps/SandgemTown/scripts.pory"
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_GET_FIRST_BADGE
+# 686 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 jump_one::
-# 680 "data/maps/SandgemTown/scripts.pory"
+# 691 "data/maps/SandgemTown/scripts.pory"
 	msgbox jump_one_Text_0
-# 681 "data/maps/SandgemTown/scripts.pory"
+# 692 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 jump_two::
-# 686 "data/maps/SandgemTown/scripts.pory"
+# 697 "data/maps/SandgemTown/scripts.pory"
 	msgbox jump_two_Text_0
-# 687 "data/maps/SandgemTown/scripts.pory"
+# 698 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
@@ -1289,14 +1303,18 @@ trade_test_Text_5:
 
 trade_test_second_Text_0:
 # 674 "data/maps/SandgemTown/scripts.pory"
-	.string "me want abra$"
+	.string "test$"
+
+trade_test_secondt_Text_0:
+# 683 "data/maps/SandgemTown/scripts.pory"
+	.string "test 2$"
 
 jump_one_Text_0:
-# 680 "data/maps/SandgemTown/scripts.pory"
+# 691 "data/maps/SandgemTown/scripts.pory"
 	.string "jump one?$"
 
 jump_two_Text_0:
-# 686 "data/maps/SandgemTown/scripts.pory"
+# 697 "data/maps/SandgemTown/scripts.pory"
 	.string "jump two?$"
 
 SandgemTown_Text_DawnTheProfessorIsWaiting::
@@ -1437,13 +1455,13 @@ SandgemTown_Text_LucasLetYourFamilyKnowYoureHelpingProfRowan::
 	.string "OK, be seeing you!$"
 
 trade_dec::
-# 691 "data/maps/SandgemTown/scripts.pory"
+# 702 "data/maps/SandgemTown/scripts.pory"
 	.string "decline msg$"
 
 trade_wrong::
-# 695 "data/maps/SandgemTown/scripts.pory"
+# 706 "data/maps/SandgemTown/scripts.pory"
 	.string "wrong msg$"
 
 trade_thx::
-# 699 "data/maps/SandgemTown/scripts.pory"
+# 710 "data/maps/SandgemTown/scripts.pory"
 	.string "thx Msg$"

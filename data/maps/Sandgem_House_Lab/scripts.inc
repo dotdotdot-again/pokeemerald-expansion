@@ -106,115 +106,115 @@ Intro_In_Sandgem_Lab_10:
 	setspeaker SP_NAME_ROWAN
 # 124 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_9
-# 137 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 136 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmessage
-# 138 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 137 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabLuda, Intro_In_Sandgem_Lab_Movement_4
-# 139 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 138 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmovement
-# 140 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 139 "data/maps/Sandgem_House_Lab/scripts.pory"
 	checkplayergender
-# 141 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 140 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Intro_In_Sandgem_Lab_14
-# 148 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 147 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Intro_In_Sandgem_Lab_15
 Intro_In_Sandgem_Lab_13:
+# 154 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker SP_NAME_ROWAN
 # 155 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker SP_NAME_ROWAN
-# 156 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_10
+# 165 "data/maps/Sandgem_House_Lab/scripts.pory"
+	waitmessage
 # 166 "data/maps/Sandgem_House_Lab/scripts.pory"
-	waitmessage
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement Lab_Cedrus, Intro_In_Sandgem_Lab_Movement_7
-# 168 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_11
+# 169 "data/maps/Sandgem_House_Lab/scripts.pory"
+	waitmovementall
 # 170 "data/maps/Sandgem_House_Lab/scripts.pory"
-	waitmovementall
+	setspeaker Intro_In_Sandgem_Lab_Text_12
 # 171 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker Intro_In_Sandgem_Lab_Text_12
-# 172 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_13, MSGBOX_AUTOCLOSE
-# 175 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 174 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabLuda, Intro_In_Sandgem_Lab_Movement_8
-# 176 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 175 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Intro_In_Sandgem_Lab_Movement_8
-# 177 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 176 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabRowan, Intro_In_Sandgem_Lab_Movement_8
-# 178 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 177 "data/maps/Sandgem_House_Lab/scripts.pory"
 	playse SE_PIN
-# 179 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 178 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitse
+# 179 "data/maps/Sandgem_House_Lab/scripts.pory"
+	waitmovementall
 # 180 "data/maps/Sandgem_House_Lab/scripts.pory"
-	waitmovementall
+	waitmessage
 # 181 "data/maps/Sandgem_House_Lab/scripts.pory"
-	waitmessage
-# 182 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabLuda, Intro_In_Sandgem_Lab_Movement_6
-# 183 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 182 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabRowan, Intro_In_Sandgem_Lab_Movement_3
-# 184 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 183 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker Intro_In_Sandgem_Lab_Text_12
-# 185 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 184 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_14
+# 186 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker SP_NAME_ROWAN
 # 187 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker SP_NAME_ROWAN
-# 188 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_15
+# 190 "data/maps/Sandgem_House_Lab/scripts.pory"
+	waitmessage
 # 191 "data/maps/Sandgem_House_Lab/scripts.pory"
-	waitmessage
-# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	closemessage
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement Lab_Cedrus, Intro_In_Sandgem_Lab_Movement_9
-# 194 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmovementall
-# 195 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 194 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_CEDRUS
-# 196 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 195 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_16, MSGBOX_AUTOCLOSE
+# 199 "data/maps/Sandgem_House_Lab/scripts.pory"
+	waitmessage
 # 200 "data/maps/Sandgem_House_Lab/scripts.pory"
-	waitmessage
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement Lab_Cedrus, Intro_In_Sandgem_Lab_Movement_10
-# 202 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmovement
-# 203 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 202 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabLuda, Intro_In_Sandgem_Lab_Movement_11
-# 204 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 203 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabRowan, Intro_In_Sandgem_Lab_Movement_12
-# 205 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 204 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_ROWAN
-# 206 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 205 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Intro_In_Sandgem_Lab_Text_17
-# 225 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 224 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmessage
-# 226 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 225 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Intro_In_Sandgem_Lab_Movement_3
-# 227 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 226 "data/maps/Sandgem_House_Lab/scripts.pory"
 	checkplayergender
-# 228 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 227 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Intro_In_Sandgem_Lab_19
-# 243 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 242 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Intro_In_Sandgem_Lab_20
 Intro_In_Sandgem_Lab_18:
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	applymovement LabLuda, Intro_In_Sandgem_Lab_Movement_13
-# 251 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmovement
-# 252 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 251 "data/maps/Sandgem_House_Lab/scripts.pory"
 	removeobject LabLuda
-# 253 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 252 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setflag LUDA_SANDGEM_LAB
-# 254 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 253 "data/maps/Sandgem_House_Lab/scripts.pory"
 	clearflag LUDA_SANDGEM
-# 255 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 254 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setvar VAR_SANDGEM_INTRO_STATE, 1
-# 256 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 255 "data/maps/Sandgem_House_Lab/scripts.pory"
 	releaseall
 	return
 
@@ -253,177 +253,237 @@ Intro_In_Sandgem_Lab_11:
 	goto Intro_In_Sandgem_Lab_10
 
 Intro_In_Sandgem_Lab_14:
-# 144 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 143 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_DAWN
-# 145 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 144 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox SandgemTownLab_Text_DawnIveGotOneToo, MSGBOX_AUTOCLOSE
-# 146 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 145 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmessage
 	goto Intro_In_Sandgem_Lab_13
 
 Intro_In_Sandgem_Lab_15:
-# 151 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 150 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_LUCAS
-# 152 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 151 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox SandgemTownLab_Text_LucasIveGotTheSameKindOfPokedex, MSGBOX_AUTOCLOSE
-# 153 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 152 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmessage
 	goto Intro_In_Sandgem_Lab_13
 
 Intro_In_Sandgem_Lab_19:
-# 230 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 229 "data/maps/Sandgem_House_Lab/scripts.pory"
 	switch VAR_STARTER_MON
-# 231 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 230 "data/maps/Sandgem_House_Lab/scripts.pory"
 	case 0, Intro_In_Sandgem_Lab_25
-# 233 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 232 "data/maps/Sandgem_House_Lab/scripts.pory"
 	case 1, Intro_In_Sandgem_Lab_26
-# 235 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 234 "data/maps/Sandgem_House_Lab/scripts.pory"
 	case 2, Intro_In_Sandgem_Lab_27
 Intro_In_Sandgem_Lab_23:
-# 239 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 238 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_DAWN
-# 240 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 239 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings, MSGBOX_AUTOCLOSE
-# 241 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 240 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmessage
 	goto Intro_In_Sandgem_Lab_18
 
 Intro_In_Sandgem_Lab_20:
-# 246 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 245 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_LUCAS
-# 247 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 246 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox SandgemTownLab_Text_LucasIllTeachYouStuffLater, MSGBOX_AUTOCLOSE
-# 248 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 247 "data/maps/Sandgem_House_Lab/scripts.pory"
 	waitmessage
 	goto Intro_In_Sandgem_Lab_18
 
 Intro_In_Sandgem_Lab_25:
-# 232 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 231 "data/maps/Sandgem_House_Lab/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_PIPLUP
 	goto Intro_In_Sandgem_Lab_23
 
 Intro_In_Sandgem_Lab_26:
-# 234 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 233 "data/maps/Sandgem_House_Lab/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_TURTWIG
 	goto Intro_In_Sandgem_Lab_23
 
 Intro_In_Sandgem_Lab_27:
-# 236 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 235 "data/maps/Sandgem_House_Lab/scripts.pory"
 	bufferspeciesname STR_VAR_2, SPECIES_CHIMCHAR
 	goto Intro_In_Sandgem_Lab_23
 
 
 Rowan_Lab::
-# 263 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 262 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 1
 	goto_if_eq Rowan_Lab_1
+# 270 "data/maps/Sandgem_House_Lab/scripts.pory"
+	compare VAR_SANDGEM_INTRO_STATE, 1
+	goto_if_gt Rowan_Lab_2
+# 312 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker SP_NAME_ROWAN
+# 313 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_7, MSGBOX_NPC
+# 314 "data/maps/Sandgem_House_Lab/scripts.pory"
+	release
 	return
 
 Rowan_Lab_1:
-# 265 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 263 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 266 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 264 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_ROWAN
-# 267 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 265 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Rowan_Lab_Text_0, MSGBOX_NPC
-# 270 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 268 "data/maps/Sandgem_House_Lab/scripts.pory"
+	release
+	return
+
+Rowan_Lab_2:
+# 272 "data/maps/Sandgem_House_Lab/scripts.pory"
+	applymovement 3, Rowan_Lab_Movement_0
+# 273 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker SP_NAME_ROWAN
+# 274 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_1, MSGBOX_YESNO
+# 277 "data/maps/Sandgem_House_Lab/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq Rowan_Lab_6
+# 304 "data/maps/Sandgem_House_Lab/scripts.pory"
+	compare VAR_RESULT, 0
+	goto_if_eq Rowan_Lab_7
+	return
+
+Rowan_Lab_6:
+# 278 "data/maps/Sandgem_House_Lab/scripts.pory"
+	setspeaker SP_NAME_ROWAN
+# 279 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_2
+# 280 "data/maps/Sandgem_House_Lab/scripts.pory"
+	specialvar VAR_RESULT, countMons
+# 281 "data/maps/Sandgem_House_Lab/scripts.pory"
+	compare VAR_RESULT, 2
+	goto_if_ge Rowan_Lab_10
+# 295 "data/maps/Sandgem_House_Lab/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_RESULT
+# 296 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_5, MSGBOX_AUTOCLOSE
+	return
+
+Rowan_Lab_7:
+# 305 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_6, MSGBOX_AUTOCLOSE
+	return
+
+Rowan_Lab_10:
+# 282 "data/maps/Sandgem_House_Lab/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_RESULT
+# 283 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_3
+# 288 "data/maps/Sandgem_House_Lab/scripts.pory"
+	giveitem ITEM_BOTTLE_CAP
+# 289 "data/maps/Sandgem_House_Lab/scripts.pory"
+	msgbox Rowan_Lab_Text_4, MSGBOX_AUTOCLOSE
+# 291 "data/maps/Sandgem_House_Lab/scripts.pory"
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_COMPLETE_DEX, SUB_QUEST_30_MONS_CAUGHT
+# 292 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 
 LuDa_Dad_Lab::
-# 281 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 321 "data/maps/Sandgem_House_Lab/scripts.pory"
 	checkplayergender
-# 282 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 322 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq LuDa_Dad_Lab_1
-# 294 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 334 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq LuDa_Dad_Lab_2
 	return
 
 LuDa_Dad_Lab_1:
-# 285 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 325 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 286 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 326 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker LuDa_Dad_Lab_Text_0
-# 287 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 327 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox LuDa_Dad_Lab_Text_1, MSGBOX_NPC
-# 292 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 332 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 LuDa_Dad_Lab_2:
-# 298 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 338 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 299 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 339 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker LuDa_Dad_Lab_Text_2
-# 300 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 340 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox LuDa_Dad_Lab_Text_3, MSGBOX_NPC
-# 305 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 345 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 
 Roseanne_Lab::
-# 310 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 350 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 311 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 351 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 1
 	goto_if_eq Roseanne_Lab_1
-# 321 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 361 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 1
 	goto_if_gt Roseanne_Lab_2
-# 350 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 390 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker Roseanne_Lab_Text_0
-# 351 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 391 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_1, MSGBOX_NPC
-# 357 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 397 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 Roseanne_Lab_1:
-# 312 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 352 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker Roseanne_Lab_Text_0
-# 313 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 353 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_1, MSGBOX_NPC
-# 319 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 359 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 Roseanne_Lab_2:
-# 323 "data/maps/Sandgem_House_Lab/scripts.pory"
-	applymovement 3, Roseanne_Lab_Movement_0
-# 324 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 363 "data/maps/Sandgem_House_Lab/scripts.pory"
+	applymovement 3, Rowan_Lab_Movement_0
+# 364 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker Roseanne_Lab_Text_0
-# 325 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 365 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_2, MSGBOX_YESNO
-# 328 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 368 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Roseanne_Lab_6
-# 343 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 383 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq Roseanne_Lab_7
 	return
 
 Roseanne_Lab_6:
-# 329 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 369 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker Roseanne_Lab_Text_0
-# 330 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 370 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_3
-# 331 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 371 "data/maps/Sandgem_House_Lab/scripts.pory"
 	specialvar VAR_RESULT, countMons
-# 332 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 372 "data/maps/Sandgem_House_Lab/scripts.pory"
 	compare VAR_RESULT, 30
 	goto_if_ge Roseanne_Lab_10
-# 336 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 376 "data/maps/Sandgem_House_Lab/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_RESULT
-# 337 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 377 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_4, MSGBOX_AUTOCLOSE
 	return
 
 Roseanne_Lab_7:
-# 344 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 384 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_5, MSGBOX_AUTOCLOSE
 	return
 
@@ -432,23 +492,23 @@ Roseanne_Lab_10:
 
 
 Lab_PC::
-# 362 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 402 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 363 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 403 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Lab_PC_Text_0, MSGBOX_SIGN
-# 364 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 404 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 
 Ced_Lab::
-# 368 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 408 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 369 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 409 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_CEDRUS
-# 370 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 410 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Ced_Lab_Text_0
-# 372 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 412 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
@@ -525,105 +585,105 @@ Intro_In_Sandgem_Lab_Movement_6:
 	face_up
 	step_end
 
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_7:
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_left
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_left
-# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 166 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_left
 	step_end
 
-# 175 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 174 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_8:
-# 175 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 174 "data/maps/Sandgem_House_Lab/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_9:
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_8
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_down
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_left
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_down
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_left
-# 193 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 192 "data/maps/Sandgem_House_Lab/scripts.pory"
 	delay_16
 	step_end
 
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_10:
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_right
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_right
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_right
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_up
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_up
-# 201 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 200 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_up
 	step_end
 
-# 203 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 202 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_11:
-# 203 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 202 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_left
 	step_end
 
-# 204 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 203 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_12:
-# 204 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 203 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_down
 	step_end
 
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 Intro_In_Sandgem_Lab_Movement_13:
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
-# 250 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 249 "data/maps/Sandgem_House_Lab/scripts.pory"
 	walk_down
 	step_end
 
-# 323 "data/maps/Sandgem_House_Lab/scripts.pory"
-Roseanne_Lab_Movement_0:
-# 323 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 272 "data/maps/Sandgem_House_Lab/scripts.pory"
+Rowan_Lab_Movement_0:
+# 272 "data/maps/Sandgem_House_Lab/scripts.pory"
 	face_player
 	step_end
 
@@ -723,15 +783,14 @@ Intro_In_Sandgem_Lab_Text_9:
 	.string "{PLAYER}, I ask that you go\n"
 	.string "everywhere and meet every kind of\l"
 	.string "Pokémon in this region!\p"
-	.string "Also as an incentive I'll have my\n"
-	.string "assistant Roseanne give you rewards\l"
-	.string "after certain milestones.\p"
-	.string "Talk to her after you catch about\n"
-	.string "hmmmm lets say 30 Pokémon?\p"
-	.string "and she'll give you a fine reward.$"
+	.string "Also as an incentive I'll giave you some\n"
+	.string "rewards after certain milestones.\p"
+	.string "Show me your dex after you catch about\n"
+	.string "hmmmm...\plets say 30 Pokémon?\n"
+	.string "and I'll give you a fine reward.$"
 
 Intro_In_Sandgem_Lab_Text_10:
-# 156 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 155 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "When you walked up Route 201\n"
 	.string "with your Pokémon, what did you feel?\p"
 	.string "I’ve lived for 60 long years.\n"
@@ -744,40 +803,40 @@ Intro_In_Sandgem_Lab_Text_10:
 	.string "Now go!$"
 
 Intro_In_Sandgem_Lab_Text_11:
-# 168 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 167 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "{PLAYER}, your grand adventure\n"
 	.string "begins rig-$"
 
 Intro_In_Sandgem_Lab_Text_12:
-# 171 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 170 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Rude Woman$"
 
 Intro_In_Sandgem_Lab_Text_13:
-# 172 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 171 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Proffesor Rowan.\p"
 	.string "I require your assistance with\n"
 	.string "something on your personal computer.$"
 
 Intro_In_Sandgem_Lab_Text_14:
-# 185 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 184 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Should not take but a momment\n"
 	.string "of your time.$"
 
 Intro_In_Sandgem_Lab_Text_15:
-# 188 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 187 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Um, well Professor Cedrus, I'd be glad to\n"
 	.string "but, as it so happens I'm a little well\l"
 	.string "preoccupied at this exact momment...$"
 
 Intro_In_Sandgem_Lab_Text_16:
-# 196 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 195 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I see...\p"
 	.string "My apologies.\p"
 	.string "I will be waiting by the your\n"
 	.string "personal computer when you are done.$"
 
 Intro_In_Sandgem_Lab_Text_17:
-# 206 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 205 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Ahem...\p"
 	.string "Sorry about that {PLAYER},\n"
 	.string "she's... new around here.\n"
@@ -799,17 +858,58 @@ Intro_In_Sandgem_Lab_Text_17:
 	.string "begins right now!$"
 
 Rowan_Lab_Text_0:
-# 267 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 265 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Go on!\p"
 	.string "{PLAYER}, your grand adventure\n"
 	.string "awaits you!$"
 
+Rowan_Lab_Text_1:
+# 274 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "Ah, {PLAYER}!\p"
+	.string "You've come to show me the Progress\n"
+	.string "you've made on your Pokédex?$"
+
+Rowan_Lab_Text_2:
+# 279 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "Hmmm...$"
+
+Rowan_Lab_Text_3:
+# 283 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "Oh, it seems you've caught {STR_VAR_1}\n"
+	.string "Pokémon!\p"
+	.string "Well done {PLAYER}!\p"
+	.string "Here, accept this reward for this\n"
+	.string "wonderful accomplishment!$"
+
+Rowan_Lab_Text_4:
+# 289 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "I'll give you another reward after you\p"
+	.string "catch 50 more Pokémon.$"
+
+Rowan_Lab_Text_5:
+# 296 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "You've caught {STR_VAR_1} Pokémon in \n"
+	.string "Sinnoh...\p"
+	.string "Look harder for wild Pokémon.\p"
+	.string "Don't be afraid of going into tall\n"
+	.string "grass.$"
+
+Rowan_Lab_Text_6:
+# 305 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "What's wrong?\p"
+	.string "You're not suggesting you've seen so\n"
+	.string "few that you're afraid to show me?\p$"
+
+Rowan_Lab_Text_7:
+# 313 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "Hello, {PLAYER}!$"
+
 LuDa_Dad_Lab_Text_0:
-# 286 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 326 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Dawn’s Father$"
 
 LuDa_Dad_Lab_Text_1:
-# 287 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 327 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’m Dawn’s father.\p"
 	.string "I’ll be happy to assist you on your\n"
 	.string "quest for the professor.\p"
@@ -817,11 +917,11 @@ LuDa_Dad_Lab_Text_1:
 	.string "I’m sure we can count on you!$"
 
 LuDa_Dad_Lab_Text_2:
-# 299 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 339 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Lucas’ Father$"
 
 LuDa_Dad_Lab_Text_3:
-# 300 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 340 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’m Lucas’ father.\p"
 	.string "I’ll be happy to assist you on your\n"
 	.string "quest for the professor.\p"
@@ -829,11 +929,11 @@ LuDa_Dad_Lab_Text_3:
 	.string "I’m sure we can count on you!$"
 
 Roseanne_Lab_Text_0:
-# 312 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 352 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Roseanne$"
 
 Roseanne_Lab_Text_1:
-# 313 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 353 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Professor Rowan invented a new\n"
 	.string "Pokédex while working alongside a\l"
 	.string "professor from the Kanto region.\p"
@@ -842,48 +942,48 @@ Roseanne_Lab_Text_1:
 	.string "our professor!$"
 
 Roseanne_Lab_Text_2:
-# 325 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 365 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Hello {PLAYER}\p"
 	.string "Do you want me to check if you've\n"
 	.string "hit a reward milestone yet?$"
 
 Roseanne_Lab_Text_3:
-# 330 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 370 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Hmmm let me look here...\p$"
 
 Roseanne_Lab_Text_4:
-# 337 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 377 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Sorry you only have {STR_VAR_1} \n"
 	.string "Pokémon registred as caught.\p"
 	.string "That's not enough for a reward yet.$"
 
 Roseanne_Lab_Text_5:
-# 344 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 384 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Ok, well you know where to find\n"
 	.string "me when you do.$"
 
 Lab_PC_Text_0:
-# 363 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 403 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "It's Rowan's Computer$"
 
 Ced_Lab_Text_0:
-# 370 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 410 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Sorry I am too busy to converse\n"
 	.string "right now.$"
 
 SandgemTownLab_Text_DawnImSoGladThatYourKindTowardPokemon::
-# 385 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 425 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’m so glad that you’re kind\n"
 	.string "toward Pokémon!\p"
 	.string "If you weren’t, I’d have to...\n"
 	.string "Oh, I just can’t say it...$"
 
 SandgemTownLab_Text_DawnIveGotOneToo::
-# 392 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 432 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’ve got one, too!$"
 
 SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings::
-# 396 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 436 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "The Pokémon that I met for\n"
 	.string "the first time was {STR_VAR_2}!\p"
 	.string "If you would have chosen {STR_VAR_2}\n"
@@ -900,19 +1000,19 @@ SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings::
 	.string "Glad to meet you, {PLAYER}!$"
 
 SandgemTownLab_Text_LucasBoyAmIGladYoureKindTowardPokemon::
-# 415 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 455 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Boy, am I glad you’re kind\n"
 	.string "toward Pokémon.\p"
 	.string "If you weren’t, well...\n"
 	.string "I don’t even want to think about it.$"
 
 SandgemTownLab_Text_LucasIveGotTheSameKindOfPokedex::
-# 422 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 462 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’ve got the same kind of\n"
 	.string "Pokédex as you.$"
 
 SandgemTownLab_Text_LucasIllTeachYouStuffLater::
-# 427 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 467 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "The professor asked me to help,\n"
 	.string "so I’m filling the Pokédex pages, too.\p"
 	.string "That makes us comrades working toward\n"

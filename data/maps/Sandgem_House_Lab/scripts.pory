@@ -128,12 +128,11 @@ script Intro_In_Sandgem_Lab {
         "{PLAYER}, I ask that you go\n"
         "everywhere and meet every kind of\l"
         "Pokémon in this region!\p"
-        "Also as an incentive I'll have my\n"
-        "assistant Roseanne give you rewards\l"
-        "after certain milestones.\p"
-        "Talk to her after you catch about\n"
-        "hmmmm lets say 30 Pokémon?\p"
-        "and she'll give you a fine reward.")
+        "Also as an incentive I'll giave you some\n"
+        "rewards after certain milestones.\p"
+        "Show me your dex after you catch about\n"
+        "hmmmm...\plets say 30 Pokémon?\n"
+        "and I'll give you a fine reward.")
     waitmessage
     applymovement(LabLuda, moves(walk_in_place_left))
     waitmovement
@@ -260,19 +259,60 @@ script Intro_In_Sandgem_Lab {
 //NPC Text
 
 script Rowan_Lab {
-if(var(VAR_SANDGEM_INTRO_STATE) == 1)
-{
-    lock
-setspeaker(SP_NAME_ROWAN)
-msgbox("Go on!\p"
-        "{PLAYER}, your grand adventure\n"
-        "awaits you!",MSGBOX_NPC)
-    release
-}
-else
-{
+    if(var(VAR_SANDGEM_INTRO_STATE) == 1){
+        lock
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Go on!\p"
+            "{PLAYER}, your grand adventure\n"
+            "awaits you!",MSGBOX_NPC)
+        release
+    } 
+    elif(var(VAR_SANDGEM_INTRO_STATE) > 1)
+    {
+    applymovement(3, moves(face_player))
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Ah, {PLAYER}!\p" 
+    "You've come to show me the Progress\n"
+    "you've made on your Pok\edex?",MSGBOX_YESNO)
+        if(var(VAR_RESULT) == 1){
+            setspeaker(SP_NAME_ROWAN)
+            msgbox("Hmmm...")
+            specialvar(VAR_RESULT,countMons)
+            if(var(VAR_RESULT) >= 2){
+                buffernumberstring(STR_VAR_1,VAR_RESULT)
+                msgbox("Oh, it seems you've caught {STR_VAR_1}\n"
+                "Pok\emon!\p"
+                "Well done {PLAYER}!\p"
+                "Here, accept this reward for this\n"
+                "wonderful accomplishment!")
+                giveitem(ITEM_BOTTLE_CAP)
+                msgbox("I'll give you another reward after you\p"
+                "catch 50 more Pok\emon.",MSGBOX_AUTOCLOSE)
+                subquestmenu(QUEST_MENU_COMPLETE_QUEST,QUEST_COMPLETE_DEX,SUB_QUEST_30_MONS_CAUGHT)
+                release
+            }
+            else{
+            buffernumberstring(STR_VAR_1,VAR_RESULT)
+            msgbox("You've caught {STR_VAR_1} Pok\emon in \n"
+            "Sinnoh...\p"
+            "Look harder for wild Pok\emon.\p"
+            "Don't be afraid of going into tall\n"
+            "grass.",MSGBOX_AUTOCLOSE)
+            }
 
-}
+        }
+        elif(var(VAR_RESULT) == 0){
+            msgbox("What's wrong?\p"
+            "You're not suggesting you've seen so\n"
+            "few that you're afraid to show me?\p",MSGBOX_AUTOCLOSE)
+        }
+    }
+    else
+    {
+    setspeaker(SP_NAME_ROWAN)
+    msgbox("Hello, {PLAYER}!",MSGBOX_NPC)
+        release
+    }
 
 }
 

@@ -56,6 +56,7 @@ script JubilifeSchool_Barry_Stuff {
         waitmovement  
     }
     setvar(VAR_JUBILIFE_STATE,2)
+    questmenu(QUEST_MENU_SET_ACTIVE , QUEST_GET_FIRST_BADGE)
     setflag(FLAG_WONDER_CARD_UNUSED_4)
     clearflag(FLAG_JUBILIFE_POKETKCH)
     clearflag(FLAG_CLOWNS)

@@ -47,7 +47,7 @@
 #define QUEST_30        29
 #define QUEST_COUNT     (QUEST_30 + 1)
 
-#define SUB_QUEST_1          0
+#define SUB_QUEST_30_MONS_CAUGHT          0
 #define SUB_QUEST_2          1
 #define SUB_QUEST_3          2
 #define SUB_QUEST_4          3

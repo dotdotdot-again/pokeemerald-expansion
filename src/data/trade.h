@@ -1214,16 +1214,16 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_ABRA] = 
     {
-        .nickname = _("Abby"),
+        .nickname = _("Kazza"),
         .species = SPECIES_ABRA,
-        .ivs = {24, 15, 22, 16, 23, 22},
+        .ivs = {15, 15, 15, 25, 25, 30},
         .abilityNum = 0,
-        .otId = 9853,
+        .otId = 25643,
         .conditions = {5, 5, 5, 5, 30},
         .personality = 0x482cac89,
-        .heldItem = ITEM_NONE,
+        .heldItem = ITEM_ORAN_BERRY,
         .mailNum = -1,
-        .otName = _("Sophie"),
+        .otName = _("Hilary"),
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_MACHOP
