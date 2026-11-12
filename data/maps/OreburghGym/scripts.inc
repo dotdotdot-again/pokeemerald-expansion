@@ -7,10 +7,10 @@ Roarck_Gym::
 	lockall
 # 6 "data/maps/OreburghGym/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_RUSTBORO_GYM, Roarck_Gym_2
-# 63 "data/maps/OreburghGym/scripts.pory"
+# 66 "data/maps/OreburghGym/scripts.pory"
 	goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, Roarck_Gym_3
 Roarck_Gym_1:
-# 72 "data/maps/OreburghGym/scripts.pory"
+# 75 "data/maps/OreburghGym/scripts.pory"
 	releaseall
 	return
 
@@ -32,13 +32,13 @@ Roarck_Gym_2:
 # 33 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 # 34 "data/maps/OreburghGym/scripts.pory"
-	call Common_EventScript_PlayGymBadgeFanfare
+	closemessage
 # 35 "data/maps/OreburghGym/scripts.pory"
-	msgbox Roarck_Gym_Text_3
+	msgbox Roarck_Gym_Text_3, MSGBOX_DEFAULT
 # 37 "data/maps/OreburghGym/scripts.pory"
-	waitfanfare
+	call Common_EventScript_PlayGymBadgeFanfare
 # 38 "data/maps/OreburghGym/scripts.pory"
-	waitmessage
+	waitfanfare
 # 39 "data/maps/OreburghGym/scripts.pory"
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
 # 40 "data/maps/OreburghGym/scripts.pory"
@@ -46,104 +46,102 @@ Roarck_Gym_2:
 # 41 "data/maps/OreburghGym/scripts.pory"
 	setvar VAR_0x8008, 1
 # 42 "data/maps/OreburghGym/scripts.pory"
-	call Common_EventScript_SetGymTrainers
+	setvar VAR_JUBILIFE_STATE, 7
 # 43 "data/maps/OreburghGym/scripts.pory"
-	setspeaker SP_NAME_ROARK
+	clearflag FLAG_JUB_GAL_EVENT
 # 44 "data/maps/OreburghGym/scripts.pory"
-	msgbox Roarck_Gym_Text_4
-# 48 "data/maps/OreburghGym/scripts.pory"
-	waitmessage
-# 49 "data/maps/OreburghGym/scripts.pory"
-	giveitem ITEM_TM_STEALTH_ROCK
-# 50 "data/maps/OreburghGym/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_GET_FIRST_BADGE
-# 51 "data/maps/OreburghGym/scripts.pory"
+	closemessage
+# 45 "data/maps/OreburghGym/scripts.pory"
+	call Common_EventScript_SetGymTrainers
+# 46 "data/maps/OreburghGym/scripts.pory"
 	setspeaker SP_NAME_ROARK
+# 47 "data/maps/OreburghGym/scripts.pory"
+	msgbox Roarck_Gym_Text_4
+# 51 "data/maps/OreburghGym/scripts.pory"
+	waitmessage
 # 52 "data/maps/OreburghGym/scripts.pory"
+	giveitem ITEM_TM_STEALTH_ROCK
+# 53 "data/maps/OreburghGym/scripts.pory"
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_GET_FIRST_BADGE
+# 54 "data/maps/OreburghGym/scripts.pory"
+	setspeaker SP_NAME_ROARK
+# 55 "data/maps/OreburghGym/scripts.pory"
 	msgbox Roarck_Gym_Text_5, MSGBOX_AUTOCLOSE
-# 61 "data/maps/OreburghGym/scripts.pory"
+# 64 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 	goto Roarck_Gym_1
 
 Roarck_Gym_3:
-# 65 "data/maps/OreburghGym/scripts.pory"
+# 68 "data/maps/OreburghGym/scripts.pory"
 	setspeaker SP_NAME_ROARK
-# 66 "data/maps/OreburghGym/scripts.pory"
+# 69 "data/maps/OreburghGym/scripts.pory"
 	msgbox Roarck_Gym_Text_6, MSGBOX_NPC
-# 70 "data/maps/OreburghGym/scripts.pory"
+# 73 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 	goto Roarck_Gym_1
 
 
 OreburghGym__GymGuide::
-# 76 "data/maps/OreburghGym/scripts.pory"
+# 79 "data/maps/OreburghGym/scripts.pory"
 	lock
-# 77 "data/maps/OreburghGym/scripts.pory"
+# 80 "data/maps/OreburghGym/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_RUSTBORO_GYM, OreburghGym__GymGuide_2
-# 103 "data/maps/OreburghGym/scripts.pory"
+# 106 "data/maps/OreburghGym/scripts.pory"
 	msgbox OreburghGym__GymGuide_Text_1, MSGBOX_NPC
-# 110 "data/maps/OreburghGym/scripts.pory"
+# 113 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 OreburghGym__GymGuide_1:
-# 113 "data/maps/OreburghGym/scripts.pory"
+# 116 "data/maps/OreburghGym/scripts.pory"
 	release
 	return
 
 OreburghGym__GymGuide_2:
-# 79 "data/maps/OreburghGym/scripts.pory"
+# 82 "data/maps/OreburghGym/scripts.pory"
 	msgbox OreburghGym__GymGuide_Text_0, MSGBOX_NPC
-# 98 "data/maps/OreburghGym/scripts.pory"
+# 101 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 	goto OreburghGym__GymGuide_1
 
 
 OreburghGym_Text_GymStatue::
-# 117 "data/maps/OreburghGym/scripts.pory"
+# 120 "data/maps/OreburghGym/scripts.pory"
 	lock
-# 118 "data/maps/OreburghGym/scripts.pory"
+# 121 "data/maps/OreburghGym/scripts.pory"
 	goto_if_unset FLAG_DEFEATED_RUSTBORO_GYM, OreburghGym_Text_GymStatue_2
-# 129 "data/maps/OreburghGym/scripts.pory"
+# 132 "data/maps/OreburghGym/scripts.pory"
 	msgbox OreburghGym_Text_GymStatue_Text_1, MSGBOX_SIGN
-# 134 "data/maps/OreburghGym/scripts.pory"
+# 137 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 OreburghGym_Text_GymStatue_1:
-# 137 "data/maps/OreburghGym/scripts.pory"
+# 140 "data/maps/OreburghGym/scripts.pory"
 	release
 	return
 
 OreburghGym_Text_GymStatue_2:
-# 120 "data/maps/OreburghGym/scripts.pory"
+# 123 "data/maps/OreburghGym/scripts.pory"
 	msgbox OreburghGym_Text_GymStatue_Text_0, MSGBOX_SIGN
-# 124 "data/maps/OreburghGym/scripts.pory"
+# 127 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
 	goto OreburghGym_Text_GymStatue_1
 
 
 OreburghGym_Jonathon::
-# 142 "data/maps/OreburghGym/scripts.pory"
-	lock
-# 143 "data/maps/OreburghGym/scripts.pory"
+# 145 "data/maps/OreburghGym/scripts.pory"
 	trainerbattle_single TRAINER_JAYLEN, OreburghGym_Jonathon_Text_0, OreburghGym_Jonathon_Text_1
-# 146 "data/maps/OreburghGym/scripts.pory"
-	msgbox OreburghGym_Jonathon_Text_2, MSGBOX_NPC
 # 148 "data/maps/OreburghGym/scripts.pory"
+	msgbox OreburghGym_Jonathon_Text_2, MSGBOX_NPC
+# 150 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
-# 149 "data/maps/OreburghGym/scripts.pory"
-	release
 	return
 
 
 OreburghGym_Darius::
-# 153 "data/maps/OreburghGym/scripts.pory"
-	lock
 # 154 "data/maps/OreburghGym/scripts.pory"
 	trainerbattle_single TRAINER_DILLON, OreburghGym_Darius_Text_0, OreburghGym_Darius_Text_1
 # 157 "data/maps/OreburghGym/scripts.pory"
 	msgbox OreburghGym_Darius_Text_2, MSGBOX_NPC
 # 159 "data/maps/OreburghGym/scripts.pory"
 	waitmessage
-# 160 "data/maps/OreburghGym/scripts.pory"
-	release
 	return
 
 
@@ -189,14 +187,14 @@ Roarck_Gym_Text_3:
 	.string "the Coal Badge from Roark!$"
 
 Roarck_Gym_Text_4:
-# 44 "data/maps/OreburghGym/scripts.pory"
+# 47 "data/maps/OreburghGym/scripts.pory"
 	.string "Having that Coal Badge means your\n"
 	.string "Pokémon can now use the hidden move\l"
 	.string "Rock Smash outside of battle.\p"
 	.string "You should also take this, too.$"
 
 Roarck_Gym_Text_5:
-# 52 "data/maps/OreburghGym/scripts.pory"
+# 55 "data/maps/OreburghGym/scripts.pory"
 	.string "That TM contains\n"
 	.string "the move Stealth Rock.\p"
 	.string "It’s a move that inflicts damage on\n"
@@ -208,14 +206,14 @@ Roarck_Gym_Text_5:
 	.string "So feel free to teach it\nto whoever you want!$"
 
 Roarck_Gym_Text_6:
-# 66 "data/maps/OreburghGym/scripts.pory"
+# 69 "data/maps/OreburghGym/scripts.pory"
 	.string "In this region of Sinnoh, there are\n"
 	.string "seven other Gym Leaders.\p"
 	.string "I should warn you--they’re a lot\n"
 	.string "tougher than I am!$"
 
 OreburghGym__GymGuide_Text_0:
-# 79 "data/maps/OreburghGym/scripts.pory"
+# 82 "data/maps/OreburghGym/scripts.pory"
 	.string "Howdy!\n"
 	.string "How’s it going, Champ-to-be?\p"
 	.string "That’s what I said to a really\n"
@@ -237,7 +235,7 @@ OreburghGym__GymGuide_Text_0:
 	.string "Thanks for listening!$"
 
 OreburghGym__GymGuide_Text_1:
-# 103 "data/maps/OreburghGym/scripts.pory"
+# 106 "data/maps/OreburghGym/scripts.pory"
 	.string "Howdy!\n"
 	.string "Oh! {PLAYER}!\n"
 	.string "You’ve taken care of the Gym Leader!\p"
@@ -247,14 +245,14 @@ OreburghGym__GymGuide_Text_1:
 	.string "great if you’d become my fan!$"
 
 OreburghGym_Text_GymStatue_Text_0:
-# 120 "data/maps/OreburghGym/scripts.pory"
+# 123 "data/maps/OreburghGym/scripts.pory"
 	.string "Oreburgh City Pokémon Gym\n"
 	.string "Leader: Roark\p"
 	.string "Certified Trainers:\n"
 	.string "Barry$"
 
 OreburghGym_Text_GymStatue_Text_1:
-# 129 "data/maps/OreburghGym/scripts.pory"
+# 132 "data/maps/OreburghGym/scripts.pory"
 	.string "Oreburgh City Pokémon Gym\n"
 	.string "Leader: Roark\p"
 	.string "Certified Trainers:\n"
@@ -262,17 +260,17 @@ OreburghGym_Text_GymStatue_Text_1:
 	.string "{PLAYER}$"
 
 OreburghGym_Jonathon_Text_0:
-# 143 "data/maps/OreburghGym/scripts.pory"
+# 145 "data/maps/OreburghGym/scripts.pory"
 	.string "You avoided the long way around?\n"
 	.string "Let’s see why you’d do that!$"
 
 OreburghGym_Jonathon_Text_1:
-# 144 "data/maps/OreburghGym/scripts.pory"
+# 146 "data/maps/OreburghGym/scripts.pory"
 	.string "Now I understand why you decided to\n"
 	.string "battle with me.$"
 
 OreburghGym_Jonathon_Text_2:
-# 146 "data/maps/OreburghGym/scripts.pory"
+# 148 "data/maps/OreburghGym/scripts.pory"
 	.string "You should go whichever way you\n"
 	.string "want, shortcut or the long way!$"
 

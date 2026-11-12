@@ -32,6 +32,14 @@ script MiningMuseum_Text_CoalExhibit2 {
     release
 }
 
+script MiningMuseum_Text_CoalExhibit3 {
+    lock
+    msgbox("This coal is so cool.",MSGBOX_NPC)
+    release
+}
+
+
+
 script MiningMuseum_Text_MineExtendsUnderSea {
     lock
     msgbox("Well, how about that!\p"

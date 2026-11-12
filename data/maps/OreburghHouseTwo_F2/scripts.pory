@@ -41,6 +41,7 @@ script OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude {
     returnqueststate(QUEST_SHOW_A_PHANPY)
     switch (var(VAR_RESULT)) {
         case 1:
+            lockall
             setspeaker("Some Guy")
             msgbox("The view is good from the second floor,\n"
                 "but it’s a pain going outside.\p"
@@ -49,6 +50,7 @@ script OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude {
             waitmessage
             startquest(QUEST_SHOW_A_PHANPY)
         case 2:
+            lockall
             setspeaker("Some Guy")
             msgbox("The view is good from the second floor,\n"
                 "but it’s a pain going outside.\p"
@@ -58,6 +60,7 @@ script OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude {
             checkspecies(SPECIES_PHANPY,NO_PARTY_SCREEN)
             if(var(VAR_RESULT) == TRUE)
             {
+            lockall
             setspeaker("Some Guy")
             msgbox("Oh, that Pokémon!\n"
             "thats a Phanpy!\p"
@@ -70,6 +73,7 @@ script OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude {
             completequest(QUEST_SHOW_A_PHANPY)
             }
         case 4:
+            lockall
             setspeaker("That Phanpy Guy")
             msgbox("Hey there!\p"
             "Thanks again for showing me how\n"

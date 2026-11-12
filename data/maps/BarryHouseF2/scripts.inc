@@ -148,7 +148,7 @@ EveryFrame_BarryF2_Text_1:
 # 30 "data/maps/BarryHouseF2/scripts.pory"
 	.string "Oh, hey, {PLAYER}!\p"
 	.string "I'll be waiting on the road!\n"
-	.string "It's a 10 million fine if you're late!$"
+	.string "It's a ¥10 million fine if you're late!$"
 
 wii_barry_text_Text_0:
 # 51 "data/maps/BarryHouseF2/scripts.pory"
@@ -157,7 +157,7 @@ wii_barry_text_Text_0:
 
 barry_f2_tv_text_Text_0:
 # 56 "data/maps/BarryHouseF2/scripts.pory"
-	.string "It’s a TV, how intresting.$"
+	.string "It’s a TV how intresting.$"
 
 barry_f2_PC_Text_0:
 # 60 "data/maps/BarryHouseF2/scripts.pory"

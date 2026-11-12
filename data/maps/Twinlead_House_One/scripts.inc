@@ -75,7 +75,7 @@ Twinlead_House_One_Old_lady_Text_1:
 	.string "The Pokémon Professor returned\n"
 	.string "to the next town over.\p"
 	.string "They say he was gone for four long\n"
-	.string "years."
+	.string "years.\p"
 	.string "I wonder if he found some amazing\n"
 	.string "Pokémon while he was gone?$"
 

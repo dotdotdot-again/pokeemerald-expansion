@@ -437,6 +437,14 @@ u8 (*const gMovementTypeFuncs_CopyPlayerInGrass[])(struct ObjectEvent *, struct 
     MovementType_CopyPlayer_Step2,
 };
 
+u32 (*const gMovementTypeFuncs_Windmill[])(struct ObjectEvent *, struct Sprite *) = {
+	MovementType_Windmill_Step0,
+	MovementType_Windmill_Step1,
+	MovementType_Windmill_Step2,
+	MovementType_Windmill_Step3,
+
+};
+
 u8 (*const gMovementTypeFuncs_Buried[])(struct ObjectEvent *, struct Sprite *) = {
     MovementType_Buried_Step0,
 };

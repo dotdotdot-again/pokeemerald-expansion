@@ -401,58 +401,60 @@ after_starter::
 # 307 "data/maps/PlayerHouseF1/scripts.pory"
 	waitmessage
 # 308 "data/maps/PlayerHouseF1/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 8
+	special HealPlayerParty
 # 309 "data/maps/PlayerHouseF1/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 8
+# 310 "data/maps/PlayerHouseF1/scripts.pory"
 	releaseall
 	return
 
 
 PlayerHouseF1_Meow::
-# 313 "data/maps/PlayerHouseF1/scripts.pory"
-	lock
 # 314 "data/maps/PlayerHouseF1/scripts.pory"
+	lock
+# 315 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_TWINLEAF_INTRO_STATE, 8
 	goto_if_eq PlayerHouseF1_Meow_5
 PlayerHouseF1_Meow_4:
-# 322 "data/maps/PlayerHouseF1/scripts.pory"
+# 323 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 3
 	goto_if_eq PlayerHouseF1_Meow_2
-# 332 "data/maps/PlayerHouseF1/scripts.pory"
-	playmoncry SPECIES_GLAMEOW, 0
 # 333 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker after_starter_Text_3
+	playmoncry SPECIES_GLAMEOW, 0
 # 334 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_0
+	setspeaker after_starter_Text_3
 # 335 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_0
+# 336 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox PlayerHouseF1_Meow_Text_2, MSGBOX_NPC
-# 338 "data/maps/PlayerHouseF1/scripts.pory"
+# 339 "data/maps/PlayerHouseF1/scripts.pory"
 	release
 	return
 
 PlayerHouseF1_Meow_1:
-# 315 "data/maps/PlayerHouseF1/scripts.pory"
-	playmoncry SPECIES_GLAMEOW, 0
 # 316 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker after_starter_Text_3
+	playmoncry SPECIES_GLAMEOW, 0
 # 317 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_0
+	setspeaker after_starter_Text_3
 # 318 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_0
+# 319 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox PlayerHouseF1_Meow_Text_0, MSGBOX_NPC
 	return
 
 PlayerHouseF1_Meow_2:
-# 323 "data/maps/PlayerHouseF1/scripts.pory"
-	playmoncry SPECIES_GLAMEOW, 0
 # 324 "data/maps/PlayerHouseF1/scripts.pory"
-	setspeaker after_starter_Text_3
+	playmoncry SPECIES_GLAMEOW, 0
 # 325 "data/maps/PlayerHouseF1/scripts.pory"
-	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_1
+	setspeaker after_starter_Text_3
 # 326 "data/maps/PlayerHouseF1/scripts.pory"
+	applymovement Moms_Cat, PlayerHouseF1_Meow_Movement_1
+# 327 "data/maps/PlayerHouseF1/scripts.pory"
 	msgbox PlayerHouseF1_Meow_Text_1, MSGBOX_NPC
 	return
 
 PlayerHouseF1_Meow_5:
-# 314 "data/maps/PlayerHouseF1/scripts.pory"
+# 315 "data/maps/PlayerHouseF1/scripts.pory"
 	compare VAR_SANDGEM_INTRO_STATE, 2
 	goto_if_gt PlayerHouseF1_Meow_1
 	goto PlayerHouseF1_Meow_4
@@ -714,15 +716,15 @@ after_starter_Movement_4:
 	jump_in_place_left
 	step_end
 
-# 317 "data/maps/PlayerHouseF1/scripts.pory"
+# 318 "data/maps/PlayerHouseF1/scripts.pory"
 PlayerHouseF1_Meow_Movement_0:
-# 317 "data/maps/PlayerHouseF1/scripts.pory"
+# 318 "data/maps/PlayerHouseF1/scripts.pory"
 	emote_heart
 	step_end
 
-# 325 "data/maps/PlayerHouseF1/scripts.pory"
+# 326 "data/maps/PlayerHouseF1/scripts.pory"
 PlayerHouseF1_Meow_Movement_1:
-# 325 "data/maps/PlayerHouseF1/scripts.pory"
+# 326 "data/maps/PlayerHouseF1/scripts.pory"
 	emote_double_exclamation_mark
 	step_end
 
@@ -936,20 +938,20 @@ after_starter_Text_5:
 	.string "back to me and I'll fix you two right up.$"
 
 PlayerHouseF1_Meow_Text_0:
-# 318 "data/maps/PlayerHouseF1/scripts.pory"
+# 319 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Meorw Merooow!!\p"
 	.string "“Glammy seems happy you\n"
 	.string "are ok.”$"
 
 PlayerHouseF1_Meow_Text_1:
-# 326 "data/maps/PlayerHouseF1/scripts.pory"
+# 327 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Mrrow!!! Mmmmrow!\p"
 	.string "“Glammy seems sad to see you go\p"
 	.string "and a little jeleous of your new\n"
 	.string "Pokémon.”$"
 
 PlayerHouseF1_Meow_Text_2:
-# 335 "data/maps/PlayerHouseF1/scripts.pory"
+# 336 "data/maps/PlayerHouseF1/scripts.pory"
 	.string "Meorw!\p"
 	.string "“Glammy seems happy to\n"
 	.string "see you”$"

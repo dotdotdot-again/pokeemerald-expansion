@@ -55,14 +55,14 @@ BarrysMomTalk_Text_1:
 	.string "Did you come calling on Barry?\p"
 	.string "He was gone for a second, but then\n"
 	.string "he came running right back home.\p"
-	.string "He just can't still, that boy.\n"
+	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"
 
 BarrysMomTalk_Text_2:
 # 17 "data/maps/BarryHouseF1/scripts.pory"
 	.string "That kid rocketed\n"
 	.string "off again like usual.\p"
-	.string "I'd geuss he would be out on\n"
+	.string "I'd guess he would be out on\n"
 	.string "Route 201 by now?\p"
 	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"

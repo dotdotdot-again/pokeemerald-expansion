@@ -9,14 +9,14 @@ script BarrysMomTalk {
     "Did you come calling on Barry?\p"
     "He was gone for a second, but then\n"
     "he came running right back home.\p"
-    "He just can't still, that boy.\n"
+    "He just can't sit still, that boy.\n"
     "I wonder who he takes after?",MSGBOX_NPC)
     }
     elif(var(VAR_TWINLEAF_INTRO_STATE) == 6)
     {
     msgbox("That kid rocketed\n"
     "off again like usual.\p"
-    "I'd geuss he would be out on\n"
+    "I'd guess he would be out on\n"
     "Route 201 by now?\p"
     "He just can't sit still, that boy.\n"
     "I wonder who he takes after?",MSGBOX_NPC)

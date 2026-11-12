@@ -485,7 +485,7 @@ Route201_Barry_Trigger_Left::
 # 362 "data/maps/Route201/scripts.pory"
 	setspeaker SP_NAME_BARRY
 # 363 "data/maps/Route201/scripts.pory"
-	msgbox Route201_Barry_Trigger_Far_Right_Text_1, MSGBOX_AUTOCLOSE
+	msgbox Route201_Barry_Trigger_Left_Text_0, MSGBOX_AUTOCLOSE
 # 365 "data/maps/Route201/scripts.pory"
 	waitmessage
 # 366 "data/maps/Route201/scripts.pory"
@@ -523,7 +523,7 @@ Route201_Barry_Trigger_Far_Left::
 # 384 "data/maps/Route201/scripts.pory"
 	setspeaker SP_NAME_BARRY
 # 385 "data/maps/Route201/scripts.pory"
-	msgbox Route201_Barry_Trigger_Far_Right_Text_1, MSGBOX_AUTOCLOSE
+	msgbox Route201_Barry_Trigger_Left_Text_0, MSGBOX_AUTOCLOSE
 # 387 "data/maps/Route201/scripts.pory"
 	waitmessage
 # 388 "data/maps/Route201/scripts.pory"
@@ -1532,7 +1532,7 @@ Route201_Barry_Text_1:
 Route201_Barry_Text_2:
 # 46 "data/maps/Route201/scripts.pory"
 	.string "Ok, here goes!\p"
-	.string "On your maarks...$"
+	.string "On your marks...$"
 
 Route201_Barry_Text_3:
 # 51 "data/maps/Route201/scripts.pory"
@@ -1754,6 +1754,11 @@ Route201_Barry_Trigger_Far_Right_Text_0:
 Route201_Barry_Trigger_Far_Right_Text_1:
 # 318 "data/maps/Route201/scripts.pory"
 	.string "All right!\n"
+	.string "Let's get moving to Prof. Rowan's lab.$"
+
+Route201_Barry_Trigger_Left_Text_0:
+# 363 "data/maps/Route201/scripts.pory"
+	.string "All right!\n"
 	.string "Let's get mocing to Prof. Rowan's lab.$"
 
 Route201_Try_to_not_get_pokemon_trigger_down_Text_0:
@@ -1863,7 +1868,7 @@ toSlowAgain_Far_Right_Text_0:
 
 route201_talk_barry_Text_0:
 # 662 "data/maps/Route201/scripts.pory"
-	.string "Pokeémon all have\n"
+	.string "Pokémon all have\n"
 	.string "different moves, huh?\p"
 	.string "A Trainer makes his Pokémon battle\n"
 	.string "by ordering them to use moves.\p"

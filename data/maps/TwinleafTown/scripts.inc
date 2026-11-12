@@ -371,7 +371,7 @@ Twinleaf_outside_guy_Text_2:
 # 92 "data/maps/TwinleafTown/scripts.pory"
 	.string "Hiya, {PLAYER}.\n"
 	.string "You're looking for Barry?\p"
-	.string "He just went tear off a little\n"
+	.string "He just went tearing off a little\n"
 	.string "while ago.\p"
 	.string "He's probably not gone too far.\n"
 	.string "Why not go chase after him?$"

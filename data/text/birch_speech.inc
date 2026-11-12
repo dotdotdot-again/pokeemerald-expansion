@@ -19,13 +19,11 @@ gText_Birch_MainSpeech::
 	.string "and at other times we\l"
 	.string "work together.\p"
 	.string "Some people use their Pokémon\n"
-	.string "to battle and develop.\l"
+	.string "to battle and develop\l"
 	.string "closer bonds with them.\p"
 	.string "What do I do?\p"
 	.string "I conduct research so that we may\n"
 	.string "learn more about Pokémon.\p"
-	.string "Now, why don’t you tell me\n"
-	.string "a little bit about yourself?\p"
 	.string "$"
 
 gText_Birch_AndYouAre::

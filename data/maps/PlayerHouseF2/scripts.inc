@@ -788,14 +788,14 @@ EveryFrameTest_Text_0:
 
 EveryFrameTest_Text_1:
 # 33 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "“Pokémon are by our side, always.\n I hope you will understand the meaning\l of those words.”\p"
+	.string "“Pokémon are by our side, always.\n I hope you will understand the meaning\lof those words.”\p"
 	.string "That was the comment left by Prof.\n Rowan, who has returned to Sinnoh from\l the Kanto Region.$"
 
 EveryFrameTest_Text_2:
 # 37 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "That concludges our special program,\n “Let's Ask Prof. Rowan!”\p"
+	.string "That concludes our special program,\n “Let’s Ask Prof. Rowan!”\p"
 	.string "Brought to you by Jubilife TV\n on Nationwide Net!\p"
-	.string "See You next week,\n same time, same channel$"
+	.string "See you next week,\n same time, same channel.$"
 
 BarryWalksRight_Text_0:
 # 60 "data/maps/PlayerHouseF2/scripts.pory"
@@ -825,7 +825,7 @@ Player_PC_text_Text_0:
 
 Player_TV_text_Text_0:
 # 298 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "It's an ad about the local\n trading station.$"
+	.string "It's an ad about the local\ntrading station.$"
 
 Player_Wii_text_Text_0:
 # 304 "data/maps/PlayerHouseF2/scripts.pory"
@@ -833,7 +833,7 @@ Player_Wii_text_Text_0:
 
 BarryOne::
 # 260 "data/maps/PlayerHouseF2/scripts.pory"
-	.string "Hey, {PLAYER} \n"
+	.string "Hey, {PLAYER}!\n"
 	.string "Did you just see the TV? Sure you did!\p"
 	.string "Prof. Rowan’s that really important\n"
 	.string "guy who studies Pokémon, right?\p"
@@ -848,4 +848,4 @@ BarryLast::
 	.string "Prof. Rowan and get some Pokémon.\p"
 	.string "I’ll be waiting outside.\p"
 	.string "OK, {PLAYER}? If you’re late, I’m\n"
-	.string "fining you 10 million PokéDollars!$"
+	.string "fining you ¥10 million!$"

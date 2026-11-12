@@ -63,17 +63,17 @@ Route203_Barry_Encounter_3:
 
 Route203_Barry_Encounter_9:
 # 39 "data/maps/Route203/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TREECKO, Route203_Barry_Encounter_Text_1
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TREECKO, Route203_Barry_Encounter_Text_1
 	goto Route203_Barry_Encounter_7
 
 Route203_Barry_Encounter_10:
 # 41 "data/maps/Route203/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TORCHIC, Route203_Barry_Encounter_Text_2
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TORCHIC, Route203_Barry_Encounter_Text_1
 	goto Route203_Barry_Encounter_7
 
 Route203_Barry_Encounter_11:
 # 43 "data/maps/Route203/scripts.pory"
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_MUDKIP, Route203_Barry_Encounter_Text_1
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_MUDKIP, Route203_Barry_Encounter_Text_1
 	goto Route203_Barry_Encounter_7
 
 
@@ -294,10 +294,6 @@ Route203_Barry_Encounter_Text_0:
 
 Route203_Barry_Encounter_Text_1:
 # 39 "data/maps/Route203/scripts.pory"
-	.string "What are you saying?!\nWe ended up losing?!$"
-
-Route203_Barry_Encounter_Text_2:
-# 41 "data/maps/Route203/scripts.pory"
 	.string "What just happen?\nI lost?!$"
 
 Route203_Barry_Encounter_Count_Text_0:

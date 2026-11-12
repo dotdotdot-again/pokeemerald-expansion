@@ -362,7 +362,7 @@ Rowan_Lab_6:
 # 280 "data/maps/Sandgem_House_Lab/scripts.pory"
 	specialvar VAR_RESULT, countMons
 # 281 "data/maps/Sandgem_House_Lab/scripts.pory"
-	compare VAR_RESULT, 2
+	compare VAR_RESULT, 30
 	goto_if_ge Rowan_Lab_10
 # 295 "data/maps/Sandgem_House_Lab/scripts.pory"
 	buffernumberstring STR_VAR_1, VAR_RESULT
@@ -427,88 +427,32 @@ LuDa_Dad_Lab_2:
 
 Roseanne_Lab::
 # 350 "data/maps/Sandgem_House_Lab/scripts.pory"
-	lock
+	setspeaker Roseanne_Lab_Text_0
 # 351 "data/maps/Sandgem_House_Lab/scripts.pory"
-	compare VAR_SANDGEM_INTRO_STATE, 1
-	goto_if_eq Roseanne_Lab_1
-# 361 "data/maps/Sandgem_House_Lab/scripts.pory"
-	compare VAR_SANDGEM_INTRO_STATE, 1
-	goto_if_gt Roseanne_Lab_2
-# 390 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker Roseanne_Lab_Text_0
-# 391 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Roseanne_Lab_Text_1, MSGBOX_NPC
-# 397 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 357 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
-	return
-
-Roseanne_Lab_1:
-# 352 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker Roseanne_Lab_Text_0
-# 353 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox Roseanne_Lab_Text_1, MSGBOX_NPC
-# 359 "data/maps/Sandgem_House_Lab/scripts.pory"
-	release
-	return
-
-Roseanne_Lab_2:
-# 363 "data/maps/Sandgem_House_Lab/scripts.pory"
-	applymovement 3, Rowan_Lab_Movement_0
-# 364 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker Roseanne_Lab_Text_0
-# 365 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox Roseanne_Lab_Text_2, MSGBOX_YESNO
-# 368 "data/maps/Sandgem_House_Lab/scripts.pory"
-	compare VAR_RESULT, 1
-	goto_if_eq Roseanne_Lab_6
-# 383 "data/maps/Sandgem_House_Lab/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq Roseanne_Lab_7
-	return
-
-Roseanne_Lab_6:
-# 369 "data/maps/Sandgem_House_Lab/scripts.pory"
-	setspeaker Roseanne_Lab_Text_0
-# 370 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox Roseanne_Lab_Text_3
-# 371 "data/maps/Sandgem_House_Lab/scripts.pory"
-	specialvar VAR_RESULT, countMons
-# 372 "data/maps/Sandgem_House_Lab/scripts.pory"
-	compare VAR_RESULT, 30
-	goto_if_ge Roseanne_Lab_10
-# 376 "data/maps/Sandgem_House_Lab/scripts.pory"
-	buffernumberstring STR_VAR_1, VAR_RESULT
-# 377 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox Roseanne_Lab_Text_4, MSGBOX_AUTOCLOSE
-	return
-
-Roseanne_Lab_7:
-# 384 "data/maps/Sandgem_House_Lab/scripts.pory"
-	msgbox Roseanne_Lab_Text_5, MSGBOX_AUTOCLOSE
-	return
-
-Roseanne_Lab_10:
 	return
 
 
 Lab_PC::
-# 402 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 361 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 403 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 362 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Lab_PC_Text_0, MSGBOX_SIGN
-# 404 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 363 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
 
 Ced_Lab::
-# 408 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 367 "data/maps/Sandgem_House_Lab/scripts.pory"
 	lock
-# 409 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 368 "data/maps/Sandgem_House_Lab/scripts.pory"
 	setspeaker SP_NAME_CEDRUS
-# 410 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 369 "data/maps/Sandgem_House_Lab/scripts.pory"
 	msgbox Ced_Lab_Text_0
-# 412 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 371 "data/maps/Sandgem_House_Lab/scripts.pory"
 	release
 	return
 
@@ -783,7 +727,7 @@ Intro_In_Sandgem_Lab_Text_9:
 	.string "{PLAYER}, I ask that you go\n"
 	.string "everywhere and meet every kind of\l"
 	.string "Pokémon in this region!\p"
-	.string "Also as an incentive I'll giave you some\n"
+	.string "Also as an incentive I'll give you some\n"
 	.string "rewards after certain milestones.\p"
 	.string "Show me your dex after you catch about\n"
 	.string "hmmmm...\plets say 30 Pokémon?\n"
@@ -813,26 +757,26 @@ Intro_In_Sandgem_Lab_Text_12:
 
 Intro_In_Sandgem_Lab_Text_13:
 # 171 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Proffesor Rowan.\p"
+	.string "Professor Rowan.\p"
 	.string "I require your assistance with\n"
 	.string "something on your personal computer.$"
 
 Intro_In_Sandgem_Lab_Text_14:
 # 184 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Should not take but a momment\n"
+	.string "Should not take but a moment\n"
 	.string "of your time.$"
 
 Intro_In_Sandgem_Lab_Text_15:
 # 187 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Um, well Professor Cedrus, I'd be glad to\n"
-	.string "but, as it so happens I'm a little well\l"
-	.string "preoccupied at this exact momment...$"
+	.string "but, as it so happens I'm a little, well\l"
+	.string "preoccupied at this exact moment...$"
 
 Intro_In_Sandgem_Lab_Text_16:
 # 195 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I see...\p"
 	.string "My apologies.\p"
-	.string "I will be waiting by the your\n"
+	.string "I will be waiting by your\n"
 	.string "personal computer when you are done.$"
 
 Intro_In_Sandgem_Lab_Text_17:
@@ -850,9 +794,9 @@ Intro_In_Sandgem_Lab_Text_17:
 	.string "Pokémon thought to be long extinct.\p"
 	.string "Pokémon from back when this land was\n"
 	.string "still called Hisui.\p"
-	.string "Oh, sorry, your not here for a lecture.\p"
-	.string "In fact I'm pretty sure I was about to\n"
-	.string "see you off before we where intrupted.\p"
+	.string "Oh, sorry, you're not here for a lecture.\p"
+	.string "In fact, I'm pretty sure I was about to\n"
+	.string "see you off before we where intrrupted.\p"
 	.string "Ahem...\p"
 	.string "{PLAYER}, your grand adventure\n"
 	.string "begins right now!$"
@@ -929,11 +873,11 @@ LuDa_Dad_Lab_Text_3:
 	.string "I’m sure we can count on you!$"
 
 Roseanne_Lab_Text_0:
-# 352 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 350 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Roseanne$"
 
 Roseanne_Lab_Text_1:
-# 353 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 351 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Professor Rowan invented a new\n"
 	.string "Pokédex while working alongside a\l"
 	.string "professor from the Kanto region.\p"
@@ -941,49 +885,28 @@ Roseanne_Lab_Text_1:
 	.string "It’s an honor to be an assistant to\n"
 	.string "our professor!$"
 
-Roseanne_Lab_Text_2:
-# 365 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Hello {PLAYER}\p"
-	.string "Do you want me to check if you've\n"
-	.string "hit a reward milestone yet?$"
-
-Roseanne_Lab_Text_3:
-# 370 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Hmmm let me look here...\p$"
-
-Roseanne_Lab_Text_4:
-# 377 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Sorry you only have {STR_VAR_1} \n"
-	.string "Pokémon registred as caught.\p"
-	.string "That's not enough for a reward yet.$"
-
-Roseanne_Lab_Text_5:
-# 384 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Ok, well you know where to find\n"
-	.string "me when you do.$"
-
 Lab_PC_Text_0:
-# 403 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 362 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "It's Rowan's Computer$"
 
 Ced_Lab_Text_0:
-# 410 "data/maps/Sandgem_House_Lab/scripts.pory"
-	.string "Sorry I am too busy to converse\n"
+# 369 "data/maps/Sandgem_House_Lab/scripts.pory"
+	.string "Sorry, I am too busy to converse\n"
 	.string "right now.$"
 
 SandgemTownLab_Text_DawnImSoGladThatYourKindTowardPokemon::
-# 425 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 384 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’m so glad that you’re kind\n"
 	.string "toward Pokémon!\p"
 	.string "If you weren’t, I’d have to...\n"
 	.string "Oh, I just can’t say it...$"
 
 SandgemTownLab_Text_DawnIveGotOneToo::
-# 432 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 391 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’ve got one, too!$"
 
 SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings::
-# 436 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 395 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "The Pokémon that I met for\n"
 	.string "the first time was {STR_VAR_2}!\p"
 	.string "If you would have chosen {STR_VAR_2}\n"
@@ -1000,19 +923,19 @@ SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings::
 	.string "Glad to meet you, {PLAYER}!$"
 
 SandgemTownLab_Text_LucasBoyAmIGladYoureKindTowardPokemon::
-# 455 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 414 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "Boy, am I glad you’re kind\n"
 	.string "toward Pokémon.\p"
 	.string "If you weren’t, well...\n"
 	.string "I don’t even want to think about it.$"
 
 SandgemTownLab_Text_LucasIveGotTheSameKindOfPokedex::
-# 462 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 421 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "I’ve got the same kind of\n"
 	.string "Pokédex as you.$"
 
 SandgemTownLab_Text_LucasIllTeachYouStuffLater::
-# 467 "data/maps/Sandgem_House_Lab/scripts.pory"
+# 426 "data/maps/Sandgem_House_Lab/scripts.pory"
 	.string "The professor asked me to help,\n"
 	.string "so I’m filling the Pokédex pages, too.\p"
 	.string "That makes us comrades working toward\n"

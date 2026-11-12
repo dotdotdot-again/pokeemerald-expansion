@@ -91,7 +91,7 @@ script Twinleaf_outside_guy {
         //I got lazy with this one lol :p
     msgbox("Hiya, {PLAYER}.\n"
     "You're looking for Barry?\p"
-    "He just went tear off a little\n"
+    "He just went tearing off a little\n"
     "while ago.\p"
     "He's probably not gone too far.\n"
     "Why not go chase after him?",MSGBOX_NPC)

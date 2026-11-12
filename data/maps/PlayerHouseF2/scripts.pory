@@ -30,13 +30,13 @@ script EveryFrameTest {
 	    setflag(FLAG_SYS_B_DASH)
         playbgm(MUS_PL_TV_BROADCAST, 0)
         setspeaker("Newscaster")
-	    msgbox("\qoPok\emon are by our side, always.\n I hope you will understand the meaning\l of those words.\qc\p" 
+	    msgbox("\qoPok\emon are by our side, always.\n I hope you will understand the meaning\lof those words.\qc\p" 
         "That was the comment left by Prof.\n Rowan, who has returned to Sinnoh from\l the Kanto Region.")
         fadenewbgm(MUS_PL_TV_END)
         setspeaker("Newscaster")
-         msgbox("That concludges our special program,\n \qoLet's Ask Prof. Rowan!\qc\p"
+         msgbox("That concludes our special program,\n \qoLet’s Ask Prof. Rowan!\qc\p"
         "Brought to you by Jubilife TV\n on Nationwide Net!\p"
-        "See You next week,\n same time, same channel")
+        "See you next week,\n same time, same channel.")
 	    waitmessage
         closemessage
         fadedefaultbgm
@@ -258,7 +258,7 @@ script BarryWalksUp {
 }
 
 text BarryOne {
-        "Hey, {PLAYER} \n"
+        "Hey, {PLAYER}!\n"
         "Did you just see the TV? Sure you did!\p"
         "Prof. Rowan’s that really important\n"
         "guy who studies Pokémon, right?\p"
@@ -273,7 +273,7 @@ text BarryLast {
         "Prof. Rowan and get some Pokémon.\p"
         "I’ll be waiting outside.\p"
         "OK, {PLAYER}? If you’re late, I’m\n"
-        "fining you 10 million PokéDollars!"
+        "fining you ¥10 million!"
 }
 
 script BarryEnters {
@@ -295,7 +295,7 @@ script Player_PC_text {
 
 script Player_TV_text {
         lock
-        msgbox("It's an ad about the local\n trading station.",MSGBOX_SIGN)
+        msgbox("It's an ad about the local\ntrading station.",MSGBOX_SIGN)
         release
 }
 

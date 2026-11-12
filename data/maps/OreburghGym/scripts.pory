@@ -31,14 +31,17 @@ if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
         "Here’s your official Pokémon League\n"
         "Coal Badge.")
     waitmessage
-    call(Common_EventScript_PlayGymBadgeFanfare)
+    closemessage
     msgbox("{PLAYER} received\n"
-        "the Coal Badge from Roark!")
+        "the Coal Badge from Roark!",MSGBOX_DEFAULT)
+    call(Common_EventScript_PlayGymBadgeFanfare)
     waitfanfare
-    waitmessage
     setflag(FLAG_DEFEATED_RUSTBORO_GYM)
 	setflag(FLAG_BADGE01_GET) 
     setvar(VAR_0x8008, 1)
+    setvar(VAR_JUBILIFE_STATE, 7)
+    clearflag(FLAG_JUB_GAL_EVENT)
+    closemessage
     call(Common_EventScript_SetGymTrainers) 
         setspeaker(SP_NAME_ROARK)
     msgbox("Having that Coal Badge means your\n"
@@ -47,7 +50,7 @@ if(flag(FLAG_DEFEATED_RUSTBORO_GYM) == FALSE)
         "You should also take this, too.")
     waitmessage
     giveitem(ITEM_TM_STEALTH_ROCK)
-    questmenu(QUEST_MENU_SET_ACTIVE , QUEST_GET_FIRST_BADGE)
+    questmenu(QUEST_MENU_COMPLETE_QUEST , QUEST_GET_FIRST_BADGE)
          setspeaker(SP_NAME_ROARK)
     msgbox("That TM contains\n"
         "the move Stealth Rock.\p"
@@ -139,23 +142,19 @@ script OreburghGym_Text_GymStatue {
 }
 
 script OreburghGym_Jonathon {
-    lock
     trainerbattle_single(TRAINER_JAYLEN, "You avoided the long way around?\n"
                 "Let’s see why you’d do that!", "Now I understand why you decided to\n"
                 "battle with me.")
     msgbox("You should go whichever way you\n"
                 "want, shortcut or the long way!",MSGBOX_NPC)
     waitmessage
-    release
 }
 
 script OreburghGym_Darius {
-    lock
     trainerbattle_single(TRAINER_DILLON, "Only those who want to win can\n"
                 "challenge a Pokémon Gym!", "Gggh...\n"
                 "This is humiliating!")
     msgbox("One day, I’m going to become a tough\n"
                 "Trainer like you.",MSGBOX_NPC)
     waitmessage
-    release
 }

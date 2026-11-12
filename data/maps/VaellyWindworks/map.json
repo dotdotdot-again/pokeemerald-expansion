@@ -21,6 +21,7 @@
   ],
   "object_events": [
     {
+      "local_id": "windMillFour",
       "graphics_id": "OBJ_EVENT_GFX_DP_WINDMILL",
       "x": 10,
       "y": 71,
@@ -34,6 +35,7 @@
       "flag": "0"
     },
     {
+      "local_id": "windMillSix",
       "graphics_id": "OBJ_EVENT_GFX_DP_WINDMILL",
       "x": 10,
       "y": 64,
@@ -47,6 +49,7 @@
       "flag": "0"
     },
     {
+      "local_id": "windMillThree",
       "graphics_id": "OBJ_EVENT_GFX_DP_WINDMILL",
       "x": 20,
       "y": 75,
@@ -60,6 +63,7 @@
       "flag": "0"
     },
     {
+      "local_id": "windMillFive",
       "graphics_id": "OBJ_EVENT_GFX_DP_WINDMILL",
       "x": 27,
       "y": 65,
@@ -73,11 +77,12 @@
       "flag": "0"
     },
     {
+      "local_id": "windMillTwo",
       "graphics_id": "OBJ_EVENT_GFX_DP_WINDMILL",
       "x": 19,
       "y": 81,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WINDMILL",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -86,11 +91,12 @@
       "flag": "0"
     },
     {
+      "local_id": "windMillOne",
       "graphics_id": "OBJ_EVENT_GFX_DP_WINDMILL",
       "x": 11,
       "y": 81,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

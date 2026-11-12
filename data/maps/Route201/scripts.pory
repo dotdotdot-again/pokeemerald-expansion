@@ -44,7 +44,7 @@ script Route201_Barry {
     waitmovementall
     setspeaker(SP_NAME_BARRY)
     msgbox("Ok, here goes!\p"
-    "On your maarks...",MSGBOX_AUTOCLOSE)
+    "On your marks...",MSGBOX_AUTOCLOSE)
     applymovement(Barry_201, moves(walk_fast_right*3))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
     waitmovementall
@@ -316,7 +316,7 @@ script Route201_Barry_Trigger_Far_Right {
     waitmovement
     setspeaker(SP_NAME_BARRY)
     msgbox("All right!\n"
-    "Let's get mocing to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
+    "Let's get moving to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(Barry_201, moves(walk_up*2,walk_right*2,face_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,walk_right))
@@ -339,7 +339,7 @@ script Route201_Barry_Trigger_Middle {
     waitmovement
     setspeaker(SP_NAME_BARRY)
     msgbox("All right!\n"
-    "Let's get mocing to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
+    "Let's get moving to Prof. Rowan's lab.",MSGBOX_AUTOCLOSE)
     waitmessage
     applymovement(Barry_201, moves(walk_up*2,walk_right*3,face_left))
     applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2,walk_right*2))
@@ -659,7 +659,7 @@ text barryToSlowText {
 
 script route201_talk_barry {
     setspeaker(SP_NAME_BARRY)
-    msgbox("Poke\emon all have\n"
+    msgbox("Pok\emon all have\n"
     "different moves, huh?\p"
     "A Trainer makes his Pok\emon battle\n"
     "by ordering them to use moves.\p"

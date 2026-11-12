@@ -42,112 +42,122 @@ MiningMuseum_Text_CoalExhibit2::
 	return
 
 
-MiningMuseum_Text_MineExtendsUnderSea::
+MiningMuseum_Text_CoalExhibit3::
 # 36 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
 # 37 "data/maps/Oreburgh_museum/scripts.pory"
+	msgbox MiningMuseum_Text_CoalExhibit3_Text_0, MSGBOX_NPC
+# 38 "data/maps/Oreburgh_museum/scripts.pory"
+	release
+	return
+
+
+MiningMuseum_Text_MineExtendsUnderSea::
+# 44 "data/maps/Oreburgh_museum/scripts.pory"
+	lock
+# 45 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_MineExtendsUnderSea_Text_0, MSGBOX_NPC
-# 40 "data/maps/Oreburgh_museum/scripts.pory"
+# 48 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_MineHistory::
-# 44 "data/maps/Oreburgh_museum/scripts.pory"
+# 52 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 45 "data/maps/Oreburgh_museum/scripts.pory"
+# 53 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_MineHistory_Text_0, MSGBOX_NPC
-# 49 "data/maps/Oreburgh_museum/scripts.pory"
+# 57 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_UndergroundManInfo::
-# 53 "data/maps/Oreburgh_museum/scripts.pory"
+# 61 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 54 "data/maps/Oreburgh_museum/scripts.pory"
+# 62 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_UndergroundManInfo_Text_0, MSGBOX_NPC
-# 60 "data/maps/Oreburgh_museum/scripts.pory"
+# 68 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_HowCoalIsMade1::
-# 64 "data/maps/Oreburgh_museum/scripts.pory"
+# 72 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 65 "data/maps/Oreburgh_museum/scripts.pory"
+# 73 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_HowCoalIsMade1_Text_0, MSGBOX_SIGN
-# 70 "data/maps/Oreburgh_museum/scripts.pory"
+# 78 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_HowCoalIsMade2::
-# 74 "data/maps/Oreburgh_museum/scripts.pory"
+# 82 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 75 "data/maps/Oreburgh_museum/scripts.pory"
+# 83 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_HowCoalIsMade2_Text_0, MSGBOX_SIGN
-# 80 "data/maps/Oreburgh_museum/scripts.pory"
+# 88 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_HowCoalIsMade3::
-# 84 "data/maps/Oreburgh_museum/scripts.pory"
+# 92 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 85 "data/maps/Oreburgh_museum/scripts.pory"
+# 93 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_HowCoalIsMade3_Text_0, MSGBOX_SIGN
-# 90 "data/maps/Oreburgh_museum/scripts.pory"
+# 98 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_SamplesDifferentRegions::
-# 94 "data/maps/Oreburgh_museum/scripts.pory"
+# 102 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 95 "data/maps/Oreburgh_museum/scripts.pory"
+# 103 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_SamplesDifferentRegions_Text_0, MSGBOX_SIGN
-# 97 "data/maps/Oreburgh_museum/scripts.pory"
+# 105 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_CategorizedCoalSamples::
-# 101 "data/maps/Oreburgh_museum/scripts.pory"
+# 109 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 102 "data/maps/Oreburgh_museum/scripts.pory"
+# 110 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_CategorizedCoalSamples_Text_0, MSGBOX_SIGN
-# 104 "data/maps/Oreburgh_museum/scripts.pory"
+# 112 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_MiningLamps::
-# 108 "data/maps/Oreburgh_museum/scripts.pory"
+# 116 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 109 "data/maps/Oreburgh_museum/scripts.pory"
+# 117 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_MiningLamps_Text_0, MSGBOX_SIGN
-# 113 "data/maps/Oreburgh_museum/scripts.pory"
+# 121 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_MiningTools::
-# 117 "data/maps/Oreburgh_museum/scripts.pory"
+# 125 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 118 "data/maps/Oreburgh_museum/scripts.pory"
+# 126 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_MiningTools_Text_0, MSGBOX_SIGN
-# 122 "data/maps/Oreburgh_museum/scripts.pory"
+# 130 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
 
 MiningMuseum_Text_MineWorkerItems::
-# 126 "data/maps/Oreburgh_museum/scripts.pory"
+# 134 "data/maps/Oreburgh_museum/scripts.pory"
 	lock
-# 127 "data/maps/Oreburgh_museum/scripts.pory"
+# 135 "data/maps/Oreburgh_museum/scripts.pory"
 	msgbox MiningMuseum_Text_MineWorkerItems_Text_0, MSGBOX_SIGN
-# 129 "data/maps/Oreburgh_museum/scripts.pory"
+# 137 "data/maps/Oreburgh_museum/scripts.pory"
 	release
 	return
 
@@ -176,21 +186,25 @@ MiningMuseum_Text_CoalExhibit2_Text_0:
 	.string "Wow! The Pokémon that carried this\n"
 	.string "must be terribly strong!$"
 
-MiningMuseum_Text_MineExtendsUnderSea_Text_0:
+MiningMuseum_Text_CoalExhibit3_Text_0:
 # 37 "data/maps/Oreburgh_museum/scripts.pory"
+	.string "This coal is so cool.$"
+
+MiningMuseum_Text_MineExtendsUnderSea_Text_0:
+# 45 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "Well, how about that!\p"
 	.string "The Oreburgh Mine extends under\n"
 	.string "the seafloor!$"
 
 MiningMuseum_Text_MineHistory_Text_0:
-# 45 "data/maps/Oreburgh_museum/scripts.pory"
+# 53 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "The history of Oreburgh Mine...\p"
 	.string "You could call it a history of effort\n"
 	.string "and friendship between people\l"
 	.string "and Pokémon.$"
 
 MiningMuseum_Text_UndergroundManInfo_Text_0:
-# 54 "data/maps/Oreburgh_museum/scripts.pory"
+# 62 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "It’s a little far from here, but there\n"
 	.string "is a city called Eterna City.\p"
 	.string "I’ve heard a curious person named the\n"
@@ -199,7 +213,7 @@ MiningMuseum_Text_UndergroundManInfo_Text_0:
 	.string "authority on the Underground.$"
 
 MiningMuseum_Text_HowCoalIsMade1_Text_0:
-# 65 "data/maps/Oreburgh_museum/scripts.pory"
+# 73 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "How Coal Is Made   1:\p"
 	.string "In a time long before history,\n"
 	.string "vegetative matter was swept along\p"
@@ -207,7 +221,7 @@ MiningMuseum_Text_HowCoalIsMade1_Text_0:
 	.string "buried under the ground.$"
 
 MiningMuseum_Text_HowCoalIsMade2_Text_0:
-# 75 "data/maps/Oreburgh_museum/scripts.pory"
+# 83 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "How Coal Is Made   2:\p"
 	.string "The buried plant matter was\n"
 	.string "forced ever deeper under the ground\p"
@@ -215,7 +229,7 @@ MiningMuseum_Text_HowCoalIsMade2_Text_0:
 	.string "by the shifting landmasses.$"
 
 MiningMuseum_Text_HowCoalIsMade3_Text_0:
-# 85 "data/maps/Oreburgh_museum/scripts.pory"
+# 93 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "How Coal Is Made   3:\p"
 	.string "Deep under the ground, the\n"
 	.string "plant matter was subjected to heavy\p"
@@ -223,30 +237,30 @@ MiningMuseum_Text_HowCoalIsMade3_Text_0:
 	.string "It gradually turned into coal.$"
 
 MiningMuseum_Text_SamplesDifferentRegions_Text_0:
-# 95 "data/maps/Oreburgh_museum/scripts.pory"
+# 103 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "Samples of coal from different regions\n"
 	.string "are displayed.$"
 
 MiningMuseum_Text_CategorizedCoalSamples_Text_0:
-# 102 "data/maps/Oreburgh_museum/scripts.pory"
+# 110 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "The box contains categorized samples\n"
 	.string "of coal.$"
 
 MiningMuseum_Text_MiningLamps_Text_0:
-# 109 "data/maps/Oreburgh_museum/scripts.pory"
+# 117 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "Different kinds of lamps are\n"
 	.string "displayed.\p"
 	.string "They appear to have been worn\n"
 	.string "on someone’s head while underground.$"
 
 MiningMuseum_Text_MiningTools_Text_0:
-# 118 "data/maps/Oreburgh_museum/scripts.pory"
+# 126 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "Badly scarred wooden tools are\n"
 	.string "displayed.\p"
 	.string "They apparently dug out coal using\n"
 	.string "these tools in the olden days.$"
 
 MiningMuseum_Text_MineWorkerItems_Text_0:
-# 127 "data/maps/Oreburgh_museum/scripts.pory"
+# 135 "data/maps/Oreburgh_museum/scripts.pory"
 	.string "The everyday items and tools of\n"
 	.string "past mine workers are displayed.$"

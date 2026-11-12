@@ -305,6 +305,7 @@ script after_starter {
     msgbox("And if you need any healing just come\n"
     "back to me and I'll fix you two right up.",MSGBOX_AUTOCLOSE)
     waitmessage
+    special(HealPlayerParty)
     setvar(VAR_TWINLEAF_INTRO_STATE, 8)
     releaseall
 }

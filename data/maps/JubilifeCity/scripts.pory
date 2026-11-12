@@ -84,6 +84,7 @@ script Jubilife_Enterence_LuDa_Event_Right  {
 script Jubilife_Enterence_LuDa_Event_Cont {
 	setflag(FLAG_JUBILIFE_POKETKCH)
 	setflag(FLAG_CLOWNS)
+	setflag(FLAG_JUB_GAL_EVENT)
 	checkplayergender
 	if(var(VAR_RESULT) == 0)
     {
@@ -386,7 +387,7 @@ script Jubilife_Enterence_LuDa_Event_Cont {
 script Jubilife_lookerStop {
 	lock
 	setspeaker(SP_NAME_LOOKER)
-	applymovement(LookerJubilifeBlock, moves(emote_exclamation_mark))
+	applymovement(LookerJubilifeBlock, moves(face_player,emote_exclamation_mark))
     playse(SE_PIN) 
     waitse
 	waitmovement
@@ -405,7 +406,7 @@ script Jubilife_lookerStop {
 script Jubilife_lookerStopTwo {
 	lock
 	setspeaker(SP_NAME_LOOKER)
-	applymovement(LookerJubilifeBlock, moves(emote_exclamation_mark))
+	applymovement(LookerJubilifeBlock, moves(face_player,emote_exclamation_mark))
     playse(SE_PIN) 
     waitse
 	waitmovement
@@ -821,6 +822,15 @@ script JubilifeCity_Text_ImTradingPokemonWithMyBuddy {
 	release
 }
 
+script JubilifeCity_Text_AcetrainerGirl {
+	lock
+	msgbox("Did you know this was the first city in\n"
+	"In all of Sinnoh?\p"
+	"Tho It was just a humble village\n"
+	"back then.",MSGBOX_NPC)
+	release
+}
+
 script JubilifeCity_TextIMadeMyPokemonHoldAnItemBeforeTradingIt {
 	lock
 	msgbox("I made my Pokémon hold an item before\n"
@@ -907,5 +917,14 @@ script JubilifeCity_Text_CanYouTellMeWhatTypeOfPokemonYouLike {
 		waitmessage
 	}
 
+	release
+}
+
+
+script JubilifeCity_Galatic_Event {
+	lockall
+	msgbox("The Pokétch is a watch that lets you\n"
+		"do all sorts of things.\p"
+		"It’s a must-have for Trainers!",MSGBOX_NPC)
 	release
 }

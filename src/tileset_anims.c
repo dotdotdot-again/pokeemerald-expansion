@@ -1587,6 +1587,37 @@ const u16 gTilesetAnims_red_flowers_Frame2[] = INCBIN_U16("data/tilesets/seconda
 const u16 gTilesetAnims_red_flowers_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/03.4bpp");
 const u16 gTilesetAnims_red_flowers_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/redFlowers/04.4bpp");
 
+//Floraroma Purple Flowers
+const u16 gTilesetAnims_purple_flowers_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/prupFlowers/0.4bpp");
+const u16 gTilesetAnims_purple_flowers_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/prupFlowers/1.4bpp");
+const u16 gTilesetAnims_purple_flowers_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/prupFlowers/2.4bpp");
+const u16 gTilesetAnims_purple_flowers_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/prupFlowers/3.4bpp");
+const u16 gTilesetAnims_purple_flowers_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/prupFlowers/4.4bpp");
+
+//Floraroma Blue Flowers
+const u16 gTilesetAnims_blue_flowers_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/blueFlowers/0.4bpp");
+const u16 gTilesetAnims_blue_flowers_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/blueFlowers/1.4bpp");
+const u16 gTilesetAnims_blue_flowers_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/blueFlowers/2.4bpp");
+const u16 gTilesetAnims_blue_flowers_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/blueFlowers/3.4bpp");
+const u16 gTilesetAnims_blue_flowers_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/blueFlowers/4.4bpp");
+
+//Floraroma Pink Flowers
+const u16 gTilesetAnims_pink_flowers_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/pinkFlowers/0.4bpp");
+const u16 gTilesetAnims_pink_flowers_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/pinkFlowers/1.4bpp");
+const u16 gTilesetAnims_pink_flowers_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/pinkFlowers/2.4bpp");
+const u16 gTilesetAnims_pink_flowers_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/pinkFlowers/3.4bpp");
+const u16 gTilesetAnims_pink_flowers_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/pinkFlowers/4.4bpp");
+
+//Floraroma Yellow Flowers
+const u16 gTilesetAnims_yellow_flowers_Frame0[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/yellowFlowers/0.4bpp");
+const u16 gTilesetAnims_yellow_flowers_Frame1[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/yellowFlowers/1.4bpp");
+const u16 gTilesetAnims_yellow_flowers_Frame2[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/yellowFlowers/2.4bpp");
+const u16 gTilesetAnims_yellow_flowers_Frame3[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/yellowFlowers/3.4bpp");
+const u16 gTilesetAnims_yellow_flowers_Frame4[] = INCBIN_U16("data/tilesets/secondary/porytiles_secondary_plat_gbawest_specials/anim/yellowFlowers/4.4bpp");
+
+
+
+//Normal FRLG Red Flowers
 const u16 *const gTilesetAnims_red_flowers[] = {
     gTilesetAnims_red_flowers_Frame0,
     gTilesetAnims_red_flowers_Frame1,
@@ -1595,16 +1626,85 @@ const u16 *const gTilesetAnims_red_flowers[] = {
     gTilesetAnims_red_flowers_Frame4
 };
 
+//Floraroma Purple Flowers
+const u16 *const gTilesetAnims_purple_flowers[] = {
+    gTilesetAnims_purple_flowers_Frame0,
+    gTilesetAnims_purple_flowers_Frame1,
+    gTilesetAnims_purple_flowers_Frame2,
+    gTilesetAnims_purple_flowers_Frame3,
+    gTilesetAnims_purple_flowers_Frame4
+};
+
+//Floraroma Blue Flowers
+const u16 *const gTilesetAnims_blue_flowers[] = {
+    gTilesetAnims_blue_flowers_Frame0,
+    gTilesetAnims_blue_flowers_Frame1,
+    gTilesetAnims_blue_flowers_Frame2,
+    gTilesetAnims_blue_flowers_Frame3,
+    gTilesetAnims_blue_flowers_Frame4
+};
+
+//Floraroma Pink Flowers
+const u16 *const gTilesetAnims_pink_flowers[] = {
+    gTilesetAnims_pink_flowers_Frame0,
+    gTilesetAnims_pink_flowers_Frame1,
+    gTilesetAnims_pink_flowers_Frame2,
+    gTilesetAnims_pink_flowers_Frame3,
+    gTilesetAnims_pink_flowers_Frame4
+};
+
+//Floraroma Yellow Flowers
+const u16 *const gTilesetAnims_yellow_flowers[] = {
+    gTilesetAnims_yellow_flowers_Frame0,
+    gTilesetAnims_yellow_flowers_Frame1,
+    gTilesetAnims_yellow_flowers_Frame2,
+    gTilesetAnims_yellow_flowers_Frame3,
+    gTilesetAnims_yellow_flowers_Frame4
+};
+
+//Normal FRLG Red Flowers
 static void QueueAnimTiles_red_flowers(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_red_flowers);
-    AppendTilesetAnimToBuffer(gTilesetAnims_red_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(512)), 4 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_red_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(524)), 4 * TILE_SIZE_4BPP);
+}
+
+//Floraroma Purple Flowers
+static void QueueAnimTiles_purp_flowers(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_purple_flowers);
+    AppendTilesetAnimToBuffer(gTilesetAnims_purple_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(520)), 4 * TILE_SIZE_4BPP);
+}
+
+//Floraroma Blue Flowers
+static void QueueAnimTiles_blue_flowers(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_blue_flowers);
+    AppendTilesetAnimToBuffer(gTilesetAnims_blue_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(512)), 4 * TILE_SIZE_4BPP);
+}
+
+//Floraroma Pink Flowers
+static void QueueAnimTiles_pink_flowers(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_pink_flowers);
+    AppendTilesetAnimToBuffer(gTilesetAnims_pink_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(516)), 4 * TILE_SIZE_4BPP);
+}
+
+//Floraroma Yellow Flowers
+static void QueueAnimTiles_yellow_flowers(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_yellow_flowers);
+    AppendTilesetAnimToBuffer(gTilesetAnims_yellow_flowers[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(528)), 4 * TILE_SIZE_4BPP);
 }
 
 static void TilesetAnim_westOthers(u16 timer)
 {
     if (timer % 16 == 0) {
         QueueAnimTiles_red_flowers(timer / 16);
+        QueueAnimTiles_purp_flowers(timer / 16);
+        QueueAnimTiles_blue_flowers(timer / 16);
+        QueueAnimTiles_pink_flowers(timer / 16);
+        QueueAnimTiles_yellow_flowers(timer / 16);
     }
 }
 

@@ -68,57 +68,65 @@ OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude::
 	switch VAR_RESULT
 # 43 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	case 1, OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_3
-# 51 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 52 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	case 2, OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_4
-# 72 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 75 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	case 4, OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_5
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_1:
-# 79 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 83 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	releaseall
 	return
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_3:
 # 44 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_0
+	lockall
 # 45 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_0
+# 46 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	msgbox OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_1, MSGBOX_NPC
-# 49 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	waitmessage
 # 50 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	waitmessage
+# 51 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	startquest QUEST_SHOW_A_PHANPY
 	goto OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_1
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_4:
-# 52 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_0
 # 53 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	lockall
+# 54 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_0
+# 55 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	msgbox OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_1, MSGBOX_NPC
-# 57 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	waitmessage
-# 58 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	checkspecies SPECIES_PHANPY, NO_PARTY_SCREEN
 # 59 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	waitmessage
+# 60 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	checkspecies SPECIES_PHANPY, NO_PARTY_SCREEN
+# 61 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_6
 	goto OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_1
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_5:
-# 73 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_3
-# 74 "data/maps/OreburghHouseTwo_F2/scripts.pory"
-	msgbox OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_4, MSGBOX_NPC
+# 76 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	lockall
 # 77 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_3
+# 78 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	msgbox OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_4, MSGBOX_NPC
+# 81 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	waitmessage
 	goto OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_1
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_6:
-# 61 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 63 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+	lockall
+# 64 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	setspeaker OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_0
-# 62 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 65 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	msgbox OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_2, MSGBOX_NPC
-# 69 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 72 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	giveitem ITEM_HEAVY_BALL, 5
-# 70 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 73 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	completequest QUEST_SHOW_A_PHANPY
 	goto OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_1
 
@@ -140,18 +148,18 @@ OreburghCityNorthHouse2F_Text_MyFavoritePokemonAbilityIsMyPachirisusPickup_Text_
 	.string "items without me noticing!$"
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_0:
-# 44 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 45 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	.string "Some Guy$"
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_1:
-# 45 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 46 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	.string "The view is good from the second floor,\n"
 	.string "but it’s a pain going outside.\p"
 	.string "If you don’t mind, how about showing me\n"
 	.string "a Pokémon called Phanpy?$"
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_2:
-# 62 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 65 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	.string "Oh, that Pokémon!\n"
 	.string "thats a Phanpy!\p"
 	.string "It's so cute...\p"
@@ -161,11 +169,11 @@ OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_2:
 	.string "This is a token of my thanks!$"
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_3:
-# 73 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 77 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	.string "That Phanpy Guy$"
 
 OreburghCityNorthHouse2F_Text_HowAboutShowingMeAPokemonCalledGeodude_Text_4:
-# 74 "data/maps/OreburghHouseTwo_F2/scripts.pory"
+# 78 "data/maps/OreburghHouseTwo_F2/scripts.pory"
 	.string "Hey there!\p"
 	.string "Thanks again for showing me how\n"
 	.string "amazing Phanpy is!$"
